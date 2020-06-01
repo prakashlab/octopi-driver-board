@@ -1,5 +1,5 @@
 BOM ID,Component ID,Image,Component Name,Manufacturer,Manufacturer Part #,Supplier,Supplier Part #,Supplier Link,Supplier Description,ShenZhen OPL MPN,Mounting Type,Quantity,Designator,Notes
-1,1,,Processing Plane v0.1.0,JLCPCB,,Octopi Team,ODS-PPDv0.1.0,https://github.com/ethanjli/octopi-driver-board/tree/master/Stacked/Processing%20Plane,Processing Plane v0.1.0 for Due,,Fastener,1,,
+1,1.1,,Processing Plane v0.1.1,Seeed Studio,,Octopi Team,ODS-PPDv0.1.1,https://github.com/ethanjli/octopi-driver-board/tree/ODS-PPDv0.1.1/Stacked/Processing%20Planee,Processing Plane v0.1.1 for Due,,Fastener,1,,
 4,7,,2x3 Female Header,Pololu,1023,Pololu,1023,https://www.pololu.com/product/1023,"0.100"" (2.54 mm) Female Header: 2x3-Pin, Straight",,PTH,1,SPI,Solder with the long side of the header plugged into the Arduino Due.
 5,8,,1X10 Male Header,Pololu,965,Pololu,965,https://www.pololu.com/product/965,"0.100"" (2.54 mm) Breakaway Male Header: 1×40-Pin, Straight, Black",,PTH,1,,Solder with the long side of the header plugged into the Arduino Due.
 6,9,,1X8 Male Header,Pololu,965,Pololu,965,https://www.pololu.com/product/965,"0.100"" (2.54 mm) Breakaway Male Header: 1×40-Pin, Straight, Black",,PTH,5,,Solder with the long side of the header plugged into the Arduino Due.
