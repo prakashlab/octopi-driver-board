@@ -1,0 +1,15 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP 74HC4067PW
+D CMOS Logic 16-Channel Analog Multiplexer/Demultiplexer, TSSOP-24
+K multiplexer demultiplexer mux demux
+F https://assets.nexperia.com/documents/data-sheet/74HC_HCT4067.pdf
+$ENDCMP
+#
+$CMP MAX7317
+D 16-port I/O expander, SPI, QSOP-16
+K SPI parallel port expander
+F https://datasheets.maximintegrated.com/en/ds/MAX7317.pdf
+$ENDCMP
+#
+#End Doc Library
