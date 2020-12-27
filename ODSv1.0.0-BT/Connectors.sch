@@ -24,6 +24,9 @@ F 0 "J1" H 2500 7067 50  0000 C CNN
 F 1 "Conn_02x60_Odd_Even" H 2500 6976 50  0000 C CNN
 F 2 "Backplane_Connector_Hirose:Hirose_FX20_FX20-120P-0.5SV_2x60_P0.50mm_Vertical" H 2450 3950 50  0001 C CNN
 F 3 "https://www.hirose.com/product/document?clcode=&productname=&series=FX20&documenttype=Catalog&lang=en&documentid=D49373_en" H 2450 3950 50  0001 C CNN
+F 4 "FX20-120P-0.5SV15" H 2450 3950 50  0001 C CNN "MPN"
+F 5 "Hirose" H 2450 3950 50  0001 C CNN "Manufacturer"
+F 6 "https://www.digikey.com/en/products/detail/hirose-electric-co-ltd/FX20-120P-0-5SV15/3461671" H 2450 3950 50  0001 C CNN "Ordering URL"
 	1    2450 3950
 	1    0    0    -1  
 $EndComp
@@ -453,8 +456,11 @@ AR Path="/60C51399/61296724" Ref="J?"  Part="1"
 AR Path="/60C51399/60E9531F/61296724" Ref="J2"  Part="1" 
 F 0 "J2" H 5500 7067 50  0000 C CNN
 F 1 "Conn_02x60_Odd_Even" H 5500 6976 50  0000 C CNN
-F 2 "Backplane_Connector_Hirose:Hirose_FX20_FX20-120P-0.5SV_2x60_P0.50mm_Vertical" H 5450 3950 50  0001 C CNN
+F 2 "Backplane_Connector_Hirose:Hirose_FX20_FX20-120S-0.5SV_2x60_P0.50mm_Vertical" H 5450 3950 50  0001 C CNN
 F 3 "https://www.hirose.com/product/document?clcode=&productname=&series=FX20&documenttype=Catalog&lang=en&documentid=D49373_en" H 5450 3950 50  0001 C CNN
+F 4 "FX20-120S-0.5SV" H 5450 3950 50  0001 C CNN "MPN"
+F 5 "Hirose" H 5450 3950 50  0001 C CNN "Manufacturer"
+F 6 "https://www.digikey.com/en/products/detail/hirose-electric-co-ltd/FX20-120S-0-5SV/3461673" H 5450 3950 50  0001 C CNN "Ordering URL"
 	1    5450 3950
 	1    0    0    -1  
 $EndComp

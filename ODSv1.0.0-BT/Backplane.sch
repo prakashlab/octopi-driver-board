@@ -114,7 +114,7 @@ U 1 1 617F768B
 P 4150 3900
 F 0 "R7" V 4100 4050 50  0000 L CNN
 F 1 "DNP" V 4150 3900 50  0000 C CNN
-F 2 "" V 4080 3900 50  0001 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 4080 3900 50  0001 C CNN
 F 3 "~" H 4150 3900 50  0001 C CNN
 	1    4150 3900
 	0    1    1    0   
@@ -125,7 +125,7 @@ U 1 1 618DC64E
 P 4150 4000
 F 0 "R8" V 4100 4150 50  0000 L CNN
 F 1 "DNP" V 4150 4000 50  0000 C CNN
-F 2 "" V 4080 4000 50  0001 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 4080 4000 50  0001 C CNN
 F 3 "~" H 4150 4000 50  0001 C CNN
 	1    4150 4000
 	0    1    1    0   
@@ -136,7 +136,7 @@ U 1 1 618DE09D
 P 4150 4100
 F 0 "R9" V 4100 4250 50  0000 L CNN
 F 1 "DNP" V 4150 4100 50  0000 C CNN
-F 2 "" V 4080 4100 50  0001 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 4080 4100 50  0001 C CNN
 F 3 "~" H 4150 4100 50  0001 C CNN
 	1    4150 4100
 	0    1    1    0   
@@ -147,7 +147,7 @@ U 1 1 618DFA23
 P 4150 4200
 F 0 "R10" V 4100 4350 50  0000 L CNN
 F 1 "DNP" V 4150 4200 50  0000 C CNN
-F 2 "" V 4080 4200 50  0001 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 4080 4200 50  0001 C CNN
 F 3 "~" H 4150 4200 50  0001 C CNN
 	1    4150 4200
 	0    1    1    0   
@@ -158,7 +158,7 @@ U 1 1 618E1433
 P 4150 4300
 F 0 "R11" V 4100 4450 50  0000 L CNN
 F 1 "DNP" V 4150 4300 50  0000 C CNN
-F 2 "" V 4080 4300 50  0001 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 4080 4300 50  0001 C CNN
 F 3 "~" H 4150 4300 50  0001 C CNN
 	1    4150 4300
 	0    1    1    0   
@@ -169,7 +169,7 @@ U 1 1 618E2EC6
 P 4150 4400
 F 0 "R12" V 4100 4550 50  0000 L CNN
 F 1 "DNP" V 4150 4400 50  0000 C CNN
-F 2 "" V 4080 4400 50  0001 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 4080 4400 50  0001 C CNN
 F 3 "~" H 4150 4400 50  0001 C CNN
 	1    4150 4400
 	0    1    1    0   
@@ -180,7 +180,7 @@ U 1 1 618E491C
 P 4150 4500
 F 0 "R13" V 4100 4650 50  0000 L CNN
 F 1 "DNP" V 4150 4500 50  0000 C CNN
-F 2 "" V 4080 4500 50  0001 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 4080 4500 50  0001 C CNN
 F 3 "~" H 4150 4500 50  0001 C CNN
 	1    4150 4500
 	0    1    1    0   
@@ -191,7 +191,7 @@ U 1 1 618E634F
 P 4150 4600
 F 0 "R14" V 4100 4750 50  0000 L CNN
 F 1 "DNP" V 4150 4600 50  0000 C CNN
-F 2 "" V 4080 4600 50  0001 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 4080 4600 50  0001 C CNN
 F 3 "~" H 4150 4600 50  0001 C CNN
 	1    4150 4600
 	0    1    1    0   
@@ -202,7 +202,7 @@ U 1 1 618E7E11
 P 4150 4700
 F 0 "R15" V 4100 4850 50  0000 L CNN
 F 1 "DNP" V 4150 4700 50  0000 C CNN
-F 2 "" V 4080 4700 50  0001 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 4080 4700 50  0001 C CNN
 F 3 "~" H 4150 4700 50  0001 C CNN
 	1    4150 4700
 	0    1    1    0   
@@ -213,7 +213,7 @@ U 1 1 618E97E4
 P 4150 4800
 F 0 "R16" V 4100 4950 50  0000 L CNN
 F 1 "DNP" V 4150 4800 50  0000 C CNN
-F 2 "" V 4080 4800 50  0001 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 4080 4800 50  0001 C CNN
 F 3 "~" H 4150 4800 50  0001 C CNN
 	1    4150 4800
 	0    1    1    0   
@@ -224,7 +224,7 @@ U 1 1 618EB227
 P 4150 4900
 F 0 "R17" V 4100 5050 50  0000 L CNN
 F 1 "DNP" V 4150 4900 50  0000 C CNN
-F 2 "" V 4080 4900 50  0001 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 4080 4900 50  0001 C CNN
 F 3 "~" H 4150 4900 50  0001 C CNN
 	1    4150 4900
 	0    1    1    0   
@@ -235,7 +235,7 @@ U 1 1 618ECC9B
 P 4150 5000
 F 0 "R18" V 4100 5150 50  0000 L CNN
 F 1 "DNP" V 4150 5000 50  0000 C CNN
-F 2 "" V 4080 5000 50  0001 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 4080 5000 50  0001 C CNN
 F 3 "~" H 4150 5000 50  0001 C CNN
 	1    4150 5000
 	0    1    1    0   
@@ -246,7 +246,7 @@ U 1 1 618EE76D
 P 4150 5100
 F 0 "R19" V 4100 5250 50  0000 L CNN
 F 1 "DNP" V 4150 5100 50  0000 C CNN
-F 2 "" V 4080 5100 50  0001 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 4080 5100 50  0001 C CNN
 F 3 "~" H 4150 5100 50  0001 C CNN
 	1    4150 5100
 	0    1    1    0   
@@ -257,7 +257,7 @@ U 1 1 618F0151
 P 4150 5200
 F 0 "R20" V 4100 5350 50  0000 L CNN
 F 1 "DNP" V 4150 5200 50  0000 C CNN
-F 2 "" V 4080 5200 50  0001 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 4080 5200 50  0001 C CNN
 F 3 "~" H 4150 5200 50  0001 C CNN
 	1    4150 5200
 	0    1    1    0   
@@ -268,7 +268,7 @@ U 1 1 618F1B66
 P 4150 5300
 F 0 "R21" V 4100 5450 50  0000 L CNN
 F 1 "DNP" V 4150 5300 50  0000 C CNN
-F 2 "" V 4080 5300 50  0001 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 4080 5300 50  0001 C CNN
 F 3 "~" H 4150 5300 50  0001 C CNN
 	1    4150 5300
 	0    1    1    0   
@@ -279,7 +279,7 @@ U 1 1 618F358C
 P 4150 5400
 F 0 "R22" V 4100 5550 50  0000 L CNN
 F 1 "DNP" V 4150 5400 50  0000 C CNN
-F 2 "" V 4080 5400 50  0001 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 4080 5400 50  0001 C CNN
 F 3 "~" H 4150 5400 50  0001 C CNN
 	1    4150 5400
 	0    1    1    0   
@@ -530,8 +530,11 @@ AR Path="/60C51399/61775202/6237AE10" Ref="R?"  Part="1"
 AR Path="/60C51399/6237AE10" Ref="R1"  Part="1" 
 F 0 "R1" V 4100 2950 50  0000 L CNN
 F 1 "0" V 4150 2800 50  0000 C CNN
-F 2 "" V 4080 2800 50  0001 C CNN
-F 3 "~" H 4150 2800 50  0001 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 4080 2800 50  0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 4150 2800 50  0001 C CNN
+F 4 "RC1206FR-070RL" H 4150 2800 50  0001 C CNN "MPN"
+F 5 "Yageo" H 4150 2800 50  0001 C CNN "Manufacturer"
+F 6 "https://www.digikey.com/en/products/detail/yageo/RC1206FR-070RL/5698945" H 4150 2800 50  0001 C CNN "Ordering URL"
 	1    4150 2800
 	0    1    1    0   
 $EndComp
@@ -549,7 +552,7 @@ AR Path="/60C51399/61775202/6237AE18" Ref="R?"  Part="1"
 AR Path="/60C51399/6237AE18" Ref="R2"  Part="1" 
 F 0 "R2" V 4100 3050 50  0000 L CNN
 F 1 "DNP" V 4150 2900 50  0000 C CNN
-F 2 "" V 4080 2900 50  0001 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 4080 2900 50  0001 C CNN
 F 3 "~" H 4150 2900 50  0001 C CNN
 	1    4150 2900
 	0    1    1    0   
@@ -568,8 +571,11 @@ AR Path="/60C51399/61775202/62384C14" Ref="R?"  Part="1"
 AR Path="/60C51399/62384C14" Ref="R3"  Part="1" 
 F 0 "R3" V 4100 3150 50  0000 L CNN
 F 1 "0" V 4150 3000 50  0000 C CNN
-F 2 "" V 4080 3000 50  0001 C CNN
-F 3 "~" H 4150 3000 50  0001 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 4080 3000 50  0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 4150 3000 50  0001 C CNN
+F 4 "RC1206FR-070RL" H 4150 3000 50  0001 C CNN "MPN"
+F 5 "Yageo" H 4150 3000 50  0001 C CNN "Manufacturer"
+F 6 "https://www.digikey.com/en/products/detail/yageo/RC1206FR-070RL/5698945" H 4150 3000 50  0001 C CNN "Ordering URL"
 	1    4150 3000
 	0    1    1    0   
 $EndComp
@@ -587,7 +593,7 @@ AR Path="/60C51399/61775202/62384C1C" Ref="R?"  Part="1"
 AR Path="/60C51399/62384C1C" Ref="R4"  Part="1" 
 F 0 "R4" V 4100 3250 50  0000 L CNN
 F 1 "DNP" V 4150 3100 50  0000 C CNN
-F 2 "" V 4080 3100 50  0001 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 4080 3100 50  0001 C CNN
 F 3 "~" H 4150 3100 50  0001 C CNN
 	1    4150 3100
 	0    1    1    0   
@@ -606,8 +612,11 @@ AR Path="/60C51399/61775202/6238EFC3" Ref="R?"  Part="1"
 AR Path="/60C51399/6238EFC3" Ref="R5"  Part="1" 
 F 0 "R5" V 4100 3350 50  0000 L CNN
 F 1 "0" V 4150 3200 50  0000 C CNN
-F 2 "" V 4080 3200 50  0001 C CNN
-F 3 "~" H 4150 3200 50  0001 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 4080 3200 50  0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 4150 3200 50  0001 C CNN
+F 4 "RC1206FR-070RL" H 4150 3200 50  0001 C CNN "MPN"
+F 5 "Yageo" H 4150 3200 50  0001 C CNN "Manufacturer"
+F 6 "https://www.digikey.com/en/products/detail/yageo/RC1206FR-070RL/5698945" H 4150 3200 50  0001 C CNN "Ordering URL"
 	1    4150 3200
 	0    1    1    0   
 $EndComp
@@ -625,7 +634,7 @@ AR Path="/60C51399/61775202/6238EFCB" Ref="R?"  Part="1"
 AR Path="/60C51399/6238EFCB" Ref="R6"  Part="1" 
 F 0 "R6" V 4100 3450 50  0000 L CNN
 F 1 "DNP" V 4150 3300 50  0000 C CNN
-F 2 "" V 4080 3300 50  0001 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 4080 3300 50  0001 C CNN
 F 3 "~" H 4150 3300 50  0001 C CNN
 	1    4150 3300
 	0    1    1    0   
@@ -833,8 +842,11 @@ U 1 1 61EE0A88
 P 9000 4550
 F 0 "R26" V 8950 4700 50  0000 L CNN
 F 1 "560" V 9000 4550 50  0000 C CNN
-F 2 "" V 8930 4550 50  0001 C CNN
-F 3 "~" H 9000 4550 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 8930 4550 50  0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 9000 4550 50  0001 C CNN
+F 4 "RC0603FR-07560RL" H 9000 4550 50  0001 C CNN "MPN"
+F 5 "Yageo" H 9000 4550 50  0001 C CNN "Manufacturer"
+F 6 "https://www.digikey.com/en/products/detail/yageo/RC0603FR-07560RL/727304" H 9000 4550 50  0001 C CNN "Ordering URL"
 	1    9000 4550
 	0    1    1    0   
 $EndComp
@@ -844,8 +856,11 @@ U 1 1 61EE9DA7
 P 9000 4650
 F 0 "R27" V 8950 4800 50  0000 L CNN
 F 1 "560" V 9000 4650 50  0000 C CNN
-F 2 "" V 8930 4650 50  0001 C CNN
-F 3 "~" H 9000 4650 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 8930 4650 50  0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 9000 4650 50  0001 C CNN
+F 4 "RC0603FR-07560RL" H 9000 4650 50  0001 C CNN "MPN"
+F 5 "Yageo" H 9000 4650 50  0001 C CNN "Manufacturer"
+F 6 "https://www.digikey.com/en/products/detail/yageo/RC0603FR-07560RL/727304" H 9000 4650 50  0001 C CNN "Ordering URL"
 	1    9000 4650
 	0    1    1    0   
 $EndComp
@@ -855,8 +870,11 @@ U 1 1 61EF30C8
 P 9000 4750
 F 0 "R28" V 8950 4900 50  0000 L CNN
 F 1 "150" V 9000 4750 50  0000 C CNN
-F 2 "" V 8930 4750 50  0001 C CNN
-F 3 "~" H 9000 4750 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 8930 4750 50  0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 9000 4750 50  0001 C CNN
+F 4 "RC0603FR-07150RL" H 9000 4750 50  0001 C CNN "MPN"
+F 5 "Yageo" H 9000 4750 50  0001 C CNN "Manufacturer"
+F 6 "https://www.digikey.com/en/products/detail/yageo/RC0603FR-07150RL/726958" H 9000 4750 50  0001 C CNN "Ordering URL"
 	1    9000 4750
 	0    1    1    0   
 $EndComp
@@ -866,8 +884,11 @@ U 1 1 61EFC353
 P 9000 4850
 F 0 "R29" V 8950 5000 50  0000 L CNN
 F 1 "75" V 9000 4850 50  0000 C CNN
-F 2 "" V 8930 4850 50  0001 C CNN
-F 3 "~" H 9000 4850 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 8930 4850 50  0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 9000 4850 50  0001 C CNN
+F 4 "RC0603FR-0775RL" H 9000 4850 50  0001 C CNN "MPN"
+F 5 "Yageo" H 9000 4850 50  0001 C CNN "Manufacturer"
+F 6 "https://www.digikey.com/en/products/detail/yageo/RC0603FR-0775RL/727377" H 9000 4850 50  0001 C CNN "Ordering URL"
 	1    9000 4850
 	0    1    1    0   
 $EndComp
@@ -877,8 +898,11 @@ U 1 1 61F055EF
 P 9000 4950
 F 0 "R30" V 8950 5100 50  0000 L CNN
 F 1 "75" V 9000 4950 50  0000 C CNN
-F 2 "" V 8930 4950 50  0001 C CNN
-F 3 "~" H 9000 4950 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 8930 4950 50  0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 9000 4950 50  0001 C CNN
+F 4 "RC0603FR-0775RL" H 9000 4950 50  0001 C CNN "MPN"
+F 5 "Yageo" H 9000 4950 50  0001 C CNN "Manufacturer"
+F 6 "https://www.digikey.com/en/products/detail/yageo/RC0603FR-0775RL/727377" H 9000 4950 50  0001 C CNN "Ordering URL"
 	1    9000 4950
 	0    1    1    0   
 $EndComp
@@ -890,8 +914,11 @@ U 1 1 62020128
 P 8550 4950
 F 0 "D5" H 8650 4900 50  0000 L CNN
 F 1 "Red" H 8350 4900 50  0000 R CNN
-F 2 "" H 8550 4950 50  0001 C CNN
-F 3 "~" H 8550 4950 50  0001 C CNN
+F 2 "LED_SMD:LED_0603_1608Metric" H 8550 4950 50  0001 C CNN
+F 3 "https://optoelectronics.liteon.com/upload/download/DS-22-99-0151/LTST-C190KRKT.pdf" H 8550 4950 50  0001 C CNN
+F 4 "LTST-C190KRKT" H 8550 4950 50  0001 C CNN "MPN"
+F 5 "Lite-On" H 8550 4950 50  0001 C CNN "Manufacturer"
+F 6 "https://www.digikey.com/en/products/detail/lite-on-inc/LTST-C190KRKT/386817" H 8550 4950 50  0001 C CNN "Ordering URL"
 	1    8550 4950
 	1    0    0    1   
 $EndComp
@@ -901,8 +928,11 @@ U 1 1 62016DB5
 P 8550 4850
 F 0 "D4" H 8650 4800 50  0000 L CNN
 F 1 "Red" H 8350 4800 50  0000 R CNN
-F 2 "" H 8550 4850 50  0001 C CNN
-F 3 "~" H 8550 4850 50  0001 C CNN
+F 2 "LED_SMD:LED_0603_1608Metric" H 8550 4850 50  0001 C CNN
+F 3 "https://optoelectronics.liteon.com/upload/download/DS-22-99-0151/LTST-C190KRKT.pdf" H 8550 4850 50  0001 C CNN
+F 4 "LTST-C190KRKT" H 8550 4850 50  0001 C CNN "MPN"
+F 5 "Lite-On" H 8550 4850 50  0001 C CNN "Manufacturer"
+F 6 "https://www.digikey.com/en/products/detail/lite-on-inc/LTST-C190KRKT/386817" H 8550 4850 50  0001 C CNN "Ordering URL"
 	1    8550 4850
 	1    0    0    1   
 $EndComp
@@ -912,8 +942,11 @@ U 1 1 6200DA64
 P 8550 4750
 F 0 "D3" H 8650 4700 50  0000 L CNN
 F 1 "Orange" H 8350 4700 50  0000 R CNN
-F 2 "" H 8550 4750 50  0001 C CNN
-F 3 "~" H 8550 4750 50  0001 C CNN
+F 2 "LED_SMD:LED_0603_1608Metric" H 8550 4750 50  0001 C CNN
+F 3 "https://optoelectronics.liteon.com/upload/download/DS-22-99-0186/LTST-C190KFKT.PDF" H 8550 4750 50  0001 C CNN
+F 4 "LTST-C190KFKT" H 8550 4750 50  0001 C CNN "MPN"
+F 5 "Lite-On" H 8550 4750 50  0001 C CNN "Manufacturer"
+F 6 "https://www.digikey.com/en/products/detail/lite-on-inc/LTST-C190KFKT/386813" H 8550 4750 50  0001 C CNN "Ordering URL"
 	1    8550 4750
 	1    0    0    1   
 $EndComp
@@ -923,8 +956,11 @@ U 1 1 62004719
 P 8550 4650
 F 0 "D2" H 8650 4600 50  0000 L CNN
 F 1 "Yellow" H 8350 4600 50  0000 R CNN
-F 2 "" H 8550 4650 50  0001 C CNN
-F 3 "~" H 8550 4650 50  0001 C CNN
+F 2 "LED_SMD:LED_0603_1608Metric" H 8550 4650 50  0001 C CNN
+F 3 "https://optoelectronics.liteon.com/upload/download/DS-22-99-0189/LTST-C190KSKT.pdf" H 8550 4650 50  0001 C CNN
+F 4 "LTST-C190KSKT" H 8550 4650 50  0001 C CNN "MPN"
+F 5 "Lite-On" H 8550 4650 50  0001 C CNN "Manufacturer"
+F 6 "https://www.digikey.com/en/products/detail/lite-on-inc/LTST-C190KSKT/386819" H 8550 4650 50  0001 C CNN "Ordering URL"
 	1    8550 4650
 	1    0    0    1   
 $EndComp
@@ -934,8 +970,11 @@ U 1 1 61DEBF01
 P 8550 4550
 F 0 "D1" H 8650 4500 50  0000 L CNN
 F 1 "Yellow" H 8350 4500 50  0000 R CNN
-F 2 "" H 8550 4550 50  0001 C CNN
-F 3 "~" H 8550 4550 50  0001 C CNN
+F 2 "LED_SMD:LED_0603_1608Metric" H 8550 4550 50  0001 C CNN
+F 3 "https://optoelectronics.liteon.com/upload/download/DS-22-99-0189/LTST-C190KSKT.pdf" H 8550 4550 50  0001 C CNN
+F 4 "LTST-C190KSKT" H 8550 4550 50  0001 C CNN "MPN"
+F 5 "Lite-On" H 8550 4550 50  0001 C CNN "Manufacturer"
+F 6 "https://www.digikey.com/en/products/detail/lite-on-inc/LTST-C190KSKT/386819" H 8550 4550 50  0001 C CNN "Ordering URL"
 	1    8550 4550
 	1    0    0    1   
 $EndComp
@@ -1004,8 +1043,11 @@ U 1 1 626C91FC
 P 9150 5750
 F 0 "D6" H 8950 5700 50  0000 R CNN
 F 1 "Blue" H 9250 5700 50  0000 L CNN
-F 2 "" H 9150 5750 50  0001 C CNN
-F 3 "~" H 9150 5750 50  0001 C CNN
+F 2 "LED_SMD:LED_0603_1608Metric" H 9150 5750 50  0001 C CNN
+F 3 "https://optoelectronics.liteon.com/upload/download/DS-22-99-0224/LTST-C190TBKT.PDF" H 9150 5750 50  0001 C CNN
+F 4 "LTST-C190TBKT" H 9150 5750 50  0001 C CNN "MPN"
+F 5 "Lite-On" H 9150 5750 50  0001 C CNN "Manufacturer"
+F 6 "https://www.digikey.com/en/products/detail/lite-on-inc/LTST-C190TBKT/388529" H 9150 5750 50  0001 C CNN "Ordering URL"
 	1    9150 5750
 	-1   0    0    1   
 $EndComp
@@ -1015,8 +1057,11 @@ U 1 1 626D59FC
 P 8550 5750
 F 0 "R23" V 8500 5900 50  0000 L CNN
 F 1 "270" V 8550 5750 50  0000 C CNN
-F 2 "" V 8480 5750 50  0001 C CNN
-F 3 "~" H 8550 5750 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 8480 5750 50  0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 8550 5750 50  0001 C CNN
+F 4 "RC0603FR-07270RL" H 8550 5750 50  0001 C CNN "MPN"
+F 5 "Yageo" H 8550 5750 50  0001 C CNN "Manufacturer"
+F 6 "https://www.digikey.com/en/products/detail/yageo/RC0603FR-07270RL/727103" H 8550 5750 50  0001 C CNN "Ordering URL"
 	1    8550 5750
 	0    1    1    0   
 $EndComp
@@ -1034,8 +1079,11 @@ U 1 1 6275C050
 P 9150 5850
 F 0 "D7" H 8950 5800 50  0000 R CNN
 F 1 "Blue" H 9250 5800 50  0000 L CNN
-F 2 "" H 9150 5850 50  0001 C CNN
-F 3 "~" H 9150 5850 50  0001 C CNN
+F 2 "LED_SMD:LED_0603_1608Metric" H 9150 5850 50  0001 C CNN
+F 3 "https://optoelectronics.liteon.com/upload/download/DS-22-99-0224/LTST-C190TBKT.PDF" H 9150 5850 50  0001 C CNN
+F 4 "LTST-C190TBKT" H 9150 5850 50  0001 C CNN "MPN"
+F 5 "Lite-On" H 9150 5850 50  0001 C CNN "Manufacturer"
+F 6 "https://www.digikey.com/en/products/detail/lite-on-inc/LTST-C190TBKT/388529" H 9150 5850 50  0001 C CNN "Ordering URL"
 	1    9150 5850
 	-1   0    0    1   
 $EndComp
@@ -1045,8 +1093,11 @@ U 1 1 6275C056
 P 8550 5850
 F 0 "R24" V 8500 6000 50  0000 L CNN
 F 1 "1k" V 8550 5850 50  0000 C CNN
-F 2 "" V 8480 5850 50  0001 C CNN
-F 3 "~" H 8550 5850 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 8480 5850 50  0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 8550 5850 50  0001 C CNN
+F 4 "RC0603FR-071KL" H 8550 5850 50  0001 C CNN "MPN"
+F 5 "Yageo" H 8550 5850 50  0001 C CNN "Manufacturer"
+F 6 "https://www.digikey.com/en/products/detail/yageo/RC0603FR-071KL/726843" H 8550 5850 50  0001 C CNN "Ordering URL"
 	1    8550 5850
 	0    1    1    0   
 $EndComp
@@ -1058,8 +1109,11 @@ U 1 1 62766C77
 P 9150 5950
 F 0 "D8" H 8950 5900 50  0000 R CNN
 F 1 "Blue" H 9250 5900 50  0000 L CNN
-F 2 "" H 9150 5950 50  0001 C CNN
-F 3 "~" H 9150 5950 50  0001 C CNN
+F 2 "LED_SMD:LED_0603_1608Metric" H 9150 5950 50  0001 C CNN
+F 3 "https://optoelectronics.liteon.com/upload/download/DS-22-99-0224/LTST-C190TBKT.PDF" H 9150 5950 50  0001 C CNN
+F 4 "LTST-C190TBKT" H 9150 5950 50  0001 C CNN "MPN"
+F 5 "Lite-On" H 9150 5950 50  0001 C CNN "Manufacturer"
+F 6 "https://www.digikey.com/en/products/detail/lite-on-inc/LTST-C190TBKT/388529" H 9150 5950 50  0001 C CNN "Ordering URL"
 	1    9150 5950
 	-1   0    0    1   
 $EndComp
@@ -1069,8 +1123,11 @@ U 1 1 62766C7D
 P 8550 5950
 F 0 "R25" V 8500 6100 50  0000 L CNN
 F 1 "1.2k" V 8550 5950 50  0000 C CNN
-F 2 "" V 8480 5950 50  0001 C CNN
-F 3 "~" H 8550 5950 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 8480 5950 50  0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 8550 5950 50  0001 C CNN
+F 4 "RC0603FR-071K2L" H 8550 5950 50  0001 C CNN "MPN"
+F 5 "Yageo" H 8550 5950 50  0001 C CNN "Manufacturer"
+F 6 "https://www.digikey.com/en/products/detail/yageo/RC0603FR-071K2L/726852" H 8550 5950 50  0001 C CNN "Ordering URL"
 	1    8550 5950
 	0    1    1    0   
 $EndComp

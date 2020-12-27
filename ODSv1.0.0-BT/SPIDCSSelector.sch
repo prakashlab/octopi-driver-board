@@ -21,6 +21,9 @@ F 0 "U1" H 1550 2700 50  0000 C CNN
 F 1 "MAX7317" H 2000 2100 50  0000 C CNN
 F 2 "Package_SO:QSOP-16_3.9x4.9mm_P0.635mm" H 2200 1450 50  0001 L CNN
 F 3 "https://datasheets.maximintegrated.com/en/ds/MAX7317.pdf" H 2200 1000 50  0001 L CNN
+F 4 "MAX7317AEE+T" H 2000 2100 50  0001 C CNN "MPN"
+F 5 "Maxim" H 2000 2100 50  0001 C CNN "Manufacturer"
+F 6 "https://www.digikey.com/en/products/detail/maxim-integrated/MAX7317AEE-T/1781026" H 2000 2100 50  0001 C CNN "Ordering URL"
 	1    2000 2100
 	1    0    0    -1  
 $EndComp
@@ -164,6 +167,9 @@ F 0 "U2" H 4450 2850 50  0000 C CNN
 F 1 "74HC4067PW" H 4700 2250 50  0000 C CNN
 F 2 "Package_SO:TSSOP-24_4.4x7.8mm_P0.65mm" H 5800 950 50  0001 C CIN
 F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT4067.pdf" H 4400 2800 50  0001 C CNN
+F 4 "74HC4067PW,118" H 4750 1900 50  0001 C CNN "MPN"
+F 5 "Nexperia" H 4750 1900 50  0001 C CNN "Manufacturer"
+F 6 "https://www.digikey.com/en/products/detail/nexperia-usa-inc/74HC4067PW118/1230424" H 4750 1900 50  0001 C CNN "Ordering URL"
 	1    4750 1900
 	1    0    0    -1  
 $EndComp
