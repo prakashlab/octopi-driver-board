@@ -190,7 +190,7 @@ Text HLabel 2000 1250 0    50   BiDi ~ 0
 GPIO_I2C0_SDA
 Text HLabel 2000 1350 0    50   Output ~ 0
 GPIO_I2C2_SCL
-Text HLabel 2000 1450 0    50   Input ~ 0
+Text HLabel 2000 1450 0    50   BiDi ~ 0
 GPIO_I2C2_SDA
 Text HLabel 2000 1550 0    50   Output ~ 0
 GPIO_SER8_TX
@@ -218,21 +218,21 @@ Text HLabel 2000 3150 0    50   UnSpc ~ 0
 GPIO_6
 Text HLabel 2000 3350 0    50   UnSpc ~ 0
 GPIO_10
-Text HLabel 3000 1150 2    50   BiDi ~ 0
+Text HLabel 3000 1150 2    50   Output ~ 0
 GPIO_I2C1_SCL
-Text HLabel 3000 1250 2    50   Output ~ 0
+Text HLabel 3000 1250 2    50   BiDi ~ 0
 GPIO_I2C1_SDA
-Text HLabel 3000 1350 2    50   BiDi ~ 0
+Text HLabel 3000 1350 2    50   Output ~ 0
 GPIO_CAN2_CTX
-Text HLabel 3000 1450 2    50   Output ~ 0
+Text HLabel 3000 1450 2    50   Input ~ 0
 GPIO_CAN2_CRX
-Text HLabel 3000 1550 2    50   Input ~ 0
+Text HLabel 3000 1550 2    50   Output ~ 0
 GPIO_SER2_TX
-Text HLabel 3000 1650 2    50   Output ~ 0
+Text HLabel 3000 1650 2    50   Input ~ 0
 GPIO_SER2_RX
-Text HLabel 3000 1750 2    50   Input ~ 0
+Text HLabel 3000 1750 2    50   Output ~ 0
 GPIO_SER3_TX
-Text HLabel 3000 1850 2    50   Output ~ 0
+Text HLabel 3000 1850 2    50   Input ~ 0
 GPIO_SER3_RX
 Text HLabel 3000 1950 2    50   UnSpc ~ 0
 GPIO_20
@@ -250,15 +250,15 @@ Text HLabel 2000 3050 0    50   UnSpc ~ 0
 GPIO_5
 Text HLabel 3000 2850 2    50   Output ~ 0
 SPI_SPI0_SCK
-Text HLabel 3000 3050 2    50   Input ~ 0
+Text HLabel 3000 3050 2    50   Output ~ 0
 SPI_SPI0_COPI
-Text HLabel 3000 3250 2    50   Output ~ 0
+Text HLabel 3000 3250 2    50   Input ~ 0
 SPI_SPI0_CIPO
 Text HLabel 3000 2250 2    50   Output ~ 0
 SPI_SPI1_SCK
-Text HLabel 3000 2450 2    50   Input ~ 0
+Text HLabel 3000 2450 2    50   Output ~ 0
 SPI_SPI1_COPI
-Text HLabel 3000 2650 2    50   Output ~ 0
+Text HLabel 3000 2650 2    50   Input ~ 0
 SPI_SPI1_CIPO
 Text HLabel 2000 3650 0    50   UnSpc ~ 0
 INTERPLANE_1
@@ -857,7 +857,7 @@ Text HLabel 5000 1250 0    50   BiDi ~ 0
 GPIO_I2C0_SDA
 Text HLabel 5000 1350 0    50   Output ~ 0
 GPIO_I2C2_SCL
-Text HLabel 5000 1450 0    50   Input ~ 0
+Text HLabel 5000 1450 0    50   BiDi ~ 0
 GPIO_I2C2_SDA
 Text HLabel 5000 1550 0    50   Output ~ 0
 GPIO_SER8_TX
@@ -867,22 +867,6 @@ Text HLabel 5000 1750 0    50   Output ~ 0
 GPIO_SER7_TX
 Text HLabel 5000 1850 0    50   Input ~ 0
 GPIO_SER7_RX
-Text HLabel 6000 1150 2    50   BiDi ~ 0
-GPIO_I2C1_SCL
-Text HLabel 6000 1250 2    50   Output ~ 0
-GPIO_I2C1_SDA
-Text HLabel 6000 1350 2    50   BiDi ~ 0
-GPIO_CAN2_CTX
-Text HLabel 6000 1450 2    50   Output ~ 0
-GPIO_CAN2_CRX
-Text HLabel 6000 1550 2    50   Input ~ 0
-GPIO_SER2_TX
-Text HLabel 6000 1650 2    50   Output ~ 0
-GPIO_SER2_RX
-Text HLabel 6000 1750 2    50   Input ~ 0
-GPIO_SER3_TX
-Text HLabel 6000 1850 2    50   Output ~ 0
-GPIO_SER3_RX
 Text HLabel 5000 1950 0    50   UnSpc ~ 0
 GPIO_22
 Text HLabel 5000 2050 0    50   UnSpc ~ 0
@@ -1090,18 +1074,8 @@ Wire Wire Line
 	5750 4750 6000 4750
 Wire Wire Line
 	5750 4850 6000 4850
-Text HLabel 6000 2850 2    50   Output ~ 0
-SPI_SPI0_SCK
-Text HLabel 6000 3050 2    50   Input ~ 0
-SPI_SPI0_COPI
-Text HLabel 6000 3250 2    50   Output ~ 0
-SPI_SPI0_CIPO
 Text HLabel 6000 2250 2    50   Output ~ 0
 SPI_SPI1_SCK
-Text HLabel 6000 2450 2    50   Input ~ 0
-SPI_SPI1_COPI
-Text HLabel 6000 2650 2    50   Output ~ 0
-SPI_SPI1_CIPO
 Text HLabel 6000 3450 2    50   Output ~ 0
 ~SPI_DCS~
 Text HLabel 6000 3550 2    50   Output ~ 0
@@ -1231,4 +1205,30 @@ Wire Wire Line
 	5250 4950 5000 4950
 Wire Wire Line
 	5000 4350 5250 4350
+Text HLabel 6000 1150 2    50   Output ~ 0
+GPIO_I2C1_SCL
+Text HLabel 6000 1250 2    50   BiDi ~ 0
+GPIO_I2C1_SDA
+Text HLabel 6000 1350 2    50   Output ~ 0
+GPIO_CAN2_CTX
+Text HLabel 6000 1450 2    50   Input ~ 0
+GPIO_CAN2_CRX
+Text HLabel 6000 1550 2    50   Output ~ 0
+GPIO_SER2_TX
+Text HLabel 6000 1650 2    50   Input ~ 0
+GPIO_SER2_RX
+Text HLabel 6000 1750 2    50   Output ~ 0
+GPIO_SER3_TX
+Text HLabel 6000 1850 2    50   Input ~ 0
+GPIO_SER3_RX
+Text HLabel 6000 2450 2    50   Output ~ 0
+SPI_SPI1_COPI
+Text HLabel 6000 2650 2    50   Input ~ 0
+SPI_SPI1_CIPO
+Text HLabel 6000 2850 2    50   Output ~ 0
+SPI_SPI0_SCK
+Text HLabel 6000 3050 2    50   Output ~ 0
+SPI_SPI0_COPI
+Text HLabel 6000 3250 2    50   Input ~ 0
+SPI_SPI0_CIPO
 $EndSCHEMATC
