@@ -145,7 +145,7 @@ L Mechanical:MountingHole H1
 U 1 1 600692B9
 P 750 700
 F 0 "H1" H 850 746 50  0000 L CNN
-F 1 "MountingHole" H 850 655 50  0000 L CNN
+F 1 "StackMountingHole" H 850 655 50  0000 L CNN
 F 2 "MountingHole:MountingHole_3.2mm_M3" H 750 700 50  0001 C CNN
 F 3 "~" H 750 700 50  0001 C CNN
 	1    750  700 
@@ -156,7 +156,7 @@ L Mechanical:MountingHole H2
 U 1 1 6006AFC8
 P 1750 700
 F 0 "H2" H 1850 746 50  0000 L CNN
-F 1 "MountingHole" H 1850 655 50  0000 L CNN
+F 1 "StackMountingHole" H 1850 655 50  0000 L CNN
 F 2 "MountingHole:MountingHole_3.2mm_M3" H 1750 700 50  0001 C CNN
 F 3 "~" H 1750 700 50  0001 C CNN
 	1    1750 700 
@@ -167,7 +167,7 @@ L Mechanical:MountingHole H3
 U 1 1 6006B051
 P 2750 700
 F 0 "H3" H 2850 746 50  0000 L CNN
-F 1 "MountingHole" H 2850 655 50  0000 L CNN
+F 1 "StackMountingHole" H 2850 655 50  0000 L CNN
 F 2 "MountingHole:MountingHole_3.2mm_M3" H 2750 700 50  0001 C CNN
 F 3 "~" H 2750 700 50  0001 C CNN
 	1    2750 700 
@@ -178,7 +178,7 @@ L Mechanical:MountingHole H4
 U 1 1 6006B0C5
 P 3750 700
 F 0 "H4" H 3850 746 50  0000 L CNN
-F 1 "MountingHole" H 3850 655 50  0000 L CNN
+F 1 "StackMountingHole" H 3850 655 50  0000 L CNN
 F 2 "MountingHole:MountingHole_3.2mm_M3" H 3750 700 50  0001 C CNN
 F 3 "~" H 3750 700 50  0001 C CNN
 	1    3750 700 
