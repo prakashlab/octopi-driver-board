@@ -192,7 +192,10 @@ P 2750 1200
 F 0 "C1" H 2865 1246 50  0000 L CNN
 F 1 "0.047uF" H 2865 1155 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 2788 1050 50  0001 C CNN
-F 3 "~" H 2750 1200 50  0001 C CNN
+F 3 "http://datasheets.avx.com/X7RDielectric.pdf" H 2750 1200 50  0001 C CNN
+F 4 "06033C473KAT2A" H 2750 1200 50  0001 C CNN "MPN"
+F 5 "AVX" H 2750 1200 50  0001 C CNN "Manufacturer"
+F 6 "https://www.digikey.com/en/products/detail/avx-corporation/06033C473KAT2A/563345" H 2750 1200 50  0001 C CNN "Ordering URL"
 	1    2750 1200
 	1    0    0    -1  
 $EndComp
@@ -203,7 +206,10 @@ P 3500 1150
 F 0 "C2" H 3615 1196 50  0000 L CNN
 F 1 "0.1uF" H 3615 1105 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 3538 1000 50  0001 C CNN
-F 3 "~" H 3500 1150 50  0001 C CNN
+F 3 "http://datasheets.avx.com/X7RDielectric.pdf" H 3500 1150 50  0001 C CNN
+F 4 "06033C104KAT4A" H 3500 1150 50  0001 C CNN "MPN"
+F 5 "AVX" H 3500 1150 50  0001 C CNN "Manufacturer"
+F 6 "https://www.digikey.com/en/products/detail/avx-corporation/06033C104KAT4A/3247517" H 3500 1150 50  0001 C CNN "Ordering URL"
 	1    3500 1150
 	1    0    0    -1  
 $EndComp
