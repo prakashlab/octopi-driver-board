@@ -5,7 +5,7 @@ $Descr USLetter 11000 8500
 encoding utf-8
 Sheet 1 4
 Title "Backplane Template"
-Date "2020-12-26"
+Date "2020-12-31"
 Rev "v0.1.0"
 Comp "Prakash Lab/Octopi Team"
 Comment1 "Designer: Ethan Li"
