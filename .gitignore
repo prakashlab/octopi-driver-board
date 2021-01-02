@@ -27,6 +27,20 @@ fp-info-cache
 *.xml
 *.csv
 
+# Generated Gerber files
+*.gbr
+*.gbl
+*.gbs
+*.gbp
+*.gbo
+*.gm1
+*.gtl
+*.gts
+*.gtp
+*.gto
+*.drl
+*.zip
+
 
 # FreeCAD temporary files
 *.FCStd1
