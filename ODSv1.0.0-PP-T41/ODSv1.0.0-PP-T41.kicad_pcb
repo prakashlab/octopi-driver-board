@@ -1728,7 +1728,7 @@
       (net 12 GND))
     (pad MP smd roundrect (at 9.355 -2.395 270) (size 1.25 1.8) (layers F.Cu F.Paste F.Mask) (roundrect_rratio 0.2)
       (net 12 GND))
-    (model ${KISYS3DMOD}/Connector_Molex.3dshapes/Molex_Pico-Lock_504050-1091_1x10-1MP_P1.50mm_Horizontal.wrl
+    (model "${KIPRJMOD}/../Parts/Connectors/Molex Pico-Lock 1.5mm/504050-1091.wrl"
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -1790,7 +1790,7 @@
       (net 12 GND))
     (pad MP smd roundrect (at 6.355 -2.395 270) (size 1.25 1.8) (layers F.Cu F.Paste F.Mask) (roundrect_rratio 0.2)
       (net 12 GND))
-    (model ${KISYS3DMOD}/Connector_Molex.3dshapes/Molex_Pico-Lock_504050-0691_1x06-1MP_P1.50mm_Horizontal.wrl
+    (model "${KIPRJMOD}/../Parts/Connectors/Molex Pico-Lock 1.5mm/504050-0691.wrl"
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
