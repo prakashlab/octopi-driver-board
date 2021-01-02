@@ -24,6 +24,7 @@ F 3 "https://www.cuidevices.com/product/resource/digikeypdf/pj-037ah-smt-tr.pdf"
 F 4 "PJ-037AH-SMT-TR" H 1200 1250 50  0001 C CNN "MPN"
 F 5 "CUI" H 1200 1250 50  0001 C CNN "Manufacturer"
 F 6 "https://www.digikey.com/en/products/detail/cui-devices/PJ-037AH-SMT-TR/1530998" H 1200 1250 50  0001 C CNN "Ordering URL"
+F 7 "SMD" H 1200 1250 50  0001 C CNN "Type"
 	1    1200 1250
 	1    0    0    -1  
 $EndComp
@@ -39,6 +40,7 @@ F 4 "Pufferfish Power Board" H 1150 2700 50  0001 C CNN "Associated Board"
 F 5 "172316-1108" H 1150 2700 50  0001 C CNN "MPN"
 F 6 "Molex" H 1150 2700 50  0001 C CNN "Manufacturer"
 F 7 "https://www.digikey.com/en/products/detail/molex/1723161108/5344295" H 1150 2700 50  0001 C CNN "Ordering URL"
+F 8 "PTH" H 1150 2700 50  0001 C CNN "Type"
 	1    1150 2700
 	0    -1   1    0   
 $EndComp
@@ -109,6 +111,7 @@ F 3 "https://www.vishay.com/docs/20043/crcwhpe3.pdf" H 3850 1650 50  0001 C CNN
 F 4 "CRCW12060000Z0EAHP" H 3850 1650 50  0001 C CNN "MPN"
 F 5 "Vishay" H 3850 1650 50  0001 C CNN "Manufacturer"
 F 6 "https://www.digikey.com/en/products/detail/vishay-dale/CRCW12060000Z0EAHP/2222404" H 3850 1650 50  0001 C CNN "Ordering URL"
+F 7 "SMD" H 3850 1650 50  0001 C CNN "Type"
 	1    3850 1650
 	0    1    1    0   
 $EndComp
@@ -120,6 +123,7 @@ F 0 "R16" V 3800 2000 50  0000 L CNN
 F 1 "DNP" V 3850 1850 50  0000 C CNN
 F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 3780 1850 50  0001 C CNN
 F 3 "~" H 3850 1850 50  0001 C CNN
+F 4 "SMD" H 3850 1850 50  0001 C CNN "Type"
 	1    3850 1850
 	0    1    1    0   
 $EndComp
@@ -228,6 +232,8 @@ F 3 "https://optoelectronics.liteon.com/upload/download/DS-22-99-0224/LTST-C190T
 F 4 "LTST-C190TBKT" H 5500 1650 50  0001 C CNN "MPN"
 F 5 "Lite-On" H 5500 1650 50  0001 C CNN "Manufacturer"
 F 6 "https://www.digikey.com/en/products/detail/lite-on-inc/LTST-C190TBKT/388529" H 5500 1650 50  0001 C CNN "Ordering URL"
+F 7 "SMD" H 5500 1650 50  0001 C CNN "Type"
+F 8 "Polarity is indicated by a diode symbol either next to the LED or at the end of the line of LEDs." H 5500 1650 50  0001 C CNN "Assembly Notes"
 	1    5500 1650
 	1    0    0    1   
 $EndComp
@@ -244,6 +250,7 @@ F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PY
 F 4 "RC0603FR-071KL" H 5900 1650 50  0001 C CNN "MPN"
 F 5 "Yageo" H 5900 1650 50  0001 C CNN "Manufacturer"
 F 6 "https://www.digikey.com/en/products/detail/yageo/RC0603FR-071KL/726843" H 5900 1650 50  0001 C CNN "Ordering URL"
+F 7 "SMD" H 5900 1650 50  0001 C CNN "Type"
 	1    5900 1650
 	0    -1   1    0   
 $EndComp
@@ -260,6 +267,8 @@ F 3 "https://optoelectronics.liteon.com/upload/download/DS-22-99-0224/LTST-C190T
 F 4 "LTST-C190TBKT" H 5500 1850 50  0001 C CNN "MPN"
 F 5 "Lite-On" H 5500 1850 50  0001 C CNN "Manufacturer"
 F 6 "https://www.digikey.com/en/products/detail/lite-on-inc/LTST-C190TBKT/388529" H 5500 1850 50  0001 C CNN "Ordering URL"
+F 7 "SMD" H 5500 1850 50  0001 C CNN "Type"
+F 8 "Polarity is indicated by a diode symbol either next to the LED or at the end of the line of LEDs." H 5500 1850 50  0001 C CNN "Assembly Notes"
 	1    5500 1850
 	1    0    0    1   
 $EndComp
@@ -276,6 +285,7 @@ F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PY
 F 4 "RC0603FR-071K2L" H 5900 1850 50  0001 C CNN "MPN"
 F 5 "Yageo" H 5900 1850 50  0001 C CNN "Manufacturer"
 F 6 "https://www.digikey.com/en/products/detail/yageo/RC0603FR-071K2L/726852" H 5900 1850 50  0001 C CNN "Ordering URL"
+F 7 "SMD" H 5900 1850 50  0001 C CNN "Type"
 	1    5900 1850
 	0    -1   1    0   
 $EndComp
@@ -371,6 +381,7 @@ F 3 "https://products.nichicon.co.jp/en/pdf/XJA043/e-uwt.pdf" H 4400 2650 50  00
 F 4 "UWT1C221MCL1GS" H 4400 2650 50  0001 C CNN "MPN"
 F 5 "Nichicon" H 4400 2650 50  0001 C CNN "Manufacturer"
 F 6 "https://www.digikey.com/en/products/detail/nichicon/UWT1C221MCL1GS/589920" H 4400 2650 50  0001 C CNN "Ordering URL"
+F 7 "SMD" H 4400 2650 50  0001 C CNN "Type"
 	1    4400 2650
 	1    0    0    -1  
 $EndComp

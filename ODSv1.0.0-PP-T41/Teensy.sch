@@ -244,6 +244,7 @@ F 4 "Teensy 4.1" H 2450 2100 50  0001 C CNN "Associated Board"
 F 5 "SSW-124-22-F-S-VS" H 2450 2100 50  0001 C CNN "MPN"
 F 6 "Samtec" H 2450 2100 50  0001 C CNN "Manufacturer"
 F 7 "https://www.digikey.com/en/products/detail/samtec-inc/SSW-124-22-F-S-VS/7893884" H 2450 2100 50  0001 C CNN "Ordering URL"
+F 8 "SMD" H 2450 2100 50  0001 C CNN "Type"
 	1    2450 2100
 	1    0    0    -1  
 $EndComp
@@ -259,6 +260,7 @@ F 4 "Teensy 4.1" H 4050 2200 50  0001 C CNN "Associated Board"
 F 5 "SSW-124-22-F-S-VS" H 4050 2200 50  0001 C CNN "MPN"
 F 6 "Samtec" H 4050 2200 50  0001 C CNN "Manufacturer"
 F 7 "https://www.digikey.com/en/products/detail/samtec-inc/SSW-124-22-F-S-VS/7893884" H 4050 2200 50  0001 C CNN "Ordering URL"
+F 8 "SMD" H 4050 2200 50  0001 C CNN "Type"
 	1    4050 2200
 	-1   0    0    1   
 $EndComp

@@ -112,6 +112,7 @@ F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PY
 F 4 "RC0603FR-07560RL" H 7500 4700 50  0001 C CNN "MPN"
 F 5 "Yageo" H 7500 4700 50  0001 C CNN "Manufacturer"
 F 6 "https://www.digikey.com/en/products/detail/yageo/RC0603FR-07560RL/727304" H 7500 4700 50  0001 C CNN "Ordering URL"
+F 7 "SMD" H 7500 4700 50  0001 C CNN "Type"
 	1    7500 4700
 	0    1    1    0   
 $EndComp
@@ -126,6 +127,7 @@ F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PY
 F 4 "RC0603FR-07560RL" H 7500 4800 50  0001 C CNN "MPN"
 F 5 "Yageo" H 7500 4800 50  0001 C CNN "Manufacturer"
 F 6 "https://www.digikey.com/en/products/detail/yageo/RC0603FR-07560RL/727304" H 7500 4800 50  0001 C CNN "Ordering URL"
+F 7 "SMD" H 7500 4800 50  0001 C CNN "Type"
 	1    7500 4800
 	0    1    1    0   
 $EndComp
@@ -140,6 +142,7 @@ F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PY
 F 4 "RC0603FR-07150RL" H 7500 4900 50  0001 C CNN "MPN"
 F 5 "Yageo" H 7500 4900 50  0001 C CNN "Manufacturer"
 F 6 "https://www.digikey.com/en/products/detail/yageo/RC0603FR-07150RL/726958" H 7500 4900 50  0001 C CNN "Ordering URL"
+F 7 "SMD" H 7500 4900 50  0001 C CNN "Type"
 	1    7500 4900
 	0    1    1    0   
 $EndComp
@@ -154,6 +157,7 @@ F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PY
 F 4 "RC0603FR-0775RL" H 7500 5000 50  0001 C CNN "MPN"
 F 5 "Yageo" H 7500 5000 50  0001 C CNN "Manufacturer"
 F 6 "https://www.digikey.com/en/products/detail/yageo/RC0603FR-0775RL/727377" H 7500 5000 50  0001 C CNN "Ordering URL"
+F 7 "SMD" H 7500 5000 50  0001 C CNN "Type"
 	1    7500 5000
 	0    1    1    0   
 $EndComp
@@ -168,6 +172,7 @@ F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PY
 F 4 "RC0603FR-0775RL" H 7500 5100 50  0001 C CNN "MPN"
 F 5 "Yageo" H 7500 5100 50  0001 C CNN "Manufacturer"
 F 6 "https://www.digikey.com/en/products/detail/yageo/RC0603FR-0775RL/727377" H 7500 5100 50  0001 C CNN "Ordering URL"
+F 7 "SMD" H 7500 5100 50  0001 C CNN "Type"
 	1    7500 5100
 	0    1    1    0   
 $EndComp
@@ -184,6 +189,8 @@ F 3 "https://optoelectronics.liteon.com/upload/download/DS-22-99-0151/LTST-C190K
 F 4 "LTST-C190KRKT" H 7050 5100 50  0001 C CNN "MPN"
 F 5 "Lite-On" H 7050 5100 50  0001 C CNN "Manufacturer"
 F 6 "https://www.digikey.com/en/products/detail/lite-on-inc/LTST-C190KRKT/386817" H 7050 5100 50  0001 C CNN "Ordering URL"
+F 7 "SMD" H 7050 5100 50  0001 C CNN "Type"
+F 8 "Polarity is indicated by a diode symbol either next to the LED or at the end of the line of LEDs." H 7050 5100 50  0001 C CNN "Assembly Notes"
 	1    7050 5100
 	1    0    0    1   
 $EndComp
@@ -198,6 +205,8 @@ F 3 "https://optoelectronics.liteon.com/upload/download/DS-22-99-0151/LTST-C190K
 F 4 "LTST-C190KRKT" H 7050 5000 50  0001 C CNN "MPN"
 F 5 "Lite-On" H 7050 5000 50  0001 C CNN "Manufacturer"
 F 6 "https://www.digikey.com/en/products/detail/lite-on-inc/LTST-C190KRKT/386817" H 7050 5000 50  0001 C CNN "Ordering URL"
+F 7 "SMD" H 7050 5000 50  0001 C CNN "Type"
+F 8 "Polarity is indicated by a diode symbol either next to the LED or at the end of the line of LEDs." H 7050 5000 50  0001 C CNN "Assembly Notes"
 	1    7050 5000
 	1    0    0    1   
 $EndComp
@@ -212,6 +221,8 @@ F 3 "https://optoelectronics.liteon.com/upload/download/DS-22-99-0186/LTST-C190K
 F 4 "LTST-C190KFKT" H 7050 4900 50  0001 C CNN "MPN"
 F 5 "Lite-On" H 7050 4900 50  0001 C CNN "Manufacturer"
 F 6 "https://www.digikey.com/en/products/detail/lite-on-inc/LTST-C190KFKT/386813" H 7050 4900 50  0001 C CNN "Ordering URL"
+F 7 "SMD" H 7050 4900 50  0001 C CNN "Type"
+F 8 "Polarity is indicated by a diode symbol either next to the LED or at the end of the line of LEDs." H 7050 4900 50  0001 C CNN "Assembly Notes"
 	1    7050 4900
 	1    0    0    1   
 $EndComp
@@ -226,6 +237,8 @@ F 3 "https://optoelectronics.liteon.com/upload/download/DS-22-99-0189/LTST-C190K
 F 4 "LTST-C190KSKT" H 7050 4800 50  0001 C CNN "MPN"
 F 5 "Lite-On" H 7050 4800 50  0001 C CNN "Manufacturer"
 F 6 "https://www.digikey.com/en/products/detail/lite-on-inc/LTST-C190KSKT/386819" H 7050 4800 50  0001 C CNN "Ordering URL"
+F 7 "SMD" H 7050 4800 50  0001 C CNN "Type"
+F 8 "Polarity is indicated by a diode symbol either next to the LED or at the end of the line of LEDs." H 7050 4800 50  0001 C CNN "Assembly Notes"
 	1    7050 4800
 	1    0    0    1   
 $EndComp
@@ -240,6 +253,8 @@ F 3 "https://optoelectronics.liteon.com/upload/download/DS-22-99-0189/LTST-C190K
 F 4 "LTST-C190KSKT" H 7050 4700 50  0001 C CNN "MPN"
 F 5 "Lite-On" H 7050 4700 50  0001 C CNN "Manufacturer"
 F 6 "https://www.digikey.com/en/products/detail/lite-on-inc/LTST-C190KSKT/386819" H 7050 4700 50  0001 C CNN "Ordering URL"
+F 7 "SMD" H 7050 4700 50  0001 C CNN "Type"
+F 8 "Polarity is indicated by a diode symbol either next to the LED or at the end of the line of LEDs." H 7050 4700 50  0001 C CNN "Assembly Notes"
 	1    7050 4700
 	1    0    0    1   
 $EndComp
@@ -301,6 +316,8 @@ F 3 "https://optoelectronics.liteon.com/upload/download/DS-22-99-0224/LTST-C190T
 F 4 "LTST-C190TBKT" H 2200 6150 50  0001 C CNN "MPN"
 F 5 "Lite-On" H 2200 6150 50  0001 C CNN "Manufacturer"
 F 6 "https://www.digikey.com/en/products/detail/lite-on-inc/LTST-C190TBKT/388529" H 2200 6150 50  0001 C CNN "Ordering URL"
+F 7 "SMD" H 2200 6150 50  0001 C CNN "Type"
+F 8 "Polarity is indicated by a diode symbol either next to the LED or at the end of the line of LEDs." H 2200 6150 50  0001 C CNN "Assembly Notes"
 	1    2200 6150
 	1    0    0    1   
 $EndComp
@@ -315,6 +332,7 @@ F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PY
 F 4 "RC0603FR-07270RL" H 2600 6150 50  0001 C CNN "MPN"
 F 5 "Yageo" H 2600 6150 50  0001 C CNN "Manufacturer"
 F 6 "https://www.digikey.com/en/products/detail/yageo/RC0603FR-07270RL/727103" H 2600 6150 50  0001 C CNN "Ordering URL"
+F 7 "SMD" H 2600 6150 50  0001 C CNN "Type"
 	1    2600 6150
 	0    -1   1    0   
 $EndComp
@@ -335,6 +353,8 @@ F 3 "https://optoelectronics.liteon.com/upload/download/DS-22-99-0224/LTST-C190T
 F 4 "LTST-C190TBKT" H 2200 6250 50  0001 C CNN "MPN"
 F 5 "Lite-On" H 2200 6250 50  0001 C CNN "Manufacturer"
 F 6 "https://www.digikey.com/en/products/detail/lite-on-inc/LTST-C190TBKT/388529" H 2200 6250 50  0001 C CNN "Ordering URL"
+F 7 "SMD" H 2200 6250 50  0001 C CNN "Type"
+F 8 "Polarity is indicated by a diode symbol either next to the LED or at the end of the line of LEDs." H 2200 6250 50  0001 C CNN "Assembly Notes"
 	1    2200 6250
 	1    0    0    1   
 $EndComp
@@ -349,6 +369,7 @@ F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PY
 F 4 "RC0603FR-071KL" H 2600 6250 50  0001 C CNN "MPN"
 F 5 "Yageo" H 2600 6250 50  0001 C CNN "Manufacturer"
 F 6 "https://www.digikey.com/en/products/detail/yageo/RC0603FR-071KL/726843" H 2600 6250 50  0001 C CNN "Ordering URL"
+F 7 "SMD" H 2600 6250 50  0001 C CNN "Type"
 	1    2600 6250
 	0    -1   1    0   
 $EndComp
@@ -363,6 +384,8 @@ F 3 "https://optoelectronics.liteon.com/upload/download/DS-22-99-0224/LTST-C190T
 F 4 "LTST-C190TBKT" H 2200 6350 50  0001 C CNN "MPN"
 F 5 "Lite-On" H 2200 6350 50  0001 C CNN "Manufacturer"
 F 6 "https://www.digikey.com/en/products/detail/lite-on-inc/LTST-C190TBKT/388529" H 2200 6350 50  0001 C CNN "Ordering URL"
+F 7 "SMD" H 2200 6350 50  0001 C CNN "Type"
+F 8 "Polarity is indicated by a diode symbol either next to the LED or at the end of the line of LEDs." H 2200 6350 50  0001 C CNN "Assembly Notes"
 	1    2200 6350
 	1    0    0    1   
 $EndComp
@@ -377,6 +400,7 @@ F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PY
 F 4 "RC0603FR-071K2L" H 2600 6350 50  0001 C CNN "MPN"
 F 5 "Yageo" H 2600 6350 50  0001 C CNN "Manufacturer"
 F 6 "https://www.digikey.com/en/products/detail/yageo/RC0603FR-071K2L/726852" H 2600 6350 50  0001 C CNN "Ordering URL"
+F 7 "SMD" H 2600 6350 50  0001 C CNN "Type"
 	1    2600 6350
 	0    -1   1    0   
 $EndComp

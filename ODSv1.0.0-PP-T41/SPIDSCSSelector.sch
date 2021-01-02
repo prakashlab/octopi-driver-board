@@ -24,6 +24,7 @@ F 3 "https://datasheets.maximintegrated.com/en/ds/MAX7317.pdf" H 2200 1000 50  0
 F 4 "MAX7317AEE+T" H 2000 2100 50  0001 C CNN "MPN"
 F 5 "Maxim" H 2000 2100 50  0001 C CNN "Manufacturer"
 F 6 "https://www.digikey.com/en/products/detail/maxim-integrated/MAX7317AEE-T/1781026" H 2000 2100 50  0001 C CNN "Ordering URL"
+F 7 "SMD" H 2000 2100 50  0001 C CNN "Type"
 	1    2000 2100
 	1    0    0    -1  
 $EndComp
@@ -170,6 +171,7 @@ F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT4067.pdf" H 4400 2
 F 4 "74HC4067PW,118" H 4750 1900 50  0001 C CNN "MPN"
 F 5 "Nexperia" H 4750 1900 50  0001 C CNN "Manufacturer"
 F 6 "https://www.digikey.com/en/products/detail/nexperia-usa-inc/74HC4067PW118/1230424" H 4750 1900 50  0001 C CNN "Ordering URL"
+F 7 "SMD" H 4750 1900 50  0001 C CNN "Type"
 	1    4750 1900
 	1    0    0    -1  
 $EndComp
@@ -196,6 +198,7 @@ F 3 "http://datasheets.avx.com/X7RDielectric.pdf" H 2750 1150 50  0001 C CNN
 F 4 "06033C473KAT2A" H 2750 1150 50  0001 C CNN "MPN"
 F 5 "AVX" H 2750 1150 50  0001 C CNN "Manufacturer"
 F 6 "https://www.digikey.com/en/products/detail/avx-corporation/06033C473KAT2A/563345" H 2750 1150 50  0001 C CNN "Ordering URL"
+F 7 "SMD" H 2750 1150 50  0001 C CNN "Type"
 	1    2750 1150
 	1    0    0    -1  
 $EndComp
@@ -210,6 +213,7 @@ F 3 "http://datasheets.avx.com/X7RDielectric.pdf" H 3500 1150 50  0001 C CNN
 F 4 "06033C104KAT4A" H 3500 1150 50  0001 C CNN "MPN"
 F 5 "AVX" H 3500 1150 50  0001 C CNN "Manufacturer"
 F 6 "https://www.digikey.com/en/products/detail/avx-corporation/06033C104KAT4A/3247517" H 3500 1150 50  0001 C CNN "Ordering URL"
+F 7 "SMD" H 3500 1150 50  0001 C CNN "Type"
 	1    3500 1150
 	1    0    0    -1  
 $EndComp
