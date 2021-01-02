@@ -1969,6 +1969,21 @@
     (fp_circle (center 0 0) (end 2.7 0) (layer Cmts.User) (width 0.15))
     (fp_circle (center 0 0) (end 2.95 0) (layer B.CrtYd) (width 0.05))
     (pad 1 np_thru_hole circle (at 0 0) (size 2.7 2.7) (drill 2.7) (layers *.Cu *.Mask))
+    (model "${KIPRJMOD}/../Parts/Fasteners/Wurth Elektronik Standoffs/970200144.wrl"
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
+    (model "${KIPRJMOD}/../Parts/Fasteners/Wurth Elektronik Standoffs/970200154.wrl"
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
+    (model "${KIPRJMOD}/../Parts/Fasteners/Wurth Elektronik Standoffs/970200154.wrl"
+      (offset (xyz 0 0 20))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 180 0 0))
+    )
   )
 
   (module MountingHole:MountingHole_2.7mm_M2.5 (layer B.Cu) (tedit 56D1B4CB) (tstamp 5FEB3763)
@@ -1989,6 +2004,26 @@
     (fp_circle (center 0 0) (end 2.7 0) (layer Cmts.User) (width 0.15))
     (fp_circle (center 0 0) (end 2.95 0) (layer B.CrtYd) (width 0.05))
     (pad 1 np_thru_hole circle (at 0 0) (size 2.7 2.7) (drill 2.7) (layers *.Cu *.Mask))
+    (model "${KIPRJMOD}/../Parts/Fasteners/Wurth Elektronik Standoffs/970200144.wrl"
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
+    (model "${KIPRJMOD}/../Parts/Fasteners/Wurth Elektronik Standoffs/970200154.wrl"
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
+    (model "${KIPRJMOD}/../Parts/Boards/NVIDIA Jetson Nano/P3450_P3449_A02_P3448_A02.stp"
+      (offset (xyz 0 0 20))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 -90))
+    )
+    (model "${KIPRJMOD}/../Parts/Fasteners/Wurth Elektronik Standoffs/970200154.wrl"
+      (offset (xyz 0 0 20))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 180 0 0))
+    )
   )
 
   (module MountingHole:MountingHole_2.7mm_M2.5 (layer B.Cu) (tedit 56D1B4CB) (tstamp 5FEB375B)
@@ -2009,6 +2044,21 @@
     (fp_circle (center 0 0) (end 2.7 0) (layer Cmts.User) (width 0.15))
     (fp_circle (center 0 0) (end 2.95 0) (layer B.CrtYd) (width 0.05))
     (pad 1 np_thru_hole circle (at 0 0) (size 2.7 2.7) (drill 2.7) (layers *.Cu *.Mask))
+    (model "${KIPRJMOD}/../Parts/Fasteners/Wurth Elektronik Standoffs/970200144.wrl"
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
+    (model "${KIPRJMOD}/../Parts/Fasteners/Wurth Elektronik Standoffs/970200154.wrl"
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
+    (model "${KIPRJMOD}/../Parts/Fasteners/Wurth Elektronik Standoffs/970200154.wrl"
+      (offset (xyz 0 0 20))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 180 0 0))
+    )
   )
 
   (module MountingHole:MountingHole_2.7mm_M2.5 (layer B.Cu) (tedit 56D1B4CB) (tstamp 5FEB3753)
@@ -2029,6 +2079,21 @@
     (fp_circle (center 0 0) (end 2.7 0) (layer Cmts.User) (width 0.15))
     (fp_circle (center 0 0) (end 2.95 0) (layer B.CrtYd) (width 0.05))
     (pad 1 np_thru_hole circle (at 0 0) (size 2.7 2.7) (drill 2.7) (layers *.Cu *.Mask))
+    (model "${KIPRJMOD}/../Parts/Fasteners/Wurth Elektronik Standoffs/970200144.wrl"
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
+    (model "${KIPRJMOD}/../Parts/Fasteners/Wurth Elektronik Standoffs/970200154.wrl"
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
+    (model "${KIPRJMOD}/../Parts/Fasteners/Wurth Elektronik Standoffs/970200154.wrl"
+      (offset (xyz 0 0 20))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 180 0 0))
+    )
   )
 
   (module LED_SMD:LED_0603_1608Metric (layer F.Cu) (tedit 5B301BBE) (tstamp 5FEB3713)
@@ -2209,6 +2274,26 @@
     (fp_circle (center 0 0) (end 3.2 0) (layer Cmts.User) (width 0.15))
     (fp_circle (center 0 0) (end 3.45 0) (layer F.CrtYd) (width 0.05))
     (pad 1 np_thru_hole circle (at 0 0) (size 3.2 3.2) (drill 3.2) (layers *.Cu *.Mask))
+    (model "${KIPRJMOD}/../Parts/Fasteners/Keystone Standoffs/24339.wrl"
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
+    (model "${KIPRJMOD}/../Parts/Fasteners/Keystone Standoffs/24342.wrl"
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
+    (model "${KIPRJMOD}/../Parts/Fasteners/Keystone Standoffs/24342.wrl"
+      (offset (xyz 0 0 -25))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
+    (model "${KIPRJMOD}/../Parts/Fasteners/Keystone Standoffs/24342.wrl"
+      (offset (xyz 0 0 -50))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module MountingHole:MountingHole_3.2mm_M3 (layer F.Cu) (tedit 56D1B4CB) (tstamp 5FED7AAC)
@@ -2229,6 +2314,26 @@
     (fp_circle (center 0 0) (end 3.2 0) (layer Cmts.User) (width 0.15))
     (fp_circle (center 0 0) (end 3.45 0) (layer F.CrtYd) (width 0.05))
     (pad 1 np_thru_hole circle (at 0 0) (size 3.2 3.2) (drill 3.2) (layers *.Cu *.Mask))
+    (model "${KIPRJMOD}/../Parts/Fasteners/Keystone Standoffs/24339.wrl"
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
+    (model "${KIPRJMOD}/../Parts/Fasteners/Keystone Standoffs/24342.wrl"
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
+    (model "${KIPRJMOD}/../Parts/Fasteners/Keystone Standoffs/24342.wrl"
+      (offset (xyz 0 0 -25))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
+    (model "${KIPRJMOD}/../Parts/Fasteners/Keystone Standoffs/24342.wrl"
+      (offset (xyz 0 0 -50))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module MountingHole:MountingHole_3.2mm_M3 (layer F.Cu) (tedit 56D1B4CB) (tstamp 5FE97684)
@@ -2249,6 +2354,26 @@
     (fp_circle (center 0 0) (end 3.2 0) (layer Cmts.User) (width 0.15))
     (fp_circle (center 0 0) (end 3.45 0) (layer F.CrtYd) (width 0.05))
     (pad 1 np_thru_hole circle (at 0 0) (size 3.2 3.2) (drill 3.2) (layers *.Cu *.Mask))
+    (model "${KIPRJMOD}/../Parts/Fasteners/Keystone Standoffs/24339.wrl"
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
+    (model "${KIPRJMOD}/../Parts/Fasteners/Keystone Standoffs/24342.wrl"
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
+    (model "${KIPRJMOD}/../Parts/Fasteners/Keystone Standoffs/24342.wrl"
+      (offset (xyz 0 0 -25))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
+    (model "${KIPRJMOD}/../Parts/Fasteners/Keystone Standoffs/24342.wrl"
+      (offset (xyz 0 0 -50))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module MountingHole:MountingHole_3.2mm_M3 (layer F.Cu) (tedit 56D1B4CB) (tstamp 5FE9767C)
@@ -2269,6 +2394,26 @@
     (fp_circle (center 0 0) (end 3.2 0) (layer Cmts.User) (width 0.15))
     (fp_circle (center 0 0) (end 3.45 0) (layer F.CrtYd) (width 0.05))
     (pad 1 np_thru_hole circle (at 0 0) (size 3.2 3.2) (drill 3.2) (layers *.Cu *.Mask))
+    (model "${KIPRJMOD}/../Parts/Fasteners/Keystone Standoffs/24339.wrl"
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
+    (model "${KIPRJMOD}/../Parts/Fasteners/Keystone Standoffs/24342.wrl"
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
+    (model "${KIPRJMOD}/../Parts/Fasteners/Keystone Standoffs/24342.wrl"
+      (offset (xyz 0 0 -25))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
+    (model "${KIPRJMOD}/../Parts/Fasteners/Keystone Standoffs/24342.wrl"
+      (offset (xyz 0 0 -50))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module LED_SMD:LED_0603_1608Metric (layer F.Cu) (tedit 5B301BBE) (tstamp 5FE9474D)
