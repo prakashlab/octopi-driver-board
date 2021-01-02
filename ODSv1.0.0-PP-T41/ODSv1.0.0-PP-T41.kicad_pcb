@@ -497,7 +497,12 @@
       (net 93 /~SPI_MSCS~))
     (pad 24 smd rect (at 1.655 -29.21 90) (size 2.51 1) (layers B.Cu B.Paste B.Mask)
       (net 92 /Teensy/32))
-    (model ${KISYS3DMOD}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x24_P2.54mm_Vertical_SMD_Pin1Left.wrl
+    (model ${KISYS3DMOD}/Connector_PinSocket_2.54mm.3dshapes/PinSocket_1x24_P2.54mm_Vertical_SMD_Pin1Left.wrl
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
+    (model "/home/lietk12/Projects/mp/octopi/octopi-driver-board/Parts/Boards/Teensy 4/Teensy 4.1.wrl"
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -677,7 +682,7 @@
       (net 23 +3V3))
     (pad 24 smd rect (at 1.655 -29.21 270) (size 2.51 1) (layers B.Cu B.Paste B.Mask)
       (net 21 +5V))
-    (model ${KISYS3DMOD}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x24_P2.54mm_Vertical_SMD_Pin1Left.wrl
+    (model ${KISYS3DMOD}/Connector_PinSocket_2.54mm.3dshapes/PinSocket_1x24_P2.54mm_Vertical_SMD_Pin1Left.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -1133,7 +1138,7 @@
       (net 37 /Teensy/16))
     (pad 2 smd rect (at 14.75 2.675) (size 0.3 1.75) (layers B.Cu B.Mask)
       (net 12 GND))
-    (model ${KISYS3DMOD}/Backplane_Connector_Hirose.3dshapes/Hirose_FX20_FX20-120S-0.5SV_2x60_P0.50mm_Vertical.wrl
+    (model "${KIPRJMOD}/../Parts/Connectors/FunctionMAX FX20/FX20-120S-0.5SV.wrl"
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -1839,7 +1844,7 @@
       (net 12 GND) (thermal_width 1.2))
     (pad 3 smd rect (at 6.45 -3.2 90) (size 3.9 6.2) (layers B.Cu B.Paste B.Mask))
     (pad "" np_thru_hole circle (at 0 -7 90) (size 2 2) (drill 2) (layers *.Cu *.Mask))
-    (model ${KISYS3DMOD}/Connector_BarrelJack.3dshapes/BarrelJack_CUI_PJ-036AH-SMT_Horizontal.wrl
+    (model "${KIPRJMOD}/../Parts/Connectors/CUI PJ/CUI_DEVICES_PJ-036AH-SMT-TR.wrl"
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -1939,6 +1944,11 @@
       (net 12 GND) (thermal_width 0.4))
     (pad None np_thru_hole circle (at 1.75 -10.91 90) (size 3.05 3.05) (drill 3.05) (layers *.Cu *.Mask))
     (pad None np_thru_hole circle (at 8.75 -10.91 90) (size 3.05 3.05) (drill 3.05) (layers *.Cu *.Mask))
+    (model "${KIPRJMOD}/../Parts/Connectors/Molex Ultra-Fit/172316-1108.wrl"
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module MountingHole:MountingHole_2.7mm_M2.5 (layer B.Cu) (tedit 56D1B4CB) (tstamp 5FEB376B)
@@ -2978,7 +2988,7 @@
       (net 37 /Teensy/16))
     (pad 2 smd rect (at -14.75 -4.125 180) (size 0.3 1.75) (layers F.Cu F.Mask)
       (net 12 GND))
-    (model ${KISYS3DMOD}/Backplane_Connector_Hirose.3dshapes/Hirose_FX20_FX20-120P-0.5SV_2x60_P0.50mm_Vertical.wrl
+    (model "${KIPRJMOD}/../Parts/Connectors/FunctionMAX FX20/FX20-120P-0.5SV15.wrl"
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -3796,7 +3806,7 @@
     (arrow2b (pts (xy 60 165) (xy 61.126504 164.413579)))
   )
   (dimension 100 (width 0.15) (layer B.Fab) (tstamp 5FF36BF0)
-    (gr_text "100.000 mm" (at 201.3 115 90) (layer B.Fab) (tstamp 5FF36BF1)
+    (gr_text "100.000 mm" (at 201.3 115 90) (layer B.Fab) (tstamp 5FF36BF0)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (feature1 (pts (xy 177 65) (xy 200.586421 65)))
