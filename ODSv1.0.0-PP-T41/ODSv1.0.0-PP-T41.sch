@@ -411,6 +411,7 @@ F 4 "RC0603JR-070RL" H 2850 4950 50  0001 C CNN "MPN"
 F 5 "Yageo" H 2850 4950 50  0001 C CNN "Manufacturer"
 F 6 "https://www.digikey.com/en/products/detail/yageo/RC0603JR-070RL/726675" H 2850 4950 50  0001 C CNN "Ordering URL"
 F 7 "SMD" H 2850 4950 50  0001 C CNN "Type"
+F 8 "311-0.0GRCT-ND" H 2850 4950 50  0001 C CNN "Digikey ID"
 	1    2850 4950
 	0    1    1    0   
 $EndComp
@@ -428,6 +429,7 @@ F 4 "RC0603JR-070RL" H 2850 5050 50  0001 C CNN "MPN"
 F 5 "Yageo" H 2850 5050 50  0001 C CNN "Manufacturer"
 F 6 "https://www.digikey.com/en/products/detail/yageo/RC0603JR-070RL/726675" H 2850 5050 50  0001 C CNN "Ordering URL"
 F 7 "SMD" H 2850 5050 50  0001 C CNN "Type"
+F 8 "311-0.0GRCT-ND" H 2850 5050 50  0001 C CNN "Digikey ID"
 	1    2850 5050
 	0    1    1    0   
 $EndComp
@@ -445,6 +447,7 @@ F 4 "RC0603JR-070RL" H 2850 5250 50  0001 C CNN "MPN"
 F 5 "Yageo" H 2850 5250 50  0001 C CNN "Manufacturer"
 F 6 "https://www.digikey.com/en/products/detail/yageo/RC0603JR-070RL/726675" H 2850 5250 50  0001 C CNN "Ordering URL"
 F 7 "SMD" H 2850 5250 50  0001 C CNN "Type"
+F 8 "311-0.0GRCT-ND" H 2850 5250 50  0001 C CNN "Digikey ID"
 	1    2850 5250
 	0    1    1    0   
 $EndComp
@@ -462,6 +465,7 @@ F 4 "RC0603JR-070RL" H 2850 5350 50  0001 C CNN "MPN"
 F 5 "Yageo" H 2850 5350 50  0001 C CNN "Manufacturer"
 F 6 "https://www.digikey.com/en/products/detail/yageo/RC0603JR-070RL/726675" H 2850 5350 50  0001 C CNN "Ordering URL"
 F 7 "SMD" H 2850 5350 50  0001 C CNN "Type"
+F 8 "311-0.0GRCT-ND" H 2850 5350 50  0001 C CNN "Digikey ID"
 	1    2850 5350
 	0    1    1    0   
 $EndComp
@@ -495,6 +499,7 @@ F 4 "RC0603JR-070RL" H 2850 5850 50  0001 C CNN "MPN"
 F 5 "Yageo" H 2850 5850 50  0001 C CNN "Manufacturer"
 F 6 "https://www.digikey.com/en/products/detail/yageo/RC0603JR-070RL/726675" H 2850 5850 50  0001 C CNN "Ordering URL"
 F 7 "SMD" H 2850 5850 50  0001 C CNN "Type"
+F 8 "311-0.0GRCT-ND" H 2850 5850 50  0001 C CNN "Digikey ID"
 	1    2850 5850
 	0    1    1    0   
 $EndComp
@@ -520,6 +525,7 @@ F 4 "RC0603JR-070RL" H 2850 5750 50  0001 C CNN "MPN"
 F 5 "Yageo" H 2850 5750 50  0001 C CNN "Manufacturer"
 F 6 "https://www.digikey.com/en/products/detail/yageo/RC0603JR-070RL/726675" H 2850 5750 50  0001 C CNN "Ordering URL"
 F 7 "SMD" H 2850 5750 50  0001 C CNN "Type"
+F 8 "311-0.0GRCT-ND" H 2850 5750 50  0001 C CNN "Digikey ID"
 	1    2850 5750
 	0    1    1    0   
 $EndComp

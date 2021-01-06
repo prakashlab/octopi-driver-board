@@ -29,6 +29,7 @@ F 5 "Hirose" H 2450 3950 50  0001 C CNN "Manufacturer"
 F 6 "https://www.digikey.com/en/products/detail/hirose-electric-co-ltd/FX20-120P-0-5SV15/3461671" H 2450 3950 50  0001 C CNN "Ordering URL"
 F 7 "SMD" H 2450 3950 50  0001 C CNN "Type"
 F 8 "Pin 1 is indicated by a triangle on the component and an extra line in the silkscreen." H 2450 3950 50  0001 C CNN "Assembly Notes"
+F 9 "H12043-ND" H 2450 3950 50  0001 C CNN "Digikey ID"
 	1    2450 3950
 	1    0    0    -1  
 $EndComp
@@ -292,6 +293,7 @@ F 5 "Hirose" H 5450 3950 50  0001 C CNN "Manufacturer"
 F 6 "https://www.digikey.com/en/products/detail/hirose-electric-co-ltd/FX20-120S-0-5SV/3461673" H 5450 3950 50  0001 C CNN "Ordering URL"
 F 7 "SMD" H 5450 3950 50  0001 C CNN "Type"
 F 8 "Pin 1 is indicated by a triangle on the component and an extra line in the silkscreen." H 5450 3950 50  0001 C CNN "Assembly Notes"
+F 9 "H12041-ND" H 5450 3950 50  0001 C CNN "Digikey ID"
 	1    5450 3950
 	1    0    0    -1  
 $EndComp

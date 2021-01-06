@@ -25,6 +25,7 @@ F 4 "PJ-037AH-SMT-TR" H 1200 1250 50  0001 C CNN "MPN"
 F 5 "CUI" H 1200 1250 50  0001 C CNN "Manufacturer"
 F 6 "https://www.digikey.com/en/products/detail/cui-devices/PJ-037AH-SMT-TR/1530998" H 1200 1250 50  0001 C CNN "Ordering URL"
 F 7 "SMD" H 1200 1250 50  0001 C CNN "Type"
+F 8 "CP-037AHPJCT-ND" H 1200 1250 50  0001 C CNN "Digikey ID"
 	1    1200 1250
 	1    0    0    -1  
 $EndComp
@@ -41,6 +42,7 @@ F 5 "172316-1108" H 1150 2700 50  0001 C CNN "MPN"
 F 6 "Molex" H 1150 2700 50  0001 C CNN "Manufacturer"
 F 7 "https://www.digikey.com/en/products/detail/molex/1723161108/5344295" H 1150 2700 50  0001 C CNN "Ordering URL"
 F 8 "PTH" H 1150 2700 50  0001 C CNN "Type"
+F 9 "WM11598-ND" H 1150 2700 50  0001 C CNN "Digikey ID"
 	1    1150 2700
 	0    -1   1    0   
 $EndComp
@@ -112,6 +114,7 @@ F 4 "CRCW12060000Z0EAHP" H 3850 1650 50  0001 C CNN "MPN"
 F 5 "Vishay" H 3850 1650 50  0001 C CNN "Manufacturer"
 F 6 "https://www.digikey.com/en/products/detail/vishay-dale/CRCW12060000Z0EAHP/2222404" H 3850 1650 50  0001 C CNN "Ordering URL"
 F 7 "SMD" H 3850 1650 50  0001 C CNN "Type"
+F 8 "541-0.0UBCT-ND" H 3850 1650 50  0001 C CNN "Digikey ID"
 	1    3850 1650
 	0    1    1    0   
 $EndComp
@@ -234,6 +237,7 @@ F 5 "Lite-On" H 5500 1650 50  0001 C CNN "Manufacturer"
 F 6 "https://www.digikey.com/en/products/detail/lite-on-inc/LTST-C190TBKT/388529" H 5500 1650 50  0001 C CNN "Ordering URL"
 F 7 "SMD" H 5500 1650 50  0001 C CNN "Type"
 F 8 "Polarity is indicated by a diode symbol either next to the LED or at the end of the line of LEDs." H 5500 1650 50  0001 C CNN "Assembly Notes"
+F 9 "160-1646-1-ND" H 5500 1650 50  0001 C CNN "Digikey ID"
 	1    5500 1650
 	1    0    0    1   
 $EndComp
@@ -269,6 +273,7 @@ F 5 "Lite-On" H 5500 1850 50  0001 C CNN "Manufacturer"
 F 6 "https://www.digikey.com/en/products/detail/lite-on-inc/LTST-C190TBKT/388529" H 5500 1850 50  0001 C CNN "Ordering URL"
 F 7 "SMD" H 5500 1850 50  0001 C CNN "Type"
 F 8 "Polarity is indicated by a diode symbol either next to the LED or at the end of the line of LEDs." H 5500 1850 50  0001 C CNN "Assembly Notes"
+F 9 "160-1646-1-ND" H 5500 1850 50  0001 C CNN "Digikey ID"
 	1    5500 1850
 	1    0    0    1   
 $EndComp
@@ -382,6 +387,7 @@ F 4 "UWT1C221MCL1GS" H 4400 2650 50  0001 C CNN "MPN"
 F 5 "Nichicon" H 4400 2650 50  0001 C CNN "Manufacturer"
 F 6 "https://www.digikey.com/en/products/detail/nichicon/UWT1C221MCL1GS/589920" H 4400 2650 50  0001 C CNN "Ordering URL"
 F 7 "SMD" H 4400 2650 50  0001 C CNN "Type"
+F 8 "493-2179-1-ND" H 4400 2650 50  0001 C CNN "Digikey ID"
 	1    4400 2650
 	1    0    0    -1  
 $EndComp

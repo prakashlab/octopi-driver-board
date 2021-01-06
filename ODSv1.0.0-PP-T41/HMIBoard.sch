@@ -26,6 +26,7 @@ F 5 "504050-1091" H 2550 2550 50  0001 C CNN "MPN"
 F 6 "Molex" H 2550 2550 50  0001 C CNN "Manufacturer"
 F 7 "https://www.digikey.com/en/products/detail/molex/5040501091/4357650" H 2550 2550 50  0001 C CNN "Ordering URL"
 F 8 "SMD" H 2550 2550 50  0001 C CNN "Type"
+F 9 "WM10138CT-ND" H 2550 2550 50  0001 C CNN "Digikey ID"
 	1    2550 2550
 	-1   0    0    1   
 $EndComp
@@ -42,6 +43,7 @@ F 5 "504050-0691" H 2550 1350 50  0001 C CNN "MPN"
 F 6 "Molex" H 2550 1350 50  0001 C CNN "Manufacturer"
 F 7 "https://www.digikey.com/en/products/detail/molex/5040500691/4357148" H 2550 1350 50  0001 C CNN "Ordering URL"
 F 8 "SMD" H 2550 1350 50  0001 C CNN "Type"
+F 9 "WM10143CT-ND" H 2550 1350 50  0001 C CNN "Digikey ID"
 	1    2550 1350
 	-1   0    0    1   
 $EndComp
