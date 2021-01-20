@@ -1,6 +1,6 @@
 # Backbone_Connector_Hirose.pretty
 
-Automatically-generated footprints for Hirose FX20 connectors
+Automatically generated KiCad footprints for Hirose FX20 connectors
 
 These footprints were generated using scripts at https://gitlab.com/ethanjli/kicad-footprint-generator/-/blob/master/scripts/Connector/Connector_Hirose/conn_hirose_fx20_p_smd_top.py and https://gitlab.com/ethanjli/kicad-footprint-generator/-/blob/master/scripts/Connector/Connector_Hirose/conn_hirose_fx20_s_smd_top.py .
 

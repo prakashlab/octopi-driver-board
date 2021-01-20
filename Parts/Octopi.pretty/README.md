@@ -1,6 +1,6 @@
 # Octopi.pretty
 
-Footprints for one-off components for the Octopi Driver Stack
+KiCad footprints for one-off components for the Octopi Driver Stack
 
 ## License
 

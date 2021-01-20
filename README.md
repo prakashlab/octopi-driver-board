@@ -47,9 +47,9 @@ Every plane is separated by a distance of either 15 mm or 20 mm from the plane a
 
 ## Install
 
-To set up your computer for using this repository, you will need to install [KiCAD](https://kicad.org/) version ≥ 5.1.0. You should have the default symbol, footprint, and 3-D model libraries provided by KiCAD. References to custom symbols, footprints, and 3-D models will work out-of-the-box, as they are all provided in this repository and referenced in KiCAD relative to the `${KIPRJMOD}` environment variable.
+To set up your computer for using this repository, you will need to install [KiCad](https://kicad.org/) version ≥ 5.1.0. You should have the default symbol, footprint, and 3-D model libraries provided by KiCad. References to custom symbols, footprints, and 3-D models will work out-of-the-box, as they are all provided in this repository and referenced in KiCad relative to the `${KIPRJMOD}` environment variable.
 
-To prepare 3D models for components, you will need to download [FreeCAD 0.19](https://github.com/FreeCAD/FreeCAD/releases/tag/0.19_pre) and install the [KiCAD StepUp workbench](https://github.com/easyw/kicadStepUpMod).
+To prepare 3D models for components, you will need to download [FreeCAD 0.19](https://github.com/FreeCAD/FreeCAD/releases/tag/0.19_pre) and install the [KiCad StepUp workbench](https://github.com/easyw/kicadStepUpMod).
 
 ## Usage
 
@@ -59,11 +59,11 @@ This repository is structured so that every board has its own top-level director
 - Planes: `ODSv<Octopi Driver Stack version>-<board type name code>-<specific design name code>`
 - Peripheral boards and daughter boards: `<board type name code>-<specific design name code>`
 
-Each directory has a short README describing the contents of the directory. All boards are designed in KiCAD. Only the most recent version of each board is included at the HEAD of the repository; older versions of boards are tagged on Git and archived in this repository's Github Releases.
+Each directory has a short README describing the contents of the directory. All boards are designed in KiCad. Only the most recent version of each board is included at the HEAD of the repository; older versions of boards are tagged on Git and archived in this repository's Github Releases.
 
 Templates are provided as starters to copy for creating new boards. For more information, refer to [ODSv1.0.0-BT/README.md](ODSv1.0.0-BT/README.md).
 
-All footprints, documentation, CAD models, and KiCAD libraries for components and daughter boards used with the ODSv1.0.0 boards are available in the `Parts` directory.
+All footprints, documentation, CAD models, and KiCad libraries for components and daughter boards used with the ODSv1.0.0 boards are available in the `Parts` directory.
 
 ## Maintainers
 
