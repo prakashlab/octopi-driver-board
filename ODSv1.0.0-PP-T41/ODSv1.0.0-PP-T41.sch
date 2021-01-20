@@ -153,8 +153,8 @@ $EndComp
 $Sheet
 S 750  1000 1000 6500
 U 60C51399
-F0 "Backplane" 50
-F1 "Backplane.sch" 50
+F0 "Backbone" 50
+F1 "Backbone.sch" 50
 F2 "3.3V" I R 1750 1050 50 
 F3 "5V" I R 1750 1150 50 
 F4 "12V" I R 1750 1250 50 

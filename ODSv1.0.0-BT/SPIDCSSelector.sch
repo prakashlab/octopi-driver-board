@@ -4,8 +4,8 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 3 4
-Title "Backplane Template"
-Date "2020-12-26"
+Title "Backbone Template"
+Date "2021-01-19"
 Rev "v0.1.0"
 Comp "Prakash Lab/Octopi Team"
 Comment1 "Designer: Ethan Li"

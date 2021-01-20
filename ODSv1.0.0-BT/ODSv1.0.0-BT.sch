@@ -4,8 +4,8 @@ EELAYER END
 $Descr USLetter 11000 8500
 encoding utf-8
 Sheet 1 4
-Title "Backplane Template"
-Date "2020-12-31"
+Title "Backbone Template"
+Date "2021-01-19"
 Rev "v0.1.0"
 Comp "Prakash Lab/Octopi Team"
 Comment1 "Designer: Ethan Li"
@@ -16,8 +16,8 @@ $EndDescr
 $Sheet
 S 750  1000 1000 6500
 U 60C51399
-F0 "Backplane" 50
-F1 "Backplane.sch" 50
+F0 "Backbone" 50
+F1 "Backbone.sch" 50
 F2 "SPI_SCK" O R 1750 1450 50 
 F3 "SPI_COPI" O R 1750 1550 50 
 F4 "SPI_CIPO" I R 1750 1650 50 
@@ -139,7 +139,7 @@ F 3 "" H 2000 1250 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Text Notes 7000 1100 0    50   ~ 0
-Customization Instructions:\n- Customize the backplane as instructed in the Backplane hierarchical sheet.\n- Route any SPI devices to the SPI section of the Backplane symbol; use a unique DCS\n   pin for the CS of each SPI device.\n- If you need a more complex power topology (e.g. 12 V can come from the backplane\n   or from a power jack), add it between the 12 V pin of the Backplane symbol and the\n   12 V power symbol.
+Customization Instructions:\n- Customize the backbone as instructed in the Backbone hierarchical sheet.\n- Route any SPI devices to the SPI section of the Backbone symbol; use a unique DCS\n   pin for the CS of each SPI device.\n- If you need a more complex power topology (e.g. 12 V can come from the backbone\n   or from a power jack), add it between the 12 V pin of the Backbone symbol and the\n   12 V power symbol.
 $Comp
 L Mechanical:MountingHole H1
 U 1 1 600692B9

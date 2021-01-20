@@ -4,8 +4,8 @@ EELAYER END
 $Descr USLetter 11000 8500
 encoding utf-8
 Sheet 2 4
-Title "Backplane Template"
-Date "2020-12-26"
+Title "Backbone Template"
+Date "2021-01-19"
 Rev "v0.1.0"
 Comp "Prakash Lab/Octopi Team"
 Comment1 "Designer: Ethan Li"
@@ -750,7 +750,7 @@ Wire Wire Line
 Wire Notes Line
 	9600 5200 8000 5200
 Text Notes 8025 5175 0    25   ~ 0
-LED colors can be reallocated, but make sure to update resistor values.\n220 drives blue at 33% brightness, 150 drives orange at 50% brightness,\nand 75 drives red at 66% brightness.
+LED colors can be reallocated, but make sure to update resistor values.\n560 drives yellow at 33% brightness, 150 drives orange at 50% brightness,\nand 75 drives red at 66% brightness.
 Text Label 7950 4650 2    50   ~ 0
 ~LED1~
 Text Label 7950 4750 2    50   ~ 0
@@ -761,8 +761,8 @@ Text Label 7950 4950 2    50   ~ 0
 ~LED4~
 Text Notes 8000 5300 0    25   ~ 0
 Programmable indicator LEDs can be removed to free up extra GPIO pins\nfrom the SPI DCS selector's I/O expander IC for other purposes.
-Text Notes 6500 1250 0    50   ~ 0
-Customization Instructions:\n- Select a DSCS pin to use for selecting SPI devices on the plane, by changing a resistor from DNP\n   to 0 for the corresponding DSCS pin in the "SPI DSCS Selector" section.\n- If you don't need one of the power supplies, change the corresponding LED value and resistor value\n   in the "Power Indicator LEDs" section to DNP.\n- Customize the colors and order of programmable indicator LEDs in the "Programmable Indicator\n   LEDs" section; make sure to update resistor values.\n- If you need to use any pins from the GPIO or Interplane sections, add hierarchical pin labels in\n   this sheet and add the corresponding pins to the sheet's symbol in the parent.
+Text Notes 6500 1300 0    50   ~ 0
+Customization Instructions:\n- Select a DSCS pin to use for selecting SPI devices on the plane, by changing a resistor from DNP\n   to 0 for the corresponding DSCS pin in the "SPI DSCS Selector" section.\n- If you don't need one of the power supplies, change the corresponding LED value and resistor value\n   in the "Power Indicator LEDs" section to DNP.\n- Customize the colors and order of programmable indicator LEDs in the "Programmable Indicator\n   LEDs" section; make sure to update resistor values.\n- Remove any unnecessary power indicator LEDs in the "Power Indicator LEDs" section.\n- If you need to use any pins from the GPIO or Interplane sections, add hierarchical pin labels in\n   this sheet and add the corresponding pins to the sheet's symbol in the parent.
 $Comp
 L Device:LED D1
 U 1 1 626C91FC
@@ -952,7 +952,7 @@ Wire Wire Line
 Wire Notes Line
 	2500 4000 1750 4000
 Text Notes 1775 5375 0    25   ~ 0
-Add hierarchical labels to export\nadditional pins from the backplane.
+Add hierarchical labels to export\nadditional pins from the backbone.
 Wire Notes Line
 	2500 950  2500 5400
 Wire Notes Line
@@ -1037,4 +1037,6 @@ F69 "GPIO_3" B L 1750 2100 50
 F70 "GPIO_5" B L 1750 2300 50 
 F71 "GPIO_9" B L 1750 2500 50 
 $EndSheet
+Text Notes 4000 6650 0    25   ~ 0
+Remove power indicator LEDs for power sources which will not be used on\nthis plane.
 $EndSCHEMATC

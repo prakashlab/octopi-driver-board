@@ -169,7 +169,7 @@
   (fp_text user REF** (at 0 0) (layer F.Fab)
     (effects (font (size 1 1) (thickness 0.15)))
   )
-  (model ${KISYS3DMOD}/Backplane_Connector_Hirose.3dshapes/Hirose_FX20_FX20-60S-0.5SV_2x30_P0.50mm_Vertical.wrl
+  (model ${KISYS3DMOD}/Backbone_Connector_Hirose.3dshapes/Hirose_FX20_FX20-60S-0.5SV_2x30_P0.50mm_Vertical.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
