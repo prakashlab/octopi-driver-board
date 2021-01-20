@@ -1,6 +1,8 @@
-# Backbone Template _(ODSv1.0.0-BT)_
+# Backbone Template _(BT)_
 
 Backbone Template for creating new planes in ODSv1.0.0
+
+![Preview render of top face of the plane](Fabrication/Preview%20Renders/Top.png)
 
 The Backbone template contains a customizable schematic and PCB layout of the subsystems repeated on every plane (except the processing plane) for connector stacking and hierarchical SPI chip-select multiplexing.
 
