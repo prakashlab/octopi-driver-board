@@ -43,6 +43,8 @@ ODSv1.0.0 consists of a single central processing plane (board type name code `P
 
 The SPI devices on these planes are addressed through [a hierarchical chip-select multiplexing scheme](https://ethanj.li/posts/2021/01/unyielding-foundations#iteration-3-more-modularity-becomes-necessary) to enable composition of planes for customization, reconfiguration, and expansion of capabilities.
 
+Every plane is separated by a distance of either 15 mm or 20 mm from the plane above it, depending on the height of components on the top face of the plane. All tall components should only be on the top face of the plane.
+
 ## Install
 
 To set up your computer for using this repository, you will need to install [KiCAD](https://kicad.org/) version ≥ 5.1.0. You should have the default symbol, footprint, and 3-D model libraries provided by KiCAD. References to custom symbols, footprints, and 3-D models will work out-of-the-box, as they are all provided in this repository and referenced in KiCAD relative to the `${KIPRJMOD}` environment variable.
