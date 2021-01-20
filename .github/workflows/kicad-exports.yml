@@ -9,12 +9,14 @@ on:
       - '*-*/**.kicad_pcb'
       - '*-*/README.md'
       - '.github/workflows/kicad-exports.yml'
+      - '.kibot/**'
   pull_request:
     paths:
       - '*-*/**.sch'
       - '*-*/**.kicad_pcb'
       - '*-*/README.md'
       - '.github/workflows/kicad-exports.yml'
+      - '.kibot/**'
   milestone:
     types: [opened, deleted]
   workflow_dispatch:
@@ -53,6 +55,8 @@ jobs:
           echo "$DIFF"
           # Treat all directories as changed if this workflow is changed
           if echo "$DIFF" | grep -q '.github/workflows/kicad-exports.yml'; then
+            export DIFF=$( ls -d */ )
+          elif  echo "$DIFF" | grep -q '.kibot/config'; then
             export DIFF=$( ls -d */ )
           fi
           # Escape newlines (replace \n with %0A)
