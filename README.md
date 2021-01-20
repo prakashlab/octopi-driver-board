@@ -57,16 +57,11 @@ This repository is structured so that every board has its own top-level director
 - Planes: `ODSv<Octopi Driver Stack version>-<board type name code>-<specific design name code>`
 - Peripheral boards and daughter boards: `<board type name code>-<specific design name code>`
 
-All boards are designed in KiCAD. Only the most recent version of each board is included at the HEAD of the repository; older versions of boards are tagged on Git and archived in this repository's Github Releases.
+Each directory has a short README describing the contents of the directory. All boards are designed in KiCAD. Only the most recent version of each board is included at the HEAD of the repository; older versions of boards are tagged on Git and archived in this repository's Github Releases.
 
-Templates are provided as starters to copy for creating new boards.  To create a new plane from the Backbone Template (board type name code: `BT`), which contains the connectors and circuitry used in the backbone section of every plane:
+Templates are provided as starters to copy for creating new boards. For more information, refer to [ODSv1.0.0-BT/README.md](ODSv1.0.0-BT/README.md).
 
-1. Make a copy of the `ODSv1.0.0-BT` folder, with the appropriate name code for the name of your new folder (for example, `ODSv1.0.0-CP-5x` for a Camera Plane for 5 Cameras).
-2. Open the project in KiCAD. In the page settings for the schematic and layout files, customize/update the title block parameters for your new plane. For example, the `Revision` field should be used to capture the specific version of your board.
-3. Follow the customization instructions listed in the upper right corner of the various sheets of the schematic to customize the schematic according to your needs. Afterwards, you can delete those instructions.
-4. If you have tall components on the top face of the plane, open the layout file and change footprint J1's associated 3D model from `${KIPRJMOD}/../Parts/Connectors/FunctionMAX FX20/FX20-120P-0.5SV15.wrl` to `${KIPRJMOD}/../Parts/Connectors/FunctionMAX FX20/FX20-120P-0.5SV20.wrl`
-
-Additionally, all footprints, documentation, CAD models, and KiCAD libraries for components and daughter boards used with the ODSv1.0.0 boards are archived in the `Parts` directory.
+All footprints, documentation, CAD models, and KiCAD libraries for components and daughter boards used with the ODSv1.0.0 boards are available in the `Parts` directory.
 
 ## Maintainers
 
