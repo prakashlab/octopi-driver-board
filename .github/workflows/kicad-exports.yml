@@ -7,11 +7,13 @@ on:
     paths:
       - '*-*/**.sch'
       - '*-*/**.kicad_pcb'
+      - '*-*/README.md'
       - '.github/workflows/kicad-exports.yml'
   pull_request:
     paths:
       - '*-*/**.sch'
       - '*-*/**.kicad_pcb'
+      - '*-*/README.md'
       - '.github/workflows/kicad-exports.yml'
   milestone:
     types: [opened, deleted]
@@ -121,6 +123,11 @@ jobs:
           schema: ${{matrix.board}}/${{matrix.board}}.sch
           # Optional PCB design file
           board: ${{matrix.board}}/${{matrix.board}}.kicad_pcb
+
+      - name: Copy documentation
+        run: |
+          sudo cp LICENSE* ${{matrix.board}}/docs/
+          sudo cp ${{matrix.board}}/README.md ${{matrix.board}}/docs/
 
       - name: Get current date
         id: date
