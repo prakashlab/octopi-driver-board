@@ -116,7 +116,7 @@ jobs:
         uses: nerdyscout/kicad-exports@v2.2
         with:
           # Required kibot config file
-          config: docs.kibot.yaml
+          config: '.kibot/config/*.kibot.yaml'
           # Optional prefix to output defined in config
           dir: ${{matrix.board}}/docs
           # Optional schematic file
