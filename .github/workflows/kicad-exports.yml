@@ -128,12 +128,6 @@ jobs:
           # Optional PCB design file
           board: ${{matrix.board}}/${{matrix.board}}.kicad_pcb
 
-      - name: Postprocess DRC & ERC reports
-        working-directory: ${{matrix.board}}/docs/
-        run: |
-          sudo mv drc_result.rpt "Report-DRC.txt"
-          sudo mv ${{matrix.board}}.erc "Report-ERC.txt"
-
       - name: Copy documentation
         run: |
           sudo cp LICENSE* ${{matrix.board}}/docs/
