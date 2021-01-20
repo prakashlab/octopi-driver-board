@@ -120,7 +120,7 @@ jobs:
         uses: nerdyscout/kicad-exports@v2.2
         with:
           # Required kibot config file
-          config: '.kibot/config/*.kibot.yaml'
+          config: '.kibot/config/docs.kibot.yaml'
           # Optional prefix to output defined in config
           dir: ${{matrix.board}}/docs
           # Optional schematic file
@@ -128,7 +128,20 @@ jobs:
           # Optional PCB design file
           board: ${{matrix.board}}/${{matrix.board}}.kicad_pcb
 
-      - name: Copy documentation
+      - name: Get layout version
+        id: version
+        run: |
+          REVISION=$(grep -o '(rev .*)' ${{matrix.board}}/${{matrix.board}}.kicad_pcb)
+          VERSION=$(echo $REVISION | sed -E 's/\(rev (.*)\)/\1/')
+          echo "::set-output name=layout::$(echo "$VERSION")"
+
+      - name: Postprocess DRC report
+        working-directory: ${{matrix.board}}/docs/
+        run: |
+          sudo mv drc_result.rpt "${{matrix.board}}${{steps.version.outputs.layout}}-drc.log"
+          sudo mv ${{matrix.board}}.erc "${{matrix.board}}${{steps.version.outputs.layout}}-erc.log"
+
+      - name: Copy README and LICENSEs
         run: |
           sudo cp LICENSE* ${{matrix.board}}/docs/
           sudo cp ${{matrix.board}}/README.md ${{matrix.board}}/docs/
@@ -136,13 +149,6 @@ jobs:
       - name: Get current date
         id: date
         run: echo "::set-output name=today::$(date +'%Y%m%d')"
-
-      - name: Get layout version
-        id: version
-        run: |
-          REVISION=$(grep -o '(rev .*)' ${{matrix.board}}/${{matrix.board}}.kicad_pcb)
-          VERSION=$(echo $REVISION | sed -E 's/\(rev (.*)\)/\1/')
-          echo "::set-output name=layout::$(echo "$VERSION")"
 
       - name: Upload results
         uses: actions/upload-artifact@v2

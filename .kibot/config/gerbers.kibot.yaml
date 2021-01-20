@@ -2,8 +2,7 @@ kibot:
   version: 1
 
 global:
-  output: '%f_rev%r-%i.%x'
-  variant: ''
+  output: '%f%r-%i.%x'
 
 preflight:
   update_xml: false

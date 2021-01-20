@@ -1,8 +1,10 @@
 # Backbone Template _(BT)_
 
-Backbone Template for creating new planes in ODSv1.0.0
+Backbone Template for creating new planes in the Octopi Driver Stack
 
 ![Preview render of top face of the plane](Fabrication/Preview%20Renders/Top.png)
+
+This board template is part of the [octopi-driver-board project](https://github.com/prakashlab/octopi-driver-board).
 
 The Backbone template contains a customizable schematic and PCB layout of the subsystems repeated on every plane (except the processing plane) for connector stacking and hierarchical SPI chip-select multiplexing.
 

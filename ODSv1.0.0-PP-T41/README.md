@@ -4,6 +4,8 @@ Central processing, control, and computation for the Octopi Driver Stack
 
 ![Mechanical render of top face of the plane, from the front edge](Mechanical%20Renders/Above%20Front.png)
 
+This plane is part of the [octopi-driver-board project](https://github.com/prakashlab/octopi-driver-board).
+
 This processing plane contains a [Teensy 4.1](https://www.pjrc.com/store/teensy41.html) microcontroller board and performs central control of all other devices in the driver stack. It also provides mounting holes for an [NVIDIA Jetson Nano Developer Kit](https://developer.nvidia.com/EMBEDDED/jetson-nano-developer-kit) which integrates the microcontroller with image acquisition and graphical user interfacing functionality. Each stack should have exactly one of these planes.
 
 ## Background
