@@ -4,7 +4,7 @@ Documentation, specifications, and 3-D models for Hirose FunctionMAX FX20 connec
 
 ## License
 
-The PDF files in this directory are copyright Hirose Electric. The STP file in this directory is copyright Hirose Electric and is released only for personal, non-commercial use.
+The PDF files in this directory are copyright Hirose Electric. The STP file in this directory is copyright Hirose Electric and is released only for personal, non-commercial use. This project has received permission from Hirose to redistribute these STP files for use in the Squid project, for making mechanical CAD renderings and for non-commercial uses.
 
 Ethan Li created the FCStd, STEP, and WRL files in this directory using the STP file in this directory. Those files are copyright Prakash Lab and the Octopi project contributors, and those files are licensed under the [Solderpad Hardware License v2.1](/LICENSE) (the “License”); you may not use files except in compliance with the License, or, at your option, the [Apache License version 2.0](/LICENSE.Apache). You may obtain a copy of the License at https://solderpad.org/licenses/SHL-2.1/
 
