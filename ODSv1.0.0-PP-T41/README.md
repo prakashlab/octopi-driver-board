@@ -8,7 +8,7 @@ This processing plane contains a [Teensy 4.1](https://www.pjrc.com/store/teensy4
 
 ## Background
 
-The Teensy 4.0/4.1, based on NXP Semiconductor's [i.MX RT1060](https://www.nxp.com/products/processors-and-microcontrollers/arm-microcontrollers/i-mx-rt-crossover-mcus/i-mx-rt1060-crossover-mcu-with-arm-cortex-m7-core:i.MX-RT1060) [Crossover Processor](https://www.nxp.com/docs/en/white-paper/I.MXRT1050WP.pdf), is the fastest microcontroller development board in existence. The i.MX RT1060 has an ARM Cortex-M7 core with a CPU clock speed of up to 600 MHz, 1 MB of RAM, and a dedicated floating-point math unit.
+The Teensy 4.1, based on NXP Semiconductor's [i.MX RT1060](https://www.nxp.com/products/processors-and-microcontrollers/arm-microcontrollers/i-mx-rt-crossover-mcus/i-mx-rt1060-crossover-mcu-with-arm-cortex-m7-core:i.MX-RT1060) [Crossover Processor](https://www.nxp.com/docs/en/white-paper/I.MXRT1050WP.pdf), is (along with the Teensy 4.0) the fastest microcontroller development board in existence. The i.MX RT1060 has an ARM Cortex-M7 core with a CPU clock speed of up to 600 MHz, 1 MB of RAM, and a dedicated floating-point math unit.
 
 This plane is designed to provide the following functionalities:
 

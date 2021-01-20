@@ -1,18 +1,10 @@
-# Auto-generates exports for all KiCad projects
+# Auto-generate exports for all KiCad projects
 
 name: KiCad Exports
 
-# Controls when the action will run. 
 on:
-  # Triggers the workflow on push or pull request events but only for the develop branch
   push:
-    paths:
-      - '**.sch'
-      - '**.kicad_pcb'
   pull_request:
-    paths:
-      - '**.sch'
-      - '**.kicad_pcb'
   milestone:
     types: [opened, deleted]
   workflow_dispatch:
@@ -21,25 +13,87 @@ on:
         description: 'Git ref (optional)'
         required: false
 
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # This workflow contains a single job called "build"
-  export:
-    # The type of runner that the job will run on
+  # Find changed boards
+  generate-matrix:
+    name: Generate matrix for exports
     runs-on: ubuntu-latest
-    
-    # Job strategy
-    strategy:
-      matrix:
-        board: [ODSv1.0.0-BT, ODSv1.0.0-PP-T41]
-
-    # Steps represent a sequence of tasks that will be executed as part of the job
+    outputs:
+      matrix: ${{steps.set-matrix.outputs.matrix}}
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v2
+      - name: Checkout repository
+        uses: actions/checkout@v2
 
-      # Auto-generates exports for KiCad5 projects
-      - uses: nerdyscout/kicad-exports@v2.2
+      - name: Check changed files
+        id: diff
+        run: |
+          # See https://github.community/t/check-pushed-file-changes-with-git-diff-tree-in-github-actions/17220/10
+          if [ $GITHUB_BASE_REF ]; then
+            # Pull Request
+            git fetch origin $GITHUB_BASE_REF --depth=1
+            export DIFF=$( git diff --name-only origin/$GITHUB_BASE_REF $GITHUB_SHA )
+            echo "Diff between origin/$GITHUB_BASE_REF and $GITHUB_SHA"
+          else
+            # Push
+            git fetch origin ${{ github.event.before }} --depth=1
+            export DIFF=$( git diff --name-only ${{ github.event.before }} $GITHUB_SHA )
+            echo "Diff between ${{ github.event.before }} and $GITHUB_SHA"
+          fi
+          echo "$DIFF"
+          # Escape newlines (replace \n with %0A)
+          echo "::set-output name=diff::$( echo "$DIFF" | sed ':a;N;$!ba;s/\n/%0A/g' )"
+
+      - name: Set matrix for build
+        id: set-matrix
+        run: |
+          # See https://stackoverflow.com/a/62953566/11948346
+          DIFF="${{ steps.diff.outputs.diff }}"
+          JSON="{\"board\":["
+
+          # Loop by lines
+          while read path; do
+            # Set $directory to substring before /
+            directory="$( echo $path | cut -d'/' -f1 -s )"
+
+            if [ -z "$directory" ]; then
+              continue # Exclude root directory
+            elif [ "$directory" == Parts ]; then
+              continue # Exclude Parts directory
+            elif [ "$directory" == .github ]; then
+              continue # Exclude .github directory
+            fi
+
+            # Add build to the matrix only if it is not already included
+            JSONline="\"$directory\","
+            if [[ "$JSON" != *"$JSONline"* ]]; then
+              JSON="$JSON$JSONline"
+            fi
+          done <<< "$DIFF"
+
+          # Remove last "," and add closing brackets
+          if [[ $JSON == *, ]]; then
+            JSON="${JSON%?}"
+          fi
+          JSON="$JSON]}"
+          echo $JSON
+
+          # Set output
+          echo "::set-output name=matrix::$( echo "$JSON" )"
+
+  # Export docs for changed boards
+  export:
+    name: Export docs for "${{matrix.board}}"
+    needs: generate-matrix
+    runs-on: ubuntu-latest
+    strategy:
+      matrix: ${{fromJson(needs.generate-matrix.outputs.matrix)}}
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Export docs
+        uses: nerdyscout/kicad-exports@v2.2
         with:
           # Required kibot config file
           config: docs.kibot.yaml
@@ -50,7 +104,6 @@ jobs:
           # Optional PCB design file
           board: ${{matrix.board}}/${{matrix.board}}.kicad_pcb
 
-      # Uploads results as workflow artifacts
       - name: Upload results
         uses: actions/upload-artifact@v2
         with:

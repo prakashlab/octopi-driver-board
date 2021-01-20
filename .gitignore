@@ -49,3 +49,7 @@ fp-info-cache
 # Vim temporary files
 *.swp
 *.swo
+
+
+# Auto-generated docs
+*/*-docs
