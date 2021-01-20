@@ -4,7 +4,15 @@ name: KiCad Exports
 
 on:
   push:
+    paths:
+      - '*-*/**.sch'
+      - '*-*/**.kicad_pcb'
+      - '.github/workflows/kicad-exports.yml'
   pull_request:
+    paths:
+      - '*-*/**.sch'
+      - '*-*/**.kicad_pcb'
+      - '.github/workflows/kicad-exports.yml'
   milestone:
     types: [opened, deleted]
   workflow_dispatch:
@@ -20,6 +28,7 @@ jobs:
     runs-on: ubuntu-latest
     outputs:
       matrix: ${{steps.set-matrix.outputs.matrix}}
+      numboards: ${{steps.set-matrix.outputs.numboards}}
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
@@ -32,14 +41,18 @@ jobs:
             # Pull Request
             git fetch origin $GITHUB_BASE_REF --depth=1
             export DIFF=$( git diff --name-only origin/$GITHUB_BASE_REF $GITHUB_SHA )
-            echo "Diff between origin/$GITHUB_BASE_REF and $GITHUB_SHA"
+            echo "Diff between origin/$GITHUB_BASE_REF and $GITHUB_SHA:"
           else
             # Push
             git fetch origin ${{ github.event.before }} --depth=1
             export DIFF=$( git diff --name-only ${{ github.event.before }} $GITHUB_SHA )
-            echo "Diff between ${{ github.event.before }} and $GITHUB_SHA"
+            echo "Diff between ${{ github.event.before }} and $GITHUB_SHA:"
           fi
           echo "$DIFF"
+          # Treat all directories as changed if this workflow is changed
+          if echo "$DIFF" | grep -q '.github/workflows/kicad-exports.yml'; then
+            export DIFF=$( ls -d */ )
+          fi
           # Escape newlines (replace \n with %0A)
           echo "::set-output name=diff::$( echo "$DIFF" | sed ':a;N;$!ba;s/\n/%0A/g' )"
 
@@ -49,6 +62,7 @@ jobs:
           # See https://stackoverflow.com/a/62953566/11948346
           DIFF="${{ steps.diff.outputs.diff }}"
           JSON="{\"board\":["
+          NUMBOARDS=0
 
           # Loop by lines
           while read path; do
@@ -67,6 +81,7 @@ jobs:
             JSONline="\"$directory\","
             if [[ "$JSON" != *"$JSONline"* ]]; then
               JSON="$JSON$JSONline"
+              NUMBOARDS=$((NUMBOARDS+1))
             fi
           done <<< "$DIFF"
 
@@ -76,15 +91,18 @@ jobs:
           fi
           JSON="$JSON]}"
           echo $JSON
+          echo $NUMBOARDS
 
           # Set output
           echo "::set-output name=matrix::$( echo "$JSON" )"
+          echo "::set-output name=numboards::$( echo "$NUMBOARDS" )"
 
   # Export docs for changed boards
   export:
-    name: Export docs for "${{matrix.board}}"
+    name: Export docs for ${{matrix.board}}
     needs: generate-matrix
     runs-on: ubuntu-latest
+    if: needs.generate-matrix.outputs.numboards > 0
     strategy:
       matrix: ${{fromJson(needs.generate-matrix.outputs.matrix)}}
 
@@ -104,8 +122,19 @@ jobs:
           # Optional PCB design file
           board: ${{matrix.board}}/${{matrix.board}}.kicad_pcb
 
+      - name: Get current date
+        id: date
+        run: echo "::set-output name=today::$(date +'%Y%m%d')"
+
+      - name: Get layout version
+        id: version
+        run: |
+          REVISION=$(grep -o '(rev .*)' ${{matrix.board}}/${{matrix.board}}.kicad_pcb)
+          VERSION=$(echo $REVISION | sed -E 's/\(rev (.*)\)/\1/')
+          echo "::set-output name=layout::$(echo "$VERSION")"
+
       - name: Upload results
         uses: actions/upload-artifact@v2
         with:
-          name: ${{matrix.board}}-docs
+          name: ${{matrix.board}}${{steps.version.outputs.layout}}-docs-rev${{steps.date.outputs.today}}
           path: ${{matrix.board}}/docs
