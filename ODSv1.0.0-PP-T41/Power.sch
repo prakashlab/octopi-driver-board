@@ -1,17 +1,17 @@
 EESchema Schematic File Version 4
 EELAYER 30 0
 EELAYER END
-$Descr A4 11693 8268
+$Descr USLetter 11000 8500
 encoding utf-8
 Sheet 6 7
-Title ""
-Date "2020-12-31"
-Rev ""
-Comp ""
-Comment1 ""
-Comment2 ""
+Title "Processing Plane for Teensy 4.1"
+Date "2021-01-20"
+Rev "v0.1.0"
+Comp "Prakash Lab/Octopi Team"
+Comment1 "Author: Ethan Li"
+Comment2 "License: SHL-2.1"
 Comment3 ""
-Comment4 ""
+Comment4 "Octopi Driver Stack v1.0.0: Plane"
 $EndDescr
 $Comp
 L Connector:Barrel_Jack_Switch J6
