@@ -1,6 +1,12 @@
 kibot:
   version: 1
 
+preflight:
+  update_xml: true
+  run_drc: true
+  check_zone_fills: true
+  ignore_unconnected: true
+
 outputs:
   # For more information: https://github.com/INTI-CMNB/KiBoM
   - name: 'layout-top-green-svg'
