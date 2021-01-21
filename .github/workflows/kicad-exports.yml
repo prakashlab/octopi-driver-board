@@ -207,6 +207,7 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install inkscape
+          sudo apt-get install poppler-utils
 
       - name: Export docs
         uses: nerdyscout/kicad-exports@v2.2
@@ -226,14 +227,19 @@ jobs:
           sudo mv drc_result.rpt "${{matrix.board}}${{steps.version.outputs.layout}}-drc.log"
           sudo mv ${{matrix.board}}.erc "${{matrix.board}}${{steps.version.outputs.layout}}-erc.log"
 
-      - name: Export schematic SVGs
-        working-directory: ${{matrix.board}}/docs/Schematics/Sheets
+      - name: Make PNGs from schematic SVGs
+        working-directory: ${{matrix.board}}/docs/Schematics/Images
         run: |
           for FILE in *.svg; do
             echo "Exporting ${FILE%.svg}"
             sudo inkscape -z -d 300 "$FILE" -e "${FILE%.svg}.png"
-            sudo inkscape -z "$FILE" -A "${FILE%.svg}.pdf"
           done
+
+      - name: Split schematic PDF into sheets
+        working-directory: ${{matrix.board}}/docs/Schematics/
+        run: |
+          sudo mkdir Sheets
+          sudo pdfseparate "${{matrix.board}}${{steps.version.outputs.layout}}-schematic.pdf" "Sheets/%d.pdf"
 
       - name: Copy README and LICENSEs
         run: |

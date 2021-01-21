@@ -20,7 +20,7 @@ outputs:
   - name: 'schematic-svg'
     comment: "Print schematic (SVG)"
     type: svg_sch_print
-    dir: Schematics/Sheets
+    dir: Schematics/Images
 
   - name: 'print board mechanics'
     comment: "Print board layout (PDF)"
