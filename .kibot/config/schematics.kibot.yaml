@@ -1,0 +1,21 @@
+kibot:
+  version: 1
+
+global:
+  output: '%f%r-%i.%x'
+
+preflight:
+  run_erc: true
+  ignore_unconnected: false
+
+outputs:
+  # For more information: https://github.com/INTI-CMNB/KiBoM
+  - name: 'schematic-pdf'
+    comment: "Print schematic (PDF)"
+    type: pdf_sch_print
+    dir: Schematics
+
+  - name: 'schematic-svg'
+    comment: "Print schematic (SVG)"
+    type: svg_sch_print
+    dir: Schematics/Images

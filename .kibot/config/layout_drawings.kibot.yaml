@@ -1,0 +1,82 @@
+kibot:
+  version: 1
+
+global:
+  output: '%f%r-%i.%x'
+
+preflight:
+  run_drc: true
+  check_zone_fills: true
+  ignore_unconnected: false
+
+outputs:
+  # For more information: https://github.com/INTI-CMNB/KiBoM
+  - name: 'layout-doc-top'
+    comment: "Print top face docs (PDF)"
+    type: pdf_pcb_print
+    layers: 
+      - Edge.Cuts
+      - Margin
+      - Cmts.User
+      - Dwgs.User
+      - Eco1.User
+      - Eco2.User
+      - F.Fab
+    dir: "Layout Drawings"
+    options:
+      output: '%f%r-doc-top.%x'
+      plot_sheet_reference: true # [boolean=true] include the title-block.
+      scaling: 1.0
+
+  - name: 'layout-doc-bottom'
+    comment: "Print bottom face docs (PDF)"
+    type: pdf_pcb_print
+    layers: 
+      - Edge.Cuts
+      - Margin
+      - Cmts.User
+      - Dwgs.User
+      - Eco1.User
+      - Eco2.User
+      - B.Fab
+    dir: "Layout Drawings"
+    options:
+      output: '%f%r-doc-bottom.%x'
+      plot_sheet_reference: true # [boolean=true] include the title-block.
+      scaling: 1.0
+
+  - name: 'layout-silk-top'
+    comment: "Print top face silks (PDF)"
+    type: pdf_pcb_print
+    layers: 
+      - Edge.Cuts
+      - Margin
+      - Cmts.User
+      - Dwgs.User
+      - Eco1.User
+      - Eco2.User
+      - F.SilkS
+      - F.Mask
+    dir: "Layout Drawings"
+    options:
+      output: '%f%r-silk-top.%x'
+      plot_sheet_reference: true # [boolean=true] include the title-block.
+      scaling: 1.0
+
+  - name: 'layout-silk-bottom'
+    comment: "Print bottom face silks (PDF)"
+    type: pdf_pcb_print
+    layers: 
+      - Edge.Cuts
+      - Margin
+      - Cmts.User
+      - Dwgs.User
+      - Eco1.User
+      - Eco2.User
+      - B.SilkS
+      - B.Mask
+    dir: "Layout Drawings"
+    options:
+      output: '%f%r-silk-bottom.%x'
+      plot_sheet_reference: true # [boolean=true] include the title-block.
+      scaling: 1.0
