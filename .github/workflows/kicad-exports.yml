@@ -232,7 +232,7 @@ jobs:
         run: |
           for FILE in *.svg; do
             echo "Exporting ${FILE%.svg}"
-            sudo inkscape -z -d 300 "$FILE" -e "${FILE%.svg}.png"
+            sudo inkscape -z -d 300 -b white -y 1.0 "$FILE" -e "${FILE%.svg}.png"
           done
 
       - name: Split schematic PDF into sheets
