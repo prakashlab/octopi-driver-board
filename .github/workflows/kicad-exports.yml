@@ -111,6 +111,7 @@ jobs:
     if: needs.generate-matrix.outputs.numboards > 0
     strategy:
       matrix: ${{fromJson(needs.generate-matrix.outputs.matrix)}}
+      fail-fast: false
 
     steps:
       - name: Checkout repository
@@ -235,21 +236,20 @@ jobs:
             sudo inkscape -z -d 300 -b white -y 1.0 "$FILE" -e "${FILE%.svg}.png"
           done
 
+      - name: Split schematic PDF into sheets
+        working-directory: ${{matrix.board}}/docs/Schematics/
+        run: |
+          sudo mkdir Sheets
+          sudo pdfseparate "${{matrix.board}}${{steps.version.outputs.layout}}-schematic.pdf" "Sheets/%d.pdf"
+
       - name: Make PNGs from layout render SVGs
         working-directory: "${{matrix.board}}/docs/Layout Renders"
         run: |
           for FILE in *.svg; do
             echo "Exporting ${FILE%.svg}"
             sudo inkscape -z -D "$FILE" -l "$FILE"
-            sudo inkscape -z "$FILE" -A "${FILE%.svg}.pdf"
             sudo inkscape -z -d 300 "$FILE" -e "${FILE%.svg}.png"
           done
-
-      - name: Split schematic PDF into sheets
-        working-directory: ${{matrix.board}}/docs/Schematics/
-        run: |
-          sudo mkdir Sheets
-          sudo pdfseparate "${{matrix.board}}${{steps.version.outputs.layout}}-schematic.pdf" "Sheets/%d.pdf"
 
       - name: Copy README and LICENSEs
         run: |
