@@ -29,7 +29,7 @@ jobs:
   # Find changed boards
   generate-matrix:
     name: Generate matrix for exports
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     outputs:
       matrix: ${{steps.set-matrix.outputs.matrix}}
       numboards: ${{steps.set-matrix.outputs.numboards}}
@@ -85,14 +85,14 @@ jobs:
 
             # Add build to the matrix only if it is not already included
             JSONline="\"$directory\","
-            if [[ "$JSON" != *"$JSONline"* ]]; then
+            if [ "$JSON" != *"$JSONline"* ]; then
               JSON="$JSON$JSONline"
               NUMBOARDS=$((NUMBOARDS+1))
             fi
           done <<< "$DIFF"
 
           # Remove last "," and add closing brackets
-          if [[ $JSON == *, ]]; then
+          if [ $JSON == *, ]; then
             JSON="${JSON%?}"
           fi
           JSON="$JSON]}"
@@ -107,7 +107,7 @@ jobs:
   export:
     name: Export docs for ${{matrix.board}}
     needs: generate-matrix
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     if: needs.generate-matrix.outputs.numboards > 0
     strategy:
       matrix: ${{fromJson(needs.generate-matrix.outputs.matrix)}}
@@ -115,6 +115,98 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
+
+      - name: Get current date
+        id: date
+        run: echo "::set-output name=today::$(date +'%Y%m%d')"
+
+      - name: Check schematic and layout file names
+        working-directory: ${{matrix.board}}
+        run: |
+          if [ ! -f "${{matrix.board}}.sch" ]; then
+            echo "Schematic file ${{matrix.board}}.sch doesn't exist!"
+            exit 1
+          fi
+          if [ ! -f "${{matrix.board}}.kicad_pcb" ]; then
+            echo "Layout file ${{matrix.board}}.kicad_pcb doesn't exist!"
+            exit 1
+          fi
+
+      - name: Check schematic file title consistency
+        working-directory: ${{matrix.board}}
+        run: |
+          if [ $(grep -h 'Title ".*"' *.sch | uniq -c | wc -l) != 1 ]; then
+            echo "Titles in schematic files aren't all the same!"
+            exit 1
+          fi
+
+      - name: Check schematic file version number consistency
+        working-directory: ${{matrix.board}}
+        run: |
+          if [ $(grep -h 'Rev ".*"' *.sch | uniq -c | wc -l) != 1 ]; then
+            echo "Version numbers in schematic files aren't all the same!"
+            exit 1
+          fi
+
+      - name: Check schematic file designer comment field
+        working-directory: ${{matrix.board}}
+        run: |
+          if [ $(grep -h 'Comment1 "Designer.*: ' *.sch | wc -l) != $(ls *.sch | wc -l) ]; then
+            echo "Not all schematic files have a valid designer or list of designers in the comment 1 field!"
+            exit 1
+          fi
+
+      - name: Check schematic file license comment field
+        working-directory: ${{matrix.board}}
+        run: |
+          if [ $(grep -h 'Comment2 "License.*: ' *.sch | wc -l) != $(ls *.sch | wc -l) ]; then
+            echo "Not all schematic files have a valid license or list of licenses in the comment 2 field!"
+            exit 1
+          fi
+
+      - name: Check layout file designer comment field
+        working-directory: ${{matrix.board}}
+        run: |
+          if grep -q '(comment 1 "Designer.*: .*")' ${{matrix.board}}/${{matrix.board}}.kicad_pcb; then
+            echo "The layout file does not have a valid designer or list of designers in the comment 1 field!"
+            exit 1
+          fi
+
+      - name: Check layout file license comment field
+        working-directory: ${{matrix.board}}
+        run: |
+          if grep -q '(comment 2 "License.*: .*")' ${{matrix.board}}/${{matrix.board}}.kicad_pcb; then
+            echo "The layout file does not have a valid license or list of licenses in the comment 2 field!"
+            exit 1
+          fi
+
+      - name: Check schematic and layout file title consistency
+        working-directory: ${{matrix.board}}
+        run: |
+          SCHEMATIC_TITLE=$(grep -o 'Title ".*"' ${{matrix.board}}.sch | sed -E 's/Title "(.*)"/\1/')
+          LAYOUT_TITLE=$(grep -o '(title ".*")' ${{matrix.board}}.kicad_pcb | sed -E 's/\(title "(.*)"\)/\1/')
+          if [ "$SCHEMATIC_TITLE" != "$LAYOUT_TITLE" ]; then
+            echo "The layout file's title doesn't match the schematic file's title!"
+            exit 1
+          fi
+
+      - name: Check schematic and layout file version number consistency
+        id: version
+        working-directory: ${{matrix.board}}
+        run: |
+          SCHEMATIC_VERSION=$(grep -o 'Rev .*' ${{matrix.board}}.sch | sed -E 's/Rev "(.*)"/\1/')
+          LAYOUT_VERSION=$(grep -o '(rev .*)' ${{matrix.board}}.kicad_pcb | sed -E 's/\(rev (.*)\)/\1/')
+          if [ "$SCHEMATIC_VERSION" != "$LAYOUT_VERSION" ]; then
+            echo "The layout file's version number doesn't match the schematic file's version number!"
+            exit 1
+          fi
+          echo "::set-output name=schematic::$(echo "SCHEMATIC_VERSION")"
+          echo "::set-output name=layout::$(echo "$LAYOUT_VERSION")"
+
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install inkscape
 
       - name: Export docs
         uses: nerdyscout/kicad-exports@v2.2
@@ -128,27 +220,25 @@ jobs:
           # Optional PCB design file
           board: ${{matrix.board}}/${{matrix.board}}.kicad_pcb
 
-      - name: Get layout version
-        id: version
-        run: |
-          REVISION=$(grep -o '(rev .*)' ${{matrix.board}}/${{matrix.board}}.kicad_pcb)
-          VERSION=$(echo $REVISION | sed -E 's/\(rev (.*)\)/\1/')
-          echo "::set-output name=layout::$(echo "$VERSION")"
-
       - name: Postprocess DRC report
         working-directory: ${{matrix.board}}/docs/
         run: |
           sudo mv drc_result.rpt "${{matrix.board}}${{steps.version.outputs.layout}}-drc.log"
           sudo mv ${{matrix.board}}.erc "${{matrix.board}}${{steps.version.outputs.layout}}-erc.log"
 
+      - name: Export schematic SVGs
+        working-directory: ${{matrix.board}}/docs/Schematics/Sheets
+        run: |
+          for FILE in *.svg; do
+            echo "Exporting ${FILE%.svg}"
+            sudo inkscape -z -d 300 "$FILE" -e "${FILE%.svg}.png"
+            sudo inkscape -z "$FILE" -A "${FILE%.svg}.pdf"
+          done
+
       - name: Copy README and LICENSEs
         run: |
           sudo cp LICENSE* ${{matrix.board}}/docs/
           sudo cp ${{matrix.board}}/README.md ${{matrix.board}}/docs/
-
-      - name: Get current date
-        id: date
-        run: echo "::set-output name=today::$(date +'%Y%m%d')"
 
       - name: Upload results
         uses: actions/upload-artifact@v2
