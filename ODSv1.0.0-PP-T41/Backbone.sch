@@ -416,6 +416,7 @@ F 4 "RC0603FR-071K2L" H 2600 6350 50  0001 C CNN "MPN"
 F 5 "Yageo" H 2600 6350 50  0001 C CNN "Manufacturer"
 F 6 "https://www.digikey.com/en/products/detail/yageo/RC0603FR-071K2L/726852" H 2600 6350 50  0001 C CNN "Ordering URL"
 F 7 "SMD" H 2600 6350 50  0001 C CNN "Type"
+F 8 "311-1.20KHRCT-ND" H 2600 6350 50  0001 C CNN "Digikey ID"
 	1    2600 6350
 	0    -1   1    0   
 $EndComp

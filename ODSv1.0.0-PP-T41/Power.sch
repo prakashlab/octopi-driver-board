@@ -125,8 +125,12 @@ P 3850 1850
 F 0 "R16" V 3800 2000 50  0000 L CNN
 F 1 "DNP" V 3850 1850 50  0000 C CNN
 F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 3780 1850 50  0001 C CNN
-F 3 "~" H 3850 1850 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/20043/crcwhpe3.pdf" H 3850 1850 50  0001 C CNN
 F 4 "SMD" H 3850 1850 50  0001 C CNN "Type"
+F 5 "541-0.0UBCT-ND" H 3850 1850 50  0001 C CNN "Digikey ID"
+F 6 "CRCW12060000Z0EAHP" H 3850 1850 50  0001 C CNN "MPN"
+F 7 "Vishay" H 3850 1850 50  0001 C CNN "Manufacturer"
+F 8 "https://www.digikey.com/en/products/detail/vishay-dale/CRCW12060000Z0EAHP/2222404" H 3850 1850 50  0001 C CNN "Ordering URL"
 	1    3850 1850
 	0    1    1    0   
 $EndComp
@@ -251,10 +255,11 @@ F 0 "R17" V 5850 1500 50  0000 R CNN
 F 1 "1.2k" V 5900 1650 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 5830 1650 50  0001 C CNN
 F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 5900 1650 50  0001 C CNN
-F 4 "RC0603FR-071KL" H 5900 1650 50  0001 C CNN "MPN"
+F 4 "RC0603FR-071K2L" H 5900 1650 50  0001 C CNN "MPN"
 F 5 "Yageo" H 5900 1650 50  0001 C CNN "Manufacturer"
-F 6 "https://www.digikey.com/en/products/detail/yageo/RC0603FR-071KL/726843" H 5900 1650 50  0001 C CNN "Ordering URL"
+F 6 "https://www.digikey.com/en/products/detail/yageo/RC0603FR-071K2L/726852" H 5900 1650 50  0001 C CNN "Ordering URL"
 F 7 "SMD" H 5900 1650 50  0001 C CNN "Type"
+F 8 "311-1.20KHRCT-ND" H 5900 1650 50  0001 C CNN "Digikey ID"
 	1    5900 1650
 	0    -1   1    0   
 $EndComp
@@ -291,6 +296,7 @@ F 4 "RC0603FR-071K2L" H 5900 1850 50  0001 C CNN "MPN"
 F 5 "Yageo" H 5900 1850 50  0001 C CNN "Manufacturer"
 F 6 "https://www.digikey.com/en/products/detail/yageo/RC0603FR-071K2L/726852" H 5900 1850 50  0001 C CNN "Ordering URL"
 F 7 "SMD" H 5900 1850 50  0001 C CNN "Type"
+F 8 "311-1.20KHRCT-ND" H 5900 1850 50  0001 C CNN "Digikey ID"
 	1    5900 1850
 	0    -1   1    0   
 $EndComp
