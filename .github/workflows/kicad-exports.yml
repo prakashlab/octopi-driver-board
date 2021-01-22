@@ -27,12 +27,12 @@ on:
 
 jobs:
   # Find changed boards
-  generate-matrix:
-    name: Generate matrix for exports
+  diff-boards:
+    name: Identify boards to re-export
     runs-on: ubuntu-20.04
     outputs:
-      matrix: ${{steps.set-matrix.outputs.matrix}}
-      numboards: ${{steps.set-matrix.outputs.numboards}}
+      boards: ${{steps.set-boards.outputs.boards}}
+      numboards: ${{steps.set-boards.outputs.numboards}}
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
@@ -62,12 +62,12 @@ jobs:
           # Escape newlines (replace \n with %0A)
           echo "::set-output name=diff::$( echo "$DIFF" | sed ':a;N;$!ba;s/\n/%0A/g' )"
 
-      - name: Set matrix for build
-        id: set-matrix
+      - name: Set boards for build
+        id: set-boards
         run: |
           # See https://stackoverflow.com/a/62953566/11948346
           DIFF="${{ steps.diff.outputs.diff }}"
-          JSON="{\"board\":["
+          JSON="["
           NUMBOARDS=0
 
           # Loop by lines
@@ -83,7 +83,7 @@ jobs:
               continue # Exclude .github directory
             fi
 
-            # Add build to the matrix only if it is not already included
+            # Add board only if it is not already included
             JSONline="\"$directory\","
             if [ "$JSON" != *"$JSONline"* ]; then
               JSON="$JSON$JSONline"
@@ -95,22 +95,23 @@ jobs:
           if [ $JSON == *, ]; then
             JSON="${JSON%?}"
           fi
-          JSON="$JSON]}"
+          JSON="$JSON]"
           echo $JSON
           echo $NUMBOARDS
 
           # Set output
-          echo "::set-output name=matrix::$( echo "$JSON" )"
+          echo "::set-output name=boards::$( echo "$JSON" )"
           echo "::set-output name=numboards::$( echo "$NUMBOARDS" )"
 
   # Export docs for changed boards
   export:
     name: Export docs for ${{matrix.board}}
-    needs: generate-matrix
+    needs: diff-boards
     runs-on: ubuntu-20.04
-    if: needs.generate-matrix.outputs.numboards > 0
+    if: needs.diff-boards.outputs.numboards > 0
     strategy:
-      matrix: ${{fromJson(needs.generate-matrix.outputs.matrix)}}
+      matrix:
+        board: ${{fromJson(needs.diff-boards.outputs.boards)}}
       fail-fast: false
 
     steps:
@@ -219,23 +220,17 @@ jobs:
           sed -i "s/netlist_file: '%f\/%f/netlist_file: '${{matrix.board}}\/$NETLIST_NAME/" ibom.kibot.yaml
           echo "::set-output name=name::$(echo "$NETLIST_NAME")"
 
-      - name: Build docs
-        uses: nerdyscout/kicad-exports@v2.2
+      - name: Build schematic docs
+        uses: INTI-CMNB/KiBot@v0.9.0
         with:
           # Required kibot config file
-          config: '.kibot/config/*.kibot.yaml'
+          config: .kibot/config/schematics.kibot.yaml
           # Optional prefix to output defined in config
           dir: ${{matrix.board}}/docs
           # Optional schematic file
           schema: ${{matrix.board}}/${{matrix.board}}.sch
           # Optional PCB design file
           board: ${{matrix.board}}/${{matrix.board}}.kicad_pcb
-
-      - name: Postprocess DRC & ERC reports
-        working-directory: ${{matrix.board}}/docs/
-        run: |
-          sudo mv drc_result.rpt "${{matrix.board}}${{steps.version.outputs.layout}}-drc.log"
-          sudo mv "${{matrix.board}}.erc" "${{matrix.board}}${{steps.version.outputs.layout}}-erc.log"
 
       - name: Make PNGs from schematic SVGs
         working-directory: ${{matrix.board}}/docs/Schematics/Images
@@ -251,6 +246,30 @@ jobs:
           sudo mkdir Sheets
           sudo pdfseparate "${{matrix.board}}${{steps.version.outputs.layout}}-schematic.pdf" "Sheets/%d.pdf"
 
+      - name: Build layout drawings
+        uses: INTI-CMNB/KiBot@v0.9.0
+        with:
+          # Required kibot config file
+          config: .kibot/config/layout_drawings.kibot.yaml
+          # Optional prefix to output defined in config
+          dir: ${{matrix.board}}/docs
+          # Optional schematic file
+          schema: ${{matrix.board}}/${{matrix.board}}.sch
+          # Optional PCB design file
+          board: ${{matrix.board}}/${{matrix.board}}.kicad_pcb
+
+      - name: Build layout renders
+        uses: INTI-CMNB/KiBot@v0.9.0
+        with:
+          # Required kibot config file
+          config: .kibot/config/layout_renders.kibot.yaml
+          # Optional prefix to output defined in config
+          dir: ${{matrix.board}}/docs
+          # Optional schematic file
+          schema: ${{matrix.board}}/${{matrix.board}}.sch
+          # Optional PCB design file
+          board: ${{matrix.board}}/${{matrix.board}}.kicad_pcb
+
       - name: Make PNGs from layout render SVGs
         working-directory: "${{matrix.board}}/docs/Layout Renders"
         run: |
@@ -260,11 +279,66 @@ jobs:
             sudo inkscape -z -d 300 "$FILE" -e "${FILE%.svg}.png"
           done
 
+      - name: Build BOMs
+        uses: INTI-CMNB/KiBot@v0.9.0
+        with:
+          # Required kibot config file
+          config: .kibot/config/boms.kibot.yaml
+          # Optional prefix to output defined in config
+          dir: ${{matrix.board}}/docs
+          # Optional schematic file
+          schema: ${{matrix.board}}/${{matrix.board}}.sch
+          # Optional PCB design file
+          board: ${{matrix.board}}/${{matrix.board}}.kicad_pcb
+
+      - name: Build interactive BOM
+        uses: INTI-CMNB/KiBot@v0.9.0
+        with:
+          # Required kibot config file
+          config: .kibot/config/ibom.kibot.yaml
+          # Optional prefix to output defined in config
+          dir: ${{matrix.board}}/docs
+          # Optional schematic file
+          schema: ${{matrix.board}}/${{matrix.board}}.sch
+          # Optional PCB design file
+          board: ${{matrix.board}}/${{matrix.board}}.kicad_pcb
+
       - name: Postprocess BOMs
         working-directory: ${{matrix.board}}
         run: |
           sudo rm "docs/${{matrix.board}}.csv"
           sudo cp "${{steps.netlist.outputs.name}}.xml" "docs/${{matrix.board}}${{steps.version.outputs.layout}}-net.xml"
+
+      - name: Build positions file
+        uses: INTI-CMNB/KiBot@v0.9.0
+        with:
+          # Required kibot config file
+          config: .kibot/config/positions.kibot.yaml
+          # Optional prefix to output defined in config
+          dir: ${{matrix.board}}/docs
+          # Optional schematic file
+          schema: ${{matrix.board}}/${{matrix.board}}.sch
+          # Optional PCB design file
+          board: ${{matrix.board}}/${{matrix.board}}.kicad_pcb
+
+       # Disabled until the next release, as v0.9.0 can't generate drill files correctly for PCBway
+#      - name: Build gerber files
+#        uses: INTI-CMNB/KiBot@v0.9.0
+#        with:
+#          # Required kibot config file
+#          config: .kibot/config/gerbers.kibot.yaml
+#          # Optional prefix to output defined in config
+#          dir: ${{matrix.board}}/docs
+#          # Optional schematic file
+#          schema: ${{matrix.board}}/${{matrix.board}}.sch
+#          # Optional PCB design file
+#          board: ${{matrix.board}}/${{matrix.board}}.kicad_pcb
+
+      - name: Postprocess ERC & DRC reports
+        working-directory: ${{matrix.board}}/docs/
+        run: |
+          sudo mv "${{matrix.board}}.erc" "${{matrix.board}}${{steps.version.outputs.layout}}-erc.log"
+          sudo mv drc_result.rpt "${{matrix.board}}${{steps.version.outputs.layout}}-drc.log"
 
       - name: Copy README and LICENSEs
         run: |
