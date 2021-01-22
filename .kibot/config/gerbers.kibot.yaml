@@ -5,7 +5,6 @@ global:
   output: '%f%r-%i.%x'
 
 preflight:
-  update_xml: false
   run_drc: true
   check_zone_fills: true
   ignore_unconnected: false

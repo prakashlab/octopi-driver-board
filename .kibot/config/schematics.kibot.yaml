@@ -6,7 +6,6 @@ global:
 
 preflight:
   run_erc: true
-  ignore_unconnected: false
 
 outputs:
   # For more information: https://github.com/INTI-CMNB/KiBoM

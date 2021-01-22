@@ -15,8 +15,8 @@ filters:
     keys: ['dnp', 'DNP']
 
 outputs:
-  - name: 'https://github.com/openscopeproject/InteractiveHtmlBom'
-    comment: 'ibom.html'
+  - name: 'bom-interactive-html'
+    comment: 'Generate interactive BOM (HTML)'
     type: 'ibom'
     dir: 'BOMs'
     options:

@@ -4,9 +4,6 @@ kibot:
 global:
   output: '%f%r-%i.%x'
 
-preflight:
-  update_xml: true
-
 filters:
   - name: 'exclude_dnp'
     type: 'generic'
@@ -49,7 +46,7 @@ outputs:
       # [boolean=false] Print grouped references in the alternate compressed style eg: R1-R7,R18
       use_alt: false
 
-  - name: 'https://github.com/SchrodingersGat/KiBoM'
+  - name: 'bom-fancy-html'
     comment: 'Generate fancy BOM (HTML)'
     type: 'bom'
     dir: 'BOMs'
