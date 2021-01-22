@@ -201,7 +201,7 @@ jobs:
             echo "The layout file's version number doesn't match the schematic file's version number!"
             exit 1
           fi
-          echo "::set-output name=schematic::$(echo "SCHEMATIC_VERSION")"
+          echo "::set-output name=schematic::$(echo "$SCHEMATIC_VERSION")"
           echo "::set-output name=layout::$(echo "$LAYOUT_VERSION")"
 
       - name: Install dependencies
@@ -210,46 +210,86 @@ jobs:
           sudo apt-get install inkscape
           sudo apt-get install poppler-utils
 
+      # Since KiCad's netlist filename for "ODSv1.0.0-PP-T41.sch" is "ODSv1.0.xml"
+      - name: Sanitize filenames for correct netlist filename
+        id: sanitize
+        run: |
+          BOARD_SANITIZED="$(echo "${{matrix.board}}" | sed 's/[.]/,/g')"
+          echo "::set-output name=board::$(echo "$BOARD_SANITIZED")"
+          sudo mv "${{matrix.board}}/${{matrix.board}}.pro" "${{matrix.board}}/$BOARD_SANITIZED.pro"
+          sudo mv "${{matrix.board}}/${{matrix.board}}.sch" "${{matrix.board}}/$BOARD_SANITIZED.sch"
+          sudo mv "${{matrix.board}}/${{matrix.board}}.kicad_pcb" "${{matrix.board}}/$BOARD_SANITIZED.kicad_pcb"
+          sudo mv "${{matrix.board}}" "$BOARD_SANITIZED"
+          
+      #  Since nerdyscout/kicad-exports@v2.2 doesn't use kibot v0.9.0 yet
+      - name: Preprocess ibom.kibot.yaml
+        working-directory: .kibot/config
+        run: |
+          sed "s/netlist_file: '%f\/%f/netlist_file: '${{steps.sanitize.outputs.board}}\/${{steps.sanitize.outputs.board}}/" -i ibom.kibot.yaml
+
       - name: Build docs
         uses: nerdyscout/kicad-exports@v2.2
         with:
           # Required kibot config file
           config: '.kibot/config/*.kibot.yaml'
           # Optional prefix to output defined in config
-          dir: ${{matrix.board}}/docs
+          dir: ${{steps.sanitize.outputs.board}}/docs
           # Optional schematic file
-          schema: ${{matrix.board}}/${{matrix.board}}.sch
+          schema: ${{steps.sanitize.outputs.board}}/${{steps.sanitize.outputs.board}}.sch
           # Optional PCB design file
-          board: ${{matrix.board}}/${{matrix.board}}.kicad_pcb
+          board: ${{steps.sanitize.outputs.board}}/${{steps.sanitize.outputs.board}}.kicad_pcb
 
-      - name: Postprocess DRC report
-        working-directory: ${{matrix.board}}/docs/
+      - name: Postprocess DRC & ERC reports
+        working-directory: ${{steps.sanitize.outputs.board}}/docs/
         run: |
           sudo mv drc_result.rpt "${{matrix.board}}${{steps.version.outputs.layout}}-drc.log"
-          sudo mv ${{matrix.board}}.erc "${{matrix.board}}${{steps.version.outputs.layout}}-erc.log"
+          sudo mv "${{steps.sanitize.outputs.board}}.erc" "${{matrix.board}}${{steps.version.outputs.layout}}-erc.log"
 
       - name: Make PNGs from schematic SVGs
-        working-directory: ${{matrix.board}}/docs/Schematics/Images
+        working-directory: ${{steps.sanitize.outputs.board}}/docs/Schematics/Images
         run: |
+          for FILE in *,*.svg; do
+            FILE_DESANITIZED="$(echo "$FILE" | sed 's/[,]/./g')"
+            sudo mv "$FILE" "$FILE_DESANITIZED"
+          done
           for FILE in *.svg; do
             echo "Exporting ${FILE%.svg}"
             sudo inkscape -z -d 300 -b white -y 1.0 "$FILE" -e "${FILE%.svg}.png"
           done
 
       - name: Split schematic PDF into sheets
-        working-directory: ${{matrix.board}}/docs/Schematics/
+        working-directory: ${{steps.sanitize.outputs.board}}/docs/Schematics/
         run: |
           sudo mkdir Sheets
+          sudo mv "${{steps.sanitize.outputs.board}}${{steps.version.outputs.layout}}-schematic.pdf" "${{matrix.board}}${{steps.version.outputs.layout}}-schematic.pdf"
           sudo pdfseparate "${{matrix.board}}${{steps.version.outputs.layout}}-schematic.pdf" "Sheets/%d.pdf"
 
       - name: Make PNGs from layout render SVGs
-        working-directory: "${{matrix.board}}/docs/Layout Renders"
+        working-directory: "${{steps.sanitize.outputs.board}}/docs/Layout Renders"
         run: |
           for FILE in *.svg; do
             echo "Exporting ${FILE%.svg}"
             sudo inkscape -z -D "$FILE" -l "$FILE"
             sudo inkscape -z -d 300 "$FILE" -e "${FILE%.svg}.png"
           done
+
+      - name: Postprocess BOMs
+        working-directory: ${{steps.sanitize.outputs.board}}
+        run: |
+          sudo rm "docs/${{steps.sanitize.outputs.board}}.csv"
+          sudo cp *.xml docs/
+
+      - name: Desanitize filenames
+        working-directory: ${{steps.sanitize.outputs.board}}/docs
+        run: |
+          for FILE in */"${{steps.sanitize.outputs.board}}"*; do
+            FILE_DESANITIZED="$(echo "$FILE" | sed 's/[,]/./g')"
+            sudo mv "$FILE" "$FILE_DESANITIZED"
+          done
+          
+      - name: Desanitize folder
+        run: |
+          sudo mv "${{steps.sanitize.outputs.board}}" "${{matrix.board}}"
 
       - name: Copy README and LICENSEs
         run: |
