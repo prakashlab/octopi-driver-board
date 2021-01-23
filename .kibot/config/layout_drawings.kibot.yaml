@@ -28,6 +28,7 @@ outputs:
       output: '%f%r%v-doc-top.%x'
       plot_sheet_reference: true # [boolean=true] include the title-block.
       scaling: 1.0
+      variant: 'Default'
 
   - name: 'layout-doc-bottom'
     comment: "Print bottom face docs (PDF)"
@@ -45,6 +46,7 @@ outputs:
       output: '%f%r%v-doc-bottom.%x'
       plot_sheet_reference: true # [boolean=true] include the title-block.
       scaling: 1.0
+      variant: 'Default'
 
   - name: 'layout-silk-top'
     comment: "Print top face silks (PDF)"
@@ -63,6 +65,7 @@ outputs:
       output: '%f%r%v-silk-top.%x'
       plot_sheet_reference: true # [boolean=true] include the title-block.
       scaling: 1.0
+      variant: 'Default'
 
   - name: 'layout-silk-bottom'
     comment: "Print bottom face silks (PDF)"
@@ -81,3 +84,4 @@ outputs:
       output: '%f%r%v-silk-bottom.%x'
       plot_sheet_reference: true # [boolean=true] include the title-block.
       scaling: 1.0
+      variant: 'Default'

@@ -14,3 +14,4 @@ outputs:
       output: '%f%r%v-pos.%x'
       separate_files_for_front_and_back: false
       units: 'millimeters'
+      variant: 'Default'

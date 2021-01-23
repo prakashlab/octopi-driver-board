@@ -27,6 +27,7 @@ outputs:
       use_protel_extensions: true
       disable_aperture_macros: true
       inner_extension_pattern: '.gl%N'
+      variant: 'Default'
     layers:
       - copper
       - F.SilkS

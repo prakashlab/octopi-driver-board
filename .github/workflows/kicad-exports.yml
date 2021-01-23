@@ -310,7 +310,7 @@ jobs:
         run: |
           for FILE in .kibot/config/*.kibot.yaml; do
             cat "${{matrix.board}}/variants.yml" >> $FILE
-            sed -i "s/  variant: 'Default'/  variant: '${{matrix.variant}}'/" $FILE
+            sed -i "s/variant: 'Default'/variant: '${{matrix.variant}}'/" $FILE
           done
 
       - name: Build schematic docs

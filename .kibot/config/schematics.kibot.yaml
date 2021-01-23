@@ -14,8 +14,12 @@ outputs:
     comment: "Print schematic (PDF)"
     type: pdf_sch_print
     dir: Schematics
+    options:
+      variant: 'Default'
 
   - name: 'schematic-svg'
     comment: "Print schematic (SVG)"
     type: svg_sch_print
     dir: Schematics/Images
+    options:
+      variant: 'Default'

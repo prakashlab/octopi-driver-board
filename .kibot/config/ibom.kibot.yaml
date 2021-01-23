@@ -24,3 +24,4 @@ outputs:
       netlist_file: '%f/%f.xml'
       output: '%f%r%v-%i.%x'
       show_fabrication: true
+      variant: 'Default'
