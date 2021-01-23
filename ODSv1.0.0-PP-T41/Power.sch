@@ -20,12 +20,12 @@ P 1200 1250
 F 0 "J6" H 1257 1567 50  0000 C CNN
 F 1 "Barrel_Jack_Switch" H 1257 1476 50  0000 C CNN
 F 2 "Connector_BarrelJack:BarrelJack_CUI_PJ-036AH-SMT_Horizontal" H 1250 1210 50  0001 C CNN
-F 3 "https://www.cuidevices.com/product/resource/digikeypdf/pj-037ah-smt-tr.pdf" H 1250 1210 50  0001 C CNN
-F 4 "PJ-037AH-SMT-TR" H 1200 1250 50  0001 C CNN "MPN"
+F 3 "https://www.cuidevices.com/product/resource/pj-036ah-smt-tr.pdf" H 1250 1210 50  0001 C CNN
+F 4 "PJ-036AH-SMT-TR" H 1200 1250 50  0001 C CNN "MPN"
 F 5 "CUI" H 1200 1250 50  0001 C CNN "Manufacturer"
-F 6 "https://www.digikey.com/en/products/detail/cui-devices/PJ-037AH-SMT-TR/1530998" H 1200 1250 50  0001 C CNN "Ordering URL"
+F 6 "https://www.digikey.com/en/products/detail/cui-devices/PJ-036AH-SMT-TR/1530971" H 1200 1250 50  0001 C CNN "Ordering URL"
 F 7 "SMD" H 1200 1250 50  0001 C CNN "Type"
-F 8 "CP-037AHPJCT-ND" H 1200 1250 50  0001 C CNN "Digikey ID"
+F 8 "CP-036AHPJCT-ND" H 1200 1250 50  0001 C CNN "Digikey ID"
 	1    1200 1250
 	1    0    0    -1  
 $EndComp

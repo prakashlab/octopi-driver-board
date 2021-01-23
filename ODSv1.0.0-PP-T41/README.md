@@ -43,7 +43,7 @@ This plane has the following mechanical stacking specifications:
 This plane has the following external connectors:
 
 - [Molex Ultra-Fit 2x4 Header](https://www.molex.com/molex/products/part-detail/pcb_headers/1723161108) for receiving power from a Pufferfish Power Board, at the left edge of the board.
-- [12 V DC Barrel Jack](https://www.digikey.com/en/products/detail/cui-devices/PJ-037AH-SMT-TR/1530998) for external power supply from a wall wart, at the left edge of the board. The dimensions of this barrel jack are the same as for the Arduino Uno.
+- [12 V DC Barrel Jack](https://www.digikey.com/en/products/detail/cui-devices/PJ-036AH-SMT-TR/1530971) for external power supply from a wall wart, at the left edge of the board. The dimensions of this barrel jack are the same as for the Arduino Uno.
 - A [10-pin Molex Pico-Lock Header](https://www.digikey.com/en/products/detail/molex/5040501091/4357650) and a [6-pin Molex Pico-Lock Header](https://www.digikey.com/en/products/detail/molex/5040500691/4357148) at the right edge of the board to interface with HB-Sm.
 
 This plane has the following backbone power interface:
