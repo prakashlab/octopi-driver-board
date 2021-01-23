@@ -1,0 +1,51 @@
+kibot:
+  version: 1
+
+preflight:
+  run_drc: true
+  check_zone_fills: true
+  ignore_unconnected: true
+
+outputs:
+  # For more information: https://github.com/INTI-CMNB/KiBoM
+  - name: 'layout-top-green-svg'
+    comment: 'Render top face as green PCB (SVG)'
+    type: 'pcbdraw'
+    dir: 'Layout Renders'
+    options:
+      format: 'svg'
+      output: '%f%r-board-green-%i.%x'
+      style: '/usr/share/pcbdraw/styles/jlcpcb-green-enig.json'
+      warnings: 'none'
+
+  - name: 'layout-bottom-green-svg'
+    comment: 'Render bottom face as green PCB (SVG)'
+    type: 'pcbdraw'
+    dir: 'Layout Renders'
+    options:
+      format: 'svg'
+      bottom: true
+      output: '%f%r-board-green-%i.%x'
+      style: '/usr/share/pcbdraw/styles/jlcpcb-green-enig.json'
+      warnings: 'none'
+
+  - name: 'layout-top-red-svg'
+    comment: 'Render top face as red PCB (SVG)'
+    type: 'pcbdraw'
+    dir: 'Layout Renders'
+    options:
+      format: 'svg'
+      output: '%f%r-board-red-%i.%x'
+      style: '/usr/share/pcbdraw/styles/set-red-enig.json'
+      warnings: 'none'
+
+  - name: 'layout-bottom-red-svg'
+    comment: 'Render bottom face as red PCB (SVG)'
+    type: 'pcbdraw'
+    dir: 'Layout Renders'
+    options:
+      format: 'svg'
+      bottom: true
+      output: '%f%r-board-red-%i.%x'
+      style: '/usr/share/pcbdraw/styles/set-red-enig.json'
+      warnings: 'none'

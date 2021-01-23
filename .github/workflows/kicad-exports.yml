@@ -1,0 +1,352 @@
+# Auto-generate exports for all KiCad projects
+
+name: KiCad Exports
+
+on:
+  push:
+    paths:
+      - '*-*/**.sch'
+      - '*-*/**.kicad_pcb'
+      - '*-*/README.md'
+      - '.github/workflows/kicad-exports.yml'
+      - '.kibot/**'
+  pull_request:
+    paths:
+      - '*-*/**.sch'
+      - '*-*/**.kicad_pcb'
+      - '*-*/README.md'
+      - '.github/workflows/kicad-exports.yml'
+      - '.kibot/**'
+  milestone:
+    types: [opened, deleted]
+  workflow_dispatch:
+    inputs:
+      git-ref:
+        description: 'Git ref (optional)'
+        required: false
+
+jobs:
+  # Find changed boards
+  diff-boards:
+    name: Identify boards to re-export
+    runs-on: ubuntu-20.04
+    outputs:
+      boards: ${{steps.set-boards.outputs.boards}}
+      numboards: ${{steps.set-boards.outputs.numboards}}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Check changed files
+        id: diff
+        run: |
+          # See https://github.community/t/check-pushed-file-changes-with-git-diff-tree-in-github-actions/17220/10
+          if [ $GITHUB_BASE_REF ]; then
+            # Pull Request
+            git fetch origin $GITHUB_BASE_REF --depth=1
+            export DIFF=$( git diff --name-only origin/$GITHUB_BASE_REF $GITHUB_SHA )
+            echo "Diff between origin/$GITHUB_BASE_REF and $GITHUB_SHA:"
+          else
+            # Push
+            git fetch origin ${{ github.event.before }} --depth=1
+            export DIFF=$( git diff --name-only ${{ github.event.before }} $GITHUB_SHA )
+            echo "Diff between ${{ github.event.before }} and $GITHUB_SHA:"
+          fi
+          echo "$DIFF"
+          # Treat all directories as changed if this workflow is changed
+          if echo "$DIFF" | grep -q '.github/workflows/kicad-exports.yml'; then
+            export DIFF=$( ls -d */ )
+          elif  echo "$DIFF" | grep -q '.kibot/config'; then
+            export DIFF=$( ls -d */ )
+          fi
+          # Escape newlines (replace \n with %0A)
+          echo "::set-output name=diff::$( echo "$DIFF" | sed ':a;N;$!ba;s/\n/%0A/g' )"
+
+      - name: Set boards for build
+        id: set-boards
+        run: |
+          # See https://stackoverflow.com/a/62953566/11948346
+          DIFF="${{ steps.diff.outputs.diff }}"
+          JSON="["
+          NUMBOARDS=0
+
+          # Loop by lines
+          while read path; do
+            # Set $directory to substring before /
+            directory="$( echo $path | cut -d'/' -f1 -s )"
+
+            if [ -z "$directory" ]; then
+              continue # Exclude root directory
+            elif [ "$directory" == Parts ]; then
+              continue # Exclude Parts directory
+            elif [ "$directory" == .github ]; then
+              continue # Exclude .github directory
+            fi
+
+            # Add board only if it is not already included
+            JSONline="\"$directory\","
+            if [ "$JSON" != *"$JSONline"* ]; then
+              JSON="$JSON$JSONline"
+              NUMBOARDS=$((NUMBOARDS+1))
+            fi
+          done <<< "$DIFF"
+
+          # Remove last "," and add closing brackets
+          if [ $JSON == *, ]; then
+            JSON="${JSON%?}"
+          fi
+          JSON="$JSON]"
+          echo $JSON
+          echo $NUMBOARDS
+
+          # Set output
+          echo "::set-output name=boards::$( echo "$JSON" )"
+          echo "::set-output name=numboards::$( echo "$NUMBOARDS" )"
+
+  # Export docs for changed boards
+  export:
+    name: Export docs for ${{matrix.board}}
+    needs: diff-boards
+    runs-on: ubuntu-20.04
+    if: needs.diff-boards.outputs.numboards > 0
+    strategy:
+      matrix:
+        board: ${{fromJson(needs.diff-boards.outputs.boards)}}
+      fail-fast: false
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Get current date
+        id: date
+        run: echo "::set-output name=today::$(date +'%Y%m%d')"
+
+      - name: Check schematic and layout file names
+        working-directory: ${{matrix.board}}
+        run: |
+          if [ ! -f "${{matrix.board}}.sch" ]; then
+            echo "Schematic file ${{matrix.board}}.sch doesn't exist!"
+            exit 1
+          fi
+          if [ ! -f "${{matrix.board}}.kicad_pcb" ]; then
+            echo "Layout file ${{matrix.board}}.kicad_pcb doesn't exist!"
+            exit 1
+          fi
+
+      - name: Check schematic file title consistency
+        working-directory: ${{matrix.board}}
+        run: |
+          if [ $(grep -h 'Title ".*"' *.sch | uniq -c | wc -l) != 1 ]; then
+            echo "Titles in schematic files aren't all the same!"
+            exit 1
+          fi
+
+      - name: Check schematic file version number consistency
+        working-directory: ${{matrix.board}}
+        run: |
+          if [ $(grep -h 'Rev ".*"' *.sch | uniq -c | wc -l) != 1 ]; then
+            echo "Version numbers in schematic files aren't all the same!"
+            exit 1
+          fi
+
+      - name: Check schematic file designer comment field
+        working-directory: ${{matrix.board}}
+        run: |
+          if [ $(grep -h 'Comment1 "Designer.*: ' *.sch | wc -l) != $(ls *.sch | wc -l) ]; then
+            echo "Not all schematic files have a valid designer or list of designers in the comment 1 field!"
+            exit 1
+          fi
+
+      - name: Check schematic file license comment field
+        working-directory: ${{matrix.board}}
+        run: |
+          if [ $(grep -h 'Comment2 "License.*: ' *.sch | wc -l) != $(ls *.sch | wc -l) ]; then
+            echo "Not all schematic files have a valid license or list of licenses in the comment 2 field!"
+            exit 1
+          fi
+
+      - name: Check layout file designer comment field
+        working-directory: ${{matrix.board}}
+        run: |
+          if grep -q '(comment 1 "Designer.*: .*")' ${{matrix.board}}/${{matrix.board}}.kicad_pcb; then
+            echo "The layout file does not have a valid designer or list of designers in the comment 1 field!"
+            exit 1
+          fi
+
+      - name: Check layout file license comment field
+        working-directory: ${{matrix.board}}
+        run: |
+          if grep -q '(comment 2 "License.*: .*")' ${{matrix.board}}/${{matrix.board}}.kicad_pcb; then
+            echo "The layout file does not have a valid license or list of licenses in the comment 2 field!"
+            exit 1
+          fi
+
+      - name: Check schematic and layout file title consistency
+        working-directory: ${{matrix.board}}
+        run: |
+          SCHEMATIC_TITLE=$(grep -o 'Title ".*"' ${{matrix.board}}.sch | sed -E 's/Title "(.*)"/\1/')
+          LAYOUT_TITLE=$(grep -o '(title ".*")' ${{matrix.board}}.kicad_pcb | sed -E 's/\(title "(.*)"\)/\1/')
+          if [ "$SCHEMATIC_TITLE" != "$LAYOUT_TITLE" ]; then
+            echo "The layout file's title doesn't match the schematic file's title!"
+            exit 1
+          fi
+
+      - name: Check schematic and layout file version number consistency
+        id: version
+        working-directory: ${{matrix.board}}
+        run: |
+          SCHEMATIC_VERSION=$(grep -o 'Rev .*' ${{matrix.board}}.sch | sed -E 's/Rev "(.*)"/\1/')
+          LAYOUT_VERSION=$(grep -o '(rev .*)' ${{matrix.board}}.kicad_pcb | sed -E 's/\(rev (.*)\)/\1/')
+          if [ "$SCHEMATIC_VERSION" != "$LAYOUT_VERSION" ]; then
+            echo "The layout file's version number doesn't match the schematic file's version number!"
+            exit 1
+          fi
+          echo "::set-output name=schematic::$(echo "$SCHEMATIC_VERSION")"
+          echo "::set-output name=layout::$(echo "$LAYOUT_VERSION")"
+
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install inkscape
+          sudo apt-get install poppler-utils
+          
+      #  Since KiCad incorrectly makes a netlist file "ODSv1.0.xml" for "ODSv1.0.0-PP-T41.sch"
+      - name: Preprocess ibom.kibot.yaml
+        id: netlist
+        working-directory: .kibot/config
+        run: |
+          NETLIST_NAME="$(echo "${{matrix.board}}" | cut -f1,2 -d'.')"
+          sed -i "s/netlist_file: '%f\/%f/netlist_file: '${{matrix.board}}\/$NETLIST_NAME/" ibom.kibot.yaml
+          echo "::set-output name=name::$(echo "$NETLIST_NAME")"
+
+      - name: Build schematic docs
+        uses: INTI-CMNB/KiBot@v0.9.0
+        with:
+          # Required kibot config file
+          config: .kibot/config/schematics.kibot.yaml
+          # Optional prefix to output defined in config
+          dir: ${{matrix.board}}/docs
+          # Optional schematic file
+          schema: ${{matrix.board}}/${{matrix.board}}.sch
+          # Optional PCB design file
+          board: ${{matrix.board}}/${{matrix.board}}.kicad_pcb
+
+      - name: Make PNGs from schematic SVGs
+        working-directory: ${{matrix.board}}/docs/Schematics/Images
+        run: |
+          for FILE in *.svg; do
+            echo "Exporting ${FILE%.svg}"
+            sudo inkscape -z -d 300 -b white -y 1.0 "$FILE" -e "${FILE%.svg}.png"
+          done
+
+      - name: Split schematic PDF into sheets
+        working-directory: ${{matrix.board}}/docs/Schematics/
+        run: |
+          sudo mkdir Sheets
+          sudo pdfseparate "${{matrix.board}}${{steps.version.outputs.layout}}-schematic.pdf" "Sheets/%d.pdf"
+
+      - name: Build layout drawings
+        uses: INTI-CMNB/KiBot@v0.9.0
+        with:
+          # Required kibot config file
+          config: .kibot/config/layout_drawings.kibot.yaml
+          # Optional prefix to output defined in config
+          dir: ${{matrix.board}}/docs
+          # Optional schematic file
+          schema: ${{matrix.board}}/${{matrix.board}}.sch
+          # Optional PCB design file
+          board: ${{matrix.board}}/${{matrix.board}}.kicad_pcb
+
+      - name: Build layout renders
+        uses: INTI-CMNB/KiBot@v0.9.0
+        with:
+          # Required kibot config file
+          config: .kibot/config/layout_renders.kibot.yaml
+          # Optional prefix to output defined in config
+          dir: ${{matrix.board}}/docs
+          # Optional schematic file
+          schema: ${{matrix.board}}/${{matrix.board}}.sch
+          # Optional PCB design file
+          board: ${{matrix.board}}/${{matrix.board}}.kicad_pcb
+
+      - name: Make PNGs from layout render SVGs
+        working-directory: "${{matrix.board}}/docs/Layout Renders"
+        run: |
+          for FILE in *.svg; do
+            echo "Exporting ${FILE%.svg}"
+            sudo inkscape -z -D "$FILE" -l "$FILE"
+            sudo inkscape -z -d 300 "$FILE" -e "${FILE%.svg}.png"
+          done
+
+      - name: Build BOMs
+        uses: INTI-CMNB/KiBot@v0.9.0
+        with:
+          # Required kibot config file
+          config: .kibot/config/boms.kibot.yaml
+          # Optional prefix to output defined in config
+          dir: ${{matrix.board}}/docs
+          # Optional schematic file
+          schema: ${{matrix.board}}/${{matrix.board}}.sch
+          # Optional PCB design file
+          board: ${{matrix.board}}/${{matrix.board}}.kicad_pcb
+
+      - name: Build interactive BOM
+        uses: INTI-CMNB/KiBot@v0.9.0
+        with:
+          # Required kibot config file
+          config: .kibot/config/ibom.kibot.yaml
+          # Optional prefix to output defined in config
+          dir: ${{matrix.board}}/docs
+          # Optional schematic file
+          schema: ${{matrix.board}}/${{matrix.board}}.sch
+          # Optional PCB design file
+          board: ${{matrix.board}}/${{matrix.board}}.kicad_pcb
+
+      - name: Postprocess BOMs
+        working-directory: ${{matrix.board}}
+        run: |
+          sudo rm "docs/${{matrix.board}}.csv"
+          sudo cp "${{steps.netlist.outputs.name}}.xml" "docs/${{matrix.board}}${{steps.version.outputs.layout}}-net.xml"
+
+      - name: Build positions file
+        uses: INTI-CMNB/KiBot@v0.9.0
+        with:
+          # Required kibot config file
+          config: .kibot/config/positions.kibot.yaml
+          # Optional prefix to output defined in config
+          dir: ${{matrix.board}}/docs
+          # Optional schematic file
+          schema: ${{matrix.board}}/${{matrix.board}}.sch
+          # Optional PCB design file
+          board: ${{matrix.board}}/${{matrix.board}}.kicad_pcb
+
+       # Disabled until the next release, as v0.9.0 can't generate drill files correctly for PCBway
+#      - name: Build gerber files
+#        uses: INTI-CMNB/KiBot@v0.9.0
+#        with:
+#          # Required kibot config file
+#          config: .kibot/config/gerbers.kibot.yaml
+#          # Optional prefix to output defined in config
+#          dir: ${{matrix.board}}/docs
+#          # Optional schematic file
+#          schema: ${{matrix.board}}/${{matrix.board}}.sch
+#          # Optional PCB design file
+#          board: ${{matrix.board}}/${{matrix.board}}.kicad_pcb
+
+      - name: Postprocess ERC & DRC reports
+        working-directory: ${{matrix.board}}/docs/
+        run: |
+          sudo mv "${{matrix.board}}.erc" "${{matrix.board}}${{steps.version.outputs.layout}}-erc.log"
+          sudo mv drc_result.rpt "${{matrix.board}}${{steps.version.outputs.layout}}-drc.log"
+
+      - name: Copy README and LICENSEs
+        run: |
+          sudo cp LICENSE* ${{matrix.board}}/docs/
+          sudo cp ${{matrix.board}}/README.md ${{matrix.board}}/docs/
+
+      - name: Upload results
+        uses: actions/upload-artifact@v2
+        with:
+          name: ${{matrix.board}}${{steps.version.outputs.layout}}-docs-rev${{steps.date.outputs.today}}
+          path: ${{matrix.board}}/docs

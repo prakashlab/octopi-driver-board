@@ -1,5 +1,0 @@
-BOM ID,Component ID,Image,Component Name,Manufacturer,Manufacturer Part #,Supplier,Supplier Part #,Supplier Link,Supplier Description,ShenZhen OPL MPN,Mounting Type,Quantity,Designator,Notes
-1,36,,HMI Board v0.2.0,Seeed Studio,,Octopi Team,ODS-HMIv0.2.0,https://github.com/ethanjli/octopi-driver-board/tree/ODS-HMIv0.2.0/Stacked v0.2.0/HMI%20Board,HMI Board v0.2.0,,Fastener,1,,
-6,39,,Phoenix 1x3 Shrouded SSL Header,Phoenix Contact,1778706,Digi-Key,277-10159-1-ND,https://www.digikey.com.mx/en/products/detail/phoenix-contact/1778706/5131541,HEADER 3POS SMT WHITE,,SMT,1,U3,
-5,38,,Rotary Potentiometer,Bourns,PCW1J-C24-BAB103L,Digi-Key,PCW1J-C24-BAB103L-ND,https://www.digikey.com/en/products/detail/bourns-inc/PCW1J-C24-BAB103L/3534177,POT 10K OHM 3/4W PLASTIC LINEAR,,PTH,2,"U1,U2",
-10,43,,1x3 Female SMT Header,Sullins Connector Solutions,PPPC031LFBN-RC,Digi-Key,S7036-ND,https://www.digikey.com/en/products/detail/sullins-connector-solutions/PPPC031LFBN-RC/810175,CONN HDR 3POS 0.1 GOLD PCB,,SMT,,,

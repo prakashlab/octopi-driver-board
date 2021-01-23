@@ -1,0 +1,65 @@
+kibot:
+  version: 1
+
+global:
+  output: '%f%r-%i.%x'
+
+filters:
+  - name: 'exclude_dnp'
+    type: 'generic'
+    comment: 'Exclude components with value DNP'
+    exclude_value: true
+    keys: ['dnp', 'DNP']
+
+outputs:
+  - name: 'bom-assembly-csv'
+    comment: 'Generate assembly BOM (CSV)'
+    type: 'bom'
+    dir: 'Assembly'
+    options:
+      format: 'CSV'
+      csv:
+        hide_pcb_info: true
+        hide_stats_info: true
+      number: 1
+      output: '%f%r-%i.%x'
+      dnf_filter: 'exclude_dnp'
+      fit_field: 'Value'
+      # [boolean=false] Print grouped references in the alternate compressed style eg: R1-R7,R18
+      use_alt: false
+
+  - name: 'bom-fancy-xlsx'
+    comment: 'Generate fancy BOM (XLSX)'
+    type: 'bom'
+    dir: 'BOMs'
+    options:
+      format: 'XLSX'
+      xlsx:
+        datasheet_as_link: Datasheet
+        digikey_link: Ordering URL
+        title: Bill of Materials
+        logo: false
+      number: 1
+      output: '%f%r-%i.%x'
+      dnf_filter: 'exclude_dnp'
+      fit_field: 'Value'
+      # [boolean=false] Print grouped references in the alternate compressed style eg: R1-R7,R18
+      use_alt: false
+
+  - name: 'bom-fancy-html'
+    comment: 'Generate fancy BOM (HTML)'
+    type: 'bom'
+    dir: 'BOMs'
+    options:
+      format: 'HTML'
+      html:
+        datasheet_as_link: Datasheet
+        digikey_link: Ordering URL
+        title: Bill of Materials
+        logo: false
+      number: 1
+      output: '%f%r-%i.%x'
+      dnf_filter: 'exclude_dnp'
+      fit_field: 'Value'
+      # [boolean=false] Print grouped references in the alternate compressed style eg: R1-R7,R18
+      use_alt: false

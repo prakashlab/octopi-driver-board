@@ -1,0 +1,33 @@
+kibot:
+  version: 1
+
+global:
+  output: '%f%r-%i.%x'
+
+preflight:
+  update_xml: true
+
+filters:
+  - name: 'exclude_dnp'
+    type: 'generic'
+    comment: 'Exclude components with value DNP'
+    exclude_value: true
+    keys: ['dnp', 'DNP']
+
+outputs:
+  - name: 'bom-interactive-html'
+    comment: 'Generate interactive BOM (HTML)'
+    type: 'ibom'
+    dir: 'BOMs'
+    options:
+      checkboxes: 'Sourced,Placed'
+      dnf_filter: 'exclude_dnp'
+      # [string=''] Comma separated list of extra fields to pull from netlist or xml file
+      extra_fields: 'MPN,Assembly Notes'
+      highlight_pin1: true
+      include_nets: true
+      include_tracks: true
+      layer_view: 'FB'
+      netlist_file: '%f/%f.xml'
+      output: '%f%r-%i.%x'
+      show_fabrication: true

@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name Backbone_Connector_Generic)(type Legacy)(uri ${KIPRJMOD}/../Parts/Connectors/Backbone_Connector_Generic.lib)(options "")(descr ""))
+  (lib (name Octopi)(type Legacy)(uri ${KIPRJMOD}/../Parts/Octopi.lib)(options "")(descr ""))
+)
