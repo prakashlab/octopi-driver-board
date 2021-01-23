@@ -1,6 +1,9 @@
 kibot:
   version: 1
 
+global:
+  variant: 'Default'
+
 preflight:
   run_drc: true
   check_zone_fills: true

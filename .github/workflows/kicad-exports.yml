@@ -25,11 +25,14 @@ on:
       boards:
         description: 'Boards (optional)'
         required: false
+      variants:
+        description: 'Variants (optional)'
+        required: false
 
 jobs:
   # Find changed boards
-  diff-boards:
-    name: Identify boards to re-export
+  specify-boards:
+    name: Specify boards to re-export
     runs-on: ubuntu-20.04
     outputs:
       boards: ${{steps.set-boards.outputs.boards}}
@@ -120,15 +123,37 @@ jobs:
           echo "::set-output name=boards::$( echo "$JSON" )"
           echo "::set-output name=numboards::$( echo "$NUMBOARDS" )"
 
+  specify-variants:
+    name: Specify variants to re-export
+    runs-on: ubuntu-20.04
+    outputs:
+      variants: ${{steps.set-variants.outputs.variants}}
+    steps:
+      - name: Set variants for build
+        id: set-variants
+        run: |
+          if [ -n "${{github.event.inputs.variants}}" ]; then
+            VARIANTS=$(echo "${{github.event.inputs.variants}}" | tr " " "\n" | sed -r 's/(^|$)/"/g' | paste -sd "," -)
+            export JSON="[$VARIANTS]"
+            echo "Manually selected variants:"
+          else
+            export JSON='["Default"]'
+          fi
+          echo "$JSON"
+          echo "::set-output name=variants::$( echo "$JSON" )"
+
   # Export docs for changed boards
   export:
-    name: Export docs for ${{matrix.board}}
-    needs: diff-boards
+    name: Export docs for ${{matrix.board}} ${{matrix.variant}} variant
+    needs:
+      - specify-boards
+      - specify-variants
     runs-on: ubuntu-20.04
-    if: needs.diff-boards.outputs.numboards > 0
+    if: needs.specify-boards.outputs.numboards > 0
     strategy:
       matrix:
-        board: ${{fromJson(needs.diff-boards.outputs.boards)}}
+        board: ${{fromJson(needs.specify-boards.outputs.boards)}}
+        variant: ${{fromJson(needs.specify-variants.outputs.variants)}}
       fail-fast: false
 
     steps:
@@ -241,15 +266,13 @@ jobs:
           sudo apt-get update
           sudo apt-get install inkscape
           sudo apt-get install poppler-utils
-          
-      #  Since KiCad incorrectly makes a netlist file "ODSv1.0.xml" for "ODSv1.0.0-PP-T41.sch"
-      - name: Preprocess ibom.kibot.yaml
-        id: netlist
-        working-directory: .kibot/config
+
+      - name: Preprocess kibot configs for variants
         run: |
-          NETLIST_NAME="$(echo "${{matrix.board}}" | cut -f1,2 -d'.')"
-          sed -i "s/netlist_file: '%f\/%f/netlist_file: '${{matrix.board}}\/$NETLIST_NAME/" ibom.kibot.yaml
-          echo "::set-output name=name::$(echo "$NETLIST_NAME")"
+          for FILE in .kibot/config/*.kibot.yaml; do
+            cat "${{matrix.board}}/variants.yml" >> "$FILE"
+            sed -i "s/  variant: '(Default)'/  variant: '${{matrix.variant}}'/" "$FILE"
+          done
 
       - name: Build schematic docs
         uses: INTI-CMNB/KiBot@v0.9.0
@@ -321,6 +344,15 @@ jobs:
           schema: ${{matrix.board}}/${{matrix.board}}.sch
           # Optional PCB design file
           board: ${{matrix.board}}/${{matrix.board}}.kicad_pcb
+
+      #  Since KiCad incorrectly makes a netlist file "ODSv1.0.xml" for "ODSv1.0.0-PP-T41.sch"
+      - name: Preprocess interactive BOM config for XML filename
+        id: netlist
+        working-directory: .kibot/config
+        run: |
+          NETLIST_NAME="$(echo "${{matrix.board}}" | cut -f1,2 -d'.')"
+          sed -i "s/netlist_file: '%f\/%f/netlist_file: '${{matrix.board}}\/$NETLIST_NAME/" ibom.kibot.yaml
+          echo "::set-output name=name::$(echo "$NETLIST_NAME")"
 
       - name: Build interactive BOM
         uses: INTI-CMNB/KiBot@v0.9.0

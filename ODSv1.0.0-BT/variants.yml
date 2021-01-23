@@ -1,0 +1,4 @@
+variants:
+  - name: 'Default'
+    comment: 'Fully populated PCB configured for default DSCS setting'
+    type: kibom

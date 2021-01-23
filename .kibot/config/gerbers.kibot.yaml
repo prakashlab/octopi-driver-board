@@ -3,6 +3,7 @@ kibot:
 
 global:
   output: '%f%r-%i.%x'
+  variant: 'Default'
 
 preflight:
   run_drc: true

@@ -3,13 +3,7 @@ kibot:
 
 global:
   output: '%f%r-%i.%x'
-
-filters:
-  - name: 'exclude_dnp'
-    type: 'generic'
-    comment: 'Exclude components with value DNP'
-    exclude_value: true
-    keys: ['dnp', 'DNP']
+  variant: 'Default'
 
 outputs:
   - name: 'bom-assembly-csv'
@@ -23,7 +17,6 @@ outputs:
         hide_stats_info: true
       number: 1
       output: '%f%r-%i.%x'
-      dnf_filter: 'exclude_dnp'
       fit_field: 'Value'
       # [boolean=false] Print grouped references in the alternate compressed style eg: R1-R7,R18
       use_alt: false
@@ -41,7 +34,6 @@ outputs:
         logo: false
       number: 1
       output: '%f%r-%i.%x'
-      dnf_filter: 'exclude_dnp'
       fit_field: 'Value'
       # [boolean=false] Print grouped references in the alternate compressed style eg: R1-R7,R18
       use_alt: false
@@ -59,7 +51,6 @@ outputs:
         logo: false
       number: 1
       output: '%f%r-%i.%x'
-      dnf_filter: 'exclude_dnp'
       fit_field: 'Value'
       # [boolean=false] Print grouped references in the alternate compressed style eg: R1-R7,R18
       use_alt: false

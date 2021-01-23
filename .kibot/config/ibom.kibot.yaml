@@ -3,16 +3,10 @@ kibot:
 
 global:
   output: '%f%r-%i.%x'
+  variant: 'Default'
 
 preflight:
   update_xml: true
-
-filters:
-  - name: 'exclude_dnp'
-    type: 'generic'
-    comment: 'Exclude components with value DNP'
-    exclude_value: true
-    keys: ['dnp', 'DNP']
 
 outputs:
   - name: 'bom-interactive-html'
@@ -21,7 +15,6 @@ outputs:
     dir: 'BOMs'
     options:
       checkboxes: 'Sourced,Placed'
-      dnf_filter: 'exclude_dnp'
       # [string=''] Comma separated list of extra fields to pull from netlist or xml file
       extra_fields: 'MPN,Assembly Notes'
       highlight_pin1: true

@@ -65,6 +65,27 @@ Templates are provided as starters to copy for creating new boards. For more inf
 
 All footprints, documentation, CAD models, and KiCad libraries for components and daughter boards used with the ODSv1.0.0 boards are available in the `Parts` directory.
 
+### Releases
+
+Snapshots of boards for fabrication/assembly are tagged and associated with releases. Each release comes with the following attachments:
+
+- The schematic diagram (`*-schematic.pdf`)
+- A drawing of the footprints and silkscreens on the top face of the board (`*-silk-top.pdf`)
+- A 2-D rendering of the top face of the board, including copper and silkscreens (`*-board-*-top.png`)
+- Gerber and drill files for fabricating the board with PCBway (`*-gerb.zip`)
+- A complete archive of all diagrams, drawings, renderings, and fabrication and assembly files for the board (`*-docs-rev*.zip`)
+
+### Automated Exports
+
+The assets attached with releases are automatically generated from a Github Actions workflow in this repository. This workflow is automatically run for commits in all pull requests and for any pushed commit.
+
+The workflow can also be manually triggered from the [KiCad Exports](https://github.com/prakashlab/octopi-driver-board/actions?query=workflow%3A%22KiCad+Exports%22) page, with the following parameters:
+
+- Branch: Use this to specify which branch to use for the workflow.
+- Git ref: Use this to specify which commit of the design files to export. If you leave it blank, it will do an export from the most recent commit on the selected branch. If you give it a tag name or commit SHA hash, the workflow will export files from the corresponding commit.
+- Boards: Use this to specify which boards to export. If you leave it blank, it will export all boards. If you want to export multiple boards, separate their names with spaces (e.g. `ODSv1.0.0-PP-T41 ODSv1.0.0-CP-5x`).
+- Variants: Use this to specify which variants of each board to export. If you leave it blank, it will export only the default variant of all specified boards. You should only use this field if you have specified exactly one board to export; otherwise, leave it blank. If you want to export multiple variants, separate them with spaces (e.g. `Default Pufferfish`).
+
 ## Maintainers
 
 Currently the maintainer of this repository is [Ethan Li](https://github.com/ethanjli).
