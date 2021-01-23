@@ -146,6 +146,13 @@ jobs:
         id: date
         run: echo "::set-output name=today::$(date +'%Y%m%d')"
 
+      - name: Check directory name
+        run: |
+          if [ ! -d "${{matrix.board}}" ]; then
+            echo "Directory ${{matrix.board}} doesn't exist!"
+            exit 1
+          fi
+
       - name: Check schematic and layout file names
         working-directory: ${{matrix.board}}
         run: |
