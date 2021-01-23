@@ -17,8 +17,6 @@ on:
       - '*-*/README.md'
       - '.github/workflows/kicad-exports.yml'
       - '.kibot/**'
-  milestone:
-    types: [opened, deleted]
   workflow_dispatch:
     inputs:
       git-ref:
@@ -40,17 +38,23 @@ jobs:
       - name: Check changed files
         id: diff
         run: |
+          echo "Event:"
+          echo "${{toJson(github.event)}}"
+          echo
           # See https://github.community/t/check-pushed-file-changes-with-git-diff-tree-in-github-actions/17220/10
           if [ $GITHUB_BASE_REF ]; then
             # Pull Request
             git fetch origin $GITHUB_BASE_REF --depth=1
             export DIFF=$( git diff --name-only origin/$GITHUB_BASE_REF $GITHUB_SHA )
             echo "Diff between origin/$GITHUB_BASE_REF and $GITHUB_SHA:"
-          else
+          elif [ ${{github.event.before}} != "0000000000000000000000000000000000000000" ]; then
             # Push
             git fetch origin ${{ github.event.before }} --depth=1
             export DIFF=$( git diff --name-only ${{ github.event.before }} $GITHUB_SHA )
             echo "Diff between ${{ github.event.before }} and $GITHUB_SHA:"
+          else
+            # Manual
+            export DIFF=$( ls -d */ )
           fi
           echo "$DIFF"
           # Treat all directories as changed if this workflow is changed
