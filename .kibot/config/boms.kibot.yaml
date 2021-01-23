@@ -2,7 +2,7 @@ kibot:
   version: 1
 
 global:
-  output: '%f%r-%i.%x'
+  output: '%f%r%v-%i.%x'
   variant: 'Default'
 
 outputs:
@@ -16,7 +16,7 @@ outputs:
         hide_pcb_info: true
         hide_stats_info: true
       number: 1
-      output: '%f%r-%i.%x'
+      output: '%f%r%v-%i.%x'
       fit_field: 'Value'
       # [boolean=false] Print grouped references in the alternate compressed style eg: R1-R7,R18
       use_alt: false
@@ -33,7 +33,7 @@ outputs:
         title: Bill of Materials
         logo: false
       number: 1
-      output: '%f%r-%i.%x'
+      output: '%f%r%v-%i.%x'
       fit_field: 'Value'
       # [boolean=false] Print grouped references in the alternate compressed style eg: R1-R7,R18
       use_alt: false
@@ -50,7 +50,7 @@ outputs:
         title: Bill of Materials
         logo: false
       number: 1
-      output: '%f%r-%i.%x'
+      output: '%f%r%v-%i.%x'
       fit_field: 'Value'
       # [boolean=false] Print grouped references in the alternate compressed style eg: R1-R7,R18
       use_alt: false

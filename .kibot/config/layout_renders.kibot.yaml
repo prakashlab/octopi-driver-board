@@ -17,7 +17,7 @@ outputs:
     dir: 'Layout Renders'
     options:
       format: 'svg'
-      output: '%f%r-board-green-%i.%x'
+      output: '%f%r%v-board-green-%i.%x'
       style: '/usr/share/pcbdraw/styles/jlcpcb-green-enig.json'
       warnings: 'none'
 
@@ -28,7 +28,7 @@ outputs:
     options:
       format: 'svg'
       bottom: true
-      output: '%f%r-board-green-%i.%x'
+      output: '%f%r%v-board-green-%i.%x'
       style: '/usr/share/pcbdraw/styles/jlcpcb-green-enig.json'
       warnings: 'none'
 
@@ -38,7 +38,7 @@ outputs:
     dir: 'Layout Renders'
     options:
       format: 'svg'
-      output: '%f%r-board-red-%i.%x'
+      output: '%f%r%v-board-red-%i.%x'
       style: '/usr/share/pcbdraw/styles/set-red-enig.json'
       warnings: 'none'
 
@@ -49,6 +49,6 @@ outputs:
     options:
       format: 'svg'
       bottom: true
-      output: '%f%r-board-red-%i.%x'
+      output: '%f%r%v-board-red-%i.%x'
       style: '/usr/share/pcbdraw/styles/set-red-enig.json'
       warnings: 'none'

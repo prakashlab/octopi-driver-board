@@ -11,6 +11,6 @@ outputs:
     dir: 'Assembly'
     options:
       format: 'CSV'
-      output: '%f%r-pos.%x'
+      output: '%f%r%v-pos.%x'
       separate_files_for_front_and_back: false
       units: 'millimeters'

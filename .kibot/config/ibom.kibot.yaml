@@ -2,7 +2,7 @@ kibot:
   version: 1
 
 global:
-  output: '%f%r-%i.%x'
+  output: '%f%r%v-%i.%x'
   variant: 'Default'
 
 preflight:
@@ -22,5 +22,5 @@ outputs:
       include_tracks: true
       layer_view: 'FB'
       netlist_file: '%f/%f.xml'
-      output: '%f%r-%i.%x'
+      output: '%f%r%v-%i.%x'
       show_fabrication: true

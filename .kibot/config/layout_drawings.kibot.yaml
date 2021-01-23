@@ -2,7 +2,7 @@ kibot:
   version: 1
 
 global:
-  output: '%f%r-%i.%x'
+  output: '%f%r%v-%i.%x'
   variant: 'Default'
 
 preflight:
@@ -25,7 +25,7 @@ outputs:
       - F.Fab
     dir: "Layout Drawings"
     options:
-      output: '%f%r-doc-top.%x'
+      output: '%f%r%v-doc-top.%x'
       plot_sheet_reference: true # [boolean=true] include the title-block.
       scaling: 1.0
 
@@ -42,7 +42,7 @@ outputs:
       - B.Fab
     dir: "Layout Drawings"
     options:
-      output: '%f%r-doc-bottom.%x'
+      output: '%f%r%v-doc-bottom.%x'
       plot_sheet_reference: true # [boolean=true] include the title-block.
       scaling: 1.0
 
@@ -60,7 +60,7 @@ outputs:
       - F.Mask
     dir: "Layout Drawings"
     options:
-      output: '%f%r-silk-top.%x'
+      output: '%f%r%v-silk-top.%x'
       plot_sheet_reference: true # [boolean=true] include the title-block.
       scaling: 1.0
 
@@ -78,6 +78,6 @@ outputs:
       - B.Mask
     dir: "Layout Drawings"
     options:
-      output: '%f%r-silk-bottom.%x'
+      output: '%f%r%v-silk-bottom.%x'
       plot_sheet_reference: true # [boolean=true] include the title-block.
       scaling: 1.0

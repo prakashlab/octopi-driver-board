@@ -2,7 +2,7 @@ kibot:
   version: 1
 
 global:
-  output: '%f%r-%i.%x'
+  output: '%f%r%v-%i.%x'
   variant: 'Default'
 
 preflight:
