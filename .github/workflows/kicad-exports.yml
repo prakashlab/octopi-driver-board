@@ -107,7 +107,7 @@ jobs:
 
             # Add board only if it is not already included
             JSONline="\"$directory\","
-            if [ "$JSON" != *"$JSONline"* ]; then
+            if [[ "$JSON" != *"$JSONline"* ]]; then
               JSON="$JSON$JSONline"
               NUMBOARDS=$((NUMBOARDS+1))
             fi
