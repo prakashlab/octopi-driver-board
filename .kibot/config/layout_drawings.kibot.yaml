@@ -62,7 +62,7 @@ outputs:
       - F.Mask
     dir: "Layout Drawings"
     options:
-      output: '%f%r%v-silk-top.%x'
+      output: '%f%r-silk-top.%x'
       plot_sheet_reference: true # [boolean=true] include the title-block.
       scaling: 1.0
       variant: 'Default'
@@ -81,7 +81,7 @@ outputs:
       - B.Mask
     dir: "Layout Drawings"
     options:
-      output: '%f%r%v-silk-bottom.%x'
+      output: '%f%r-silk-bottom.%x'
       plot_sheet_reference: true # [boolean=true] include the title-block.
       scaling: 1.0
       variant: 'Default'

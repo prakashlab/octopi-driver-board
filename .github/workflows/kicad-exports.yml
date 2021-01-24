@@ -409,7 +409,7 @@ jobs:
         working-directory: ${{matrix.board}}
         run: |
           sudo rm "docs/${{matrix.board}}.csv"
-          sudo cp "${{steps.netlist.outputs.name}}.xml" "docs/${{matrix.board}}${{steps.version.outputs.layout}}${{steps.variant.outputs.fileid}}-net.xml"
+          sudo cp "${{steps.netlist.outputs.name}}.xml" "docs/${{matrix.board}}${{steps.version.outputs.layout}}-net.xml"
 
       - name: Build positions file
         uses: INTI-CMNB/KiBot@v0.9.0
@@ -439,8 +439,8 @@ jobs:
       - name: Postprocess ERC & DRC reports
         working-directory: ${{matrix.board}}/docs/
         run: |
-          sudo mv "${{matrix.board}}.erc" "${{matrix.board}}${{steps.version.outputs.layout}}${{steps.variant.outputs.fileid}}-erc.log"
-          sudo mv drc_result.rpt "${{matrix.board}}${{steps.version.outputs.layout}}${{steps.variant.outputs.fileid}}-drc.log"
+          sudo mv "${{matrix.board}}.erc" "${{matrix.board}}${{steps.version.outputs.layout}}-erc.log"
+          sudo mv drc_result.rpt "${{matrix.board}}${{steps.version.outputs.layout}}-drc.log"
 
       - name: Copy README and LICENSEs
         run: |
