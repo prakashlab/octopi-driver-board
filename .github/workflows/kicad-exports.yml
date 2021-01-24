@@ -5,16 +5,18 @@ name: KiCad Exports
 on:
   push:
     paths:
-      - '*-*/**.sch'
-      - '*-*/**.kicad_pcb'
-      - '*-*/README.md'
+      - '*/**.sch'
+      - '*/**.kicad_pcb'
+      - '*/variants.yml'
+      - '*/README.md'
       - '.github/workflows/kicad-exports.yml'
       - '.kibot/**'
   pull_request:
     paths:
-      - '*-*/**.sch'
-      - '*-*/**.kicad_pcb'
-      - '*-*/README.md'
+      - '*/**.sch'
+      - '*/**.kicad_pcb'
+      - '*/variants.yml'
+      - '*/README.md'
       - '.github/workflows/kicad-exports.yml'
       - '.kibot/**'
   workflow_dispatch:
