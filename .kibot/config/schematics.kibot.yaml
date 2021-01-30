@@ -2,7 +2,8 @@ kibot:
   version: 1
 
 global:
-  output: '%f%r-%i.%x'
+  output: '%f%r%v-%i.%x'
+  variant: 'Default'
 
 preflight:
   run_erc: true
@@ -13,8 +14,12 @@ outputs:
     comment: "Print schematic (PDF)"
     type: pdf_sch_print
     dir: Schematics
+    options:
+      variant: 'Default'
 
   - name: 'schematic-svg'
     comment: "Print schematic (SVG)"
     type: svg_sch_print
     dir: Schematics/Images
+    options:
+      variant: 'Default'

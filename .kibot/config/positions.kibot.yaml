@@ -1,12 +1,8 @@
 kibot:
   version: 1
 
-filters:
-  - name: 'exclude_dnp'
-    type: 'generic'
-    comment: 'Exclude components with value DNP'
-    exclude_value: true
-    keys: ['dnp', 'DNP']
+global:
+  variant: 'Default'
 
 outputs:
   - name: 'position'
@@ -14,8 +10,8 @@ outputs:
     type: 'position'
     dir: 'Assembly'
     options:
-      dnf_filter: 'exclude_dnp'
       format: 'CSV'
-      output: '%f%r-pos.%x'
+      output: '%f%r%v-pos.%x'
       separate_files_for_front_and_back: false
       units: 'millimeters'
+      variant: 'Default'

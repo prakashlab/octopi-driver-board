@@ -5,16 +5,18 @@ name: KiCad Exports
 on:
   push:
     paths:
-      - '*-*/**.sch'
-      - '*-*/**.kicad_pcb'
-      - '*-*/README.md'
+      - '*/**.sch'
+      - '*/**.kicad_pcb'
+      - '*/variants.yml'
+      - '*/README.md'
       - '.github/workflows/kicad-exports.yml'
       - '.kibot/**'
   pull_request:
     paths:
-      - '*-*/**.sch'
-      - '*-*/**.kicad_pcb'
-      - '*-*/README.md'
+      - '*/**.sch'
+      - '*/**.kicad_pcb'
+      - '*/variants.yml'
+      - '*/README.md'
       - '.github/workflows/kicad-exports.yml'
       - '.kibot/**'
   workflow_dispatch:
@@ -25,11 +27,14 @@ on:
       boards:
         description: 'Boards (optional)'
         required: false
+      variants:
+        description: 'Variants (optional)'
+        required: false
 
 jobs:
   # Find changed boards
-  diff-boards:
-    name: Identify boards to re-export
+  specify-boards:
+    name: Specify boards to re-export
     runs-on: ubuntu-20.04
     outputs:
       boards: ${{steps.set-boards.outputs.boards}}
@@ -90,7 +95,7 @@ jobs:
           # Loop by lines
           while read path; do
             # Set $directory to substring before /
-            directory="$( echo $path | cut -d'/' -f1 -s )"
+            directory=$( echo $path | cut -d'/' -f1 -s )
 
             if [ -z "$directory" ]; then
               continue # Exclude root directory
@@ -102,7 +107,7 @@ jobs:
 
             # Add board only if it is not already included
             JSONline="\"$directory\","
-            if [ "$JSON" != *"$JSONline"* ]; then
+            if [[ "$JSON" != *"$JSONline"* ]]; then
               JSON="$JSON$JSONline"
               NUMBOARDS=$((NUMBOARDS+1))
             fi
@@ -120,15 +125,37 @@ jobs:
           echo "::set-output name=boards::$( echo "$JSON" )"
           echo "::set-output name=numboards::$( echo "$NUMBOARDS" )"
 
-  # Export docs for changed boards
-  export:
-    name: Export docs for ${{matrix.board}}
-    needs: diff-boards
+  specify-variants:
+    name: Specify variants to re-export
     runs-on: ubuntu-20.04
-    if: needs.diff-boards.outputs.numboards > 0
+    outputs:
+      variants: ${{steps.set-variants.outputs.variants}}
+    steps:
+      - name: Set variants for build
+        id: set-variants
+        run: |
+          if [ -n "${{github.event.inputs.variants}}" ]; then
+            VARIANTS=$(echo "${{github.event.inputs.variants}}" | tr " " "\n" | sed -r 's/(^|$)/"/g' | paste -sd "," -)
+            export JSON="[$VARIANTS]"
+            echo "Manually selected variants:"
+          else
+            export JSON='["Default"]'
+          fi
+          echo "$JSON"
+          echo "::set-output name=variants::$( echo "$JSON" )"
+
+  # Export docs for specified boards
+  export:
+    name: Export ${{matrix.board}}, ${{matrix.variant}} variant
+    needs:
+      - specify-boards
+      - specify-variants
+    runs-on: ubuntu-20.04
+    if: needs.specify-boards.outputs.numboards > 0
     strategy:
       matrix:
-        board: ${{fromJson(needs.diff-boards.outputs.boards)}}
+        board: ${{fromJson(needs.specify-boards.outputs.boards)}}
+        variant: ${{fromJson(needs.specify-variants.outputs.variants)}}
       fail-fast: false
 
     steps:
@@ -236,20 +263,57 @@ jobs:
           echo "::set-output name=schematic::$(echo "$SCHEMATIC_VERSION")"
           echo "::set-output name=layout::$(echo "$LAYOUT_VERSION")"
 
+      - name: Check variant validity
+        id: variant
+        working-directory: ${{matrix.board}}
+        run: |
+          if grep -q "  - name: '${{matrix.variant}}'" variants.yml; then
+            :
+          else
+            echo "Variant ${{matrix.variant}} is not defined for ${{matrix.board}}!"
+            exit 1
+          fi
+          VARIANT_AROUND=$(sed -n "/  - name: '${{matrix.variant}}'/,/  - name: '.*'/p" variants.yml)
+          VARIANT_DEF=$(echo "$VARIANT_AROUND" | sed "/  - name: '.*'/d")
+          if [ "${{matrix.variant}}" == "Default" ]; then
+            if echo "$VARIANT_DEF" | grep -q "    variant: "; then
+              echo "Default variant shouldn't have a Config column value!"
+              exit 1
+            fi
+            if echo "$VARIANT_DEF" | grep -q "    file_id: "; then
+              echo "Default variant shouldn't have a file ID!"
+              exit 1
+            fi
+            export FILE_ID=""
+          else
+            if echo "$VARIANT_DEF" | grep -q "    variant: ${{matrix.variant}}"; then
+              :
+            else
+              echo "Variant ${{matrix.variant}} needs a 'variant' key with value '${{matrix.variant}}'!"
+              exit 1
+            fi
+            if echo "$VARIANT_DEF" | grep -q "    file_id: -${{matrix.variant}}"; then
+              :
+            else
+              echo "Variant ${{matrix.variant}} needs a 'file_id' key with value '-${{matrix.variant}}'!"
+              exit 1
+            fi
+            export FILE_ID="-${{matrix.variant}}"
+          fi
+          echo "::set-output name=fileid::$(echo "$FILE_ID")"
+
       - name: Install dependencies
         run: |
           sudo apt-get update
           sudo apt-get install inkscape
           sudo apt-get install poppler-utils
-          
-      #  Since KiCad incorrectly makes a netlist file "ODSv1.0.xml" for "ODSv1.0.0-PP-T41.sch"
-      - name: Preprocess ibom.kibot.yaml
-        id: netlist
-        working-directory: .kibot/config
+
+      - name: Preprocess kibot configs for variants
         run: |
-          NETLIST_NAME="$(echo "${{matrix.board}}" | cut -f1,2 -d'.')"
-          sed -i "s/netlist_file: '%f\/%f/netlist_file: '${{matrix.board}}\/$NETLIST_NAME/" ibom.kibot.yaml
-          echo "::set-output name=name::$(echo "$NETLIST_NAME")"
+          for FILE in .kibot/config/*.kibot.yaml; do
+            cat "${{matrix.board}}/variants.yml" >> $FILE
+            sed -i "s/variant: 'Default'/variant: '${{matrix.variant}}'/" $FILE
+          done
 
       - name: Build schematic docs
         uses: INTI-CMNB/KiBot@v0.9.0
@@ -275,7 +339,7 @@ jobs:
         working-directory: ${{matrix.board}}/docs/Schematics/
         run: |
           sudo mkdir Sheets
-          sudo pdfseparate "${{matrix.board}}${{steps.version.outputs.layout}}-schematic.pdf" "Sheets/%d.pdf"
+          sudo pdfseparate "${{matrix.board}}${{steps.version.outputs.layout}}${{steps.variant.outputs.fileid}}-schematic.pdf" "Sheets/%d.pdf"
 
       - name: Build layout drawings
         uses: INTI-CMNB/KiBot@v0.9.0
@@ -321,6 +385,15 @@ jobs:
           schema: ${{matrix.board}}/${{matrix.board}}.sch
           # Optional PCB design file
           board: ${{matrix.board}}/${{matrix.board}}.kicad_pcb
+
+      #  Since KiCad incorrectly makes a netlist file "ODSv1.0.xml" for "ODSv1.0.0-PP-T41.sch"
+      - name: Preprocess interactive BOM config for XML filename
+        id: netlist
+        working-directory: .kibot/config
+        run: |
+          NETLIST_NAME=$(echo "${{matrix.board}}" | cut -f1,2 -d'.')
+          sed -i "s/netlist_file: '%f\/%f/netlist_file: '${{matrix.board}}\/$NETLIST_NAME/" ibom.kibot.yaml
+          echo "::set-output name=name::$(echo "$NETLIST_NAME")"
 
       - name: Build interactive BOM
         uses: INTI-CMNB/KiBot@v0.9.0
@@ -379,5 +452,5 @@ jobs:
       - name: Upload results
         uses: actions/upload-artifact@v2
         with:
-          name: ${{matrix.board}}${{steps.version.outputs.layout}}-docs-rev${{steps.date.outputs.today}}
+          name: ${{matrix.board}}${{steps.version.outputs.layout}}${{steps.variant.outputs.fileid}}-docs-rev${{steps.date.outputs.today}}
           path: ${{matrix.board}}/docs

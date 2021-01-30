@@ -14,7 +14,7 @@ The Teensy 4.1, based on NXP Semiconductor's [i.MX RT1060](https://www.nxp.com/p
 
 This plane is designed to provide the following functionalities:
 
-- Low-level and real-time control, with the Teensy 4.1
+- Low-level and real-time control of components driven by the stack, with the Teensy 4.1
 - (Optionally) High-level computation, with the NVIDIA Jetson Nano
 - Human-machine interfacing, delegated to a peripheral board
 - Mechanical base for all other planes in the driver stack
@@ -22,7 +22,7 @@ This plane is designed to provide the following functionalities:
 
 This plane is associated with the following daughter boards:
 
-- Teensy 4.1 [with male headers](https://www.pjrc.com/store/teensy41_pins.html], on the bottom face of the plane at the right edge of the board.
+- Teensy 4.1 [with male headers](https://www.pjrc.com/store/teensy41_pins.html), on the bottom face of the plane at the right edge of the board.
 - NVIDIA Jetson Nano Developer Kit on the bottom face of the plane at the right edge of the board, but only through standoffs for mechanical mounting. The Teensy 4.1 is intended to be connected to the Jetson Nano through a short USB cable for power and data.
 
 This plane is associated with the following peripheral boards:
@@ -33,12 +33,6 @@ This plane has the following internal features:
 
 - 0 Ohm resistor pads to choose whether 12 V power is taken from the 12 V DC barrel jack or from a Pufferfish Power Board
 - A 220 uF bulk capacitor on the 12 V power supply input
-
-This plane has the following mechanical stacking specifications:
-
-- This plane must be placed at the bottom of the driver stack.
-- The top face of the board requires a between-board separation of 15 mm from the plane above it.
-- The bottom face of the board requires a separation of 75 mm from the surface on which this plane is placed, to allow sufficient clearance for the Jetson Nano Developer Kit and a cooling fan which may be placed on its heatsink.
 
 This plane has the following external connectors:
 
@@ -56,6 +50,33 @@ This plane has the following backbone data interface:
 - GPIO output: Pins 22 and 23 of the Teensy are exposed over the backbone but are also connected to outputs from HB-Sm; they should not be used by other planes.
 - Serial comunication: Most GPIO pins which correspond to I2C and CAN buses and or to UART Serial connections are reserved for those purposes and laid out in a special section of the backbone for other planes to interface with. Both SPI buses from the Teensy are also exposed over the backbone for other planes to interface with. SPI1 is used for peripheral boards and devices such as HB-Sm, while SPI0 is to intended for use by planes.
 - SPI chip-select multiplexing: this board reserves the DSCS0 line for on-board devices and for HB-Sm; the DSCS0 line is not exposed over the backbone. This board exposes DSCS1 - DSCS15 for other planes to use.
+
+## Usage
+
+This plane has the following mechanical stacking usage requirements:
+
+- This plane must be placed at the bottom of the driver stack.
+- The top face of the board requires a between-board separation of 15 mm from the plane above it.
+- The bottom face of the board requires a separation of 75 mm from the surface on which this plane is placed, to allow sufficient clearance for the Jetson Nano Developer Kit and a cooling fan which may be placed on its heatsink.
+
+This plane has the following BOM variants:
+
+- Default: A fully-populated PCB, configured to take 12 V power supply input from the barrel jack and not from the Pufferfish Power Board.
+- Pufferfish: A fully-populated PCB, configured to take 12 V power supply input from the Pufferfish Power Board and not from the barrel jack.
+
+This board has the following power supply connection instructions:
+
+- Regardless of BOM variant, if an active power supply is plugged into its corresponding jack, an LED should light up next to the jack to indicate that the jack is energized.
+- The BOM variant determines whether an energized jack is used to provide 12 V power to the stack. For example, in the Pufferfish variant, plugging in a 12 V DC adapter to the barrel jack will cause the LED next to the barrel jack to light up but will not provide 12 V supply to the stack; and the 12 V power indicator in the backbone section of the plane will not light up.
+
+This plane allows the following post-assembly modifications:
+
+- A 0 Ohm jumper resistor can be moved from one place to another in order to convert this between the Default and Pufferfish variants. This jumper resistor determines which power supply input (barrel jack or Pufferfish Power Board) can be used to supply 12 V to the plane.
+- A 0 Ohm jumper resistor can be added to the unpopulated location for a given variant in order to allow the operator to choose whether to power the plane from the barrel jack or the Pufferfish Power Board simply by plugging in **one** of the two power sources, rather than by moving the jumper.
+
+This plane has the following safety notices:
+
+- If jumper resistors are added for both the barrel jack and the Pufferfish Power Board during post-assembly rework, there is **no protection** for connecting both the Pufferfish Power Board and a DC power supply to the plane at the same time. This is dangerous and should not be attempted. To reduce the risk of harm resulting from such an operator error, this plane does not provide a BOM variant with jumper resistors in both locations.
 
 ## Maintainers
 

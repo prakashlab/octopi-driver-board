@@ -2,7 +2,8 @@ kibot:
   version: 1
 
 global:
-  output: '%f%r-%i.%x'
+  output: '%f%r%v-%i.%x'
+  variant: 'Default'
 
 preflight:
   run_drc: true
@@ -18,14 +19,15 @@ outputs:
     options:
       exclude_edge_layer: true
       exclude_pads_from_silkscreen: true
-      gerber_job_file: '%f%r-%i.%x'
+      gerber_job_file: '%f%r%v-%i.%x'
       line_width: 0.15
-      output: '%f%r-%i.%x'
+      output: '%f%r%v-%i.%x'
       tent_vias: true
       use_gerber_x2_attributes: false
       use_protel_extensions: true
       disable_aperture_macros: true
       inner_extension_pattern: '.gl%N'
+      variant: 'Default'
     layers:
       - copper
       - F.SilkS
@@ -57,15 +59,15 @@ outputs:
       right_digits: 4
       pth_id: '-PTH'
       npth_id: '-NPTH'
-      output: '%f%r-%i.%x'
+      output: '%f%r%v-%i.%x'
       report:
-        filename: '%f%r-drill.log'
+        filename: '%f%r%v-drill.log'
 
   - name: 'zip-pcbway'
     comment: 'Generate gerber & drill archive for PCBway (ZIP)'
     type: compress
     dir: Gerbers/
-    output: '%f%r-gerb.%x'
+    output: '%f%r%v-gerb.%x'
     files:
       - from_output: gerbers-pcbway
       - from_output: drill-pcbway

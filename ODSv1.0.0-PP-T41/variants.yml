@@ -1,0 +1,11 @@
+variants:
+  # The Default variant is used for all automatically-triggered KiCad exports and should be a reasonable default
+  - name: 'Default'
+    comment: 'Fully populated PCB configured for power from barrel jack'
+    type: kibom
+    # The Default variant should not have the file_id or variant keys
+  - name: 'Pufferfish'
+    comment: 'Fully populated PCB configured for power from Pufferfish Power Board'
+    type: kibom
+    file_id: -Pufferfish
+    variant: Pufferfish

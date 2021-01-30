@@ -5,8 +5,8 @@ $Descr USLetter 11000 8500
 encoding utf-8
 Sheet 2 4
 Title "Backbone Template"
-Date "2021-01-20"
-Rev "v0.1.0"
+Date "2021-01-23"
+Rev "v0.1.1"
 Comp "Prakash Lab/Octopi Team"
 Comment1 "Designer: Ethan Li"
 Comment2 "License: SHL-2.1"
@@ -20,7 +20,7 @@ L Device:R R1
 U 1 1 617F768B
 P 4150 3900
 F 0 "R1" V 4100 4050 50  0000 L CNN
-F 1 "DNP" V 4150 3900 50  0000 C CNN
+F 1 "0" V 4150 3900 50  0000 C CNN
 F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 4080 3900 50  0001 C CNN
 F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 4150 3900 50  0001 C CNN
 F 4 "311-0.0ERCT-ND" H 4150 3900 50  0001 C CNN "Digikey ID"
@@ -28,6 +28,7 @@ F 5 "RC1206JR-070RL" H 4150 3900 50  0001 C CNN "MPN"
 F 6 "Yageo" H 4150 3900 50  0001 C CNN "Manufacturer"
 F 7 "https://www.digikey.com/en/products/detail/yageo/RC1206JR-070RL/729184" H 4150 3900 50  0001 C CNN "Ordering URL"
 F 8 "SMD" H 4150 3900 50  0001 C CNN "Type"
+F 9 "DNP" H 4150 3900 50  0001 C CNN "Config"
 	1    4150 3900
 	0    1    1    0   
 $EndComp
@@ -36,7 +37,7 @@ L Device:R R2
 U 1 1 618DC64E
 P 4150 4000
 F 0 "R2" V 4100 4150 50  0000 L CNN
-F 1 "DNP" V 4150 4000 50  0000 C CNN
+F 1 "0" V 4150 4000 50  0000 C CNN
 F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 4080 4000 50  0001 C CNN
 F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 4150 4000 50  0001 C CNN
 F 4 "311-0.0ERCT-ND" H 4150 4000 50  0001 C CNN "Digikey ID"
@@ -44,6 +45,7 @@ F 5 "RC1206JR-070RL" H 4150 4000 50  0001 C CNN "MPN"
 F 6 "Yageo" H 4150 4000 50  0001 C CNN "Manufacturer"
 F 7 "https://www.digikey.com/en/products/detail/yageo/RC1206JR-070RL/729184" H 4150 4000 50  0001 C CNN "Ordering URL"
 F 8 "SMD" H 4150 4000 50  0001 C CNN "Type"
+F 9 "DNP" H 4150 4000 50  0001 C CNN "Config"
 	1    4150 4000
 	0    1    1    0   
 $EndComp
@@ -52,7 +54,7 @@ L Device:R R3
 U 1 1 618DE09D
 P 4150 4100
 F 0 "R3" V 4100 4250 50  0000 L CNN
-F 1 "DNP" V 4150 4100 50  0000 C CNN
+F 1 "0" V 4150 4100 50  0000 C CNN
 F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 4080 4100 50  0001 C CNN
 F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 4150 4100 50  0001 C CNN
 F 4 "311-0.0ERCT-ND" H 4150 4100 50  0001 C CNN "Digikey ID"
@@ -60,6 +62,7 @@ F 5 "RC1206JR-070RL" H 4150 4100 50  0001 C CNN "MPN"
 F 6 "Yageo" H 4150 4100 50  0001 C CNN "Manufacturer"
 F 7 "https://www.digikey.com/en/products/detail/yageo/RC1206JR-070RL/729184" H 4150 4100 50  0001 C CNN "Ordering URL"
 F 8 "SMD" H 4150 4100 50  0001 C CNN "Type"
+F 9 "DNP" H 4150 4100 50  0001 C CNN "Config"
 	1    4150 4100
 	0    1    1    0   
 $EndComp
@@ -68,7 +71,7 @@ L Device:R R4
 U 1 1 618DFA23
 P 4150 4200
 F 0 "R4" V 4100 4350 50  0000 L CNN
-F 1 "DNP" V 4150 4200 50  0000 C CNN
+F 1 "0" V 4150 4200 50  0000 C CNN
 F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 4080 4200 50  0001 C CNN
 F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 4150 4200 50  0001 C CNN
 F 4 "311-0.0ERCT-ND" H 4150 4200 50  0001 C CNN "Digikey ID"
@@ -76,6 +79,7 @@ F 5 "RC1206JR-070RL" H 4150 4200 50  0001 C CNN "MPN"
 F 6 "Yageo" H 4150 4200 50  0001 C CNN "Manufacturer"
 F 7 "https://www.digikey.com/en/products/detail/yageo/RC1206JR-070RL/729184" H 4150 4200 50  0001 C CNN "Ordering URL"
 F 8 "SMD" H 4150 4200 50  0001 C CNN "Type"
+F 9 "DNP" H 4150 4200 50  0001 C CNN "Config"
 	1    4150 4200
 	0    1    1    0   
 $EndComp
@@ -84,7 +88,7 @@ L Device:R R5
 U 1 1 618E1433
 P 4150 4300
 F 0 "R5" V 4100 4450 50  0000 L CNN
-F 1 "DNP" V 4150 4300 50  0000 C CNN
+F 1 "0" V 4150 4300 50  0000 C CNN
 F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 4080 4300 50  0001 C CNN
 F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 4150 4300 50  0001 C CNN
 F 4 "311-0.0ERCT-ND" H 4150 4300 50  0001 C CNN "Digikey ID"
@@ -92,6 +96,7 @@ F 5 "RC1206JR-070RL" H 4150 4300 50  0001 C CNN "MPN"
 F 6 "Yageo" H 4150 4300 50  0001 C CNN "Manufacturer"
 F 7 "https://www.digikey.com/en/products/detail/yageo/RC1206JR-070RL/729184" H 4150 4300 50  0001 C CNN "Ordering URL"
 F 8 "SMD" H 4150 4300 50  0001 C CNN "Type"
+F 9 "DNP" H 4150 4300 50  0001 C CNN "Config"
 	1    4150 4300
 	0    1    1    0   
 $EndComp
@@ -100,7 +105,7 @@ L Device:R R6
 U 1 1 618E2EC6
 P 4150 4400
 F 0 "R6" V 4100 4550 50  0000 L CNN
-F 1 "DNP" V 4150 4400 50  0000 C CNN
+F 1 "0" V 4150 4400 50  0000 C CNN
 F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 4080 4400 50  0001 C CNN
 F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 4150 4400 50  0001 C CNN
 F 4 "311-0.0ERCT-ND" H 4150 4400 50  0001 C CNN "Digikey ID"
@@ -108,6 +113,7 @@ F 5 "RC1206JR-070RL" H 4150 4400 50  0001 C CNN "MPN"
 F 6 "Yageo" H 4150 4400 50  0001 C CNN "Manufacturer"
 F 7 "https://www.digikey.com/en/products/detail/yageo/RC1206JR-070RL/729184" H 4150 4400 50  0001 C CNN "Ordering URL"
 F 8 "SMD" H 4150 4400 50  0001 C CNN "Type"
+F 9 "DNP" H 4150 4400 50  0001 C CNN "Config"
 	1    4150 4400
 	0    1    1    0   
 $EndComp
@@ -116,7 +122,7 @@ L Device:R R7
 U 1 1 618E491C
 P 4150 4500
 F 0 "R7" V 4100 4650 50  0000 L CNN
-F 1 "DNP" V 4150 4500 50  0000 C CNN
+F 1 "0" V 4150 4500 50  0000 C CNN
 F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 4080 4500 50  0001 C CNN
 F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 4150 4500 50  0001 C CNN
 F 4 "311-0.0ERCT-ND" H 4150 4500 50  0001 C CNN "Digikey ID"
@@ -124,6 +130,7 @@ F 5 "RC1206JR-070RL" H 4150 4500 50  0001 C CNN "MPN"
 F 6 "Yageo" H 4150 4500 50  0001 C CNN "Manufacturer"
 F 7 "https://www.digikey.com/en/products/detail/yageo/RC1206JR-070RL/729184" H 4150 4500 50  0001 C CNN "Ordering URL"
 F 8 "SMD" H 4150 4500 50  0001 C CNN "Type"
+F 9 "DNP" H 4150 4500 50  0001 C CNN "Config"
 	1    4150 4500
 	0    1    1    0   
 $EndComp
@@ -132,7 +139,7 @@ L Device:R R8
 U 1 1 618E634F
 P 4150 4600
 F 0 "R8" V 4100 4750 50  0000 L CNN
-F 1 "DNP" V 4150 4600 50  0000 C CNN
+F 1 "0" V 4150 4600 50  0000 C CNN
 F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 4080 4600 50  0001 C CNN
 F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 4150 4600 50  0001 C CNN
 F 4 "311-0.0ERCT-ND" H 4150 4600 50  0001 C CNN "Digikey ID"
@@ -140,6 +147,7 @@ F 5 "RC1206JR-070RL" H 4150 4600 50  0001 C CNN "MPN"
 F 6 "Yageo" H 4150 4600 50  0001 C CNN "Manufacturer"
 F 7 "https://www.digikey.com/en/products/detail/yageo/RC1206JR-070RL/729184" H 4150 4600 50  0001 C CNN "Ordering URL"
 F 8 "SMD" H 4150 4600 50  0001 C CNN "Type"
+F 9 "DNP" H 4150 4600 50  0001 C CNN "Config"
 	1    4150 4600
 	0    1    1    0   
 $EndComp
@@ -148,7 +156,7 @@ L Device:R R9
 U 1 1 618E7E11
 P 4150 4700
 F 0 "R9" V 4100 4850 50  0000 L CNN
-F 1 "DNP" V 4150 4700 50  0000 C CNN
+F 1 "0" V 4150 4700 50  0000 C CNN
 F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 4080 4700 50  0001 C CNN
 F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 4150 4700 50  0001 C CNN
 F 4 "311-0.0ERCT-ND" H 4150 4700 50  0001 C CNN "Digikey ID"
@@ -156,6 +164,7 @@ F 5 "RC1206JR-070RL" H 4150 4700 50  0001 C CNN "MPN"
 F 6 "Yageo" H 4150 4700 50  0001 C CNN "Manufacturer"
 F 7 "https://www.digikey.com/en/products/detail/yageo/RC1206JR-070RL/729184" H 4150 4700 50  0001 C CNN "Ordering URL"
 F 8 "SMD" H 4150 4700 50  0001 C CNN "Type"
+F 9 "DNP" H 4150 4700 50  0001 C CNN "Config"
 	1    4150 4700
 	0    1    1    0   
 $EndComp
@@ -164,7 +173,7 @@ L Device:R R10
 U 1 1 618E97E4
 P 4150 4800
 F 0 "R10" V 4100 4950 50  0000 L CNN
-F 1 "DNP" V 4150 4800 50  0000 C CNN
+F 1 "0" V 4150 4800 50  0000 C CNN
 F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 4080 4800 50  0001 C CNN
 F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 4150 4800 50  0001 C CNN
 F 4 "311-0.0ERCT-ND" H 4150 4800 50  0001 C CNN "Digikey ID"
@@ -172,6 +181,7 @@ F 5 "RC1206JR-070RL" H 4150 4800 50  0001 C CNN "MPN"
 F 6 "Yageo" H 4150 4800 50  0001 C CNN "Manufacturer"
 F 7 "https://www.digikey.com/en/products/detail/yageo/RC1206JR-070RL/729184" H 4150 4800 50  0001 C CNN "Ordering URL"
 F 8 "SMD" H 4150 4800 50  0001 C CNN "Type"
+F 9 "DNP" H 4150 4800 50  0001 C CNN "Config"
 	1    4150 4800
 	0    1    1    0   
 $EndComp
@@ -180,7 +190,7 @@ L Device:R R11
 U 1 1 618EB227
 P 4150 4900
 F 0 "R11" V 4100 5050 50  0000 L CNN
-F 1 "DNP" V 4150 4900 50  0000 C CNN
+F 1 "0" V 4150 4900 50  0000 C CNN
 F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 4080 4900 50  0001 C CNN
 F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 4150 4900 50  0001 C CNN
 F 4 "311-0.0ERCT-ND" H 4150 4900 50  0001 C CNN "Digikey ID"
@@ -188,6 +198,7 @@ F 5 "RC1206JR-070RL" H 4150 4900 50  0001 C CNN "MPN"
 F 6 "Yageo" H 4150 4900 50  0001 C CNN "Manufacturer"
 F 7 "https://www.digikey.com/en/products/detail/yageo/RC1206JR-070RL/729184" H 4150 4900 50  0001 C CNN "Ordering URL"
 F 8 "SMD" H 4150 4900 50  0001 C CNN "Type"
+F 9 "DNP" H 4150 4900 50  0001 C CNN "Config"
 	1    4150 4900
 	0    1    1    0   
 $EndComp
@@ -196,7 +207,7 @@ L Device:R R12
 U 1 1 618ECC9B
 P 4150 5000
 F 0 "R12" V 4100 5150 50  0000 L CNN
-F 1 "DNP" V 4150 5000 50  0000 C CNN
+F 1 "0" V 4150 5000 50  0000 C CNN
 F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 4080 5000 50  0001 C CNN
 F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 4150 5000 50  0001 C CNN
 F 4 "311-0.0ERCT-ND" H 4150 5000 50  0001 C CNN "Digikey ID"
@@ -204,6 +215,7 @@ F 5 "RC1206JR-070RL" H 4150 5000 50  0001 C CNN "MPN"
 F 6 "Yageo" H 4150 5000 50  0001 C CNN "Manufacturer"
 F 7 "https://www.digikey.com/en/products/detail/yageo/RC1206JR-070RL/729184" H 4150 5000 50  0001 C CNN "Ordering URL"
 F 8 "SMD" H 4150 5000 50  0001 C CNN "Type"
+F 9 "DNP" H 4150 5000 50  0001 C CNN "Config"
 	1    4150 5000
 	0    1    1    0   
 $EndComp
@@ -212,7 +224,7 @@ L Device:R R13
 U 1 1 618EE76D
 P 4150 5100
 F 0 "R13" V 4100 5250 50  0000 L CNN
-F 1 "DNP" V 4150 5100 50  0000 C CNN
+F 1 "0" V 4150 5100 50  0000 C CNN
 F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 4080 5100 50  0001 C CNN
 F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 4150 5100 50  0001 C CNN
 F 4 "311-0.0ERCT-ND" H 4150 5100 50  0001 C CNN "Digikey ID"
@@ -220,6 +232,7 @@ F 5 "RC1206JR-070RL" H 4150 5100 50  0001 C CNN "MPN"
 F 6 "Yageo" H 4150 5100 50  0001 C CNN "Manufacturer"
 F 7 "https://www.digikey.com/en/products/detail/yageo/RC1206JR-070RL/729184" H 4150 5100 50  0001 C CNN "Ordering URL"
 F 8 "SMD" H 4150 5100 50  0001 C CNN "Type"
+F 9 "DNP" H 4150 5100 50  0001 C CNN "Config"
 	1    4150 5100
 	0    1    1    0   
 $EndComp
@@ -228,7 +241,7 @@ L Device:R R14
 U 1 1 618F0151
 P 4150 5200
 F 0 "R14" V 4100 5350 50  0000 L CNN
-F 1 "DNP" V 4150 5200 50  0000 C CNN
+F 1 "0" V 4150 5200 50  0000 C CNN
 F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 4080 5200 50  0001 C CNN
 F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 4150 5200 50  0001 C CNN
 F 4 "311-0.0ERCT-ND" H 4150 5200 50  0001 C CNN "Digikey ID"
@@ -236,6 +249,7 @@ F 5 "RC1206JR-070RL" H 4150 5200 50  0001 C CNN "MPN"
 F 6 "Yageo" H 4150 5200 50  0001 C CNN "Manufacturer"
 F 7 "https://www.digikey.com/en/products/detail/yageo/RC1206JR-070RL/729184" H 4150 5200 50  0001 C CNN "Ordering URL"
 F 8 "SMD" H 4150 5200 50  0001 C CNN "Type"
+F 9 "DNP" H 4150 5200 50  0001 C CNN "Config"
 	1    4150 5200
 	0    1    1    0   
 $EndComp
@@ -244,7 +258,7 @@ L Device:R R15
 U 1 1 618F1B66
 P 4150 5300
 F 0 "R15" V 4100 5450 50  0000 L CNN
-F 1 "DNP" V 4150 5300 50  0000 C CNN
+F 1 "0" V 4150 5300 50  0000 C CNN
 F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 4080 5300 50  0001 C CNN
 F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 4150 5300 50  0001 C CNN
 F 4 "311-0.0ERCT-ND" H 4150 5300 50  0001 C CNN "Digikey ID"
@@ -252,6 +266,7 @@ F 5 "RC1206JR-070RL" H 4150 5300 50  0001 C CNN "MPN"
 F 6 "Yageo" H 4150 5300 50  0001 C CNN "Manufacturer"
 F 7 "https://www.digikey.com/en/products/detail/yageo/RC1206JR-070RL/729184" H 4150 5300 50  0001 C CNN "Ordering URL"
 F 8 "SMD" H 4150 5300 50  0001 C CNN "Type"
+F 9 "DNP" H 4150 5300 50  0001 C CNN "Config"
 	1    4150 5300
 	0    1    1    0   
 $EndComp
@@ -600,7 +615,7 @@ SPI Bus Selector
 Wire Notes Line
 	4000 3800 4600 3800
 Text Notes 4025 5500 0    25   ~ 0
-Select one DSCS line for the\ndefault BOM by changing a\nresistor value to 0.
+Select one DSCS line for the\ndefault BOM by removing\nDNP from its Config field.
 Text Notes 4025 3500 0    25   ~ 0
 Use the other SPI bus in\nthe default BOM by\nchanging the nets.
 Wire Notes Line
@@ -1113,5 +1128,5 @@ F70 "GPIO_5" B L 1750 2300 50
 F71 "GPIO_9" B L 1750 2500 50 
 $EndSheet
 Text Notes 4000 6650 0    25   ~ 0
-Remove power indicator LEDs for power sources which will not be used on\nthis plane.
+Remove power indicator LEDs for power sources which will not be used on\nthis plane by changing their Config fields to DNP in the symbol fields.
 $EndSCHEMATC

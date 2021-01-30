@@ -5,8 +5,8 @@ $Descr USLetter 11000 8500
 encoding utf-8
 Sheet 6 7
 Title "Processing Plane for Teensy 4.1"
-Date "2021-01-20"
-Rev "v0.1.0"
+Date "2021-01-23"
+Rev "v0.1.1"
 Comp "Prakash Lab/Octopi Team"
 Comment1 "Designer: Ethan Li"
 Comment2 "License: SHL-2.1"
@@ -26,6 +26,7 @@ F 5 "CUI" H 1200 1250 50  0001 C CNN "Manufacturer"
 F 6 "https://www.digikey.com/en/products/detail/cui-devices/PJ-036AH-SMT-TR/1530971" H 1200 1250 50  0001 C CNN "Ordering URL"
 F 7 "SMD" H 1200 1250 50  0001 C CNN "Type"
 F 8 "CP-036AHPJCT-ND" H 1200 1250 50  0001 C CNN "Digikey ID"
+F 9 "" H 1200 1250 50  0001 C CNN "Config"
 	1    1200 1250
 	1    0    0    -1  
 $EndComp
@@ -43,6 +44,7 @@ F 6 "Molex" H 1150 2700 50  0001 C CNN "Manufacturer"
 F 7 "https://www.digikey.com/en/products/detail/molex/1723161108/5344295" H 1150 2700 50  0001 C CNN "Ordering URL"
 F 8 "PTH" H 1150 2700 50  0001 C CNN "Type"
 F 9 "WM11598-ND" H 1150 2700 50  0001 C CNN "Digikey ID"
+F 10 "" H 1150 2700 50  0001 C CNN "Config"
 	1    1150 2700
 	0    -1   1    0   
 $EndComp
@@ -115,6 +117,7 @@ F 5 "Vishay" H 3850 1650 50  0001 C CNN "Manufacturer"
 F 6 "https://www.digikey.com/en/products/detail/vishay-dale/CRCW12060000Z0EAHP/2222404" H 3850 1650 50  0001 C CNN "Ordering URL"
 F 7 "SMD" H 3850 1650 50  0001 C CNN "Type"
 F 8 "541-0.0UBCT-ND" H 3850 1650 50  0001 C CNN "Digikey ID"
+F 9 "-Pufferfish" H 3850 1650 50  0001 C CNN "Config"
 	1    3850 1650
 	0    1    1    0   
 $EndComp
@@ -123,7 +126,7 @@ L Device:R R16
 U 1 1 61CAFC0A
 P 3850 1850
 F 0 "R16" V 3800 2000 50  0000 L CNN
-F 1 "DNP" V 3850 1850 50  0000 C CNN
+F 1 "0" V 3850 1850 50  0000 C CNN
 F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 3780 1850 50  0001 C CNN
 F 3 "https://www.vishay.com/docs/20043/crcwhpe3.pdf" H 3850 1850 50  0001 C CNN
 F 4 "SMD" H 3850 1850 50  0001 C CNN "Type"
@@ -131,6 +134,7 @@ F 5 "541-0.0UBCT-ND" H 3850 1850 50  0001 C CNN "Digikey ID"
 F 6 "CRCW12060000Z0EAHP" H 3850 1850 50  0001 C CNN "MPN"
 F 7 "Vishay" H 3850 1850 50  0001 C CNN "Manufacturer"
 F 8 "https://www.digikey.com/en/products/detail/vishay-dale/CRCW12060000Z0EAHP/2222404" H 3850 1850 50  0001 C CNN "Ordering URL"
+F 9 "+Pufferfish" H 3850 1850 50  0001 C CNN "Config"
 	1    3850 1850
 	0    1    1    0   
 $EndComp
@@ -359,7 +363,7 @@ Wire Wire Line
 Wire Wire Line
 	3450 1850 3700 1850
 Text Notes 2775 2075 0    25   ~ 0
-To use the Pufferfish power board as the 12 V supply in the default BOM, change\nthe resistor for Barrel_12V to DNP and change the resistor for Pufferfish_12V to 0.
+Population of these components is controlled by the variants in the Config column of\nthe symbol fields.
 Connection ~ 4250 1750
 Wire Wire Line
 	4250 1750 4250 1850
