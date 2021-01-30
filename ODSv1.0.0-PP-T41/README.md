@@ -14,7 +14,7 @@ The Teensy 4.1, based on NXP Semiconductor's [i.MX RT1060](https://www.nxp.com/p
 
 This plane is designed to provide the following functionalities:
 
-- Low-level and real-time control, with the Teensy 4.1
+- Low-level and real-time control of components driven by the stack, with the Teensy 4.1
 - (Optionally) High-level computation, with the NVIDIA Jetson Nano
 - Human-machine interfacing, delegated to a peripheral board
 - Mechanical base for all other planes in the driver stack
@@ -22,7 +22,7 @@ This plane is designed to provide the following functionalities:
 
 This plane is associated with the following daughter boards:
 
-- Teensy 4.1 [with male headers](https://www.pjrc.com/store/teensy41_pins.html], on the bottom face of the plane at the right edge of the board.
+- Teensy 4.1 [with male headers](https://www.pjrc.com/store/teensy41_pins.html), on the bottom face of the plane at the right edge of the board.
 - NVIDIA Jetson Nano Developer Kit on the bottom face of the plane at the right edge of the board, but only through standoffs for mechanical mounting. The Teensy 4.1 is intended to be connected to the Jetson Nano through a short USB cable for power and data.
 
 This plane is associated with the following peripheral boards:
