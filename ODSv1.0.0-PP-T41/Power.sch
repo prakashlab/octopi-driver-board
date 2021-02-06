@@ -5,7 +5,7 @@ $Descr USLetter 11000 8500
 encoding utf-8
 Sheet 6 7
 Title "Processing Plane for Teensy 4.1"
-Date "2021-01-23"
+Date "2021-02-06"
 Rev "v0.1.1"
 Comp "Prakash Lab/Octopi Team"
 Comment1 "Designer: Ethan Li"
@@ -110,7 +110,7 @@ U 1 1 61CAF7E3
 P 3850 1650
 F 0 "R15" V 3800 1800 50  0000 L CNN
 F 1 "0" V 3850 1650 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 3780 1650 50  0001 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 3780 1650 50  0001 C CNN
 F 3 "https://www.vishay.com/docs/20043/crcwhpe3.pdf" H 3850 1650 50  0001 C CNN
 F 4 "CRCW12060000Z0EAHP" H 3850 1650 50  0001 C CNN "MPN"
 F 5 "Vishay" H 3850 1650 50  0001 C CNN "Manufacturer"
@@ -127,7 +127,7 @@ U 1 1 61CAFC0A
 P 3850 1850
 F 0 "R16" V 3800 2000 50  0000 L CNN
 F 1 "0" V 3850 1850 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 3780 1850 50  0001 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 3780 1850 50  0001 C CNN
 F 3 "https://www.vishay.com/docs/20043/crcwhpe3.pdf" H 3850 1850 50  0001 C CNN
 F 4 "SMD" H 3850 1850 50  0001 C CNN "Type"
 F 5 "541-0.0UBCT-ND" H 3850 1850 50  0001 C CNN "Digikey ID"

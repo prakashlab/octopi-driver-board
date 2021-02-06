@@ -47,7 +47,7 @@ Every plane is separated by a distance of either 15 mm or 20 mm from the plane a
 
 ## Install
 
-To set up your computer for using this repository, you will need to install [KiCad](https://kicad.org/) version ≥ 5.1.0. You should have the default symbol, footprint, and 3-D model libraries provided by KiCad. References to custom symbols, footprints, and 3-D models will work out-of-the-box, as they are all provided in this repository and referenced in KiCad relative to the `${KIPRJMOD}` environment variable.
+To set up your computer for using this repository, you will need to install [KiCad](https://kicad.org/) version 5.1.9; note that this repository relies on KiCad footprints which exist in 5.1.9 and not in earlier versions. You should have the default symbol, footprint, and 3-D model libraries provided by KiCad. References to custom symbols, footprints, and 3-D models will work out-of-the-box, as they are all provided in this repository and referenced in KiCad relative to the `${KIPRJMOD}` environment variable.
 
 To prepare 3D models for components, you will need to download [FreeCAD 0.19](https://github.com/FreeCAD/FreeCAD/releases/tag/0.19_pre) and install the [KiCad StepUp workbench](https://github.com/easyw/kicadStepUpMod).
 
