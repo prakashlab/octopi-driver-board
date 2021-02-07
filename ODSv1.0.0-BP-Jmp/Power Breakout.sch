@@ -13,11 +13,11 @@ Comment2 "License: SHL-2.1"
 Comment3 ""
 Comment4 "Octopi Driver Stack v1.0.0: Plane"
 $EndDescr
-Text HLabel 3000 2500 2    50   Output ~ 0
+Text HLabel 3000 2500 2    50   Input ~ 0
 5V
-Text HLabel 3000 4000 2    50   Output ~ 0
+Text HLabel 3000 4000 2    50   Input ~ 0
 3.3V
-Text HLabel 3000 1000 2    50   Output ~ 0
+Text HLabel 3000 1000 2    50   Input ~ 0
 12V
 Wire Wire Line
 	1750 1000 1750 1100

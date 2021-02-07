@@ -13,37 +13,37 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text HLabel 2250 1900 2    50   Input ~ 0
+Text HLabel 2250 1900 2    50   Output ~ 0
 SER3_RX
-Text HLabel 2250 1800 2    50   Output ~ 0
+Text HLabel 2250 1800 2    50   Input ~ 0
 SER3_TX
-Text HLabel 2250 1300 2    50   Input ~ 0
+Text HLabel 2250 1300 2    50   Output ~ 0
 SER7_RX
-Text HLabel 2250 1200 2    50   Output ~ 0
+Text HLabel 2250 1200 2    50   Input ~ 0
 SER7_TX
-Text HLabel 2250 1700 2    50   Input ~ 0
+Text HLabel 2250 1700 2    50   Output ~ 0
 SER2_RX
-Text HLabel 2250 1600 2    50   Output ~ 0
+Text HLabel 2250 1600 2    50   Input ~ 0
 SER2_TX
-Text HLabel 2250 1100 2    50   Input ~ 0
+Text HLabel 2250 1100 2    50   Output ~ 0
 SER8_RX
-Text HLabel 2250 1000 2    50   Output ~ 0
+Text HLabel 2250 1000 2    50   Input ~ 0
 SER8_TX
-Text HLabel 2250 1500 2    50   Input ~ 0
+Text HLabel 2250 1500 2    50   Output ~ 0
 CAN2_CRX
-Text HLabel 2250 1400 2    50   Output ~ 0
+Text HLabel 2250 1400 2    50   Input ~ 0
 CAN2_CTX
 Text HLabel 2250 3400 2    50   BiDi ~ 0
 I2C2_SDA
-Text HLabel 2250 3300 2    50   Output ~ 0
+Text HLabel 2250 3300 2    50   Input ~ 0
 I2C2_SCL
 Text HLabel 2250 3200 2    50   BiDi ~ 0
 I2C1_SDA
-Text HLabel 2250 3100 2    50   Output ~ 0
+Text HLabel 2250 3100 2    50   Input ~ 0
 I2C1_SCL
 Text HLabel 2250 2600 2    50   BiDi ~ 0
 I2C0_SDA
-Text HLabel 2250 2500 2    50   Output ~ 0
+Text HLabel 2250 2500 2    50   Input ~ 0
 I2C0_SCL
 $Comp
 L Connector_Generic:Conn_02x10_Odd_Even J10
@@ -109,11 +109,11 @@ Wire Wire Line
 	2000 3400 2250 3400
 Text HLabel 2250 2800 2    50   BiDi ~ 0
 I2C0_SDA
-Text HLabel 2250 2700 2    50   Output ~ 0
+Text HLabel 2250 2700 2    50   Input ~ 0
 I2C0_SCL
 Text HLabel 2250 3000 2    50   BiDi ~ 0
 I2C0_SDA
-Text HLabel 2250 2900 2    50   Output ~ 0
+Text HLabel 2250 2900 2    50   Input ~ 0
 I2C0_SCL
 Wire Wire Line
 	1250 1000 1500 1000

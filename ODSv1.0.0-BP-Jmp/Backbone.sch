@@ -583,8 +583,6 @@ SPI DSCS Selector
 Wire Notes Line
 	4000 3800 4600 3800
 Wire Wire Line
-	3250 3600 6000 3600
-Wire Wire Line
 	6000 3900 4500 3900
 Connection ~ 4500 3900
 $Comp
@@ -1289,4 +1287,12 @@ Text HLabel 3500 3100 2    50   Output ~ 0
 SPI1_COPI
 Text HLabel 3500 3300 2    50   Input ~ 0
 SPI1_CIPO
+Text HLabel 3500 3600 2    50   Output ~ 0
+~DCS~
+Wire Wire Line
+	3250 3600 3500 3600
+Text HLabel 5750 3600 0    50   Input ~ 0
+~DCS~
+Wire Wire Line
+	5750 3600 6000 3600
 $EndSCHEMATC
