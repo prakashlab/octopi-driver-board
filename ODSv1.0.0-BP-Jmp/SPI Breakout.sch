@@ -1,17 +1,17 @@
 EESchema Schematic File Version 4
 EELAYER 30 0
 EELAYER END
-$Descr A4 11693 8268
+$Descr USLetter 11000 8500
 encoding utf-8
 Sheet 8 8
-Title ""
-Date ""
-Rev ""
-Comp ""
-Comment1 ""
-Comment2 ""
+Title "Breakout Plane for Jumper Wires"
+Date "2021-02-06"
+Rev "v0.1.0"
+Comp "Prakash Lab/Octopi Team"
+Comment1 "Designer: Ethan Li"
+Comment2 "License: SHL-2.1"
 Comment3 ""
-Comment4 ""
+Comment4 "Octopi Driver Stack v1.0.0: Plane"
 $EndDescr
 Text HLabel 2750 2800 2    50   Input ~ 0
 SPI0_SCK
