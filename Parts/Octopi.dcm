@@ -6,6 +6,12 @@ K multiplexer demultiplexer mux demux
 F https://assets.nexperia.com/documents/data-sheet/74HC_HCT4067.pdf
 $ENDCMP
 #
+$CMP DACx0508xRTE
+D 12-/14-/16-Bit, Octal-Channel, Voltage Output, SPI Digital-to-Analog Converters, WQFN-16
+K DAC SPI 8-channel
+F https://www.ti.com/lit/ds/symlink/dac60508.pdf
+$ENDCMP
+#
 $CMP MAX7317
 D 16-port I/O expander, SPI, QSOP-16
 K SPI parallel port expander

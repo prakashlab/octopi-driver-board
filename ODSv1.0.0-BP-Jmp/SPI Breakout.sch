@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr USLetter 11000 8500
 encoding utf-8
-Sheet 8 8
+Sheet 8 9
 Title "Breakout Plane for Jumper Wires"
 Date "2021-02-06"
 Rev "v0.1.0"
@@ -521,4 +521,282 @@ Text HLabel 1750 6300 0    50   Input ~ 0
 ~DCS1~
 Text HLabel 1750 6400 0    50   Input ~ 0
 ~DCS0~
+Text HLabel 6250 2800 2    50   Input ~ 0
+SPI0_SCK
+Text HLabel 6250 2600 2    50   Input ~ 0
+SPI0_COPI
+Text HLabel 6250 2700 2    50   Output ~ 0
+SPI0_CIPO
+$Comp
+L Connector_Generic:Conn_02x10_Odd_Even J19
+U 1 1 60B19A49
+P 5700 2900
+F 0 "J19" H 5750 3550 50  0000 C CNN
+F 1 "Conn_02x10_Odd_Even" H 5750 3450 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x10_P2.54mm_Vertical_SMD" H 5700 2900 50  0001 C CNN
+F 3 "~" H 5700 2900 50  0001 C CNN
+	1    5700 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6250 2600 6000 2600
+Wire Wire Line
+	6250 2700 6000 2700
+Wire Wire Line
+	6250 3100 6000 3100
+Wire Wire Line
+	6250 3200 6000 3200
+Wire Wire Line
+	6250 3300 6000 3300
+Wire Wire Line
+	6250 2800 6000 2800
+Text HLabel 6500 2500 2    50   Input ~ 0
+3.3V
+Wire Wire Line
+	6000 2500 6500 2500
+$Comp
+L power:GND #PWR?
+U 1 1 60B19A57
+P 7250 2900
+AR Path="/60C51399/60B19A57" Ref="#PWR?"  Part="1" 
+AR Path="/606DC09F/60B19A57" Ref="#PWR?"  Part="1" 
+AR Path="/6085F6E2/60B19A57" Ref="#PWR044"  Part="1" 
+F 0 "#PWR044" H 7250 2650 50  0001 C CNN
+F 1 "GND" H 7255 2727 50  0000 C CNN
+F 2 "" H 7250 2900 50  0001 C CNN
+F 3 "" H 7250 2900 50  0001 C CNN
+	1    7250 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 2900 7250 2900
+Text HLabel 6250 3300 2    50   Input ~ 0
+SPI0_SCK
+Text HLabel 6250 3100 2    50   Input ~ 0
+SPI0_COPI
+Text HLabel 6250 3200 2    50   Output ~ 0
+SPI0_CIPO
+Text HLabel 6500 3000 2    50   Input ~ 0
+3.3V
+Wire Wire Line
+	6000 3000 6500 3000
+$Comp
+L power:GND #PWR?
+U 1 1 60B19A63
+P 7250 3400
+AR Path="/60C51399/60B19A63" Ref="#PWR?"  Part="1" 
+AR Path="/606DC09F/60B19A63" Ref="#PWR?"  Part="1" 
+AR Path="/6085F6E2/60B19A63" Ref="#PWR045"  Part="1" 
+F 0 "#PWR045" H 7250 3150 50  0001 C CNN
+F 1 "GND" H 7255 3227 50  0000 C CNN
+F 2 "" H 7250 3400 50  0001 C CNN
+F 3 "" H 7250 3400 50  0001 C CNN
+	1    7250 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 3400 7250 3400
+$Comp
+L Connector_Generic:Conn_02x10_Odd_Even J18
+U 1 1 60B19A6A
+P 5700 1400
+F 0 "J18" H 5750 2050 50  0000 C CNN
+F 1 "Conn_02x10_Odd_Even" H 5750 1950 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x10_P2.54mm_Vertical_SMD" H 5700 1400 50  0001 C CNN
+F 3 "~" H 5700 1400 50  0001 C CNN
+	1    5700 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6250 1100 6000 1100
+Wire Wire Line
+	6250 1200 6000 1200
+Wire Wire Line
+	6250 1600 6000 1600
+Wire Wire Line
+	6250 1700 6000 1700
+Wire Wire Line
+	6250 1800 6000 1800
+Wire Wire Line
+	6250 1300 6000 1300
+Text HLabel 6500 1000 2    50   Input ~ 0
+3.3V
+Wire Wire Line
+	6000 1000 6500 1000
+$Comp
+L power:GND #PWR?
+U 1 1 60B19A78
+P 7250 1400
+AR Path="/60C51399/60B19A78" Ref="#PWR?"  Part="1" 
+AR Path="/606DC09F/60B19A78" Ref="#PWR?"  Part="1" 
+AR Path="/6085F6E2/60B19A78" Ref="#PWR042"  Part="1" 
+F 0 "#PWR042" H 7250 1150 50  0001 C CNN
+F 1 "GND" H 7255 1227 50  0000 C CNN
+F 2 "" H 7250 1400 50  0001 C CNN
+F 3 "" H 7250 1400 50  0001 C CNN
+	1    7250 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 1400 7250 1400
+Text HLabel 6500 1500 2    50   Input ~ 0
+3.3V
+Wire Wire Line
+	6000 1500 6500 1500
+$Comp
+L power:GND #PWR?
+U 1 1 60B19A81
+P 7250 1900
+AR Path="/60C51399/60B19A81" Ref="#PWR?"  Part="1" 
+AR Path="/606DC09F/60B19A81" Ref="#PWR?"  Part="1" 
+AR Path="/6085F6E2/60B19A81" Ref="#PWR043"  Part="1" 
+F 0 "#PWR043" H 7250 1650 50  0001 C CNN
+F 1 "GND" H 7255 1727 50  0000 C CNN
+F 2 "" H 7250 1900 50  0001 C CNN
+F 3 "" H 7250 1900 50  0001 C CNN
+	1    7250 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 1900 7250 1900
+Wire Wire Line
+	5250 1100 5500 1100
+Wire Wire Line
+	5250 1200 5500 1200
+Wire Wire Line
+	5250 1600 5500 1600
+Wire Wire Line
+	5250 1700 5500 1700
+Wire Wire Line
+	5250 1800 5500 1800
+Wire Wire Line
+	5250 1300 5500 1300
+Text HLabel 5000 1000 0    50   Input ~ 0
+3.3V
+Wire Wire Line
+	5500 1000 5000 1000
+$Comp
+L power:GND #PWR?
+U 1 1 60B19A90
+P 4250 1400
+AR Path="/60C51399/60B19A90" Ref="#PWR?"  Part="1" 
+AR Path="/606DC09F/60B19A90" Ref="#PWR?"  Part="1" 
+AR Path="/6085F6E2/60B19A90" Ref="#PWR09"  Part="1" 
+F 0 "#PWR09" H 4250 1150 50  0001 C CNN
+F 1 "GND" H 4255 1227 50  0000 C CNN
+F 2 "" H 4250 1400 50  0001 C CNN
+F 3 "" H 4250 1400 50  0001 C CNN
+	1    4250 1400
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 1400 4250 1400
+Text HLabel 5000 1500 0    50   Input ~ 0
+3.3V
+Wire Wire Line
+	5500 1500 5000 1500
+$Comp
+L power:GND #PWR?
+U 1 1 60B19A99
+P 4250 1900
+AR Path="/60C51399/60B19A99" Ref="#PWR?"  Part="1" 
+AR Path="/606DC09F/60B19A99" Ref="#PWR?"  Part="1" 
+AR Path="/6085F6E2/60B19A99" Ref="#PWR033"  Part="1" 
+F 0 "#PWR033" H 4250 1650 50  0001 C CNN
+F 1 "GND" H 4255 1727 50  0000 C CNN
+F 2 "" H 4250 1900 50  0001 C CNN
+F 3 "" H 4250 1900 50  0001 C CNN
+	1    4250 1900
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 1900 4250 1900
+Text HLabel 6250 1300 2    50   Input ~ 0
+SPI1_SCK
+Text HLabel 6250 1100 2    50   Input ~ 0
+SPI1_COPI
+Text HLabel 6250 1200 2    50   Output ~ 0
+SPI1_CIPO
+Text HLabel 6250 1800 2    50   Input ~ 0
+SPI1_SCK
+Text HLabel 6250 1600 2    50   Input ~ 0
+SPI1_COPI
+Text HLabel 6250 1700 2    50   Output ~ 0
+SPI1_CIPO
+Text HLabel 5250 1800 0    50   Input ~ 0
+SPI1_SCK
+Text HLabel 5250 1600 0    50   Input ~ 0
+SPI1_COPI
+Text HLabel 5250 1700 0    50   Output ~ 0
+SPI1_CIPO
+Text HLabel 5250 1300 0    50   Input ~ 0
+SPI1_SCK
+Text HLabel 5250 1100 0    50   Input ~ 0
+SPI1_COPI
+Text HLabel 5250 1200 0    50   Output ~ 0
+SPI1_CIPO
+Text HLabel 5250 2800 0    50   Input ~ 0
+SPI0_SCK
+Text HLabel 5250 2600 0    50   Input ~ 0
+SPI0_COPI
+Text HLabel 5250 2700 0    50   Output ~ 0
+SPI0_CIPO
+Wire Wire Line
+	5250 2600 5500 2600
+Wire Wire Line
+	5250 2700 5500 2700
+Wire Wire Line
+	5250 3100 5500 3100
+Wire Wire Line
+	5250 3200 5500 3200
+Wire Wire Line
+	5250 3300 5500 3300
+Wire Wire Line
+	5250 2800 5500 2800
+Text HLabel 5000 2500 0    50   Input ~ 0
+3.3V
+Wire Wire Line
+	5500 2500 5000 2500
+$Comp
+L power:GND #PWR?
+U 1 1 60B19AB7
+P 4250 2900
+AR Path="/60C51399/60B19AB7" Ref="#PWR?"  Part="1" 
+AR Path="/606DC09F/60B19AB7" Ref="#PWR?"  Part="1" 
+AR Path="/6085F6E2/60B19AB7" Ref="#PWR034"  Part="1" 
+F 0 "#PWR034" H 4250 2650 50  0001 C CNN
+F 1 "GND" H 4255 2727 50  0000 C CNN
+F 2 "" H 4250 2900 50  0001 C CNN
+F 3 "" H 4250 2900 50  0001 C CNN
+	1    4250 2900
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 2900 4250 2900
+Text HLabel 5250 3300 0    50   Input ~ 0
+SPI0_SCK
+Text HLabel 5250 3100 0    50   Input ~ 0
+SPI0_COPI
+Text HLabel 5250 3200 0    50   Output ~ 0
+SPI0_CIPO
+Text HLabel 5000 3000 0    50   Input ~ 0
+3.3V
+Wire Wire Line
+	5500 3000 5000 3000
+$Comp
+L power:GND #PWR?
+U 1 1 60B19AC3
+P 4250 3400
+AR Path="/60C51399/60B19AC3" Ref="#PWR?"  Part="1" 
+AR Path="/606DC09F/60B19AC3" Ref="#PWR?"  Part="1" 
+AR Path="/6085F6E2/60B19AC3" Ref="#PWR036"  Part="1" 
+F 0 "#PWR036" H 4250 3150 50  0001 C CNN
+F 1 "GND" H 4255 3227 50  0000 C CNN
+F 2 "" H 4250 3400 50  0001 C CNN
+F 3 "" H 4250 3400 50  0001 C CNN
+	1    4250 3400
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 3400 4250 3400
 $EndSCHEMATC
