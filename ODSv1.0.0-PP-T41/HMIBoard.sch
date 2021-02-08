@@ -5,7 +5,7 @@ $Descr USLetter 11000 8500
 encoding utf-8
 Sheet 7 7
 Title "Processing Plane for Teensy 4.1"
-Date "2021-02-06"
+Date "2021-02-07"
 Rev "v0.1.1"
 Comp "Prakash Lab/Octopi Team"
 Comment1 "Designer: Ethan Li"
@@ -58,7 +58,7 @@ Text HLabel 3100 2800 2    50   Output ~ 0
 SCK
 Text HLabel 3100 2600 2    50   Input ~ 0
 COPI
-Text HLabel 3100 2400 2    50   Input ~ 0
+Text HLabel 3100 2400 2    50   3State ~ 0
 CIPO
 Text HLabel 3100 2200 2    50   Input ~ 0
 ~DCS~

@@ -5,7 +5,7 @@ $Descr USLetter 11000 8500
 encoding utf-8
 Sheet 4 7
 Title "Processing Plane for Teensy 4.1"
-Date "2021-02-06"
+Date "2021-02-07"
 Rev "v0.1.1"
 Comp "Prakash Lab/Octopi Team"
 Comment1 "Designer: Ethan Li"
@@ -255,13 +255,13 @@ Text HLabel 3000 2850 2    50   Input ~ 0
 SPI_SPI0_SCK
 Text HLabel 3000 3050 2    50   Input ~ 0
 SPI_SPI0_COPI
-Text HLabel 3000 3250 2    50   Output ~ 0
+Text HLabel 3000 3250 2    50   3State ~ 0
 SPI_SPI0_CIPO
 Text HLabel 3000 2250 2    50   Input ~ 0
 SPI_SPI1_SCK
 Text HLabel 3000 2450 2    50   Input ~ 0
 SPI_SPI1_COPI
-Text HLabel 3000 2650 2    50   Output ~ 0
+Text HLabel 3000 2650 2    50   3State ~ 0
 SPI_SPI1_CIPO
 Text HLabel 2000 3650 0    50   UnSpc ~ 0
 INTERPLANE_1
@@ -978,11 +978,11 @@ Text HLabel 6000 2850 2    50   Input ~ 0
 SPI_SPI0_SCK
 Text HLabel 6000 3050 2    50   Input ~ 0
 SPI_SPI0_COPI
-Text HLabel 6000 3250 2    50   Output ~ 0
+Text HLabel 6000 3250 2    50   3State ~ 0
 SPI_SPI0_CIPO
 Text HLabel 6000 2450 2    50   Input ~ 0
 SPI_SPI1_COPI
-Text HLabel 6000 2650 2    50   Output ~ 0
+Text HLabel 6000 2650 2    50   3State ~ 0
 SPI_SPI1_CIPO
 Wire Wire Line
 	6000 4350 5750 4350

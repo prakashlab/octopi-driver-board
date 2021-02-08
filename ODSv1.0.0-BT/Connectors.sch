@@ -5,7 +5,7 @@ $Descr USLetter 11000 8500
 encoding utf-8
 Sheet 4 4
 Title "Backbone Template"
-Date "2021-01-23"
+Date "2021-02-07"
 Rev "v0.1.1"
 Comp "Prakash Lab/Octopi Team"
 Comment1 "Designer: Ethan Li"
@@ -223,13 +223,13 @@ Text HLabel 3000 2850 2    50   Output ~ 0
 SPI_SPI0_SCK
 Text HLabel 3000 3050 2    50   Output ~ 0
 SPI_SPI0_COPI
-Text HLabel 3000 3250 2    50   Input ~ 0
+Text HLabel 3000 3250 2    50   3State ~ 0
 SPI_SPI0_CIPO
 Text HLabel 3000 2250 2    50   Output ~ 0
 SPI_SPI1_SCK
 Text HLabel 3000 2450 2    50   Output ~ 0
 SPI_SPI1_COPI
-Text HLabel 3000 2650 2    50   Input ~ 0
+Text HLabel 3000 2650 2    50   3State ~ 0
 SPI_SPI1_CIPO
 Text HLabel 2000 3650 0    50   UnSpc ~ 0
 INTERPLANE_1
@@ -1195,13 +1195,13 @@ Text HLabel 6000 1850 2    50   Input ~ 0
 GPIO_SER3_RX
 Text HLabel 6000 2450 2    50   Output ~ 0
 SPI_SPI1_COPI
-Text HLabel 6000 2650 2    50   Input ~ 0
+Text HLabel 6000 2650 2    50   3State ~ 0
 SPI_SPI1_CIPO
 Text HLabel 6000 2850 2    50   Output ~ 0
 SPI_SPI0_SCK
 Text HLabel 6000 3050 2    50   Output ~ 0
 SPI_SPI0_COPI
-Text HLabel 6000 3250 2    50   Input ~ 0
+Text HLabel 6000 3250 2    50   3State ~ 0
 SPI_SPI0_CIPO
 Text HLabel 2000 1950 0    50   BiDi ~ 0
 GPIO_22

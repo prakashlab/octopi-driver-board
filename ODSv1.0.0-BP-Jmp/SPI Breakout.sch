@@ -5,7 +5,7 @@ $Descr USLetter 11000 8500
 encoding utf-8
 Sheet 8 9
 Title "Breakout Plane for Jumper Wires"
-Date "2021-02-06"
+Date "2021-02-07"
 Rev "v0.1.0"
 Comp "Prakash Lab/Octopi Team"
 Comment1 "Designer: Ethan Li"
@@ -17,7 +17,7 @@ Text HLabel 2750 2800 2    50   Input ~ 0
 SPI0_SCK
 Text HLabel 2750 2600 2    50   Input ~ 0
 SPI0_COPI
-Text HLabel 2750 2700 2    50   Output ~ 0
+Text HLabel 2750 2700 2    50   3State ~ 0
 SPI0_CIPO
 Text HLabel 2750 4900 2    50   Input ~ 0
 ~DCS15~
@@ -197,7 +197,7 @@ Text HLabel 2750 3300 2    50   Input ~ 0
 SPI0_SCK
 Text HLabel 2750 3100 2    50   Input ~ 0
 SPI0_COPI
-Text HLabel 2750 3200 2    50   Output ~ 0
+Text HLabel 2750 3200 2    50   3State ~ 0
 SPI0_CIPO
 Text HLabel 3000 3000 2    50   Input ~ 0
 3.3V
@@ -338,25 +338,25 @@ Text HLabel 2750 1300 2    50   Input ~ 0
 SPI1_SCK
 Text HLabel 2750 1100 2    50   Input ~ 0
 SPI1_COPI
-Text HLabel 2750 1200 2    50   Output ~ 0
+Text HLabel 2750 1200 2    50   3State ~ 0
 SPI1_CIPO
 Text HLabel 2750 1800 2    50   Input ~ 0
 SPI1_SCK
 Text HLabel 2750 1600 2    50   Input ~ 0
 SPI1_COPI
-Text HLabel 2750 1700 2    50   Output ~ 0
+Text HLabel 2750 1700 2    50   3State ~ 0
 SPI1_CIPO
 Text HLabel 1750 1800 0    50   Input ~ 0
 SPI1_SCK
 Text HLabel 1750 1600 0    50   Input ~ 0
 SPI1_COPI
-Text HLabel 1750 1700 0    50   Output ~ 0
+Text HLabel 1750 1700 0    50   3State ~ 0
 SPI1_CIPO
 Text HLabel 1750 1300 0    50   Input ~ 0
 SPI1_SCK
 Text HLabel 1750 1100 0    50   Input ~ 0
 SPI1_COPI
-Text HLabel 1750 1200 0    50   Output ~ 0
+Text HLabel 1750 1200 0    50   3State ~ 0
 SPI1_CIPO
 $Comp
 L Connector_Generic:Conn_02x10_Odd_Even J15
@@ -429,7 +429,7 @@ Text HLabel 1750 2800 0    50   Input ~ 0
 SPI0_SCK
 Text HLabel 1750 2600 0    50   Input ~ 0
 SPI0_COPI
-Text HLabel 1750 2700 0    50   Output ~ 0
+Text HLabel 1750 2700 0    50   3State ~ 0
 SPI0_CIPO
 Wire Wire Line
 	1750 2600 2000 2600
@@ -467,7 +467,7 @@ Text HLabel 1750 3300 0    50   Input ~ 0
 SPI0_SCK
 Text HLabel 1750 3100 0    50   Input ~ 0
 SPI0_COPI
-Text HLabel 1750 3200 0    50   Output ~ 0
+Text HLabel 1750 3200 0    50   3State ~ 0
 SPI0_CIPO
 Text HLabel 1500 3000 0    50   Input ~ 0
 3.3V
@@ -525,7 +525,7 @@ Text HLabel 6250 2800 2    50   Input ~ 0
 SPI0_SCK
 Text HLabel 6250 2600 2    50   Input ~ 0
 SPI0_COPI
-Text HLabel 6250 2700 2    50   Output ~ 0
+Text HLabel 6250 2700 2    50   3State ~ 0
 SPI0_CIPO
 $Comp
 L Connector_Generic:Conn_02x10_Odd_Even J19
@@ -574,7 +574,7 @@ Text HLabel 6250 3300 2    50   Input ~ 0
 SPI0_SCK
 Text HLabel 6250 3100 2    50   Input ~ 0
 SPI0_COPI
-Text HLabel 6250 3200 2    50   Output ~ 0
+Text HLabel 6250 3200 2    50   3State ~ 0
 SPI0_CIPO
 Text HLabel 6500 3000 2    50   Input ~ 0
 3.3V
@@ -715,19 +715,19 @@ Text HLabel 6250 1300 2    50   Input ~ 0
 SPI1_SCK
 Text HLabel 6250 1100 2    50   Input ~ 0
 SPI1_COPI
-Text HLabel 6250 1200 2    50   Output ~ 0
+Text HLabel 6250 1200 2    50   3State ~ 0
 SPI1_CIPO
 Text HLabel 6250 1800 2    50   Input ~ 0
 SPI1_SCK
 Text HLabel 6250 1600 2    50   Input ~ 0
 SPI1_COPI
-Text HLabel 6250 1700 2    50   Output ~ 0
+Text HLabel 6250 1700 2    50   3State ~ 0
 SPI1_CIPO
 Text HLabel 5250 1800 0    50   Input ~ 0
 SPI1_SCK
 Text HLabel 5250 1600 0    50   Input ~ 0
 SPI1_COPI
-Text HLabel 5250 1700 0    50   Output ~ 0
+Text HLabel 5250 1700 0    50   3State ~ 0
 SPI1_CIPO
 Text HLabel 5250 1300 0    50   Input ~ 0
 SPI1_SCK
@@ -739,7 +739,7 @@ Text HLabel 5250 2800 0    50   Input ~ 0
 SPI0_SCK
 Text HLabel 5250 2600 0    50   Input ~ 0
 SPI0_COPI
-Text HLabel 5250 2700 0    50   Output ~ 0
+Text HLabel 5250 2700 0    50   3State ~ 0
 SPI0_CIPO
 Wire Wire Line
 	5250 2600 5500 2600
@@ -777,7 +777,7 @@ Text HLabel 5250 3300 0    50   Input ~ 0
 SPI0_SCK
 Text HLabel 5250 3100 0    50   Input ~ 0
 SPI0_COPI
-Text HLabel 5250 3200 0    50   Output ~ 0
+Text HLabel 5250 3200 0    50   3State ~ 0
 SPI0_CIPO
 Text HLabel 5000 3000 0    50   Input ~ 0
 3.3V

@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 9 9
 Title ""
-Date ""
+Date "2021-02-07"
 Rev ""
 Comp ""
 Comment1 ""
@@ -17,7 +17,7 @@ Text HLabel 1800 1600 0    50   Input ~ 0
 SPI0_SCK
 Text HLabel 1800 1700 0    50   Input ~ 0
 SPI0_COPI
-Text HLabel 1800 1800 0    50   Output ~ 0
+Text HLabel 1800 1800 0    50   3State ~ 0
 SPI0_CIPO
 Text HLabel 2500 1000 1    50   Input ~ 0
 3.3V
@@ -221,7 +221,7 @@ Text HLabel 2000 3400 0    50   Input ~ 0
 SPI0_SCK
 Text HLabel 2000 3500 0    50   Input ~ 0
 SPI0_COPI
-Text HLabel 2000 3600 0    50   Output ~ 0
+Text HLabel 2000 3600 0    50   3State ~ 0
 SPI0_CIPO
 Text HLabel 2000 3700 0    50   Input ~ 0
 ~DCS1~
