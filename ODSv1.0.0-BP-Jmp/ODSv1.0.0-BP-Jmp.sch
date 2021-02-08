@@ -500,7 +500,7 @@ SPI0_CIPO
 Text Label 3500 2100 0    50   ~ 0
 ~DCS0~
 $Sheet
-S 6750 1450 1000 550 
+S 6750 1450 1000 650 
 U 60C384EE
 F0 "IO Expander" 50
 F1 "IO Expander.sch" 50
@@ -510,6 +510,7 @@ F4 "SPI0_CIPO" T L 6750 1700 50
 F5 "3.3V" I R 7750 1500 50 
 F6 "~DCS0~" I L 6750 1800 50 
 F7 "~DCS1~" I L 6750 1900 50 
+F8 "~DCS2~" I L 6750 2000 50 
 $EndSheet
 Text Label 6500 1500 2    50   ~ 0
 SPI0_SCK
@@ -546,4 +547,10 @@ Wire Wire Line
 	6500 1900 6750 1900
 Wire Wire Line
 	7750 1500 8000 1500
+Text Label 6500 2000 2    50   ~ 0
+~DCS2~
+Wire Wire Line
+	6500 2000 6750 2000
+Text Label 3500 2300 0    50   ~ 0
+~DCS2~
 $EndSCHEMATC

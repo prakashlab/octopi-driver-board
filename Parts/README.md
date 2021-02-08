@@ -23,4 +23,10 @@ The symbol for `MAX7317` was created by Ethan Li as a modification of the `MCP23
 - All pins were changed, reassigned, and moved to match what is used for the MAX7317
 - The package and component name labels were changed to match what is used for the MAX7317
 
+The symbol for `DACx0508` was created by Ethan Li as a modification of the `DAC5578xPW` symbol in the `Analog_DAC` KiCad library. The specific modifications made were:
+
+- All pins were changed, reassigned, and moved to match what is used for the DACx0508
+- The package and component name labels were changed to match what is used for the DACx0508
+
 All symbols created as modifications of symbols in the KiCad libraries are copyright Prakash Lab and the Octopi project contributors, and those symbols are licensed under the [Creative Commons CC-BY-SA 4.0 License](LICENSE.CC-BY-SA) as required by the KiCad [libraries license](https://kicad.org/libraries/license/).
+
