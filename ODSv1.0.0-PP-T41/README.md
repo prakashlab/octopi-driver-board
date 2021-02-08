@@ -56,8 +56,8 @@ This plane has the following backbone data interface:
 This plane has the following mechanical stacking usage requirements:
 
 - This plane must be placed at the bottom of the driver stack.
-- The top face of the board requires a between-board separation of 15 mm from the plane above it.
-- The bottom face of the board requires a separation of 75 mm from the surface on which this plane is placed, to allow sufficient clearance for the Jetson Nano Developer Kit and a cooling fan which may be placed on its heatsink.
+- The top face of the board requires a between-board separation of 15 mm from the plane above it. This can be achieved with a [Keystone 24339](https://www.digikey.com/en/products/detail/keystone-electronics/24339/1532140) standoff on each of mounting holes H1-H4.
+- The bottom face of the board requires a separation of 75 mm from the surface on which this plane is placed, to allow sufficient clearance for the Jetson Nano Developer Kit and a cooling fan which may be placed on its heatsink. This can be achieved with three [Keystone 24342](https://www.digikey.com/en/products/detail/keystone-electronics/24342/1532143) standoffs, screwed together, under each of mounting holes H1-H4.
 
 This plane has the following BOM variants:
 
