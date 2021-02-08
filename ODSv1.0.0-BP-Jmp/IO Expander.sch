@@ -199,7 +199,7 @@ U 1 1 60CA4DF1
 P 2500 3500
 F 0 "U4" H 2200 4050 50  0000 L CNN
 F 1 "DACx0508xRTE" H 2150 3950 50  0000 R CNN
-F 2 "Package_DFN_QFN:Texas_S-PWQFN-N16_EP2.1x2.1mm_ThermalVias" H 2500 3000 50  0001 C CNN
+F 2 "Package_DFN_QFN:WQFN-16-1EP_3x3mm_P0.5mm_EP1.6x1.6mm_ThermalVias" H 2500 3000 50  0001 C CNN
 F 3 "https://www.ti.com/lit/ds/symlink/dac60508.pdf" H 2500 3550 50  0001 C CNN
 	1    2500 3500
 	1    0    0    -1  
