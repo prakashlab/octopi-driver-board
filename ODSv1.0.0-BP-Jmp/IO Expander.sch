@@ -1,17 +1,17 @@
 EESchema Schematic File Version 4
 EELAYER 30 0
 EELAYER END
-$Descr A4 11693 8268
+$Descr USLetter 11000 8500
 encoding utf-8
 Sheet 9 9
-Title ""
-Date "2021-02-07"
-Rev ""
-Comp ""
-Comment1 ""
-Comment2 ""
+Title "Breakout Plane for Jumper Wires"
+Date "2021-02-08"
+Rev "v0.1.0"
+Comp "Prakash Lab/Octopi Team"
+Comment1 "Designer: Ethan Li"
+Comment2 "License: SHL-2.1"
 Comment3 ""
-Comment4 ""
+Comment4 "Octopi Driver Stack v1.0.0: Plane"
 $EndDescr
 Text HLabel 1800 1600 0    50   Input ~ 0
 SPI0_SCK
@@ -494,10 +494,224 @@ DACREF
 $Comp
 L Device:C C?
 U 1 1 6021E777
-P 6500 3150
+P 6000 3150
 AR Path="/60C51399/6199D8B6/6021E777" Ref="C?"  Part="1" 
 AR Path="/60C384EE/6021E777" Ref="C8"  Part="1" 
-F 0 "C8" H 6615 3196 50  0000 L CNN
+F 0 "C8" H 6115 3196 50  0000 L CNN
+F 1 "0.1uF" H 6115 3105 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6038 3000 50  0001 C CNN
+F 3 "http://datasheets.avx.com/X7RDielectric.pdf" H 6000 3150 50  0001 C CNN
+F 4 "06033C104KAT4A" H 6000 3150 50  0001 C CNN "MPN"
+F 5 "AVX" H 6000 3150 50  0001 C CNN "Manufacturer"
+F 6 "https://www.digikey.com/en/products/detail/avx-corporation/06033C104KAT4A/3247517" H 6000 3150 50  0001 C CNN "Ordering URL"
+F 7 "SMD" H 6000 3150 50  0001 C CNN "Type"
+F 8 "478-7018-1-ND" H 6000 3150 50  0001 C CNN "Digikey ID"
+	1    6000 3150
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6021E77D
+P 6000 3300
+AR Path="/60C51399/6199D8B6/6021E77D" Ref="#PWR?"  Part="1" 
+AR Path="/60C384EE/6021E77D" Ref="#PWR054"  Part="1" 
+F 0 "#PWR054" H 6000 3050 50  0001 C CNN
+F 1 "GND" H 6005 3127 50  0000 C CNN
+F 2 "" H 6000 3300 50  0001 C CNN
+F 3 "" H 6000 3300 50  0001 C CNN
+	1    6000 3300
+	-1   0    0    -1  
+$EndComp
+Text HLabel 6000 3000 1    50   Input ~ 0
+3.3V
+Wire Wire Line
+	9750 3900 9500 3900
+$Comp
+L power:GND #PWR?
+U 1 1 6026C81A
+P 9750 3900
+AR Path="/60C51399/6199D8B6/6026C81A" Ref="#PWR?"  Part="1" 
+AR Path="/60C384EE/6026C81A" Ref="#PWR053"  Part="1" 
+F 0 "#PWR053" H 9750 3650 50  0001 C CNN
+F 1 "GND" H 9755 3727 50  0000 C CNN
+F 2 "" H 9750 3900 50  0001 C CNN
+F 3 "" H 9750 3900 50  0001 C CNN
+	1    9750 3900
+	-1   0    0    -1  
+$EndComp
+Text Label 9500 3700 0    50   ~ 0
+ADCCOM
+Text Label 9500 3600 0    50   ~ 0
+ADCCOM
+Text Label 9500 3500 0    50   ~ 0
+ADCCOM
+Text Label 9500 3400 0    50   ~ 0
+ADCCOM
+Text Label 9500 3300 0    50   ~ 0
+ADCCOM
+Text Label 9500 3200 0    50   ~ 0
+ADCCOM
+Text Label 9500 3100 0    50   ~ 0
+ADCCOM
+Text Label 9500 3000 0    50   ~ 0
+ADCCOM
+Text Label 9500 3800 0    50   ~ 0
+ADCCOM
+Text HLabel 7250 2800 1    50   Input ~ 0
+3.3V
+Text Label 9000 3200 2    50   ~ 0
+ADC2
+Text Label 9000 3100 2    50   ~ 0
+ADC1
+Text Label 9000 3000 2    50   ~ 0
+ADC0
+Connection ~ 7900 2800
+Wire Wire Line
+	7250 2800 7900 2800
+Wire Wire Line
+	7900 2800 8100 2800
+Wire Wire Line
+	9000 3200 8500 3200
+Wire Wire Line
+	9000 3100 8500 3100
+Wire Wire Line
+	9000 3000 8500 3000
+$Comp
+L Connector_Generic:Conn_02x10_Odd_Even J?
+U 1 1 60C7F5E8
+P 9300 3400
+AR Path="/6085F6E2/60C7F5E8" Ref="J?"  Part="1" 
+AR Path="/60C384EE/60C7F5E8" Ref="J22"  Part="1" 
+F 0 "J22" H 9350 4050 50  0000 C CNN
+F 1 "Conn_02x10_Odd_Even" H 9350 3950 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x10_P2.54mm_Vertical_SMD" H 9300 3400 50  0001 C CNN
+F 3 "http://suddendocs.samtec.com/catalog_english/tsm.pdf" H 9300 3400 50  0001 C CNN
+F 4 "-NoExpansion" H 9300 3400 50  0001 C CNN "Config"
+F 5 "SAM8990-ND" H 9300 3400 50  0001 C CNN "Digikey ID"
+F 6 "TSM-110-01-T-DV" H 9300 3400 50  0001 C CNN "MPN"
+F 7 "Samtec" H 9300 3400 50  0001 C CNN "Manufacturer"
+F 8 "https://www.digikey.com/en/products/detail/samtec-inc/TSM-110-01-T-DV/1236604" H 9300 3400 50  0001 C CNN "Ordering URL"
+F 9 "SMD" H 9300 3400 50  0001 C CNN "Type"
+	1    9300 3400
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Analog_ADC:AD7689xCP U5
+U 1 1 602154C4
+P 8000 3500
+F 0 "U5" H 7600 4150 50  0000 L CNN
+F 1 "AD7689xCP" H 8450 4050 50  0000 L CNN
+F 2 "Package_CSP:LFCSP-20-1EP_4x4mm_P0.5mm_EP2.5x2.5mm" H 8000 3500 50  0001 C CNN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/AD7682_7689.pdf" H 8000 3500 50  0001 C CNN
+F 4 "-NoExpansion" H 8000 3500 50  0001 C CNN "Config"
+F 5 "AD7689BCPZRL7CT-ND" H 8000 3500 50  0001 C CNN "Digikey ID"
+F 6 "AD7689BCPZRL7" H 8000 3500 50  0001 C CNN "MPN"
+F 7 "Analog Devices" H 8000 3500 50  0001 C CNN "Manufacturer"
+F 8 "https://www.digikey.com/en/products/detail/analog-devices-inc/AD7689BCPZRL7/1873540" H 8000 3500 50  0001 C CNN "Ordering URL"
+F 9 "SMD" H 8000 3500 50  0001 C CNN "Type"
+	1    8000 3500
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	9000 3300 8500 3300
+Wire Wire Line
+	9000 3400 8500 3400
+Wire Wire Line
+	9000 3500 8500 3500
+Wire Wire Line
+	9000 3600 8500 3600
+Wire Wire Line
+	9000 3700 8500 3700
+Text Label 9000 3300 2    50   ~ 0
+ADC3
+Text Label 9000 3400 2    50   ~ 0
+ADC4
+Text Label 9000 3500 2    50   ~ 0
+ADC5
+Text Label 9000 3600 2    50   ~ 0
+ADC6
+Text Label 9000 3700 2    50   ~ 0
+ADC7
+Wire Wire Line
+	7250 3500 7500 3500
+Wire Wire Line
+	7250 3600 7500 3600
+Wire Wire Line
+	7250 3700 7500 3700
+Wire Wire Line
+	7250 3400 7500 3400
+Text HLabel 7250 3500 0    50   3State ~ 0
+SPI0_CIPO
+Text HLabel 7250 3600 0    50   Input ~ 0
+SPI0_COPI
+Text HLabel 7250 3700 0    50   Input ~ 0
+SPI0_SCK
+Text HLabel 7250 3400 0    50   Input ~ 0
+~DCS2~
+Wire Wire Line
+	7250 4300 7900 4300
+Connection ~ 7900 4300
+Wire Wire Line
+	7900 4300 8100 4300
+$Comp
+L power:GND #PWR?
+U 1 1 6024F9BC
+P 7250 4300
+AR Path="/60C51399/6199D8B6/6024F9BC" Ref="#PWR?"  Part="1" 
+AR Path="/60C384EE/6024F9BC" Ref="#PWR052"  Part="1" 
+F 0 "#PWR052" H 7250 4050 50  0001 C CNN
+F 1 "GND" H 7255 4127 50  0000 C CNN
+F 2 "" H 7250 4300 50  0001 C CNN
+F 3 "" H 7250 4300 50  0001 C CNN
+	1    7250 4300
+	-1   0    0    -1  
+$EndComp
+Text Label 8500 3800 0    50   ~ 0
+ADCCOM
+Text Label 9000 3800 2    50   ~ 0
+REF
+Text Label 8500 4000 0    50   ~ 0
+REF
+Text Label 8500 4100 0    50   ~ 0
+REFIN
+$Comp
+L power:GND #PWR?
+U 1 1 60237E58
+P 6500 4100
+AR Path="/60C51399/6199D8B6/60237E58" Ref="#PWR?"  Part="1" 
+AR Path="/60C384EE/60237E58" Ref="#PWR055"  Part="1" 
+F 0 "#PWR055" H 6500 3850 50  0001 C CNN
+F 1 "GND" H 6505 3927 50  0000 C CNN
+F 2 "" H 6500 4100 50  0001 C CNN
+F 3 "" H 6500 4100 50  0001 C CNN
+	1    6500 4100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 60237E52
+P 6500 3950
+AR Path="/60C51399/6199D8B6/60237E52" Ref="C?"  Part="1" 
+AR Path="/60C384EE/60237E52" Ref="C11"  Part="1" 
+F 0 "C11" H 6615 3996 50  0000 L CNN
+F 1 "10uF" H 6615 3905 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 6538 3800 50  0001 C CNN
+F 3 "http://datasheets.avx.com/X7RDielectric.pdf" H 6500 3950 50  0001 C CNN
+F 4 "0805ZC106KAT2A" H 6500 3950 50  0001 C CNN "MPN"
+F 5 "AVX" H 6500 3950 50  0001 C CNN "Manufacturer"
+F 6 "https://www.digikey.com/en/products/detail/avx-corporation/0805ZC106KAT2A/3081418" H 6500 3950 50  0001 C CNN "Ordering URL"
+F 7 "SMD" H 6500 3950 50  0001 C CNN "Type"
+F 8 "478-10578-1-ND" H 6500 3950 50  0001 C CNN "Digikey ID"
+	1    6500 3950
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 60290679
+P 6500 3150
+AR Path="/60C51399/6199D8B6/60290679" Ref="C?"  Part="1" 
+AR Path="/60C384EE/60290679" Ref="C10"  Part="1" 
+F 0 "C10" H 6615 3196 50  0000 L CNN
 F 1 "0.1uF" H 6615 3105 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 6538 3000 50  0001 C CNN
 F 3 "http://datasheets.avx.com/X7RDielectric.pdf" H 6500 3150 50  0001 C CNN
@@ -511,268 +725,54 @@ F 8 "478-7018-1-ND" H 6500 3150 50  0001 C CNN "Digikey ID"
 $EndComp
 $Comp
 L power:GND #PWR?
-U 1 1 6021E77D
+U 1 1 6029067F
 P 6500 3300
-AR Path="/60C51399/6199D8B6/6021E77D" Ref="#PWR?"  Part="1" 
-AR Path="/60C384EE/6021E77D" Ref="#PWR054"  Part="1" 
-F 0 "#PWR054" H 6500 3050 50  0001 C CNN
+AR Path="/60C51399/6199D8B6/6029067F" Ref="#PWR?"  Part="1" 
+AR Path="/60C384EE/6029067F" Ref="#PWR0111"  Part="1" 
+F 0 "#PWR0111" H 6500 3050 50  0001 C CNN
 F 1 "GND" H 6505 3127 50  0000 C CNN
 F 2 "" H 6500 3300 50  0001 C CNN
 F 3 "" H 6500 3300 50  0001 C CNN
 	1    6500 3300
 	-1   0    0    -1  
 $EndComp
-Text HLabel 6500 3000 1    50   Input ~ 0
-3.3V
-Wire Wire Line
-	10250 3900 10000 3900
-$Comp
-L power:GND #PWR?
-U 1 1 6026C81A
-P 10250 3900
-AR Path="/60C51399/6199D8B6/6026C81A" Ref="#PWR?"  Part="1" 
-AR Path="/60C384EE/6026C81A" Ref="#PWR053"  Part="1" 
-F 0 "#PWR053" H 10250 3650 50  0001 C CNN
-F 1 "GND" H 10255 3727 50  0000 C CNN
-F 2 "" H 10250 3900 50  0001 C CNN
-F 3 "" H 10250 3900 50  0001 C CNN
-	1    10250 3900
-	-1   0    0    -1  
-$EndComp
-Text Label 10000 3700 0    50   ~ 0
-ADCCOM
-Text Label 10000 3600 0    50   ~ 0
-ADCCOM
-Text Label 10000 3500 0    50   ~ 0
-ADCCOM
-Text Label 10000 3400 0    50   ~ 0
-ADCCOM
-Text Label 10000 3300 0    50   ~ 0
-ADCCOM
-Text Label 10000 3200 0    50   ~ 0
-ADCCOM
-Text Label 10000 3100 0    50   ~ 0
-ADCCOM
-Text Label 10000 3000 0    50   ~ 0
-ADCCOM
-Text Label 10000 3800 0    50   ~ 0
-ADCCOM
-Text HLabel 7750 2800 1    50   Input ~ 0
-3.3V
-Text Label 9500 3200 2    50   ~ 0
-ADC2
-Text Label 9500 3100 2    50   ~ 0
-ADC1
-Text Label 9500 3000 2    50   ~ 0
-ADC0
-Connection ~ 8400 2800
-Wire Wire Line
-	7750 2800 8400 2800
-Wire Wire Line
-	8400 2800 8600 2800
-Wire Wire Line
-	9500 3200 9000 3200
-Wire Wire Line
-	9500 3100 9000 3100
-Wire Wire Line
-	9500 3000 9000 3000
-$Comp
-L Connector_Generic:Conn_02x10_Odd_Even J?
-U 1 1 60C7F5E8
-P 9800 3400
-AR Path="/6085F6E2/60C7F5E8" Ref="J?"  Part="1" 
-AR Path="/60C384EE/60C7F5E8" Ref="J22"  Part="1" 
-F 0 "J22" H 9850 4050 50  0000 C CNN
-F 1 "Conn_02x10_Odd_Even" H 9850 3950 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x10_P2.54mm_Vertical_SMD" H 9800 3400 50  0001 C CNN
-F 3 "http://suddendocs.samtec.com/catalog_english/tsm.pdf" H 9800 3400 50  0001 C CNN
-F 4 "-NoExpansion" H 9800 3400 50  0001 C CNN "Config"
-F 5 "SAM8990-ND" H 9800 3400 50  0001 C CNN "Digikey ID"
-F 6 "TSM-110-01-T-DV" H 9800 3400 50  0001 C CNN "MPN"
-F 7 "Samtec" H 9800 3400 50  0001 C CNN "Manufacturer"
-F 8 "https://www.digikey.com/en/products/detail/samtec-inc/TSM-110-01-T-DV/1236604" H 9800 3400 50  0001 C CNN "Ordering URL"
-F 9 "SMD" H 9800 3400 50  0001 C CNN "Type"
-	1    9800 3400
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Analog_ADC:AD7689xCP U5
-U 1 1 602154C4
-P 8500 3500
-F 0 "U5" H 8100 4150 50  0000 L CNN
-F 1 "AD7689xCP" H 8950 4050 50  0000 L CNN
-F 2 "Package_CSP:LFCSP-20-1EP_4x4mm_P0.5mm_EP2.5x2.5mm" H 8500 3500 50  0001 C CNN
-F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/AD7682_7689.pdf" H 8500 3500 50  0001 C CNN
-F 4 "-NoExpansion" H 8500 3500 50  0001 C CNN "Config"
-F 5 "AD7689BCPZRL7CT-ND" H 8500 3500 50  0001 C CNN "Digikey ID"
-F 6 "AD7689BCPZRL7" H 8500 3500 50  0001 C CNN "MPN"
-F 7 "Analog Devices" H 8500 3500 50  0001 C CNN "Manufacturer"
-F 8 "https://www.digikey.com/en/products/detail/analog-devices-inc/AD7689BCPZRL7/1873540" H 8500 3500 50  0001 C CNN "Ordering URL"
-F 9 "SMD" H 8500 3500 50  0001 C CNN "Type"
-	1    8500 3500
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	9500 3300 9000 3300
-Wire Wire Line
-	9500 3400 9000 3400
-Wire Wire Line
-	9500 3500 9000 3500
-Wire Wire Line
-	9500 3600 9000 3600
-Wire Wire Line
-	9500 3700 9000 3700
-Text Label 9500 3300 2    50   ~ 0
-ADC3
-Text Label 9500 3400 2    50   ~ 0
-ADC4
-Text Label 9500 3500 2    50   ~ 0
-ADC5
-Text Label 9500 3600 2    50   ~ 0
-ADC6
-Text Label 9500 3700 2    50   ~ 0
-ADC7
-Wire Wire Line
-	7750 3500 8000 3500
-Wire Wire Line
-	7750 3600 8000 3600
-Wire Wire Line
-	7750 3700 8000 3700
-Wire Wire Line
-	7750 3400 8000 3400
-Text HLabel 7750 3500 0    50   3State ~ 0
-SPI0_CIPO
-Text HLabel 7750 3600 0    50   Input ~ 0
-SPI0_COPI
-Text HLabel 7750 3700 0    50   Input ~ 0
-SPI0_SCK
-Text HLabel 7750 3400 0    50   Input ~ 0
-~DCS2~
-Wire Wire Line
-	7750 4300 8400 4300
-Connection ~ 8400 4300
-Wire Wire Line
-	8400 4300 8600 4300
-$Comp
-L power:GND #PWR?
-U 1 1 6024F9BC
-P 7750 4300
-AR Path="/60C51399/6199D8B6/6024F9BC" Ref="#PWR?"  Part="1" 
-AR Path="/60C384EE/6024F9BC" Ref="#PWR052"  Part="1" 
-F 0 "#PWR052" H 7750 4050 50  0001 C CNN
-F 1 "GND" H 7755 4127 50  0000 C CNN
-F 2 "" H 7750 4300 50  0001 C CNN
-F 3 "" H 7750 4300 50  0001 C CNN
-	1    7750 4300
-	-1   0    0    -1  
-$EndComp
-Text Label 9000 3800 0    50   ~ 0
-ADCCOM
-Text Label 9500 3800 2    50   ~ 0
+Text Label 6500 3800 1    50   ~ 0
 REF
-Text Label 9000 4000 0    50   ~ 0
-REF
-Text Label 9000 4100 0    50   ~ 0
+Text Label 9000 3900 2    50   ~ 0
 REFIN
-$Comp
-L power:GND #PWR?
-U 1 1 60237E58
-P 7000 4100
-AR Path="/60C51399/6199D8B6/60237E58" Ref="#PWR?"  Part="1" 
-AR Path="/60C384EE/60237E58" Ref="#PWR055"  Part="1" 
-F 0 "#PWR055" H 7000 3850 50  0001 C CNN
-F 1 "GND" H 7005 3927 50  0000 C CNN
-F 2 "" H 7000 4100 50  0001 C CNN
-F 3 "" H 7000 4100 50  0001 C CNN
-	1    7000 4100
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Device:C C?
-U 1 1 60237E52
-P 7000 3950
-AR Path="/60C51399/6199D8B6/60237E52" Ref="C?"  Part="1" 
-AR Path="/60C384EE/60237E52" Ref="C11"  Part="1" 
-F 0 "C11" H 7115 3996 50  0000 L CNN
-F 1 "10uF" H 7115 3905 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 7038 3800 50  0001 C CNN
-F 3 "http://datasheets.avx.com/X7RDielectric.pdf" H 7000 3950 50  0001 C CNN
-F 4 "0805ZC106KAT2A" H 7000 3950 50  0001 C CNN "MPN"
-F 5 "AVX" H 7000 3950 50  0001 C CNN "Manufacturer"
-F 6 "https://www.digikey.com/en/products/detail/avx-corporation/0805ZC106KAT2A/3081418" H 7000 3950 50  0001 C CNN "Ordering URL"
-F 7 "SMD" H 7000 3950 50  0001 C CNN "Type"
-F 8 "478-10578-1-ND" H 7000 3950 50  0001 C CNN "Digikey ID"
-	1    7000 3950
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Device:C C?
-U 1 1 60290679
-P 7000 3150
-AR Path="/60C51399/6199D8B6/60290679" Ref="C?"  Part="1" 
-AR Path="/60C384EE/60290679" Ref="C10"  Part="1" 
-F 0 "C10" H 7115 3196 50  0000 L CNN
-F 1 "0.1uF" H 7115 3105 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 7038 3000 50  0001 C CNN
-F 3 "http://datasheets.avx.com/X7RDielectric.pdf" H 7000 3150 50  0001 C CNN
-F 4 "06033C104KAT4A" H 7000 3150 50  0001 C CNN "MPN"
-F 5 "AVX" H 7000 3150 50  0001 C CNN "Manufacturer"
-F 6 "https://www.digikey.com/en/products/detail/avx-corporation/06033C104KAT4A/3247517" H 7000 3150 50  0001 C CNN "Ordering URL"
-F 7 "SMD" H 7000 3150 50  0001 C CNN "Type"
-F 8 "478-7018-1-ND" H 7000 3150 50  0001 C CNN "Digikey ID"
-	1    7000 3150
-	-1   0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 6029067F
-P 7000 3300
-AR Path="/60C51399/6199D8B6/6029067F" Ref="#PWR?"  Part="1" 
-AR Path="/60C384EE/6029067F" Ref="#PWR0111"  Part="1" 
-F 0 "#PWR0111" H 7000 3050 50  0001 C CNN
-F 1 "GND" H 7005 3127 50  0000 C CNN
-F 2 "" H 7000 3300 50  0001 C CNN
-F 3 "" H 7000 3300 50  0001 C CNN
-	1    7000 3300
-	-1   0    0    -1  
-$EndComp
-Text Label 7000 3800 1    50   ~ 0
-REF
-Text Label 9500 3900 2    50   ~ 0
-REFIN
-Text Label 7000 3000 1    50   ~ 0
+Text Label 6500 3000 1    50   ~ 0
 REFIN
 $Comp
 L Device:C C?
 U 1 1 602A3F4C
-P 6500 3950
+P 6000 3950
 AR Path="/60C51399/6199D8B6/602A3F4C" Ref="C?"  Part="1" 
 AR Path="/60C384EE/602A3F4C" Ref="C9"  Part="1" 
-F 0 "C9" H 6615 3996 50  0000 L CNN
-F 1 "0.1uF" H 6615 3905 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 6538 3800 50  0001 C CNN
-F 3 "http://datasheets.avx.com/X7RDielectric.pdf" H 6500 3950 50  0001 C CNN
-F 4 "06033C104KAT4A" H 6500 3950 50  0001 C CNN "MPN"
-F 5 "AVX" H 6500 3950 50  0001 C CNN "Manufacturer"
-F 6 "https://www.digikey.com/en/products/detail/avx-corporation/06033C104KAT4A/3247517" H 6500 3950 50  0001 C CNN "Ordering URL"
-F 7 "SMD" H 6500 3950 50  0001 C CNN "Type"
-F 8 "478-7018-1-ND" H 6500 3950 50  0001 C CNN "Digikey ID"
-	1    6500 3950
+F 0 "C9" H 6115 3996 50  0000 L CNN
+F 1 "0.1uF" H 6115 3905 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6038 3800 50  0001 C CNN
+F 3 "http://datasheets.avx.com/X7RDielectric.pdf" H 6000 3950 50  0001 C CNN
+F 4 "06033C104KAT4A" H 6000 3950 50  0001 C CNN "MPN"
+F 5 "AVX" H 6000 3950 50  0001 C CNN "Manufacturer"
+F 6 "https://www.digikey.com/en/products/detail/avx-corporation/06033C104KAT4A/3247517" H 6000 3950 50  0001 C CNN "Ordering URL"
+F 7 "SMD" H 6000 3950 50  0001 C CNN "Type"
+F 8 "478-7018-1-ND" H 6000 3950 50  0001 C CNN "Digikey ID"
+	1    6000 3950
 	-1   0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 602A3F52
-P 6500 4100
+P 6000 4100
 AR Path="/60C51399/6199D8B6/602A3F52" Ref="#PWR?"  Part="1" 
 AR Path="/60C384EE/602A3F52" Ref="#PWR056"  Part="1" 
-F 0 "#PWR056" H 6500 3850 50  0001 C CNN
-F 1 "GND" H 6505 3927 50  0000 C CNN
-F 2 "" H 6500 4100 50  0001 C CNN
-F 3 "" H 6500 4100 50  0001 C CNN
-	1    6500 4100
+F 0 "#PWR056" H 6000 3850 50  0001 C CNN
+F 1 "GND" H 6005 3927 50  0000 C CNN
+F 2 "" H 6000 4100 50  0001 C CNN
+F 3 "" H 6000 4100 50  0001 C CNN
+	1    6000 4100
 	-1   0    0    -1  
 $EndComp
-Text HLabel 6500 3800 1    50   Input ~ 0
+Text HLabel 6000 3800 1    50   Input ~ 0
 3.3V
 $EndSCHEMATC
