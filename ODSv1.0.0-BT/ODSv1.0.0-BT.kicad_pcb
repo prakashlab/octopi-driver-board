@@ -2539,6 +2539,11 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
+    (model ${KIPRJMOD}/../Rendering/ODSv1.0.0-BP-Jmp.wrl
+      (offset (xyz -35 205 15.5))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (gr_text "Uses SPI0 (list any shared pins, UARTs, and I2C buses+addresses used).\nDesigned by Prakash Lab / Octopi Team / Ethan Li.\nReleased under Solderpad Hardware License 2.1.\nDesign files at: github.com/prakashlab/octopi-driver-board\nFor research use only. Not for use in diagnostic procedures." (at 61 193) (layer F.SilkS) (tstamp 5FEAD2D8)

@@ -11,6 +11,8 @@ on:
       - '*/README.md'
       - '.github/workflows/kicad-exports.yml'
       - '.kibot/**'
+    paths-ignore:
+      - 'ODSv1.0.0/**'
   pull_request:
     paths:
       - '*/**.sch'
@@ -19,6 +21,8 @@ on:
       - '*/README.md'
       - '.github/workflows/kicad-exports.yml'
       - '.kibot/**'
+    paths-ignore:
+      - 'ODSv1.0.0/**'
   workflow_dispatch:
     inputs:
       git-ref:

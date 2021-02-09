@@ -2,6 +2,8 @@
 
 Driver electronics for the Octopi and Squid microscope families.
 
+![3D render of the driver electronics stack](ODSv1.0.0/Mechanical%20Renders/Above%20Front%20Right.png)
+
 This repository contains the design files for printed circuit boards (PCBs) for driving the sensors and actuators of the Octopi and Squid families of microscopes.
 
 ## Background
@@ -14,7 +16,7 @@ This repository contains the design files for printed circuit boards (PCBs) for 
 
 [Squid](https://squid-imaging.org/), short for _Simplifying quantitative imaging platform development and deployment_, is a toolkit for implementing research microscopes with advanced imaging capabilities comparable to what's available in commercial solutions, but at a fraction of the cost and with much higher portability. Squid provides a full suite of hardware and software components for rapidly configuring high-performance microscopes tailored to users' applications with reduced cost, effort, and turnaround time. Besides increasing accessibility of research microscopes and available microscope hours to labs, it is also designed to simplify development and dissemination of new or otherwise advanced microscopy techniques.
 
-![CAD renderings of three configurations of the Squid microscope](https://ethanj.li/static/5ce8263b4c58000a8af6213b03295a68/ea60f/squid-configurations.png)
+![CAD renders of three configurations of the Squid microscope](https://ethanj.li/static/5ce8263b4c58000a8af6213b03295a68/ea60f/squid-configurations.png)
 
 Because the modules of the Octopi and Squid microscopes contain various sensors and actuators which need to be electronically driven and integrated into a complete system, the Squid project also provides printed circuit boards for interfacing and controlling these modules. This repository contains the designs for printed circuit boards needed to drive these microscopes.
 
