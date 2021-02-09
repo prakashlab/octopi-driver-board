@@ -2,7 +2,7 @@
 
 Backbone Template for creating new planes in the Octopi Driver Stack
 
-![Preview render of top face of the plane](Fabrication/Preview%20Renders/Top.png)
+![Preview render of top face of the plane](Preview%20Renders/Top.png)
 
 This board template is part of the [octopi-driver-board project](https://github.com/prakashlab/octopi-driver-board).
 
