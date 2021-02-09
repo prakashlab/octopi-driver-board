@@ -10,7 +10,7 @@ This processing plane contains a [Teensy 4.1](https://www.pjrc.com/store/teensy4
 
 ## Background
 
-The Teensy 4.1, based on NXP Semiconductor's [i.MX RT1060](https://www.nxp.com/products/processors-and-microcontrollers/arm-microcontrollers/i-mx-rt-crossover-mcus/i-mx-rt1060-crossover-mcu-with-arm-cortex-m7-core:i.MX-RT1060) [Crossover Processor](https://www.nxp.com/docs/en/white-paper/I.MXRT1050WP.pdf), is (along with the Teensy 4.0) the fastest microcontroller development board in existence. The i.MX RT1060 has an ARM Cortex-M7 core with a CPU clock speed of up to 600 MHz, 1 MB of RAM, and a dedicated floating-point math unit.
+The Teensy 4.1, based on NXP Semiconductor's [i.MX RT1060](https://www.nxp.com/products/processors-and-microcontrollers/arm-microcontrollers/i-mx-rt-crossover-mcus/i-mx-rt1060-crossover-mcu-with-arm-cortex-m7-core:i.MX-RT1060) [Crossover Processor](https://www.nxp.com/docs/en/white-paper/I.MXRT1050WP.pdf), is (along with the Teensy 4.0) the fastest microcontroller development board in existence. The i.MX RT1060 has an ARM Cortex-M7 core with a CPU clock speed of up to 600 MHz, 1 MB of RAM, and a dedicated floating-point math unit. This plane electrically integrates the Teensy 4.1 with the driver stack's backbone system.
 
 This plane is designed to provide the following functionalities:
 
@@ -49,7 +49,7 @@ This plane has the following backbone data interface:
 - GPIO input/output: almost all GPIO pins from the Teensy are exposed for other planes to interface with.
 - GPIO output: Pins 22 and 23 of the Teensy are exposed over the backbone but are also connected to outputs from HB-Sm; they should not be used by other planes.
 - Serial comunication: Most GPIO pins which correspond to I2C and CAN buses and or to UART Serial connections are reserved for those purposes and laid out in a special section of the backbone for other planes to interface with. Both SPI buses from the Teensy are also exposed over the backbone for other planes to interface with. SPI1 is used for peripheral boards and devices such as HB-Sm, while SPI0 is to intended for use by planes.
-- SPI chip-select multiplexing: this board reserves the DSCS0 line for on-board devices and for HB-Sm; the DSCS0 line is not exposed over the backbone. This board exposes DSCS1 - DSCS15 for other planes to use.
+- SPI chip-select multiplexing: this board reserves the DSCS0 line for use with SPI0 and SPI1 for on-board devices and HB-Sm; the DSCS0 line is not exposed over the backbone. This board exposes DSCS1 - DSCS15 for other planes to use.
 
 ## Usage
 

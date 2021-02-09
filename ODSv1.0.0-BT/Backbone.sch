@@ -5,7 +5,7 @@ $Descr USLetter 11000 8500
 encoding utf-8
 Sheet 2 4
 Title "Backbone Template"
-Date "2021-02-07"
+Date "2021-02-08"
 Rev "v0.1.1"
 Comp "Prakash Lab/Octopi Team"
 Comment1 "Designer: Ethan Li"
@@ -840,7 +840,7 @@ Wire Wire Line
 Wire Notes Line
 	9600 5200 8000 5200
 Text Notes 8025 5175 0    25   ~ 0
-LED colors can be reallocated, but make sure to update resistor values.\n560 drives yellow at 33% brightness, 150 drives orange at 50% brightness,\nand 75 drives red at 66% brightness.
+LED colors can be reallocated, but make sure to update resistor values & BOM.\n560 drives yellow at 33% brightness, 150 drives orange at 50% brightness,\nand 75 drives red at 66% brightness.
 Text Label 7950 4650 2    50   ~ 0
 ~LED1~
 Text Label 7950 4750 2    50   ~ 0

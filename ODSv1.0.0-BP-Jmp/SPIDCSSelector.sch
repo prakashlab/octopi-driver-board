@@ -174,6 +174,7 @@ F 5 "Nexperia" H 4750 1900 50  0001 C CNN "Manufacturer"
 F 6 "https://www.digikey.com/en/products/detail/nexperia-usa-inc/74HC4067PW118/1230424" H 4750 1900 50  0001 C CNN "Ordering URL"
 F 7 "SMD" H 4750 1900 50  0001 C CNN "Type"
 F 8 "1727-2042-1-ND" H 4750 1900 50  0001 C CNN "Digikey ID"
+F 9 "-NoExpansion" H 4750 1900 50  0001 C CNN "Config"
 	1    4750 1900
 	1    0    0    -1  
 $EndComp

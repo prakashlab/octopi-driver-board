@@ -36,6 +36,7 @@ F 5 "Maxim" H 2500 1750 50  0001 C CNN "Manufacturer"
 F 6 "https://www.digikey.com/en/products/detail/maxim-integrated/MAX7317AEE-T/1781026" H 2500 1750 50  0001 C CNN "Ordering URL"
 F 7 "SMD" H 2500 1750 50  0001 C CNN "Type"
 F 8 "MAX7317AEE+TCT-ND" H 2500 1750 50  0001 C CNN "Digikey ID"
+F 9 "-NoExpansion" H 2500 1750 50  0001 C CNN "Config"
 	1    2500 1750
 	1    0    0    -1  
 $EndComp
@@ -97,6 +98,7 @@ F 0 "J20" H 4000 2350 50  0000 C CNN
 F 1 "Conn_02x10_Odd_Even" H 4000 2250 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_2x10_P2.54mm_Vertical_SMD" H 3950 1700 50  0001 C CNN
 F 3 "~" H 3950 1700 50  0001 C CNN
+F 4 "-NoExpansion" H 3950 1700 50  0001 C CNN "Config"
 	1    3950 1700
 	1    0    0    -1  
 $EndComp
@@ -188,6 +190,7 @@ F 0 "U4" H 2200 4050 50  0000 L CNN
 F 1 "DACx0508xRTE" H 2150 3950 50  0000 R CNN
 F 2 "Package_DFN_QFN:WQFN-16-1EP_3x3mm_P0.5mm_EP1.6x1.6mm_ThermalVias" H 2500 3000 50  0001 C CNN
 F 3 "https://www.ti.com/lit/ds/symlink/dac60508.pdf" H 2500 3550 50  0001 C CNN
+F 4 "-NoExpansion" H 2500 3500 50  0001 C CNN "Config"
 	1    2500 3500
 	1    0    0    -1  
 $EndComp
@@ -336,6 +339,7 @@ F 0 "J21" H 4100 4050 50  0000 C CNN
 F 1 "Conn_02x10_Odd_Even" H 4100 3950 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_2x10_P2.54mm_Vertical_SMD" H 4050 3400 50  0001 C CNN
 F 3 "~" H 4050 3400 50  0001 C CNN
+F 4 "-NoExpansion" H 4050 3400 50  0001 C CNN "Config"
 	1    4050 3400
 	-1   0    0    -1  
 $EndComp
@@ -567,6 +571,7 @@ F 0 "J22" H 9850 4050 50  0000 C CNN
 F 1 "Conn_02x10_Odd_Even" H 9850 3950 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_2x10_P2.54mm_Vertical_SMD" H 9800 3400 50  0001 C CNN
 F 3 "~" H 9800 3400 50  0001 C CNN
+F 4 "-NoExpansion" H 9800 3400 50  0001 C CNN "Config"
 	1    9800 3400
 	-1   0    0    -1  
 $EndComp
@@ -578,6 +583,7 @@ F 0 "U5" H 8100 4150 50  0000 L CNN
 F 1 "AD7689xCP" H 8950 4050 50  0000 L CNN
 F 2 "Package_CSP:LFCSP-20-1EP_4x4mm_P0.5mm_EP2.5x2.5mm" H 8500 3500 50  0001 C CNN
 F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/AD7682_7689.pdf" H 8500 3500 50  0001 C CNN
+F 4 "-NoExpansion" H 8500 3500 50  0001 C CNN "Config"
 	1    8500 3500
 	-1   0    0    -1  
 $EndComp
