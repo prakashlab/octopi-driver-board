@@ -28,5 +28,9 @@ The symbol for `DACx0508` was created by Ethan Li as a modification of the `DAC5
 - All pins were changed, reassigned, and moved to match what is used for the DACx0508
 - The package and component name labels were changed to match what is used for the DACx0508
 
+The symbol for `AD7689xCP` was created by Ethan Li as a modification of the `AD7689xCP` symbol in the `Analog_ADC` KiCad library. The specific modifications made were:
+
+- The SDO pin was changed from the Output pin type to the Tri-State pin type
+
 All symbols created as modifications of symbols in the KiCad libraries are copyright Prakash Lab and the Octopi project contributors, and those symbols are licensed under the [Creative Commons CC-BY-SA 4.0 License](LICENSE.CC-BY-SA) as required by the KiCad [libraries license](https://kicad.org/libraries/license/).
 
