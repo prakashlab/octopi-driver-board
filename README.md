@@ -67,6 +67,8 @@ Templates are provided as starters to copy for creating new boards. For more inf
 
 All footprints, documentation, CAD models, and KiCad libraries for components and daughter boards used with the ODSv1.0.0 boards are available in the `Parts` directory.
 
+A KiCad project which mechanically integrates all planes in the ODSv1.0.0 stack for 3D rendering is in the `ODSv1.0.0` directory.
+
 ### Releases
 
 Snapshots of boards for fabrication/assembly are tagged and associated with releases. Each release comes with the following attachments:

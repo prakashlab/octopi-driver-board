@@ -6,7 +6,10 @@ Mechanical integration of all boards in the Octopi Driver Stack
 
 This meta-board is part of the [octopi-driver-board project](https://github.com/prakashlab/octopi-driver-board).
 
-This KiCad project is a meta-board which simply integrates the 3D models of all planes in the Octopi Driver Stack, for use in 3D export and rendering. See the [octopi-driver-board project README](../README.md) for more details.
+This KiCad project is a meta-board which simply integrates the 3D models of all planes in the Octopi Driver Stack, for use in 3D export and rendering. See the [octopi-driver-board project README](../README.md) for more details. From top to bottomm, this stack consists of the following boards:
+
+- [ODSv1.0.0-BP-Jmp](../ODSv1.0.0-BP-Jmp)
+- [ODSv1.0.0-PP-T41](../ODSv1.0.0-PP-T41)
 
 ## Maintainers
 
