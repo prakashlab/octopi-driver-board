@@ -11,8 +11,6 @@ on:
       - '*/README.md'
       - '.github/workflows/kicad-exports.yml'
       - '.kibot/**'
-    paths-ignore:
-      - 'ODSv1.0.0/**'
   pull_request:
     paths:
       - '*/**.sch'
@@ -21,8 +19,6 @@ on:
       - '*/README.md'
       - '.github/workflows/kicad-exports.yml'
       - '.kibot/**'
-    paths-ignore:
-      - 'ODSv1.0.0/**'
   workflow_dispatch:
     inputs:
       git-ref:
@@ -103,10 +99,12 @@ jobs:
 
             if [ -z "$directory" ]; then
               continue # Exclude root directory
-            elif [ "$directory" == Parts ]; then
-              continue # Exclude Parts directory
             elif [ "$directory" == .github ]; then
               continue # Exclude .github directory
+            elif [ "$directory" == Parts ]; then
+              continue # Exclude Parts directory
+            elif [ "$directory" == "ODSv1.0.0" ]; then
+              continue # Exclude ODSv1.0.0 directory, which is only used for rendering
             fi
 
             # Add board only if it is not already included
