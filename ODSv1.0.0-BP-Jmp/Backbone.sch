@@ -625,11 +625,11 @@ F 0 "R21" V 8950 4900 50  0000 L CNN
 F 1 "560" V 9000 4750 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 8930 4750 50  0001 C CNN
 F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 9000 4750 50  0001 C CNN
-F 4 "RC0603FR-07150RL" H 9000 4750 50  0001 C CNN "MPN"
+F 4 "RC0603FR-07560RL" H 9000 4750 50  0001 C CNN "MPN"
 F 5 "Yageo" H 9000 4750 50  0001 C CNN "Manufacturer"
-F 6 "https://www.digikey.com/en/products/detail/yageo/RC0603FR-07150RL/726958" H 9000 4750 50  0001 C CNN "Ordering URL"
+F 6 "https://www.digikey.com/en/products/detail/yageo/RC0603FR-07560RL/727304" H 9000 4750 50  0001 C CNN "Ordering URL"
 F 7 "SMD" H 9000 4750 50  0001 C CNN "Type"
-F 8 "311-150HRCT-ND" H 9000 4750 50  0001 C CNN "Digikey ID"
+F 8 "311-560HRCT-ND" H 9000 4750 50  0001 C CNN "Digikey ID"
 	1    9000 4750
 	0    1    1    0   
 $EndComp
@@ -641,11 +641,11 @@ F 0 "R22" V 8950 5000 50  0000 L CNN
 F 1 "560" V 9000 4850 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 8930 4850 50  0001 C CNN
 F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 9000 4850 50  0001 C CNN
-F 4 "RC0603FR-0775RL" H 9000 4850 50  0001 C CNN "MPN"
+F 4 "RC0603FR-07560RL" H 9000 4850 50  0001 C CNN "MPN"
 F 5 "Yageo" H 9000 4850 50  0001 C CNN "Manufacturer"
-F 6 "https://www.digikey.com/en/products/detail/yageo/RC0603FR-0775RL/727377" H 9000 4850 50  0001 C CNN "Ordering URL"
+F 6 "https://www.digikey.com/en/products/detail/yageo/RC0603FR-07560RL/727304" H 9000 4850 50  0001 C CNN "Ordering URL"
 F 7 "SMD" H 9000 4850 50  0001 C CNN "Type"
-F 8 "311-75.0HRCT-ND" H 9000 4850 50  0001 C CNN "Digikey ID"
+F 8 "311-560HRCT-ND" H 9000 4850 50  0001 C CNN "Digikey ID"
 	1    9000 4850
 	0    1    1    0   
 $EndComp
@@ -657,11 +657,11 @@ F 0 "R23" V 8950 5100 50  0000 L CNN
 F 1 "560" V 9000 4950 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 8930 4950 50  0001 C CNN
 F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 9000 4950 50  0001 C CNN
-F 4 "RC0603FR-0775RL" H 9000 4950 50  0001 C CNN "MPN"
+F 4 "RC0603FR-07560RL" H 9000 4950 50  0001 C CNN "MPN"
 F 5 "Yageo" H 9000 4950 50  0001 C CNN "Manufacturer"
-F 6 "https://www.digikey.com/en/products/detail/yageo/RC0603FR-0775RL/727377" H 9000 4950 50  0001 C CNN "Ordering URL"
+F 6 "https://www.digikey.com/en/products/detail/yageo/RC0603FR-07560RL/727304" H 9000 4950 50  0001 C CNN "Ordering URL"
 F 7 "SMD" H 9000 4950 50  0001 C CNN "Type"
-F 8 "311-75.0HRCT-ND" H 9000 4950 50  0001 C CNN "Digikey ID"
+F 8 "311-560HRCT-ND" H 9000 4950 50  0001 C CNN "Digikey ID"
 	1    9000 4950
 	0    1    1    0   
 $EndComp
@@ -674,13 +674,13 @@ P 8550 4950
 F 0 "D8" H 8650 4900 50  0000 L CNN
 F 1 "Yellow" H 8350 4900 50  0000 R CNN
 F 2 "LED_SMD:LED_0603_1608Metric" H 8550 4950 50  0001 C CNN
-F 3 "https://optoelectronics.liteon.com/upload/download/DS-22-99-0151/LTST-C190KRKT.pdf" H 8550 4950 50  0001 C CNN
-F 4 "LTST-C190KRKT" H 8550 4950 50  0001 C CNN "MPN"
+F 3 "https://optoelectronics.liteon.com/upload/download/DS-22-99-0189/LTST-C190KSKT.pdf" H 8550 4950 50  0001 C CNN
+F 4 "LTST-C190KSKT" H 8550 4950 50  0001 C CNN "MPN"
 F 5 "Lite-On" H 8550 4950 50  0001 C CNN "Manufacturer"
-F 6 "https://www.digikey.com/en/products/detail/lite-on-inc/LTST-C190KRKT/386817" H 8550 4950 50  0001 C CNN "Ordering URL"
+F 6 "https://www.digikey.com/en/products/detail/lite-on-inc/LTST-C190KSKT/386819" H 8550 4950 50  0001 C CNN "Ordering URL"
 F 7 "SMD" H 8550 4950 50  0001 C CNN "Type"
 F 8 "Polarity is indicated by a diode symbol either next to the LED or at the end of the line of LEDs." H 8550 4950 50  0001 C CNN "Assembly Notes"
-F 9 "160-1436-1-ND" H 8550 4950 50  0001 C CNN "Digikey ID"
+F 9 "160-1437-1-ND" H 8550 4950 50  0001 C CNN "Digikey ID"
 	1    8550 4950
 	1    0    0    1   
 $EndComp
@@ -691,13 +691,13 @@ P 8550 4850
 F 0 "D7" H 8650 4800 50  0000 L CNN
 F 1 "Yellow" H 8350 4800 50  0000 R CNN
 F 2 "LED_SMD:LED_0603_1608Metric" H 8550 4850 50  0001 C CNN
-F 3 "https://optoelectronics.liteon.com/upload/download/DS-22-99-0151/LTST-C190KRKT.pdf" H 8550 4850 50  0001 C CNN
-F 4 "LTST-C190KRKT" H 8550 4850 50  0001 C CNN "MPN"
+F 3 "https://optoelectronics.liteon.com/upload/download/DS-22-99-0189/LTST-C190KSKT.pdf" H 8550 4850 50  0001 C CNN
+F 4 "LTST-C190KSKT" H 8550 4850 50  0001 C CNN "MPN"
 F 5 "Lite-On" H 8550 4850 50  0001 C CNN "Manufacturer"
-F 6 "https://www.digikey.com/en/products/detail/lite-on-inc/LTST-C190KRKT/386817" H 8550 4850 50  0001 C CNN "Ordering URL"
+F 6 "https://www.digikey.com/en/products/detail/lite-on-inc/LTST-C190KSKT/386819" H 8550 4850 50  0001 C CNN "Ordering URL"
 F 7 "SMD" H 8550 4850 50  0001 C CNN "Type"
 F 8 "Polarity is indicated by a diode symbol either next to the LED or at the end of the line of LEDs." H 8550 4850 50  0001 C CNN "Assembly Notes"
-F 9 "160-1436-1-ND" H 8550 4850 50  0001 C CNN "Digikey ID"
+F 9 "160-1437-1-ND" H 8550 4850 50  0001 C CNN "Digikey ID"
 	1    8550 4850
 	1    0    0    1   
 $EndComp
@@ -708,13 +708,13 @@ P 8550 4750
 F 0 "D6" H 8650 4700 50  0000 L CNN
 F 1 "Yellow" H 8350 4700 50  0000 R CNN
 F 2 "LED_SMD:LED_0603_1608Metric" H 8550 4750 50  0001 C CNN
-F 3 "https://optoelectronics.liteon.com/upload/download/DS-22-99-0186/LTST-C190KFKT.PDF" H 8550 4750 50  0001 C CNN
-F 4 "LTST-C190KFKT" H 8550 4750 50  0001 C CNN "MPN"
+F 3 "https://optoelectronics.liteon.com/upload/download/DS-22-99-0189/LTST-C190KSKT.pdf" H 8550 4750 50  0001 C CNN
+F 4 "LTST-C190KSKT" H 8550 4750 50  0001 C CNN "MPN"
 F 5 "Lite-On" H 8550 4750 50  0001 C CNN "Manufacturer"
-F 6 "https://www.digikey.com/en/products/detail/lite-on-inc/LTST-C190KFKT/386813" H 8550 4750 50  0001 C CNN "Ordering URL"
+F 6 "https://www.digikey.com/en/products/detail/lite-on-inc/LTST-C190KSKT/386819" H 8550 4750 50  0001 C CNN "Ordering URL"
 F 7 "SMD" H 8550 4750 50  0001 C CNN "Type"
 F 8 "Polarity is indicated by a diode symbol either next to the LED or at the end of the line of LEDs." H 8550 4750 50  0001 C CNN "Assembly Notes"
-F 9 "160-1434-1-ND" H 8550 4750 50  0001 C CNN "Digikey ID"
+F 9 "160-1437-1-ND" H 8550 4750 50  0001 C CNN "Digikey ID"
 	1    8550 4750
 	1    0    0    1   
 $EndComp
@@ -1109,7 +1109,12 @@ P 4800 5050
 F 0 "J1" H 4700 4000 50  0000 C CNN
 F 1 "Conn_01x16" H 4700 4100 50  0000 C CNN
 F 2 "Connector_Harwin:Harwin_M20-89016xx_1x16_P2.54mm_Horizontal" H 4800 5050 50  0001 C CNN
-F 3 "~" H 4800 5050 50  0001 C CNN
+F 3 "https://s3.amazonaws.com/catalogspreads-pdf/PAGE112-113%20.100%20MALE%20HDR.pdf" H 4800 5050 50  0001 C CNN
+F 4 "S1113E-16-ND" H 4800 5050 50  0001 C CNN "Digikey ID"
+F 5 "GEC16SBSN-M89" H 4800 5050 50  0001 C CNN "MPN"
+F 6 "Sullins Connector Solutions" H 4800 5050 50  0001 C CNN "Manufacturer"
+F 7 "https://www.digikey.com/en/products/detail/sullins-connector-solutions/GEC16SBSN-M89/862267" H 4800 5050 50  0001 C CNN "Ordering URL"
+F 8 "SMD" H 4800 5050 50  0001 C CNN "Type"
 	1    4800 5050
 	-1   0    0    1   
 $EndComp

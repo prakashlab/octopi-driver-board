@@ -97,8 +97,13 @@ AR Path="/60C384EE/60C74B19" Ref="J20"  Part="1"
 F 0 "J20" H 4000 2350 50  0000 C CNN
 F 1 "Conn_02x10_Odd_Even" H 4000 2250 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_2x10_P2.54mm_Vertical_SMD" H 3950 1700 50  0001 C CNN
-F 3 "~" H 3950 1700 50  0001 C CNN
+F 3 "http://suddendocs.samtec.com/catalog_english/tsm.pdf" H 3950 1700 50  0001 C CNN
 F 4 "-NoExpansion" H 3950 1700 50  0001 C CNN "Config"
+F 5 "SAM8990-ND" H 3950 1700 50  0001 C CNN "Digikey ID"
+F 6 "TSM-110-01-T-DV" H 3950 1700 50  0001 C CNN "MPN"
+F 7 "Samtec" H 3950 1700 50  0001 C CNN "Manufacturer"
+F 8 "https://www.digikey.com/en/products/detail/samtec-inc/TSM-110-01-T-DV/1236604" H 3950 1700 50  0001 C CNN "Ordering URL"
+F 9 "SMD" H 3950 1700 50  0001 C CNN "Type"
 	1    3950 1700
 	1    0    0    -1  
 $EndComp
@@ -191,6 +196,11 @@ F 1 "DACx0508xRTE" H 2150 3950 50  0000 R CNN
 F 2 "Package_DFN_QFN:WQFN-16-1EP_3x3mm_P0.5mm_EP1.6x1.6mm_ThermalVias" H 2500 3000 50  0001 C CNN
 F 3 "https://www.ti.com/lit/ds/symlink/dac60508.pdf" H 2500 3550 50  0001 C CNN
 F 4 "-NoExpansion" H 2500 3500 50  0001 C CNN "Config"
+F 5 "296-51047-1-ND" H 2500 3500 50  0001 C CNN "Digikey ID"
+F 6 "DAC80508ZRTER" H 2500 3500 50  0001 C CNN "MPN"
+F 7 "Texas Instruments" H 2500 3500 50  0001 C CNN "Manufacturer"
+F 8 "https://www.digikey.com/en/products/detail/texas-instruments/DAC80508ZRTER/9659605" H 2500 3500 50  0001 C CNN "Ordering URL"
+F 9 "SMD" H 2500 3500 50  0001 C CNN "Type"
 	1    2500 3500
 	1    0    0    -1  
 $EndComp
@@ -338,8 +348,13 @@ AR Path="/60C384EE/60C7DCCA" Ref="J21"  Part="1"
 F 0 "J21" H 4100 4050 50  0000 C CNN
 F 1 "Conn_02x10_Odd_Even" H 4100 3950 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_2x10_P2.54mm_Vertical_SMD" H 4050 3400 50  0001 C CNN
-F 3 "~" H 4050 3400 50  0001 C CNN
+F 3 "http://suddendocs.samtec.com/catalog_english/tsm.pdf" H 4050 3400 50  0001 C CNN
 F 4 "-NoExpansion" H 4050 3400 50  0001 C CNN "Config"
+F 5 "SAM8990-ND" H 4050 3400 50  0001 C CNN "Digikey ID"
+F 6 "TSM-110-01-T-DV" H 4050 3400 50  0001 C CNN "MPN"
+F 7 "Samtec" H 4050 3400 50  0001 C CNN "Manufacturer"
+F 8 "https://www.digikey.com/en/products/detail/samtec-inc/TSM-110-01-T-DV/1236604" H 4050 3400 50  0001 C CNN "Ordering URL"
+F 9 "SMD" H 4050 3400 50  0001 C CNN "Type"
 	1    4050 3400
 	-1   0    0    -1  
 $EndComp
@@ -570,8 +585,13 @@ AR Path="/60C384EE/60C7F5E8" Ref="J22"  Part="1"
 F 0 "J22" H 9850 4050 50  0000 C CNN
 F 1 "Conn_02x10_Odd_Even" H 9850 3950 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_2x10_P2.54mm_Vertical_SMD" H 9800 3400 50  0001 C CNN
-F 3 "~" H 9800 3400 50  0001 C CNN
+F 3 "http://suddendocs.samtec.com/catalog_english/tsm.pdf" H 9800 3400 50  0001 C CNN
 F 4 "-NoExpansion" H 9800 3400 50  0001 C CNN "Config"
+F 5 "SAM8990-ND" H 9800 3400 50  0001 C CNN "Digikey ID"
+F 6 "TSM-110-01-T-DV" H 9800 3400 50  0001 C CNN "MPN"
+F 7 "Samtec" H 9800 3400 50  0001 C CNN "Manufacturer"
+F 8 "https://www.digikey.com/en/products/detail/samtec-inc/TSM-110-01-T-DV/1236604" H 9800 3400 50  0001 C CNN "Ordering URL"
+F 9 "SMD" H 9800 3400 50  0001 C CNN "Type"
 	1    9800 3400
 	-1   0    0    -1  
 $EndComp
@@ -584,6 +604,11 @@ F 1 "AD7689xCP" H 8950 4050 50  0000 L CNN
 F 2 "Package_CSP:LFCSP-20-1EP_4x4mm_P0.5mm_EP2.5x2.5mm" H 8500 3500 50  0001 C CNN
 F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/AD7682_7689.pdf" H 8500 3500 50  0001 C CNN
 F 4 "-NoExpansion" H 8500 3500 50  0001 C CNN "Config"
+F 5 "AD7689BCPZRL7CT-ND" H 8500 3500 50  0001 C CNN "Digikey ID"
+F 6 "AD7689BCPZRL7" H 8500 3500 50  0001 C CNN "MPN"
+F 7 "Analog Devices" H 8500 3500 50  0001 C CNN "Manufacturer"
+F 8 "https://www.digikey.com/en/products/detail/analog-devices-inc/AD7689BCPZRL7/1873540" H 8500 3500 50  0001 C CNN "Ordering URL"
+F 9 "SMD" H 8500 3500 50  0001 C CNN "Type"
 	1    8500 3500
 	-1   0    0    -1  
 $EndComp

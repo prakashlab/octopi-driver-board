@@ -58,7 +58,12 @@ P 2200 4400
 F 0 "J14" H 2250 5050 50  0000 C CNN
 F 1 "Conn_02x10_Odd_Even" H 2250 4950 50  0000 C CNN
 F 2 "Octopi:Samtec_TSM-110-01-X-DH_2x10_P2.54mm_Horizontal" H 2200 4400 50  0001 C CNN
-F 3 "~" H 2200 4400 50  0001 C CNN
+F 3 "http://suddendocs.samtec.com/catalog_english/tsm.pdf" H 2200 4400 50  0001 C CNN
+F 4 "SAM15910-ND" H 2200 4400 50  0001 C CNN "Digikey ID"
+F 5 "TSM-110-01-T-DH" H 2200 4400 50  0001 C CNN "MPN"
+F 6 "Samtec" H 2200 4400 50  0001 C CNN "Manufacturer"
+F 7 "https://www.digikey.com/en/products/detail/samtec-inc/TSM-110-01-T-DH/2685730" H 2200 4400 50  0001 C CNN "Ordering URL"
+F 8 "SMD" H 2200 4400 50  0001 C CNN "Type"
 	1    2200 4400
 	1    0    0    -1  
 $EndComp
@@ -157,7 +162,12 @@ P 2200 2900
 F 0 "J13" H 2250 3550 50  0000 C CNN
 F 1 "Conn_02x10_Odd_Even" H 2250 3450 50  0000 C CNN
 F 2 "Octopi:Samtec_TSM-110-01-X-DH_2x10_P2.54mm_Horizontal" H 2200 2900 50  0001 C CNN
-F 3 "~" H 2200 2900 50  0001 C CNN
+F 3 "http://suddendocs.samtec.com/catalog_english/tsm.pdf" H 2200 2900 50  0001 C CNN
+F 4 "SAM15910-ND" H 2200 2900 50  0001 C CNN "Digikey ID"
+F 5 "TSM-110-01-T-DH" H 2200 2900 50  0001 C CNN "MPN"
+F 6 "Samtec" H 2200 2900 50  0001 C CNN "Manufacturer"
+F 7 "https://www.digikey.com/en/products/detail/samtec-inc/TSM-110-01-T-DH/2685730" H 2200 2900 50  0001 C CNN "Ordering URL"
+F 8 "SMD" H 2200 2900 50  0001 C CNN "Type"
 	1    2200 2900
 	1    0    0    -1  
 $EndComp
@@ -226,7 +236,12 @@ P 2200 1400
 F 0 "J12" H 2250 2050 50  0000 C CNN
 F 1 "Conn_02x10_Odd_Even" H 2250 1950 50  0000 C CNN
 F 2 "Octopi:Samtec_TSM-110-01-X-DH_2x10_P2.54mm_Horizontal" H 2200 1400 50  0001 C CNN
-F 3 "~" H 2200 1400 50  0001 C CNN
+F 3 "http://suddendocs.samtec.com/catalog_english/tsm.pdf" H 2200 1400 50  0001 C CNN
+F 4 "SAM15910-ND" H 2200 1400 50  0001 C CNN "Digikey ID"
+F 5 "TSM-110-01-T-DH" H 2200 1400 50  0001 C CNN "MPN"
+F 6 "Samtec" H 2200 1400 50  0001 C CNN "Manufacturer"
+F 7 "https://www.digikey.com/en/products/detail/samtec-inc/TSM-110-01-T-DH/2685730" H 2200 1400 50  0001 C CNN "Ordering URL"
+F 8 "SMD" H 2200 1400 50  0001 C CNN "Type"
 	1    2200 1400
 	1    0    0    -1  
 $EndComp
@@ -365,7 +380,12 @@ P 2200 5900
 F 0 "J15" H 2250 6550 50  0000 C CNN
 F 1 "Conn_02x10_Odd_Even" H 2250 6450 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_2x10_P2.54mm_Vertical_SMD" H 2200 5900 50  0001 C CNN
-F 3 "~" H 2200 5900 50  0001 C CNN
+F 3 "http://suddendocs.samtec.com/catalog_english/tsm.pdf" H 2200 5900 50  0001 C CNN
+F 4 "SAM8990-ND" H 2200 5900 50  0001 C CNN "Digikey ID"
+F 5 "TSM-110-01-T-DV" H 2200 5900 50  0001 C CNN "MPN"
+F 6 "Samtec" H 2200 5900 50  0001 C CNN "Manufacturer"
+F 7 "https://www.digikey.com/en/products/detail/samtec-inc/TSM-110-01-T-DV/1236604" H 2200 5900 50  0001 C CNN "Ordering URL"
+F 8 "SMD" H 2200 5900 50  0001 C CNN "Type"
 	1    2200 5900
 	1    0    0    -1  
 $EndComp
@@ -534,7 +554,12 @@ P 5700 2900
 F 0 "J19" H 5750 3550 50  0000 C CNN
 F 1 "Conn_02x10_Odd_Even" H 5750 3450 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_2x10_P2.54mm_Vertical_SMD" H 5700 2900 50  0001 C CNN
-F 3 "~" H 5700 2900 50  0001 C CNN
+F 3 "http://suddendocs.samtec.com/catalog_english/tsm.pdf" H 5700 2900 50  0001 C CNN
+F 4 "SAM8990-ND" H 5700 2900 50  0001 C CNN "Digikey ID"
+F 5 "TSM-110-01-T-DV" H 5700 2900 50  0001 C CNN "MPN"
+F 6 "Samtec" H 5700 2900 50  0001 C CNN "Manufacturer"
+F 7 "https://www.digikey.com/en/products/detail/samtec-inc/TSM-110-01-T-DV/1236604" H 5700 2900 50  0001 C CNN "Ordering URL"
+F 8 "SMD" H 5700 2900 50  0001 C CNN "Type"
 	1    5700 2900
 	1    0    0    -1  
 $EndComp
@@ -603,7 +628,12 @@ P 5700 1400
 F 0 "J18" H 5750 2050 50  0000 C CNN
 F 1 "Conn_02x10_Odd_Even" H 5750 1950 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_2x10_P2.54mm_Vertical_SMD" H 5700 1400 50  0001 C CNN
-F 3 "~" H 5700 1400 50  0001 C CNN
+F 3 "http://suddendocs.samtec.com/catalog_english/tsm.pdf" H 5700 1400 50  0001 C CNN
+F 4 "SAM8990-ND" H 5700 1400 50  0001 C CNN "Digikey ID"
+F 5 "TSM-110-01-T-DV" H 5700 1400 50  0001 C CNN "MPN"
+F 6 "Samtec" H 5700 1400 50  0001 C CNN "Manufacturer"
+F 7 "https://www.digikey.com/en/products/detail/samtec-inc/TSM-110-01-T-DV/1236604" H 5700 1400 50  0001 C CNN "Ordering URL"
+F 8 "SMD" H 5700 1400 50  0001 C CNN "Type"
 	1    5700 1400
 	1    0    0    -1  
 $EndComp
