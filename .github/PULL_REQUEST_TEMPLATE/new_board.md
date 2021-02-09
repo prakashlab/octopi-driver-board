@@ -1,10 +1,10 @@
-This PR provides a new board for the Octopi Driver Stack. This board, named {INSERT NAME CODE HERE} __({INSERT FULL NAME HERE})__, {INSERT DESCRIPTION OF WHAT IT DOES HERE}. More information about this board is available at {INSERT RELATIVE LINK TO README HERE, e.g. [ODSv1.0.0-PP-T41/README.md](ODSv1.0.0-PP-T41/README.md)}.
+This PR provides a new board for the Octopi Driver Stack. This board, named {INSERT NAME CODE HERE} __({INSERT FULL NAME HERE})__, {INSERT DESCRIPTION OF WHAT IT DOES HERE}. More information about this board is available in the README.md file for this board.
 
 This PR will be used to keep track of previews and manufacturing files prior to a freeze on the `ODSv1.0.0-{{INSERT NAME CODE HERE}}v0.1.0` tag. The PR will be merged once the prototype-stage manufacturing order (red PCBs) is placed. Afterwards, additional comments should be added to document any errata or testing results from assembled prototypes, or required changes for the next version can be recorded directly in Github Issues.
 
 Attachments:
 
-- Gerber files: {{ATTACH ZIP ARCHIVE OF GERBER AND DRILL FILES HERE}}
+- Gerber files for PCBWay: {{ATTACH ZIP ARCHIVE OF GERBER AND DRILL FILES HERE}}
 
 After final changes are made on this PR and it is approved for merging, I will answer the following questions as a new comment on this PR, for records-keeping:
 

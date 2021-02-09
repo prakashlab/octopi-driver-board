@@ -1,4 +1,4 @@
-This PR modifies the {INSERT NAME CODE HERE} board for the Octopi Driver Stack. More information about this board is available at {INSERT LINK TO README HERE, e.g. [ODSv1.0.0-PP-T41/README.md](ODSv1.0.0-PP-T41/README.md)}.
+This PR modifies the {INSERT NAME CODE HERE} board for the Octopi Driver Stack. More information about this board is available in the README.md file for this board.
 
 Major breaking changes:
 
@@ -24,7 +24,7 @@ After this PR is merged, the board will be released with the `ODSv1.0.0-{{INSERT
 
 Attachments:
 
-- Gerber files: {{ATTACH ZIP ARCHIVE OF GERBER AND DRILL FILES HERE}}
+- Gerber files for PCBWay: {{ATTACH ZIP ARCHIVE OF GERBER AND DRILL FILES HERE}}
 
 After final changes are made on this PR and it is approved for merging, I will answer the following questions as a new comment on this PR, for records-keeping:
 
