@@ -55,6 +55,7 @@ F 5 "AVX" H 750 1150 50  0001 C CNN "Manufacturer"
 F 6 "https://www.digikey.com/en/products/detail/avx-corporation/06033C473KAT2A/563345" H 750 1150 50  0001 C CNN "Ordering URL"
 F 7 "SMD" H 750 1150 50  0001 C CNN "Type"
 F 8 "478-1235-1-ND" H 750 1150 50  0001 C CNN "Digikey ID"
+F 9 "-NoExpansion, -NoIC" H 750 1150 50  0001 C CNN "Config"
 	1    750  1150
 	1    0    0    -1  
 $EndComp
@@ -98,7 +99,7 @@ F 0 "J20" H 4000 2350 50  0000 C CNN
 F 1 "Conn_02x10_Odd_Even" H 4000 2250 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_2x10_P2.54mm_Vertical_SMD" H 3950 1700 50  0001 C CNN
 F 3 "http://suddendocs.samtec.com/catalog_english/tsm.pdf" H 3950 1700 50  0001 C CNN
-F 4 "-NoExpansion" H 3950 1700 50  0001 C CNN "Config"
+F 4 "-NoExpansion, -NoIC" H 3950 1700 50  0001 C CNN "Config"
 F 5 "SAM8990-ND" H 3950 1700 50  0001 C CNN "Digikey ID"
 F 6 "TSM-110-01-T-DV" H 3950 1700 50  0001 C CNN "MPN"
 F 7 "Samtec" H 3950 1700 50  0001 C CNN "Manufacturer"
@@ -349,7 +350,7 @@ F 0 "J21" H 4100 4050 50  0000 C CNN
 F 1 "Conn_02x10_Odd_Even" H 4100 3950 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_2x10_P2.54mm_Vertical_SMD" H 4050 3400 50  0001 C CNN
 F 3 "http://suddendocs.samtec.com/catalog_english/tsm.pdf" H 4050 3400 50  0001 C CNN
-F 4 "-NoExpansion" H 4050 3400 50  0001 C CNN "Config"
+F 4 "-NoExpansion, -NoIC" H 4050 3400 50  0001 C CNN "Config"
 F 5 "SAM8990-ND" H 4050 3400 50  0001 C CNN "Digikey ID"
 F 6 "TSM-110-01-T-DV" H 4050 3400 50  0001 C CNN "MPN"
 F 7 "Samtec" H 4050 3400 50  0001 C CNN "Manufacturer"
@@ -374,6 +375,7 @@ F 5 "AVX" H 750 3050 50  0001 C CNN "Manufacturer"
 F 6 "https://www.digikey.com/en/products/detail/avx-corporation/06033C104KAT4A/3247517" H 750 3050 50  0001 C CNN "Ordering URL"
 F 7 "SMD" H 750 3050 50  0001 C CNN "Type"
 F 8 "478-7018-1-ND" H 750 3050 50  0001 C CNN "Digikey ID"
+F 9 "-NoExpansion, -NoIC" H 750 3050 50  0001 C CNN "Config"
 	1    750  3050
 	1    0    0    -1  
 $EndComp
@@ -407,6 +409,7 @@ F 5 "AVX" H 750 3900 50  0001 C CNN "Manufacturer"
 F 6 "https://www.digikey.com/en/products/detail/avx-corporation/06033C104KAT4A/3247517" H 750 3900 50  0001 C CNN "Ordering URL"
 F 7 "SMD" H 750 3900 50  0001 C CNN "Type"
 F 8 "478-7018-1-ND" H 750 3900 50  0001 C CNN "Digikey ID"
+F 9 "-NoExpansion, -NoIC" H 750 3900 50  0001 C CNN "Config"
 	1    750  3900
 	1    0    0    -1  
 $EndComp
@@ -440,6 +443,7 @@ F 5 "AVX" H 1200 3050 50  0001 C CNN "Manufacturer"
 F 6 "https://www.digikey.com/en/products/detail/avx-corporation/0805ZC106KAT2A/3081418" H 1200 3050 50  0001 C CNN "Ordering URL"
 F 7 "SMD" H 1200 3050 50  0001 C CNN "Type"
 F 8 "478-10578-1-ND" H 1200 3050 50  0001 C CNN "Digikey ID"
+F 9 "-NoExpansion, -NoIC" H 1200 3050 50  0001 C CNN "Config"
 	1    1200 3050
 	1    0    0    -1  
 $EndComp
@@ -473,6 +477,7 @@ F 5 "AVX" H 1200 3900 50  0001 C CNN "Manufacturer"
 F 6 "https://www.digikey.com/en/products/detail/avx-corporation/06033C104KAT4A/3247517" H 1200 3900 50  0001 C CNN "Ordering URL"
 F 7 "SMD" H 1200 3900 50  0001 C CNN "Type"
 F 8 "478-7018-1-ND" H 1200 3900 50  0001 C CNN "Digikey ID"
+F 9 "-NoExpansion, -NoIC" H 1200 3900 50  0001 C CNN "Config"
 	1    1200 3900
 	1    0    0    -1  
 $EndComp
@@ -506,6 +511,7 @@ F 5 "AVX" H 6000 3150 50  0001 C CNN "Manufacturer"
 F 6 "https://www.digikey.com/en/products/detail/avx-corporation/06033C104KAT4A/3247517" H 6000 3150 50  0001 C CNN "Ordering URL"
 F 7 "SMD" H 6000 3150 50  0001 C CNN "Type"
 F 8 "478-7018-1-ND" H 6000 3150 50  0001 C CNN "Digikey ID"
+F 9 "-NoExpansion, -NoIC" H 6000 3150 50  0001 C CNN "Config"
 	1    6000 3150
 	-1   0    0    -1  
 $EndComp
@@ -586,7 +592,7 @@ F 0 "J22" H 9350 4050 50  0000 C CNN
 F 1 "Conn_02x10_Odd_Even" H 9350 3950 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_2x10_P2.54mm_Vertical_SMD" H 9300 3400 50  0001 C CNN
 F 3 "http://suddendocs.samtec.com/catalog_english/tsm.pdf" H 9300 3400 50  0001 C CNN
-F 4 "-NoExpansion" H 9300 3400 50  0001 C CNN "Config"
+F 4 "-NoExpansion, -NoIC" H 9300 3400 50  0001 C CNN "Config"
 F 5 "SAM8990-ND" H 9300 3400 50  0001 C CNN "Digikey ID"
 F 6 "TSM-110-01-T-DV" H 9300 3400 50  0001 C CNN "MPN"
 F 7 "Samtec" H 9300 3400 50  0001 C CNN "Manufacturer"
@@ -702,6 +708,7 @@ F 5 "AVX" H 6500 3950 50  0001 C CNN "Manufacturer"
 F 6 "https://www.digikey.com/en/products/detail/avx-corporation/0805ZC106KAT2A/3081418" H 6500 3950 50  0001 C CNN "Ordering URL"
 F 7 "SMD" H 6500 3950 50  0001 C CNN "Type"
 F 8 "478-10578-1-ND" H 6500 3950 50  0001 C CNN "Digikey ID"
+F 9 "-NoExpansion, -NoIC" H 6500 3950 50  0001 C CNN "Config"
 	1    6500 3950
 	-1   0    0    -1  
 $EndComp
@@ -720,6 +727,7 @@ F 5 "AVX" H 6500 3150 50  0001 C CNN "Manufacturer"
 F 6 "https://www.digikey.com/en/products/detail/avx-corporation/06033C104KAT4A/3247517" H 6500 3150 50  0001 C CNN "Ordering URL"
 F 7 "SMD" H 6500 3150 50  0001 C CNN "Type"
 F 8 "478-7018-1-ND" H 6500 3150 50  0001 C CNN "Digikey ID"
+F 9 "-NoExpansion, -NoIC" H 6500 3150 50  0001 C CNN "Config"
 	1    6500 3150
 	-1   0    0    -1  
 $EndComp
@@ -757,6 +765,7 @@ F 5 "AVX" H 6000 3950 50  0001 C CNN "Manufacturer"
 F 6 "https://www.digikey.com/en/products/detail/avx-corporation/06033C104KAT4A/3247517" H 6000 3950 50  0001 C CNN "Ordering URL"
 F 7 "SMD" H 6000 3950 50  0001 C CNN "Type"
 F 8 "478-7018-1-ND" H 6000 3950 50  0001 C CNN "Digikey ID"
+F 9 "-NoExpansion, -NoIC" H 6000 3950 50  0001 C CNN "Config"
 	1    6000 3950
 	-1   0    0    -1  
 $EndComp

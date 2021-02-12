@@ -175,7 +175,7 @@ F 5 "Nexperia" H 4750 1900 50  0001 C CNN "Manufacturer"
 F 6 "https://www.digikey.com/en/products/detail/nexperia-usa-inc/74HC4067PW118/1230424" H 4750 1900 50  0001 C CNN "Ordering URL"
 F 7 "SMD" H 4750 1900 50  0001 C CNN "Type"
 F 8 "1727-2042-1-ND" H 4750 1900 50  0001 C CNN "Digikey ID"
-F 9 "-NoExpansion, -NoIC" H 4750 1900 50  0001 C CNN "Config"
+F 9 "-NoIC" H 4750 1900 50  0001 C CNN "Config"
 	1    4750 1900
 	1    0    0    -1  
 $EndComp
@@ -204,6 +204,7 @@ F 5 "AVX" H 2750 1200 50  0001 C CNN "Manufacturer"
 F 6 "https://www.digikey.com/en/products/detail/avx-corporation/06033C473KAT2A/563345" H 2750 1200 50  0001 C CNN "Ordering URL"
 F 7 "SMD" H 2750 1200 50  0001 C CNN "Type"
 F 8 "478-1235-1-ND" H 2750 1200 50  0001 C CNN "Digikey ID"
+F 9 "-NoIC" H 2750 1200 50  0001 C CNN "Config"
 	1    2750 1200
 	1    0    0    -1  
 $EndComp
@@ -220,6 +221,7 @@ F 5 "AVX" H 3500 1150 50  0001 C CNN "Manufacturer"
 F 6 "https://www.digikey.com/en/products/detail/avx-corporation/06033C104KAT4A/3247517" H 3500 1150 50  0001 C CNN "Ordering URL"
 F 7 "SMD" H 3500 1150 50  0001 C CNN "Type"
 F 8 "478-7018-1-ND" H 3500 1150 50  0001 C CNN "Digikey ID"
+F 9 "-NoIC" H 3500 1150 50  0001 C CNN "Config"
 	1    3500 1150
 	1    0    0    -1  
 $EndComp

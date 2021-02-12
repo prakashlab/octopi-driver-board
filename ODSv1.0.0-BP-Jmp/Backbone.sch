@@ -829,6 +829,7 @@ F 6 "https://www.digikey.com/en/products/detail/lite-on-inc/LTST-C190TBKT/388529
 F 7 "SMD" H 4450 6100 50  0001 C CNN "Type"
 F 8 "Polarity is indicated by a diode symbol either next to the LED or at the end of the line of LEDs." H 4450 6100 50  0001 C CNN "Assembly Notes"
 F 9 "160-1646-1-ND" H 4450 6100 50  0001 C CNN "Digikey ID"
+F 10 "" H 4450 6100 50  0001 C CNN "Config"
 	1    4450 6100
 	1    0    0    1   
 $EndComp
@@ -868,6 +869,7 @@ F 6 "https://www.digikey.com/en/products/detail/lite-on-inc/LTST-C190TBKT/388529
 F 7 "SMD" H 4450 6200 50  0001 C CNN "Type"
 F 8 "Polarity is indicated by a diode symbol either next to the LED or at the end of the line of LEDs." H 4450 6200 50  0001 C CNN "Assembly Notes"
 F 9 "160-1646-1-ND" H 4450 6200 50  0001 C CNN "Digikey ID"
+F 10 "" H 4450 6200 50  0001 C CNN "Config"
 	1    4450 6200
 	1    0    0    1   
 $EndComp
@@ -901,6 +903,7 @@ F 6 "https://www.digikey.com/en/products/detail/lite-on-inc/LTST-C190TBKT/388529
 F 7 "SMD" H 4450 6300 50  0001 C CNN "Type"
 F 8 "Polarity is indicated by a diode symbol either next to the LED or at the end of the line of LEDs." H 4450 6300 50  0001 C CNN "Assembly Notes"
 F 9 "160-1646-1-ND" H 4450 6300 50  0001 C CNN "Digikey ID"
+F 10 "" H 4450 6300 50  0001 C CNN "Config"
 	1    4450 6300
 	1    0    0    1   
 $EndComp
