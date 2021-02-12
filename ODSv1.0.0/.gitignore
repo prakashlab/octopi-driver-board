@@ -1,0 +1,7 @@
+# 3D models
+
+*.wrl
+*.dae
+
+# Blender files
+*.blend1

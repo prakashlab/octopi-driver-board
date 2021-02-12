@@ -2,18 +2,42 @@
 
 Mechanical integration of all boards in the Octopi Driver Stack
 
-![Mechanical render of the stack](Mechanical%20Renders/Above%20Front%20Right.png)
+![Mechanical render of the stack](Mechanical%20Renders/6.png)
 
 This meta-board is part of the [octopi-driver-board project](https://github.com/prakashlab/octopi-driver-board).
 
-This KiCad project is a meta-board which simply integrates the 3D models of all planes in the Octopi Driver Stack, for use in 3D export and rendering. See the [octopi-driver-board project README](../README.md) for more details. From top to bottomm, this stack consists of the following boards:
+This KiCad project is a meta-board which simply integrates the 3D models of all planes in the Octopi Driver Stack, for use in 3D export and rendering. See the [octopi-driver-board project README](../README.md) for more details. From top to bottom, this stack consists of the following boards:
 
 - [ODSv1.0.0-BP-Jmp](../ODSv1.0.0-BP-Jmp)
 - [ODSv1.0.0-PP-T41](../ODSv1.0.0-PP-T41)
 
+A Blender project is also provided to render the entire stack from multiple viewpoints, with raytracing through Blender Cycles.
+
+## Usage
+
+### Rendering
+
+For each of the boards listed above, open its KICAD_PCB file in KiCad and export it as a WRL file (VRML/X3D format) into this directory (**not the directory of the board**)) with the following settings:
+
+- Units: 0.1 in
+- Grid reference X, Y: 35 mm, 205 mm (this is the location of the center of mounting hole H1)
+
+Then open ODSv1.0.0.kicad_pcb and export it as a WRL file into this directory with the following settings:
+
+- Units: 1 m
+- Grid reference X, Y: 105 mm, 135 mm (this is the location of the center of each plane)
+
+Then import the resulting WRL file into [Blender 2.79b](https://www.blender.org/download/releases/2-79/) and export it as a Collada DAE file with the default settings; note that you will need to use this older version because the WRL file import is broken for color & material imports in later versions. Then import the resulting DAE file into the ODSv1.0.0.blend file using [the latest version of Blender](https://www.blender.org/download/), and select "Render/Render Animation" from the menu to render the driver stack from the predefined camera angles. Raytracing will take a long time, but once it completes the images will be saved into the [Mechanical Renders](Mechanical%20Renders) directory.
+
+### Modifying
+
+To add a new plane to the stack, you will need to export it as a WRL file as described above, open ODSv1.0.0.kicad_pcb, and add the WRL file as a new 3D model to the H1 footprint. You will need to adjust the Z offset of this new 3D model. For a plane which needs to be 15 mm above the previous plane, its Z offset should be 16.6 mm greater than the Z offset of the previous plane (i.e. the PCB itself is 1.6 mm thick). For each plane which is 20 mm above the previous plane, its Z offset should be 21.6 mm greater than the Z offset of the previous plane
+
+You will also need to move the cameras in the Blender project as you add more planes to the stack, and for camera angles which have depth of field focusing on selected objects you will need to re-select those objects.
+
 ## Maintainers
 
-Currently the maintainer of this board is [Ethan Li](https://github.com/ethanjli).
+Currently the maintainer of this meta-board is [Ethan Li](https://github.com/ethanjli).
 
 ## License
 

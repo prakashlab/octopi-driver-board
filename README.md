@@ -2,7 +2,7 @@
 
 Driver electronics for the Octopi and Squid microscope families.
 
-![3D render of the driver electronics stack](ODSv1.0.0/Mechanical%20Renders/Above%20Front%20Right.png)
+![3D render of the driver electronics stack](ODSv1.0.0/Mechanical%20Renders/6.png)
 
 This repository contains the design files for printed circuit boards (PCBs) for driving the sensors and actuators of the Octopi and Squid families of microscopes.
 
