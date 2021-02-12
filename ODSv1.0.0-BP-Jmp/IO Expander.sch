@@ -36,7 +36,7 @@ F 5 "Maxim" H 2500 1750 50  0001 C CNN "Manufacturer"
 F 6 "https://www.digikey.com/en/products/detail/maxim-integrated/MAX7317AEE-T/1781026" H 2500 1750 50  0001 C CNN "Ordering URL"
 F 7 "SMD" H 2500 1750 50  0001 C CNN "Type"
 F 8 "MAX7317AEE+TCT-ND" H 2500 1750 50  0001 C CNN "Digikey ID"
-F 9 "-NoExpansion" H 2500 1750 50  0001 C CNN "Config"
+F 9 "-NoExpansion, -NoIC" H 2500 1750 50  0001 C CNN "Config"
 	1    2500 1750
 	1    0    0    -1  
 $EndComp
@@ -195,7 +195,7 @@ F 0 "U4" H 2200 4050 50  0000 L CNN
 F 1 "DACx0508xRTE" H 2150 3950 50  0000 R CNN
 F 2 "Package_DFN_QFN:WQFN-16-1EP_3x3mm_P0.5mm_EP1.6x1.6mm_ThermalVias" H 2500 3000 50  0001 C CNN
 F 3 "https://www.ti.com/lit/ds/symlink/dac60508.pdf" H 2500 3550 50  0001 C CNN
-F 4 "-NoExpansion" H 2500 3500 50  0001 C CNN "Config"
+F 4 "-NoExpansion, -NoIC" H 2500 3500 50  0001 C CNN "Config"
 F 5 "296-51047-1-ND" H 2500 3500 50  0001 C CNN "Digikey ID"
 F 6 "DAC80508ZRTER" H 2500 3500 50  0001 C CNN "MPN"
 F 7 "Texas Instruments" H 2500 3500 50  0001 C CNN "Manufacturer"
@@ -603,7 +603,7 @@ F 0 "U5" H 7600 4150 50  0000 L CNN
 F 1 "AD7689xCP" H 8450 4050 50  0000 L CNN
 F 2 "Package_CSP:LFCSP-20-1EP_4x4mm_P0.5mm_EP2.5x2.5mm" H 8000 3500 50  0001 C CNN
 F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/AD7682_7689.pdf" H 8000 3500 50  0001 C CNN
-F 4 "-NoExpansion" H 8000 3500 50  0001 C CNN "Config"
+F 4 "-NoExpansion, -NoIC" H 8000 3500 50  0001 C CNN "Config"
 F 5 "AD7689BCPZRL7CT-ND" H 8000 3500 50  0001 C CNN "Digikey ID"
 F 6 "AD7689BCPZRL7" H 8000 3500 50  0001 C CNN "MPN"
 F 7 "Analog Devices" H 8000 3500 50  0001 C CNN "Manufacturer"

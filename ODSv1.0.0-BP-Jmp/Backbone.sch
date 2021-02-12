@@ -598,6 +598,7 @@ F 5 "Yageo" H 9000 4550 50  0001 C CNN "Manufacturer"
 F 6 "https://www.digikey.com/en/products/detail/yageo/RC0603FR-07560RL/727304" H 9000 4550 50  0001 C CNN "Ordering URL"
 F 7 "SMD" H 9000 4550 50  0001 C CNN "Type"
 F 8 "311-560HRCT-ND" H 9000 4550 50  0001 C CNN "Digikey ID"
+F 9 "-NoIC" H 9000 4550 50  0001 C CNN "Config"
 	1    9000 4550
 	0    1    1    0   
 $EndComp
@@ -614,6 +615,7 @@ F 5 "Yageo" H 9000 4650 50  0001 C CNN "Manufacturer"
 F 6 "https://www.digikey.com/en/products/detail/yageo/RC0603FR-07560RL/727304" H 9000 4650 50  0001 C CNN "Ordering URL"
 F 7 "SMD" H 9000 4650 50  0001 C CNN "Type"
 F 8 "311-560HRCT-ND" H 9000 4650 50  0001 C CNN "Digikey ID"
+F 9 "-NoIC" H 9000 4650 50  0001 C CNN "Config"
 	1    9000 4650
 	0    1    1    0   
 $EndComp
@@ -630,6 +632,7 @@ F 5 "Yageo" H 9000 4750 50  0001 C CNN "Manufacturer"
 F 6 "https://www.digikey.com/en/products/detail/yageo/RC0603FR-07560RL/727304" H 9000 4750 50  0001 C CNN "Ordering URL"
 F 7 "SMD" H 9000 4750 50  0001 C CNN "Type"
 F 8 "311-560HRCT-ND" H 9000 4750 50  0001 C CNN "Digikey ID"
+F 9 "-NoIC" H 9000 4750 50  0001 C CNN "Config"
 	1    9000 4750
 	0    1    1    0   
 $EndComp
@@ -646,6 +649,7 @@ F 5 "Yageo" H 9000 4850 50  0001 C CNN "Manufacturer"
 F 6 "https://www.digikey.com/en/products/detail/yageo/RC0603FR-07560RL/727304" H 9000 4850 50  0001 C CNN "Ordering URL"
 F 7 "SMD" H 9000 4850 50  0001 C CNN "Type"
 F 8 "311-560HRCT-ND" H 9000 4850 50  0001 C CNN "Digikey ID"
+F 9 "-NoIC" H 9000 4850 50  0001 C CNN "Config"
 	1    9000 4850
 	0    1    1    0   
 $EndComp
@@ -662,6 +666,7 @@ F 5 "Yageo" H 9000 4950 50  0001 C CNN "Manufacturer"
 F 6 "https://www.digikey.com/en/products/detail/yageo/RC0603FR-07560RL/727304" H 9000 4950 50  0001 C CNN "Ordering URL"
 F 7 "SMD" H 9000 4950 50  0001 C CNN "Type"
 F 8 "311-560HRCT-ND" H 9000 4950 50  0001 C CNN "Digikey ID"
+F 9 "-NoIC" H 9000 4950 50  0001 C CNN "Config"
 	1    9000 4950
 	0    1    1    0   
 $EndComp
@@ -681,6 +686,7 @@ F 6 "https://www.digikey.com/en/products/detail/lite-on-inc/LTST-C190KSKT/386819
 F 7 "SMD" H 8550 4950 50  0001 C CNN "Type"
 F 8 "Polarity is indicated by a diode symbol either next to the LED or at the end of the line of LEDs." H 8550 4950 50  0001 C CNN "Assembly Notes"
 F 9 "160-1437-1-ND" H 8550 4950 50  0001 C CNN "Digikey ID"
+F 10 "-NoIC" H 8550 4950 50  0001 C CNN "Config"
 	1    8550 4950
 	1    0    0    1   
 $EndComp
@@ -698,6 +704,7 @@ F 6 "https://www.digikey.com/en/products/detail/lite-on-inc/LTST-C190KSKT/386819
 F 7 "SMD" H 8550 4850 50  0001 C CNN "Type"
 F 8 "Polarity is indicated by a diode symbol either next to the LED or at the end of the line of LEDs." H 8550 4850 50  0001 C CNN "Assembly Notes"
 F 9 "160-1437-1-ND" H 8550 4850 50  0001 C CNN "Digikey ID"
+F 10 "-NoIC" H 8550 4850 50  0001 C CNN "Config"
 	1    8550 4850
 	1    0    0    1   
 $EndComp
@@ -715,6 +722,7 @@ F 6 "https://www.digikey.com/en/products/detail/lite-on-inc/LTST-C190KSKT/386819
 F 7 "SMD" H 8550 4750 50  0001 C CNN "Type"
 F 8 "Polarity is indicated by a diode symbol either next to the LED or at the end of the line of LEDs." H 8550 4750 50  0001 C CNN "Assembly Notes"
 F 9 "160-1437-1-ND" H 8550 4750 50  0001 C CNN "Digikey ID"
+F 10 "-NoIC" H 8550 4750 50  0001 C CNN "Config"
 	1    8550 4750
 	1    0    0    1   
 $EndComp
@@ -732,6 +740,7 @@ F 6 "https://www.digikey.com/en/products/detail/lite-on-inc/LTST-C190KSKT/386819
 F 7 "SMD" H 8550 4650 50  0001 C CNN "Type"
 F 8 "Polarity is indicated by a diode symbol either next to the LED or at the end of the line of LEDs." H 8550 4650 50  0001 C CNN "Assembly Notes"
 F 9 "160-1437-1-ND" H 8550 4650 50  0001 C CNN "Digikey ID"
+F 10 "-NoIC" H 8550 4650 50  0001 C CNN "Config"
 	1    8550 4650
 	1    0    0    1   
 $EndComp
@@ -749,6 +758,7 @@ F 6 "https://www.digikey.com/en/products/detail/lite-on-inc/LTST-C190KSKT/386819
 F 7 "SMD" H 8550 4550 50  0001 C CNN "Type"
 F 8 "Polarity is indicated by a diode symbol either next to the LED or at the end of the line of LEDs." H 8550 4550 50  0001 C CNN "Assembly Notes"
 F 9 "160-1437-1-ND" H 8550 4550 50  0001 C CNN "Digikey ID"
+F 10 "-NoIC" H 8550 4550 50  0001 C CNN "Config"
 	1    8550 4550
 	1    0    0    1   
 $EndComp

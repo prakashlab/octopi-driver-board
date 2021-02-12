@@ -52,6 +52,7 @@ This plane has the following BOM variants:
 
 - Default: A fully-populated PCB.
 - NoExpansion: A PCB without components populated for I/O expansion (digital I/O expander, DAC, and ADC). This reduces the parts cost of the board by $40, because the DAC costs approx. $20 and the ADC costs approx. $12.
+- NoIC: A PCB without components populated for SPI device multiplexing or populated for I/O expansion (digital I/O expander, DAC, and ADC). This acts as a pure breakout for the backbone, without any extras. This only saves an additional approx. $8 beyond the NoExpansion variant, but it significantly reduces the number of parts to assemble.
 
 This plane allows the following post-assembly modifications:
 

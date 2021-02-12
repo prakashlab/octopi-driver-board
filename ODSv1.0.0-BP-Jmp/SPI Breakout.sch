@@ -64,6 +64,7 @@ F 5 "TSM-110-01-T-DH" H 2200 4400 50  0001 C CNN "MPN"
 F 6 "Samtec" H 2200 4400 50  0001 C CNN "Manufacturer"
 F 7 "https://www.digikey.com/en/products/detail/samtec-inc/TSM-110-01-T-DH/2685730" H 2200 4400 50  0001 C CNN "Ordering URL"
 F 8 "SMD" H 2200 4400 50  0001 C CNN "Type"
+F 9 "-NoIC" H 2200 4400 50  0001 C CNN "Config"
 	1    2200 4400
 	1    0    0    -1  
 $EndComp
@@ -386,6 +387,7 @@ F 5 "TSM-110-01-T-DV" H 2200 5900 50  0001 C CNN "MPN"
 F 6 "Samtec" H 2200 5900 50  0001 C CNN "Manufacturer"
 F 7 "https://www.digikey.com/en/products/detail/samtec-inc/TSM-110-01-T-DV/1236604" H 2200 5900 50  0001 C CNN "Ordering URL"
 F 8 "SMD" H 2200 5900 50  0001 C CNN "Type"
+F 9 "-NoIC" H 2200 5900 50  0001 C CNN "Config"
 	1    2200 5900
 	1    0    0    -1  
 $EndComp
