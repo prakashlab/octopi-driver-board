@@ -43,8 +43,6 @@ outputs:
       - B.Fab
 
   # Excellon drill format:
-  # You can create a map file for documentation purposes.
-  # This output is what you get from the 'File/Fabrication output/Drill Files' menu in pcbnew.
   - name: 'drill-pcbway'
     comment: 'Generate drill for PCBway'
     type: excellon
@@ -66,8 +64,11 @@ outputs:
   - name: 'zip-pcbway'
     comment: 'Generate gerber & drill archive for PCBway (ZIP)'
     type: compress
-    dir: Gerbers/
-    output: '%f%r%v-gerb.%x'
-    files:
-      - from_output: gerbers-pcbway
-      - from_output: drill-pcbway
+    dir: Gerbers/PCBWay
+    options:
+      output: '%f%r%v-gerb.%x'
+      files:
+        - from_output: gerbers-pcbway
+          dest: /
+        - from_output: drill-pcbway
+          dest: /
