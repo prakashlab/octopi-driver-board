@@ -443,7 +443,6 @@ jobs:
       - name: Postprocess ERC & DRC reports
         working-directory: ${{matrix.board}}/docs/
         run: |
-          ls
           sudo mv "${{matrix.board}}${{steps.version.outputs.layout}}${{steps.variant.outputs.fileid}}-erc.txt" "${{matrix.board}}${{steps.version.outputs.layout}}-erc.log"
           sudo mv ${{matrix.board}}${{steps.version.outputs.layout}}${{steps.variant.outputs.fileid}}-drc.txt "${{matrix.board}}${{steps.version.outputs.layout}}-drc.log"
 
