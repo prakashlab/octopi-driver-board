@@ -443,8 +443,9 @@ jobs:
       - name: Postprocess ERC & DRC reports
         working-directory: ${{matrix.board}}/docs/
         run: |
-          sudo mv "${{matrix.board}}${{steps.version.outputs.layout}}${{steps.variant.outputs.fileid}}-erc.txt" "${{matrix.board}}${{steps.version.outputs.layout}}-erc.log"
-          sudo mv ${{matrix.board}}${{steps.version.outputs.layout}}${{steps.variant.outputs.fileid}}-drc.txt "${{matrix.board}}${{steps.version.outputs.layout}}-drc.log"
+          ls
+          sudo mv "${{matrix.board}}${{steps.version.outputs.layout}}-erc.txt" "${{matrix.board}}${{steps.version.outputs.layout}}-erc.log"
+          sudo mv ${{matrix.board}}${{steps.version.outputs.layout}}-drc.txt "${{matrix.board}}${{steps.version.outputs.layout}}-drc.log"
 
       - name: Copy README and LICENSEs
         run: |
