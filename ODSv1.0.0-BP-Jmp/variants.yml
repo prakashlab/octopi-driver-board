@@ -1,0 +1,17 @@
+variants:
+  # The Default variant is used for all automatically-triggered KiCad exports and should be a reasonable default
+  - name: 'Default'
+    comment: 'Fully populated PCB configured for default DSCS setting'
+    type: kibom
+    # The Default variant should not have the file_id or variant keys
+  - name: 'NoExpansion'
+    comment: 'PCB without I/O expansion capabilities, to reduce cost'
+    type: kibom
+    file_id: -NoExpansion
+    variant: NoExpansion
+  - name: 'NoIC'
+    comment: 'Purely passive PCB, without any ICs'
+    type: kibom
+    file_id: -NoIC
+    variant: NoIC
+

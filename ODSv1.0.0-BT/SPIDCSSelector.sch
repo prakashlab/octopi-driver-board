@@ -5,7 +5,7 @@ $Descr USLetter 11000 8500
 encoding utf-8
 Sheet 3 4
 Title "Backbone Template"
-Date "2021-01-23"
+Date "2021-02-08"
 Rev "v0.1.1"
 Comp "Prakash Lab/Octopi Team"
 Comment1 "Designer: Ethan Li"
@@ -17,6 +17,8 @@ $Comp
 L Octopi:MAX7317 U1
 U 1 1 619E2325
 P 2000 2100
+AR Path="/619E2325" Ref="U1"  Part="1" 
+AR Path="/60C51399/6199D8B6/619E2325" Ref="U1"  Part="1" 
 F 0 "U1" H 1550 2700 50  0000 C CNN
 F 1 "MAX7317" H 2000 2100 50  0000 C CNN
 F 2 "Package_SO:QSOP-16_3.9x4.9mm_P0.635mm" H 2200 1450 50  0001 L CNN
@@ -52,7 +54,7 @@ Text HLabel 1000 1950 0    50   Input ~ 0
 SCK
 Text HLabel 1000 2050 0    50   Input ~ 0
 COPI
-Text HLabel 1000 2150 0    50   Output ~ 0
+Text HLabel 1000 2150 0    50   3State ~ 0
 CIPO
 Text HLabel 1000 2250 0    50   Input ~ 0
 ~DSCS~
@@ -68,15 +70,15 @@ Wire Wire Line
 	3000 2450 2700 2450
 Wire Wire Line
 	3000 2550 2700 2550
-Text HLabel 3000 2150 2    50   BiDi ~ 0
+Text HLabel 3000 2150 2    50   3State ~ 0
 EXPGPIO_5
-Text HLabel 3000 2250 2    50   BiDi ~ 0
+Text HLabel 3000 2250 2    50   3State ~ 0
 EXPGPIO_6
-Text HLabel 3000 2350 2    50   BiDi ~ 0
+Text HLabel 3000 2350 2    50   3State ~ 0
 EXPGPIO_7
-Text HLabel 3000 2450 2    50   BiDi ~ 0
+Text HLabel 3000 2450 2    50   3State ~ 0
 EXPGPIO_8
-Text HLabel 3000 2550 2    50   BiDi ~ 0
+Text HLabel 3000 2550 2    50   3State ~ 0
 EXPGPIO_9
 Text HLabel 5500 2650 2    50   Output ~ 0
 ~DCS15~

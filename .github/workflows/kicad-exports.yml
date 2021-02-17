@@ -99,10 +99,12 @@ jobs:
 
             if [ -z "$directory" ]; then
               continue # Exclude root directory
-            elif [ "$directory" == Parts ]; then
-              continue # Exclude Parts directory
             elif [ "$directory" == .github ]; then
               continue # Exclude .github directory
+            elif [ "$directory" == Parts ]; then
+              continue # Exclude Parts directory
+            elif [ "$directory" == "ODSv1.0.0" ]; then
+              continue # Exclude ODSv1.0.0 directory, which is only used for rendering
             fi
 
             # Add board only if it is not already included
@@ -316,7 +318,7 @@ jobs:
           done
 
       - name: Build schematic docs
-        uses: INTI-CMNB/KiBot@v0.9.0
+        uses: INTI-CMNB/KiBot@v0.10.0
         with:
           # Required kibot config file
           config: .kibot/config/schematics.kibot.yaml
@@ -342,7 +344,7 @@ jobs:
           sudo pdfseparate "${{matrix.board}}${{steps.version.outputs.layout}}${{steps.variant.outputs.fileid}}-schematic.pdf" "Sheets/%d.pdf"
 
       - name: Build layout drawings
-        uses: INTI-CMNB/KiBot@v0.9.0
+        uses: INTI-CMNB/KiBot@v0.10.0
         with:
           # Required kibot config file
           config: .kibot/config/layout_drawings.kibot.yaml
@@ -354,7 +356,7 @@ jobs:
           board: ${{matrix.board}}/${{matrix.board}}.kicad_pcb
 
       - name: Build layout renders
-        uses: INTI-CMNB/KiBot@v0.9.0
+        uses: INTI-CMNB/KiBot@v0.10.0
         with:
           # Required kibot config file
           config: .kibot/config/layout_renders.kibot.yaml
@@ -375,7 +377,7 @@ jobs:
           done
 
       - name: Build BOMs
-        uses: INTI-CMNB/KiBot@v0.9.0
+        uses: INTI-CMNB/KiBot@v0.10.0
         with:
           # Required kibot config file
           config: .kibot/config/boms.kibot.yaml
@@ -396,7 +398,7 @@ jobs:
           echo "::set-output name=name::$(echo "$NETLIST_NAME")"
 
       - name: Build interactive BOM
-        uses: INTI-CMNB/KiBot@v0.9.0
+        uses: INTI-CMNB/KiBot@v0.10.0
         with:
           # Required kibot config file
           config: .kibot/config/ibom.kibot.yaml
@@ -414,7 +416,7 @@ jobs:
           sudo cp "${{steps.netlist.outputs.name}}.xml" "docs/${{matrix.board}}${{steps.version.outputs.layout}}-net.xml"
 
       - name: Build positions file
-        uses: INTI-CMNB/KiBot@v0.9.0
+        uses: INTI-CMNB/KiBot@v0.10.0
         with:
           # Required kibot config file
           config: .kibot/config/positions.kibot.yaml
@@ -425,24 +427,25 @@ jobs:
           # Optional PCB design file
           board: ${{matrix.board}}/${{matrix.board}}.kicad_pcb
 
-       # Disabled until the next release, as v0.9.0 can't generate drill files correctly for PCBway
-#      - name: Build gerber files
-#        uses: INTI-CMNB/KiBot@v0.9.0
-#        with:
-#          # Required kibot config file
-#          config: .kibot/config/gerbers.kibot.yaml
-#          # Optional prefix to output defined in config
-#          dir: ${{matrix.board}}/docs
-#          # Optional schematic file
-#          schema: ${{matrix.board}}/${{matrix.board}}.sch
-#          # Optional PCB design file
-#          board: ${{matrix.board}}/${{matrix.board}}.kicad_pcb
+       # Disabled until the next release, as v0.10.0 can't generate drill files correctly for PCBway
+      - name: Build gerber files
+        uses: INTI-CMNB/KiBot@v0.10.0
+        with:
+          # Required kibot config file
+          config: .kibot/config/gerbers_pcbway.kibot.yaml
+          # Optional prefix to output defined in config
+          dir: ${{matrix.board}}/docs
+          # Optional schematic file
+          schema: ${{matrix.board}}/${{matrix.board}}.sch
+          # Optional PCB design file
+          board: ${{matrix.board}}/${{matrix.board}}.kicad_pcb
 
       - name: Postprocess ERC & DRC reports
         working-directory: ${{matrix.board}}/docs/
         run: |
-          sudo mv "${{matrix.board}}.erc" "${{matrix.board}}${{steps.version.outputs.layout}}-erc.log"
-          sudo mv drc_result.rpt "${{matrix.board}}${{steps.version.outputs.layout}}-drc.log"
+          ls
+          sudo mv "${{matrix.board}}${{steps.version.outputs.layout}}-erc.txt" "${{matrix.board}}${{steps.version.outputs.layout}}-erc.log"
+          sudo mv ${{matrix.board}}${{steps.version.outputs.layout}}-drc.txt "${{matrix.board}}${{steps.version.outputs.layout}}-drc.log"
 
       - name: Copy README and LICENSEs
         run: |

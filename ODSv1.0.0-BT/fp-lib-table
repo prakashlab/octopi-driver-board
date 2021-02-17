@@ -1,3 +1,4 @@
 (fp_lib_table
   (lib (name Backbone_Connector_Hirose)(type KiCad)(uri ${KIPRJMOD}/../Parts/Connectors/Backbone_Connector_Hirose.pretty)(options "")(descr ""))
+  (lib (name Octopi)(type KiCad)(uri ${KIPRJMOD}/../Parts/Octopi.pretty)(options "")(descr ""))
 )

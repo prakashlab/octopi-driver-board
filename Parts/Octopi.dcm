@@ -6,6 +6,24 @@ K multiplexer demultiplexer mux demux
 F https://assets.nexperia.com/documents/data-sheet/74HC_HCT4067.pdf
 $ENDCMP
 #
+$CMP AD7689xCP
+D 16-Bit, 8-Channel, 250 kSPS PulSAR ADC, LFSCP-20
+K ADC, SPI
+F https://www.analog.com/media/en/technical-documentation/data-sheets/AD7682_7689.pdf
+$ENDCMP
+#
+$CMP AD7699BCP
+D 16-Bit, 8-Channel, 500 kSPS PulSAR ADC, LFSCP-20
+K ADC, SPI
+F https://www.analog.com/media/en/technical-documentation/data-sheets/AD7699.pdf
+$ENDCMP
+#
+$CMP DACx0508xRTE
+D 12-/14-/16-Bit, Octal-Channel, Voltage Output, SPI Digital-to-Analog Converters, WQFN-16
+K DAC SPI 8-channel
+F https://www.ti.com/lit/ds/symlink/dac60508.pdf
+$ENDCMP
+#
 $CMP MAX7317
 D 16-port I/O expander, SPI, QSOP-16
 K SPI parallel port expander

@@ -5,7 +5,7 @@ $Descr USLetter 11000 8500
 encoding utf-8
 Sheet 2 4
 Title "Backbone Template"
-Date "2021-01-23"
+Date "2021-02-08"
 Rev "v0.1.1"
 Comp "Prakash Lab/Octopi Team"
 Comment1 "Designer: Ethan Li"
@@ -21,7 +21,7 @@ U 1 1 617F768B
 P 4150 3900
 F 0 "R1" V 4100 4050 50  0000 L CNN
 F 1 "0" V 4150 3900 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 4080 3900 50  0001 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 4080 3900 50  0001 C CNN
 F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 4150 3900 50  0001 C CNN
 F 4 "311-0.0ERCT-ND" H 4150 3900 50  0001 C CNN "Digikey ID"
 F 5 "RC1206JR-070RL" H 4150 3900 50  0001 C CNN "MPN"
@@ -38,7 +38,7 @@ U 1 1 618DC64E
 P 4150 4000
 F 0 "R2" V 4100 4150 50  0000 L CNN
 F 1 "0" V 4150 4000 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 4080 4000 50  0001 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 4080 4000 50  0001 C CNN
 F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 4150 4000 50  0001 C CNN
 F 4 "311-0.0ERCT-ND" H 4150 4000 50  0001 C CNN "Digikey ID"
 F 5 "RC1206JR-070RL" H 4150 4000 50  0001 C CNN "MPN"
@@ -55,7 +55,7 @@ U 1 1 618DE09D
 P 4150 4100
 F 0 "R3" V 4100 4250 50  0000 L CNN
 F 1 "0" V 4150 4100 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 4080 4100 50  0001 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 4080 4100 50  0001 C CNN
 F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 4150 4100 50  0001 C CNN
 F 4 "311-0.0ERCT-ND" H 4150 4100 50  0001 C CNN "Digikey ID"
 F 5 "RC1206JR-070RL" H 4150 4100 50  0001 C CNN "MPN"
@@ -72,7 +72,7 @@ U 1 1 618DFA23
 P 4150 4200
 F 0 "R4" V 4100 4350 50  0000 L CNN
 F 1 "0" V 4150 4200 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 4080 4200 50  0001 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 4080 4200 50  0001 C CNN
 F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 4150 4200 50  0001 C CNN
 F 4 "311-0.0ERCT-ND" H 4150 4200 50  0001 C CNN "Digikey ID"
 F 5 "RC1206JR-070RL" H 4150 4200 50  0001 C CNN "MPN"
@@ -89,7 +89,7 @@ U 1 1 618E1433
 P 4150 4300
 F 0 "R5" V 4100 4450 50  0000 L CNN
 F 1 "0" V 4150 4300 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 4080 4300 50  0001 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 4080 4300 50  0001 C CNN
 F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 4150 4300 50  0001 C CNN
 F 4 "311-0.0ERCT-ND" H 4150 4300 50  0001 C CNN "Digikey ID"
 F 5 "RC1206JR-070RL" H 4150 4300 50  0001 C CNN "MPN"
@@ -106,7 +106,7 @@ U 1 1 618E2EC6
 P 4150 4400
 F 0 "R6" V 4100 4550 50  0000 L CNN
 F 1 "0" V 4150 4400 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 4080 4400 50  0001 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 4080 4400 50  0001 C CNN
 F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 4150 4400 50  0001 C CNN
 F 4 "311-0.0ERCT-ND" H 4150 4400 50  0001 C CNN "Digikey ID"
 F 5 "RC1206JR-070RL" H 4150 4400 50  0001 C CNN "MPN"
@@ -123,7 +123,7 @@ U 1 1 618E491C
 P 4150 4500
 F 0 "R7" V 4100 4650 50  0000 L CNN
 F 1 "0" V 4150 4500 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 4080 4500 50  0001 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 4080 4500 50  0001 C CNN
 F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 4150 4500 50  0001 C CNN
 F 4 "311-0.0ERCT-ND" H 4150 4500 50  0001 C CNN "Digikey ID"
 F 5 "RC1206JR-070RL" H 4150 4500 50  0001 C CNN "MPN"
@@ -140,7 +140,7 @@ U 1 1 618E634F
 P 4150 4600
 F 0 "R8" V 4100 4750 50  0000 L CNN
 F 1 "0" V 4150 4600 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 4080 4600 50  0001 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 4080 4600 50  0001 C CNN
 F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 4150 4600 50  0001 C CNN
 F 4 "311-0.0ERCT-ND" H 4150 4600 50  0001 C CNN "Digikey ID"
 F 5 "RC1206JR-070RL" H 4150 4600 50  0001 C CNN "MPN"
@@ -157,7 +157,7 @@ U 1 1 618E7E11
 P 4150 4700
 F 0 "R9" V 4100 4850 50  0000 L CNN
 F 1 "0" V 4150 4700 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 4080 4700 50  0001 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 4080 4700 50  0001 C CNN
 F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 4150 4700 50  0001 C CNN
 F 4 "311-0.0ERCT-ND" H 4150 4700 50  0001 C CNN "Digikey ID"
 F 5 "RC1206JR-070RL" H 4150 4700 50  0001 C CNN "MPN"
@@ -174,7 +174,7 @@ U 1 1 618E97E4
 P 4150 4800
 F 0 "R10" V 4100 4950 50  0000 L CNN
 F 1 "0" V 4150 4800 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 4080 4800 50  0001 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 4080 4800 50  0001 C CNN
 F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 4150 4800 50  0001 C CNN
 F 4 "311-0.0ERCT-ND" H 4150 4800 50  0001 C CNN "Digikey ID"
 F 5 "RC1206JR-070RL" H 4150 4800 50  0001 C CNN "MPN"
@@ -191,7 +191,7 @@ U 1 1 618EB227
 P 4150 4900
 F 0 "R11" V 4100 5050 50  0000 L CNN
 F 1 "0" V 4150 4900 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 4080 4900 50  0001 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 4080 4900 50  0001 C CNN
 F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 4150 4900 50  0001 C CNN
 F 4 "311-0.0ERCT-ND" H 4150 4900 50  0001 C CNN "Digikey ID"
 F 5 "RC1206JR-070RL" H 4150 4900 50  0001 C CNN "MPN"
@@ -208,7 +208,7 @@ U 1 1 618ECC9B
 P 4150 5000
 F 0 "R12" V 4100 5150 50  0000 L CNN
 F 1 "0" V 4150 5000 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 4080 5000 50  0001 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 4080 5000 50  0001 C CNN
 F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 4150 5000 50  0001 C CNN
 F 4 "311-0.0ERCT-ND" H 4150 5000 50  0001 C CNN "Digikey ID"
 F 5 "RC1206JR-070RL" H 4150 5000 50  0001 C CNN "MPN"
@@ -225,7 +225,7 @@ U 1 1 618EE76D
 P 4150 5100
 F 0 "R13" V 4100 5250 50  0000 L CNN
 F 1 "0" V 4150 5100 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 4080 5100 50  0001 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 4080 5100 50  0001 C CNN
 F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 4150 5100 50  0001 C CNN
 F 4 "311-0.0ERCT-ND" H 4150 5100 50  0001 C CNN "Digikey ID"
 F 5 "RC1206JR-070RL" H 4150 5100 50  0001 C CNN "MPN"
@@ -242,7 +242,7 @@ U 1 1 618F0151
 P 4150 5200
 F 0 "R14" V 4100 5350 50  0000 L CNN
 F 1 "0" V 4150 5200 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 4080 5200 50  0001 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 4080 5200 50  0001 C CNN
 F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 4150 5200 50  0001 C CNN
 F 4 "311-0.0ERCT-ND" H 4150 5200 50  0001 C CNN "Digikey ID"
 F 5 "RC1206JR-070RL" H 4150 5200 50  0001 C CNN "MPN"
@@ -259,7 +259,7 @@ U 1 1 618F1B66
 P 4150 5300
 F 0 "R15" V 4100 5450 50  0000 L CNN
 F 1 "0" V 4150 5300 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 4080 5300 50  0001 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 4080 5300 50  0001 C CNN
 F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 4150 5300 50  0001 C CNN
 F 4 "311-0.0ERCT-ND" H 4150 5300 50  0001 C CNN "Digikey ID"
 F 5 "RC1206JR-070RL" H 4150 5300 50  0001 C CNN "MPN"
@@ -506,16 +506,16 @@ F0 "SPI DCS Selector" 50
 F1 "SPIDCSSelector.sch" 50
 F2 "SCK" I L 6000 2850 50 
 F3 "COPI" I L 6000 3050 50 
-F4 "CIPO" O L 6000 3250 50 
+F4 "CIPO" T L 6000 3250 50 
 F5 "~DSCS~" I L 6000 3900 50 
 F6 "3.3V" I L 6000 3750 50 
 F7 "~DCS~" I L 6000 3600 50 
 F8 "~DCS0~" O R 7000 2850 50 
-F9 "EXPGPIO_5" B R 7000 4550 50 
-F10 "EXPGPIO_6" B R 7000 4650 50 
-F11 "EXPGPIO_7" B R 7000 4750 50 
-F12 "EXPGPIO_8" B R 7000 4850 50 
-F13 "EXPGPIO_9" B R 7000 4950 50 
+F9 "EXPGPIO_5" T R 7000 4550 50 
+F10 "EXPGPIO_6" T R 7000 4650 50 
+F11 "EXPGPIO_7" T R 7000 4750 50 
+F12 "EXPGPIO_8" T R 7000 4850 50 
+F13 "EXPGPIO_9" T R 7000 4950 50 
 F14 "~DCS1~" O R 7000 2950 50 
 F15 "~DCS2~" O R 7000 3050 50 
 F16 "~DCS3~" O R 7000 3150 50 
@@ -566,7 +566,7 @@ Wire Wire Line
 	7000 2850 7250 2850
 Text HLabel 5750 3750 0    50   Input ~ 0
 3.3V
-Text HLabel 5750 3250 0    50   Output ~ 0
+Text HLabel 5750 3250 0    50   3State ~ 0
 SPI_CIPO
 Text HLabel 5750 3050 0    50   Input ~ 0
 SPI_COPI
@@ -584,7 +584,7 @@ Text HLabel 4750 2850 2    50   Output ~ 0
 SPI_SCK
 Text HLabel 4750 3050 2    50   Output ~ 0
 SPI_COPI
-Text HLabel 4750 3250 2    50   Input ~ 0
+Text HLabel 4750 3250 2    50   3State ~ 0
 SPI_CIPO
 Wire Wire Line
 	4500 3000 4500 3050
@@ -840,7 +840,7 @@ Wire Wire Line
 Wire Notes Line
 	9600 5200 8000 5200
 Text Notes 8025 5175 0    25   ~ 0
-LED colors can be reallocated, but make sure to update resistor values.\n560 drives yellow at 33% brightness, 150 drives orange at 50% brightness,\nand 75 drives red at 66% brightness.
+LED colors can be reallocated, but make sure to update resistor values & BOM.\n560 drives yellow at 33% brightness, 150 drives orange at 50% brightness,\nand 75 drives red at 66% brightness.
 Text Label 7950 4650 2    50   ~ 0
 ~LED1~
 Text Label 7950 4750 2    50   ~ 0
@@ -1074,7 +1074,7 @@ F16 "GPIO_SER2_TX" O R 3250 2000 50
 F17 "GPIO_SER7_RX" I R 3250 2300 50 
 F18 "GPIO_SER3_TX" O R 3250 2400 50 
 F19 "SPI_SPI0_SCK" O R 3250 2800 50 
-F20 "SPI_SPI0_CIPO" I R 3250 3200 50 
+F20 "SPI_SPI0_CIPO" T R 3250 3200 50 
 F21 "SPI_SPI1_COPI" O R 3250 3100 50 
 F22 "~SPI_DCS~" O R 3250 3600 50 
 F23 "~SPI_DSCS1~" O R 3250 3900 50 
@@ -1086,7 +1086,7 @@ F28 "~SPI_DSCS11~" O R 3250 4900 50
 F29 "~SPI_DSCS13~" O R 3250 5100 50 
 F30 "~SPI_DSCS15~" O R 3250 5300 50 
 F31 "SPI_SPI0_COPI" O R 3250 3000 50 
-F32 "SPI_SPI1_CIPO" I R 3250 3300 50 
+F32 "SPI_SPI1_CIPO" T R 3250 3300 50 
 F33 "SPI_SPI1_SCK" O R 3250 2900 50 
 F34 "~SPI_DSCS2~" O R 3250 4000 50 
 F35 "~SPI_DSCS4~" O R 3250 4200 50 

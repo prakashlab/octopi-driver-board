@@ -2,6 +2,8 @@
 
 Driver electronics for the Octopi and Squid microscope families.
 
+![3D render of the driver electronics stack](ODSv1.0.0/Mechanical%20Renders/6.png)
+
 This repository contains the design files for printed circuit boards (PCBs) for driving the sensors and actuators of the Octopi and Squid families of microscopes.
 
 ## Background
@@ -14,7 +16,7 @@ This repository contains the design files for printed circuit boards (PCBs) for 
 
 [Squid](https://squid-imaging.org/), short for _Simplifying quantitative imaging platform development and deployment_, is a toolkit for implementing research microscopes with advanced imaging capabilities comparable to what's available in commercial solutions, but at a fraction of the cost and with much higher portability. Squid provides a full suite of hardware and software components for rapidly configuring high-performance microscopes tailored to users' applications with reduced cost, effort, and turnaround time. Besides increasing accessibility of research microscopes and available microscope hours to labs, it is also designed to simplify development and dissemination of new or otherwise advanced microscopy techniques.
 
-![CAD renderings of three configurations of the Squid microscope](https://ethanj.li/static/5ce8263b4c58000a8af6213b03295a68/ea60f/squid-configurations.png)
+![CAD renders of three configurations of the Squid microscope](https://ethanj.li/static/5ce8263b4c58000a8af6213b03295a68/ea60f/squid-configurations.png)
 
 Because the modules of the Octopi and Squid microscopes contain various sensors and actuators which need to be electronically driven and integrated into a complete system, the Squid project also provides printed circuit boards for interfacing and controlling these modules. This repository contains the designs for printed circuit boards needed to drive these microscopes.
 
@@ -47,7 +49,7 @@ Every plane is separated by a distance of either 15 mm or 20 mm from the plane a
 
 ## Install
 
-To set up your computer for using this repository, you will need to install [KiCad](https://kicad.org/) version ≥ 5.1.0. You should have the default symbol, footprint, and 3-D model libraries provided by KiCad. References to custom symbols, footprints, and 3-D models will work out-of-the-box, as they are all provided in this repository and referenced in KiCad relative to the `${KIPRJMOD}` environment variable.
+To set up your computer for using this repository, you will need to install [KiCad](https://kicad.org/) version 5.1.9; note that this repository relies on KiCad footprints which exist in 5.1.9 and not in earlier versions. You should have the default symbol, footprint, and 3-D model libraries provided by KiCad. References to custom symbols, footprints, and 3-D models will work out-of-the-box, as they are all provided in this repository and referenced in KiCad relative to the `${KIPRJMOD}` environment variable.
 
 To prepare 3D models for components, you will need to download [FreeCAD 0.19](https://github.com/FreeCAD/FreeCAD/releases/tag/0.19_pre) and install the [KiCad StepUp workbench](https://github.com/easyw/kicadStepUpMod).
 
@@ -64,6 +66,8 @@ Each directory has a short README describing the contents of the directory. All 
 Templates are provided as starters to copy for creating new boards. For more information, refer to [ODSv1.0.0-BT/README.md](ODSv1.0.0-BT/README.md).
 
 All footprints, documentation, CAD models, and KiCad libraries for components and daughter boards used with the ODSv1.0.0 boards are available in the `Parts` directory.
+
+A KiCad project which mechanically integrates all planes in the ODSv1.0.0 stack for 3D rendering is in the `ODSv1.0.0` directory.
 
 ### Releases
 
