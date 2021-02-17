@@ -19,9 +19,9 @@ outputs:
     options:
       exclude_edge_layer: true
       exclude_pads_from_silkscreen: true
-      gerber_job_file: '%f%r%v-%i.%x'
+      gerber_job_file: '%f%r-%i.%x'
       line_width: 0.15
-      output: '%f%r%v-%i.%x'
+      output: '%f%r-%i.%x'
       tent_vias: true
       use_gerber_x2_attributes: false
       use_protel_extensions: true
@@ -55,9 +55,9 @@ outputs:
       zeros_format: SUPPRESS_LEADING
       left_digits: 2
       right_digits: 4
-      pth_id: '-PTH'
-      npth_id: '-NPTH'
-      output: '%f%r%v-%i.%x'
+      pth_id: 'PTH'
+      npth_id: 'NPTH'
+      output: '%f%r-%i.%x'
       report:
         filename: '%f%r%v-drill.log'
 
@@ -66,7 +66,7 @@ outputs:
     type: compress
     dir: Gerbers
     options:
-      output: '%f%r%v-gerb-pcbway.%x'
+      output: '%f%r-gerb-pcbway.%x'
       files:
         - from_output: gerbers-pcbway
           dest: /

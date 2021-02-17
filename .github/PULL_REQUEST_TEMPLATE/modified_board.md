@@ -34,4 +34,4 @@ After final changes are made on this PR and it is approved for merging, I will a
 
 {IF MODIFICATION WILL BE RELEASED AS A NEW TAG, INCLUDE THE FOLLOWING SECTION:}
 
-After final changes are made on this PR and it is approved for merging, I will add a comment attaching a zip archive of the build output from Github Actions for this board.
+After final changes are made on this PR and it is approved for merging, I will add a comment attaching a zip archive of the build output from Github Actions for each variant of this board.
