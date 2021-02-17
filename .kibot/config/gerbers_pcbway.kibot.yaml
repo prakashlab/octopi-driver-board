@@ -64,9 +64,9 @@ outputs:
   - name: 'zip-pcbway'
     comment: 'Generate gerber & drill archive for PCBway (ZIP)'
     type: compress
-    dir: Gerbers/PCBWay
+    dir: Gerbers
     options:
-      output: '%f%r%v-gerb.%x'
+      output: '%f%r%v-gerb-pcbway.%x'
       files:
         - from_output: gerbers-pcbway
           dest: /
