@@ -67,7 +67,20 @@ Templates are provided as starters to copy for creating new boards. For more inf
 
 All footprints, documentation, CAD models, and KiCad libraries for components and daughter boards used with the ODSv1.0.0 boards are available in the `Parts` directory.
 
+Unit tests for the ODSv1.0.0 boards are available in the `Tests` directory. These are Arduino sketches intended to be uploaded to the Teensy for basic verification of board functionality.
+
 A KiCad project which mechanically integrates all planes in the ODSv1.0.0 stack for 3D rendering is in the `ODSv1.0.0` directory.
+
+### Extending Functionality
+
+This repository will provide planes and boards which implement a core set of functionalities. When you need to prototype new functionalities integrated into the driver stack, you should the [ODSv1.0.0-BP-Jmp](ODSv1.0.0-BP-Jmp) breakout plane, which is designed to enable prototyping. To start out, just connect the components you need with jumper wires to the various header pins on that plane; whenever possible, you should prefer using the SPI bus and the pins in the GPIO section. If you run out of available GPIO pins, if you need to assemble many copies of your prototype, or if you need more breakouts, then you should integrate your components as a new plane and, ideally, submit your plane to this repository. To do so:
+
+1. Wherever possible, shift your use of GPIO pins on BP-Jmp to the plane's SPI I/O expanders for digital I/O, ADC, and DAC. The headers for those components are in the middle of the plane.
+2. Create a new plane as a copy of the [ODSv1.0.0-BT](ODSv1.0.0-BT) starter template. For more information, refer to [ODSv1.0.0-BT/README.md](ODSv1.0.0-BT/README.md).
+3. Add the standardized SPI I/O expanders, which are used in the BP-Jmp plane, to meet your GPIO needs.
+4. Add other SPI devices as needed.
+
+Where appropriate, you should delegate functions in your plane onto daughter boards. For example, if there is a particularly complex or expensive subsystem which you need to be able to swap out or test independently, or if you are reusing the same subsystem multiple times, you may want to make daughter board PCBs - each with one copy of the subsystem - which you can plug in to your new plane.
 
 ### Releases
 
