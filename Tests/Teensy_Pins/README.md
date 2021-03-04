@@ -10,7 +10,7 @@ This unit test allows for confirmation that the non-interplane signal lines on [
 
 ## Install
 
-As this is an Arduino sketch intended to be uploaded to the Teensy 4.1, the Arduino IDE and Teensyduino should be installed in [the standard way](https://www.pjrc.com/teensy/td_download.html). Then, download the Arduino sketch in this repository with the Arduino IDE, configure the Arduino IDE to upload the sketch to your Teensy 4.1 board, and upload the sketch.
+As this is an Arduino sketch intended to be uploaded to the Teensy 4.1, the Arduino IDE and Teensyduino should be installed in [the standard way](https://www.pjrc.com/teensy/td_download.html). Then, download the Arduino sketch in this directory with the Arduino IDE, configure the Arduino IDE to upload the sketch to your Teensy 4.1 board, and upload the sketch.
 
 ## Usage
 

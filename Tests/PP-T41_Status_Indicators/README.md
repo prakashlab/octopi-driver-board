@@ -10,11 +10,11 @@ This unit test allows for confirmation that the Teensy can talk correctly over S
 
 ## Install
 
-As this is an Arduino sketch intended to be uploaded to the Teensy 4.1, the Arduino IDE and Teensyduino should be installed in [the standard way](https://www.pjrc.com/teensy/td_download.html). Then, download the Arduino sketch in this repository with the Arduino IDE, configure the Arduino IDE to upload the sketch to your Teensy 4.1 board, and upload the sketch.
+As this is an Arduino sketch intended to be uploaded to the Teensy 4.1, the Arduino IDE and Teensyduino should be installed in [the standard way](https://www.pjrc.com/teensy/td_download.html). Then, download the Arduino sketch in this directory with the Arduino IDE, configure the Arduino IDE to upload the sketch to your Teensy 4.1 board, and upload the sketch.
 
 ## Usage
 
-As this test generates blinks the status indicator LEDs, verification of functionality will need to be done by visual inspection of the status indicator LEDs.
+As this test blinks the status indicator LEDs, verification of functionality will need to be done by visual inspection of the status indicator LEDs.
 
 This test can be used with the following test procedures, for different purposes:
 
