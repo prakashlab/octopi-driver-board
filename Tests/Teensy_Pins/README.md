@@ -32,7 +32,7 @@ Hardware setup: the Teensy 4.1 is plugged into an ODSv1.0.0-PP-T41 board, which 
 
 This test should be done in the same way as the previous test procedure, except the hardware setup for this test involves plugging in the Teensy's longer male header pins, which were exposed for the oscilloscope probe(s) in the previous test procedure, into the female headers of a PP-T41 PCB. So in this test, the probe(s) should instead be used to measure the short parts of the Teensy's male header pins - the parts which are soldered to the Teensy board itself.
 
-If everything is working according to specifications, you should see the same results as the previous test procedure:
+If everything is working according to specifications, you should see the same results as the previous test procedure.
 
 ### Verification of ODSv1.0.0-PP-T41 Backbone GPIO functionality
 
