@@ -95,8 +95,8 @@ While almost all of GPIO header pins of the Teensy 4.1 on the processing plane a
 |21        |21        |Rear Edge: GPIO            |
 |22        |22        |Rear Edge: GPIO            |
 |23        |23        |Rear Edge: GPIO            |
-|24        |24        |Rear Edge: GPIO            |
-|25        |25        |Rear Edge: GPIO            |
+|24        |SCL2      |Right Edge: Main I2C       |
+|25        |SDA2      |Right Edge: Main I2C       |
 |26        |COPI1     |Right Edge: Main SPI1      |
 |27        |SCK1      |Right Edge: Main SPI1      |
 |28        |TX7       |Rear Edge: UART & CAN      |
