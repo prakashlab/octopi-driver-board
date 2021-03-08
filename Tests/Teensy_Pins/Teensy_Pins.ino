@@ -1,7 +1,6 @@
 static const uint8_t num_pins = 42;
 uint8_t pin = 0;
 
-// the setup routine runs once when you press reset:
 void setup() {
   for (uint8_t i = 0; i < num_pins; ++i) {
     pinMode(i, OUTPUT);
@@ -26,7 +25,6 @@ void setup() {
   Serial.println("...");
 }
 
-// the loop routine runs over and over again forever:
 void loop() {
   // Advance pin on \n
   while (Serial.available()) {
