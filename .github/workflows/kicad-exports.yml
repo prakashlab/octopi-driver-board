@@ -103,6 +103,8 @@ jobs:
               continue # Exclude .github directory
             elif [ "$directory" == Parts ]; then
               continue # Exclude Parts directory
+            elif [ "$directory" == Tests ]; then
+              continue # Exclude Tests directory
             elif [ "$directory" == "ODSv1.0.0" ]; then
               continue # Exclude ODSv1.0.0 directory, which is only used for rendering
             fi

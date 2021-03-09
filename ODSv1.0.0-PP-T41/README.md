@@ -48,7 +48,7 @@ This plane has the following backbone data interface:
 
 - GPIO input/output: almost all GPIO pins from the Teensy are exposed for other planes to interface with.
 - GPIO output: Pins 22 and 23 of the Teensy are exposed over the backbone but are also connected to outputs from HB-Sm; they should not be used by other planes.
-- Serial comunication: Most GPIO pins which correspond to I2C and CAN buses and or to UART Serial connections are reserved for those purposes and laid out in a special section of the backbone for other planes to interface with. Both SPI buses from the Teensy are also exposed over the backbone for other planes to interface with. SPI1 is used for peripheral boards and devices such as HB-Sm, while SPI0 is to intended for use by planes.
+- Serial comunication: Most GPIO pins which correspond to I2C and CAN buses and or to UART Serial connections are reserved for those purposes and laid out in a special section of the backbone for other planes to interface with. Both SPI buses from the Teensy are also exposed over the backbone for other planes to interface with. SPI1 is used for peripheral boards and devices such as HB-Sm, while SPI0 is to intended for use by planes. In particular, this plane uses Teensy pins 11, 12, and 13 for COPI0, CIPO0, and SCK0, respectively, and Teensy pins 26, 39, and 27 for COPI1, CIPO1, and SCK1, respectively.
 - SPI chip-select multiplexing: this board reserves the DSCS0 line for use with SPI0 and SPI1 for on-board devices and HB-Sm; the DSCS0 line is not exposed over the backbone. This board exposes DSCS1 - DSCS15 for other planes to use.
 
 ## Usage

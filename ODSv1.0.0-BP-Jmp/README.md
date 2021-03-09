@@ -62,6 +62,60 @@ This plane has the following safety notices:
 
 - Both power and data pins on external connectors are exposed through male headers. Be careful not to short any of the pins together, especially the power pins.
 
+### Teensy Pin Mappings
+
+While almost all of GPIO header pins of the Teensy 4.1 on the processing plane are exposed in this plane, not all of them are labeled according to the Teensy pin numbers. Here is a table of correspondences between Teensy pins and header pins on this plane:
+
+|Teensy Pin|BP-Jmp Pin|BP-Jmp Section             |
+|----------|----------|---------------------------|
+|GND       |GND       |Various edges and sections |
+|3.3V      |3.3V      |Various edges and sections |
+|Vin       |5V        |Left Edge: 5V              |
+|0         |CRX2      |Rear Edge: UART & CAN      |
+|1         |CTX2      |Rear Edge: UART & CAN      |
+|2         |2         |Rear Edge: GPIO            |
+|3         |3         |Rear Edge: GPIO            |
+|4         |4         |Rear Edge: GPIO            |
+|5         |5         |Rear Edge: GPIO            |
+|6         |6         |Rear Edge: GPIO            |
+|7         |RX2       |Rear Edge: UART TX/RX      |
+|8         |TX2       |Rear Edge: UART TX/RX      |
+|9         |9         |Rear Edge: GPIO            |
+|10        |10        |Rear Edge: GPIO            |
+|11        |COPI0     |Right Edge: Main SPI0      |
+|12        |CIPO0     |Right Edge: Main SPI0      |
+|13        |SCK0      |Right Edge: Main SPI0      |
+|14        |TX3       |Rear Edge: UART & CAN      |
+|15        |RX3       |Rear Edge: UART & CAN      |
+|16        |SCL1      |Right Edge: Main I2C       |
+|17        |SDA1      |Right Edge: Main I2C       |
+|18        |SDA       |Right Edge: Main I2C       |
+|19        |SCL       |Right Edge: Main I2C       |
+|20        |20        |Rear Edge: GPIO            |
+|21        |21        |Rear Edge: GPIO            |
+|22        |22        |Rear Edge: GPIO            |
+|23        |23        |Rear Edge: GPIO            |
+|24        |SCL2      |Right Edge: Main I2C       |
+|25        |SDA2      |Right Edge: Main I2C       |
+|26        |COPI1     |Right Edge: Main SPI1      |
+|27        |SCK1      |Right Edge: Main SPI1      |
+|28        |TX7       |Rear Edge: UART & CAN      |
+|29        |RX7       |Rear Edge: UART & CAN      |
+|30        |N/A       |N/A                        |
+|31        |N/A       |N/A                        |
+|32        |DCS       |Front Edge: Extra Device CS|
+|33        |33        |Rear Edge: GPIO            |
+|34        |RX8       |Rear Edge: UART TX/RX      |
+|35        |TX8       |Rear Edge: UART TX/RX      |
+|36        |36        |Rear Edge: GPIO            |
+|37        |37        |Rear Edge: GPIO            |
+|38        |38        |Rear Edge: GPIO            |
+|39        |CIPO1     |Right Edge: Main SPI1      |
+|40        |40        |Rear Edge: GPIO            |
+|41        |41        |Rear Edge: GPIO            |
+
+Note that Teensy pins 30 and 31 are not exposed by PP-T41 over the backbone, so they are not exposed by this plane.
+
 ## Maintainers
 
 Currently the maintainer of this template is [Ethan Li](https://github.com/ethanjli).
