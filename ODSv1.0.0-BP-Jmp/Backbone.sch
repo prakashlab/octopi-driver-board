@@ -1125,7 +1125,7 @@ F 2 "Connector_Harwin:Harwin_M20-89016xx_1x16_P2.54mm_Horizontal" H 4800 5050 50
 F 3 "https://s3.amazonaws.com/catalogspreads-pdf/PAGE112-113%20.100%20MALE%20HDR.pdf" H 4800 5050 50  0001 C CNN
 F 4 "S1113E-16-ND" H 4800 5050 50  0001 C CNN "Digikey ID"
 F 5 "GEC16SBSN-M89" H 4800 5050 50  0001 C CNN "MPN"
-F 6 "Sullins Connector Solutions" H 4800 5050 50  0001 C CNN "Manufacturer"
+F 6 "Sullins" H 4800 5050 50  0001 C CNN "Manufacturer"
 F 7 "https://www.digikey.com/en/products/detail/sullins-connector-solutions/GEC16SBSN-M89/862267" H 4800 5050 50  0001 C CNN "Ordering URL"
 F 8 "SMD" H 4800 5050 50  0001 C CNN "Type"
 	1    4800 5050

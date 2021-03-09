@@ -3,9 +3,9 @@ EELAYER 30 0
 EELAYER END
 $Descr USLetter 11000 8500
 encoding utf-8
-Sheet 5 7
+Sheet 5 8
 Title "Processing Plane for Teensy 4.1"
-Date "2021-02-07"
+Date "2021-03-09"
 Rev "v0.1.1"
 Comp "Prakash Lab/Octopi Team"
 Comment1 "Designer: Ethan Li"
@@ -238,7 +238,7 @@ U 1 1 61BA3152
 P 2450 2100
 F 0 "J3" H 2530 2092 50  0000 L CNN
 F 1 "Conn_01x24" H 2530 2001 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x24_P2.54mm_Vertical_SMD_Pin1Left" H 2450 2100 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x24_P2.54mm_Vertical_SMD_Pin1Left" H 2450 2100 50  0001 C CNN
 F 3 "http://suddendocs.samtec.com/catalog_english/ssw_sm.pdf" H 2450 2100 50  0001 C CNN
 F 4 "Teensy 4.1" H 2450 2100 50  0001 C CNN "Associated Board"
 F 5 "SSW-124-22-F-S-VS" H 2450 2100 50  0001 C CNN "MPN"
@@ -255,7 +255,7 @@ U 1 1 61BA48B4
 P 4050 2200
 F 0 "J4" H 3968 775 50  0000 C CNN
 F 1 "Conn_01x24" H 3968 866 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x24_P2.54mm_Vertical_SMD_Pin1Left" H 4050 2200 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x24_P2.54mm_Vertical_SMD_Pin1Left" H 4050 2200 50  0001 C CNN
 F 3 "http://suddendocs.samtec.com/catalog_english/ssw_sm.pdf" H 4050 2200 50  0001 C CNN
 F 4 "Teensy 4.1" H 4050 2200 50  0001 C CNN "Associated Board"
 F 5 "SSW-124-22-F-S-VS" H 4050 2200 50  0001 C CNN "MPN"
