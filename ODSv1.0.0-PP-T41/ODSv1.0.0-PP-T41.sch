@@ -3,9 +3,9 @@ EELAYER 30 0
 EELAYER END
 $Descr USLetter 11000 8500
 encoding utf-8
-Sheet 1 7
+Sheet 1 8
 Title "Processing Plane for Teensy 4.1"
-Date "2021-02-07"
+Date "2021-03-09"
 Rev "v0.1.1"
 Comp "Prakash Lab/Octopi Team"
 Comment1 "Designer: Ethan Li"
@@ -533,16 +533,6 @@ Wire Wire Line
 	3000 5750 3250 5750
 Wire Wire Line
 	2700 5750 1750 5750
-Wire Wire Line
-	5250 1050 5500 1050
-Wire Wire Line
-	5250 1150 5500 1150
-Wire Wire Line
-	5250 1250 5500 1250
-Wire Wire Line
-	5250 1350 5500 1350
-Wire Wire Line
-	5250 1450 5500 1450
 $Sheet
 S 4250 2000 1000 1000
 U 61EA74DE
@@ -580,36 +570,57 @@ F 3 "" H 5750 2150 50  0001 C CNN
 	1    5750 2150
 	0    1    1    0   
 $EndComp
-Text Label 5350 2750 0    50   ~ 0
-~HB_Dial_A~
-Text Label 5350 2850 0    50   ~ 0
-~HB_Dial_B~
-Text Label 5350 2650 0    50   ~ 0
-~SPI_DCS~
-Text Label 5350 2550 0    50   ~ 0
-~SPI_DSCS0~
-Text Label 5350 2450 0    50   ~ 0
-SPI1_CIPO
-Text Label 5350 2350 0    50   ~ 0
-SPI1_COPI
-Text Label 5350 2250 0    50   ~ 0
-SPI1_SCK
-Wire Wire Line
-	5250 2250 5350 2250
-Wire Wire Line
-	5250 2350 5350 2350
-Wire Wire Line
-	5250 2450 5350 2450
-Wire Wire Line
-	5250 2550 5350 2550
-Wire Wire Line
-	5250 2650 5350 2650
-Wire Wire Line
-	5250 2750 5350 2750
-Wire Wire Line
-	5250 2850 5350 2850
 Wire Wire Line
 	5250 2050 5750 2050
 Wire Wire Line
 	5250 2150 5750 2150
+Text Label 5350 3350 0    50   ~ 0
+~SPI_MSCS~
+Text Label 5350 3450 0    50   ~ 0
+~SPI_DSCS~
+Text Label 5350 3550 0    50   ~ 0
+~SPI_DSCS0~
+Wire Wire Line
+	5250 2850 5350 2850
+Wire Wire Line
+	5250 2750 5350 2750
+Wire Wire Line
+	5250 2650 5350 2650
+Wire Wire Line
+	5250 2550 5350 2550
+Wire Wire Line
+	5250 2450 5350 2450
+Wire Wire Line
+	5250 2350 5350 2350
+Wire Wire Line
+	5250 2250 5350 2250
+Text Label 5350 2250 0    50   ~ 0
+SPI1_SCK
+Text Label 5350 2350 0    50   ~ 0
+SPI1_COPI
+Text Label 5350 2450 0    50   ~ 0
+SPI1_CIPO
+Text Label 5350 2550 0    50   ~ 0
+~SPI_DSCS0~
+Text Label 5350 2650 0    50   ~ 0
+~SPI_DCS~
+Text Label 5350 2850 0    50   ~ 0
+~HB_Dial_B~
+Text Label 5350 2750 0    50   ~ 0
+~HB_Dial_A~
+Wire Wire Line
+	5350 3350 5250 3350
+Wire Wire Line
+	5350 3450 5250 3450
+Wire Wire Line
+	5350 3550 5250 3550
+$Sheet
+S 4250 3300 1000 450 
+U 604966FD
+F0 "Test Points" 50
+F1 "TestPoints.sch" 50
+F2 "~MSCS~" I R 5250 3350 50 
+F3 "~DSCS~" I R 5250 3450 50 
+F4 "~DSCS0~" I R 5250 3550 50 
+$EndSheet
 $EndSCHEMATC
