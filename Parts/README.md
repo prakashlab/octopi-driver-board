@@ -32,5 +32,7 @@ The symbol for `AD7689xCP` was created by Ethan Li as a modification of the `AD7
 
 - The SDO pin was changed from the Output pin type to the Tri-State pin type
 
+The symbol for `NC7SZ125` was created by Ethan Li as a copy of the `74LVC1G125` symbol in the `74xGxx` KiCad library, without any modifications besides renaming the symbol.
+
 All symbols created as modifications of symbols in the KiCad libraries are copyright Prakash Lab and the Octopi project contributors, and those symbols are licensed under the [Creative Commons CC-BY-SA 4.0 License](LICENSE.CC-BY-SA) as required by the KiCad [libraries license](https://kicad.org/libraries/license/).
 

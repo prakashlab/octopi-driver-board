@@ -30,4 +30,10 @@ K SPI parallel port expander
 F https://datasheets.maximintegrated.com/en/ds/MAX7317.pdf
 $ENDCMP
 #
+$CMP NC7SZ125
+D Single Buffer Gate Tri-State, Low-Voltage CMOS
+K Single Gate Buff Tri-State CMOS
+F https://rocelec.widen.net/view/pdf/uyzzz6spvq/ONSM-S-A0003591114-1.pdf
+$ENDCMP
+#
 #End Doc Library
