@@ -106,14 +106,14 @@ L Device:R R10
 U 1 1 61EE0A88
 P 7500 4700
 F 0 "R10" V 7450 4850 50  0000 L CNN
-F 1 "560" V 7500 4700 50  0000 C CNN
+F 1 "2k" V 7500 4700 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 7430 4700 50  0001 C CNN
 F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 7500 4700 50  0001 C CNN
-F 4 "RC0603FR-07560RL" H 7500 4700 50  0001 C CNN "MPN"
+F 4 "RC0603FR-072KL" H 7500 4700 50  0001 C CNN "MPN"
 F 5 "Yageo" H 7500 4700 50  0001 C CNN "Manufacturer"
-F 6 "https://www.digikey.com/en/products/detail/yageo/RC0603FR-07560RL/727304" H 7500 4700 50  0001 C CNN "Ordering URL"
+F 6 "https://www.digikey.com/en/products/detail/yageo/RC0603FR-072KL/727009" H 7500 4700 50  0001 C CNN "Ordering URL"
 F 7 "SMD" H 7500 4700 50  0001 C CNN "Type"
-F 8 "311-560HRCT-ND" H 7500 4700 50  0001 C CNN "Digikey ID"
+F 8 "311-2.00KHRCT-ND" H 7500 4700 50  0001 C CNN "Digikey ID"
 	1    7500 4700
 	0    1    1    0   
 $EndComp
@@ -122,14 +122,14 @@ L Device:R R11
 U 1 1 61EE9DA7
 P 7500 4800
 F 0 "R11" V 7450 4950 50  0000 L CNN
-F 1 "560" V 7500 4800 50  0000 C CNN
+F 1 "2k" V 7500 4800 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 7430 4800 50  0001 C CNN
 F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 7500 4800 50  0001 C CNN
-F 4 "RC0603FR-07560RL" H 7500 4800 50  0001 C CNN "MPN"
+F 4 "RC0603FR-072KL" H 7500 4800 50  0001 C CNN "MPN"
 F 5 "Yageo" H 7500 4800 50  0001 C CNN "Manufacturer"
-F 6 "https://www.digikey.com/en/products/detail/yageo/RC0603FR-07560RL/727304" H 7500 4800 50  0001 C CNN "Ordering URL"
+F 6 "https://www.digikey.com/en/products/detail/yageo/RC0603FR-072KL/727009" H 7500 4800 50  0001 C CNN "Ordering URL"
 F 7 "SMD" H 7500 4800 50  0001 C CNN "Type"
-F 8 "311-560HRCT-ND" H 7500 4800 50  0001 C CNN "Digikey ID"
+F 8 "311-2.00KHRCT-ND" H 7500 4800 50  0001 C CNN "Digikey ID"
 	1    7500 4800
 	0    1    1    0   
 $EndComp
@@ -138,14 +138,14 @@ L Device:R R12
 U 1 1 61EF30C8
 P 7500 4900
 F 0 "R12" V 7450 5050 50  0000 L CNN
-F 1 "150" V 7500 4900 50  0000 C CNN
+F 1 "200" V 7500 4900 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 7430 4900 50  0001 C CNN
 F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 7500 4900 50  0001 C CNN
-F 4 "RC0603FR-07150RL" H 7500 4900 50  0001 C CNN "MPN"
+F 4 "RC0603FR-07200RL" H 7500 4900 50  0001 C CNN "MPN"
 F 5 "Yageo" H 7500 4900 50  0001 C CNN "Manufacturer"
-F 6 "https://www.digikey.com/en/products/detail/yageo/RC0603FR-07150RL/726958" H 7500 4900 50  0001 C CNN "Ordering URL"
+F 6 "https://www.digikey.com/en/products/detail/yageo/RC0603FR-07200RL/727043" H 7500 4900 50  0001 C CNN "Ordering URL"
 F 7 "SMD" H 7500 4900 50  0001 C CNN "Type"
-F 8 "311-150HRCT-ND" H 7500 4900 50  0001 C CNN "Digikey ID"
+F 8 "311-200HRCT-ND" H 7500 4900 50  0001 C CNN "Digikey ID"
 	1    7500 4900
 	0    1    1    0   
 $EndComp
@@ -154,14 +154,14 @@ L Device:R R13
 U 1 1 61EFC353
 P 7500 5000
 F 0 "R13" V 7450 5150 50  0000 L CNN
-F 1 "75" V 7500 5000 50  0000 C CNN
+F 1 "200" V 7500 5000 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 7430 5000 50  0001 C CNN
 F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 7500 5000 50  0001 C CNN
-F 4 "RC0603FR-0775RL" H 7500 5000 50  0001 C CNN "MPN"
+F 4 "RC0603FR-07200RL" H 7500 5000 50  0001 C CNN "MPN"
 F 5 "Yageo" H 7500 5000 50  0001 C CNN "Manufacturer"
-F 6 "https://www.digikey.com/en/products/detail/yageo/RC0603FR-0775RL/727377" H 7500 5000 50  0001 C CNN "Ordering URL"
+F 6 "https://www.digikey.com/en/products/detail/yageo/RC0603FR-07200RL/727043" H 7500 5000 50  0001 C CNN "Ordering URL"
 F 7 "SMD" H 7500 5000 50  0001 C CNN "Type"
-F 8 "311-75.0HRCT-ND" H 7500 5000 50  0001 C CNN "Digikey ID"
+F 8 "311-200HRCT-ND" H 7500 5000 50  0001 C CNN "Digikey ID"
 	1    7500 5000
 	0    1    1    0   
 $EndComp
@@ -170,14 +170,14 @@ L Device:R R14
 U 1 1 61F055EF
 P 7500 5100
 F 0 "R14" V 7450 5250 50  0000 L CNN
-F 1 "75" V 7500 5100 50  0000 C CNN
+F 1 "200" V 7500 5100 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 7430 5100 50  0001 C CNN
 F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 7500 5100 50  0001 C CNN
-F 4 "RC0603FR-0775RL" H 7500 5100 50  0001 C CNN "MPN"
+F 4 "RC0603FR-07200RL" H 7500 5100 50  0001 C CNN "MPN"
 F 5 "Yageo" H 7500 5100 50  0001 C CNN "Manufacturer"
-F 6 "https://www.digikey.com/en/products/detail/yageo/RC0603FR-0775RL/727377" H 7500 5100 50  0001 C CNN "Ordering URL"
+F 6 "https://www.digikey.com/en/products/detail/yageo/RC0603FR-07200RL/727043" H 7500 5100 50  0001 C CNN "Ordering URL"
 F 7 "SMD" H 7500 5100 50  0001 C CNN "Type"
-F 8 "311-75.0HRCT-ND" H 7500 5100 50  0001 C CNN "Digikey ID"
+F 8 "311-200HRCT-ND" H 7500 5100 50  0001 C CNN "Digikey ID"
 	1    7500 5100
 	0    1    1    0   
 $EndComp
@@ -190,13 +190,13 @@ P 7050 5100
 F 0 "D8" H 7150 5050 50  0000 L CNN
 F 1 "Red" H 6850 5050 50  0000 R CNN
 F 2 "LED_SMD:LED_0603_1608Metric" H 7050 5100 50  0001 C CNN
-F 3 "https://optoelectronics.liteon.com/upload/download/DS-22-99-0151/LTST-C190KRKT.pdf" H 7050 5100 50  0001 C CNN
-F 4 "LTST-C190KRKT" H 7050 5100 50  0001 C CNN "MPN"
-F 5 "Lite-On" H 7050 5100 50  0001 C CNN "Manufacturer"
-F 6 "https://www.digikey.com/en/products/detail/lite-on-inc/LTST-C190KRKT/386817" H 7050 5100 50  0001 C CNN "Ordering URL"
+F 3 "https://www.we-online.de/katalog/datasheet/150060RS75000.pdf" H 7050 5100 50  0001 C CNN
+F 4 "150060RS75000" H 7050 5100 50  0001 C CNN "MPN"
+F 5 "Wurth Elektronik" H 7050 5100 50  0001 C CNN "Manufacturer"
+F 6 "https://www.digikey.com/en/products/detail/w%C3%BCrth-elektronik/150060RS75000/4489901" H 7050 5100 50  0001 C CNN "Ordering URL"
 F 7 "SMD" H 7050 5100 50  0001 C CNN "Type"
 F 8 "Polarity is indicated by a diode symbol either next to the LED or at the end of the line of LEDs." H 7050 5100 50  0001 C CNN "Assembly Notes"
-F 9 "160-1436-1-ND" H 7050 5100 50  0001 C CNN "Digikey ID"
+F 9 "732-4978-1-ND" H 7050 5100 50  0001 C CNN "Digikey ID"
 	1    7050 5100
 	1    0    0    1   
 $EndComp
@@ -207,13 +207,13 @@ P 7050 5000
 F 0 "D7" H 7150 4950 50  0000 L CNN
 F 1 "Red" H 6850 4950 50  0000 R CNN
 F 2 "LED_SMD:LED_0603_1608Metric" H 7050 5000 50  0001 C CNN
-F 3 "https://optoelectronics.liteon.com/upload/download/DS-22-99-0151/LTST-C190KRKT.pdf" H 7050 5000 50  0001 C CNN
-F 4 "LTST-C190KRKT" H 7050 5000 50  0001 C CNN "MPN"
-F 5 "Lite-On" H 7050 5000 50  0001 C CNN "Manufacturer"
-F 6 "https://www.digikey.com/en/products/detail/lite-on-inc/LTST-C190KRKT/386817" H 7050 5000 50  0001 C CNN "Ordering URL"
+F 3 "https://www.we-online.de/katalog/datasheet/150060RS75000.pdf" H 7050 5000 50  0001 C CNN
+F 4 "150060RS75000" H 7050 5000 50  0001 C CNN "MPN"
+F 5 "Wurth Elektronik" H 7050 5000 50  0001 C CNN "Manufacturer"
+F 6 "https://www.digikey.com/en/products/detail/w%C3%BCrth-elektronik/150060RS75000/4489901" H 7050 5000 50  0001 C CNN "Ordering URL"
 F 7 "SMD" H 7050 5000 50  0001 C CNN "Type"
 F 8 "Polarity is indicated by a diode symbol either next to the LED or at the end of the line of LEDs." H 7050 5000 50  0001 C CNN "Assembly Notes"
-F 9 "160-1436-1-ND" H 7050 5000 50  0001 C CNN "Digikey ID"
+F 9 "732-4978-1-ND" H 7050 5000 50  0001 C CNN "Digikey ID"
 	1    7050 5000
 	1    0    0    1   
 $EndComp
@@ -222,15 +222,15 @@ L Device:LED D6
 U 1 1 6200DA64
 P 7050 4900
 F 0 "D6" H 7150 4850 50  0000 L CNN
-F 1 "Orange" H 6850 4850 50  0000 R CNN
+F 1 "Yellow" H 6850 4850 50  0000 R CNN
 F 2 "LED_SMD:LED_0603_1608Metric" H 7050 4900 50  0001 C CNN
-F 3 "https://optoelectronics.liteon.com/upload/download/DS-22-99-0186/LTST-C190KFKT.PDF" H 7050 4900 50  0001 C CNN
-F 4 "LTST-C190KFKT" H 7050 4900 50  0001 C CNN "MPN"
-F 5 "Lite-On" H 7050 4900 50  0001 C CNN "Manufacturer"
-F 6 "https://www.digikey.com/en/products/detail/lite-on-inc/LTST-C190KFKT/386813" H 7050 4900 50  0001 C CNN "Ordering URL"
+F 3 "https://www.we-online.de/katalog/datasheet/150060YS75000.pdf" H 7050 4900 50  0001 C CNN
+F 4 "150060YS75000" H 7050 4900 50  0001 C CNN "MPN"
+F 5 "Wurth Elektronik" H 7050 4900 50  0001 C CNN "Manufacturer"
+F 6 "https://www.digikey.com/en/products/detail/w%C3%BCrth-elektronik/150060YS75000/4489909" H 7050 4900 50  0001 C CNN "Ordering URL"
 F 7 "SMD" H 7050 4900 50  0001 C CNN "Type"
 F 8 "Polarity is indicated by a diode symbol either next to the LED or at the end of the line of LEDs." H 7050 4900 50  0001 C CNN "Assembly Notes"
-F 9 "160-1434-1-ND" H 7050 4900 50  0001 C CNN "Digikey ID"
+F 9 "732-4981-1-ND" H 7050 4900 50  0001 C CNN "Digikey ID"
 	1    7050 4900
 	1    0    0    1   
 $EndComp
@@ -239,15 +239,15 @@ L Device:LED D5
 U 1 1 62004719
 P 7050 4800
 F 0 "D5" H 7150 4750 50  0000 L CNN
-F 1 "Yellow" H 6850 4750 50  0000 R CNN
+F 1 "Blue" H 6850 4750 50  0000 R CNN
 F 2 "LED_SMD:LED_0603_1608Metric" H 7050 4800 50  0001 C CNN
-F 3 "https://optoelectronics.liteon.com/upload/download/DS-22-99-0189/LTST-C190KSKT.pdf" H 7050 4800 50  0001 C CNN
-F 4 "LTST-C190KSKT" H 7050 4800 50  0001 C CNN "MPN"
-F 5 "Lite-On" H 7050 4800 50  0001 C CNN "Manufacturer"
-F 6 "https://www.digikey.com/en/products/detail/lite-on-inc/LTST-C190KSKT/386819" H 7050 4800 50  0001 C CNN "Ordering URL"
+F 3 "https://www.we-online.de/katalog/datasheet/150060BS75000.pdf" H 7050 4800 50  0001 C CNN
+F 4 "150060BS75000" H 7050 4800 50  0001 C CNN "MPN"
+F 5 "Wurth Elektronik" H 7050 4800 50  0001 C CNN "Manufacturer"
+F 6 "https://www.digikey.com/en/products/detail/w%C3%BCrth-elektronik/150060BS75000/4489895" H 7050 4800 50  0001 C CNN "Ordering URL"
 F 7 "SMD" H 7050 4800 50  0001 C CNN "Type"
 F 8 "Polarity is indicated by a diode symbol either next to the LED or at the end of the line of LEDs." H 7050 4800 50  0001 C CNN "Assembly Notes"
-F 9 "160-1437-1-ND" H 7050 4800 50  0001 C CNN "Digikey ID"
+F 9 "732-4966-1-ND" H 7050 4800 50  0001 C CNN "Digikey ID"
 	1    7050 4800
 	1    0    0    1   
 $EndComp
@@ -256,15 +256,15 @@ L Device:LED D4
 U 1 1 61DEBF01
 P 7050 4700
 F 0 "D4" H 7150 4650 50  0000 L CNN
-F 1 "Yellow" H 6850 4650 50  0000 R CNN
+F 1 "Blue" H 6850 4650 50  0000 R CNN
 F 2 "LED_SMD:LED_0603_1608Metric" H 7050 4700 50  0001 C CNN
-F 3 "https://optoelectronics.liteon.com/upload/download/DS-22-99-0189/LTST-C190KSKT.pdf" H 7050 4700 50  0001 C CNN
-F 4 "LTST-C190KSKT" H 7050 4700 50  0001 C CNN "MPN"
-F 5 "Lite-On" H 7050 4700 50  0001 C CNN "Manufacturer"
-F 6 "https://www.digikey.com/en/products/detail/lite-on-inc/LTST-C190KSKT/386819" H 7050 4700 50  0001 C CNN "Ordering URL"
+F 3 "https://www.we-online.de/katalog/datasheet/150060BS75000.pdf" H 7050 4700 50  0001 C CNN
+F 4 "150060BS75000" H 7050 4700 50  0001 C CNN "MPN"
+F 5 "Wurth Elektronik" H 7050 4700 50  0001 C CNN "Manufacturer"
+F 6 "https://www.digikey.com/en/products/detail/w%C3%BCrth-elektronik/150060BS75000/4489895" H 7050 4700 50  0001 C CNN "Ordering URL"
 F 7 "SMD" H 7050 4700 50  0001 C CNN "Type"
 F 8 "Polarity is indicated by a diode symbol either next to the LED or at the end of the line of LEDs." H 7050 4700 50  0001 C CNN "Assembly Notes"
-F 9 "160-1437-1-ND" H 7050 4700 50  0001 C CNN "Digikey ID"
+F 9 "732-4966-1-ND" H 7050 4700 50  0001 C CNN "Digikey ID"
 	1    7050 4700
 	1    0    0    1   
 $EndComp
@@ -303,8 +303,6 @@ Wire Wire Line
 	7650 5100 8000 5100
 Wire Notes Line
 	8100 5350 6500 5350
-Text Notes 6525 5325 0    25   ~ 0
-LED colors can be reallocated, but make sure to update resistor values.\n220 drives blue at 33% brightness, 150 drives orange at 50% brightness,\nand 75 drives red at 66% brightness.
 Text Label 6450 4800 2    50   ~ 0
 ~LED1~
 Text Label 6450 4900 2    50   ~ 0
@@ -313,22 +311,20 @@ Text Label 6450 5000 2    50   ~ 0
 ~LED3~
 Text Label 6450 5100 2    50   ~ 0
 ~LED4~
-Text Notes 6500 5450 0    25   ~ 0
-Programmable indicator LEDs can be removed to free up extra GPIO pins\nfrom the SPI DCS selector's I/O expander IC for other purposes.
 $Comp
 L Device:LED D1
 U 1 1 626C91FC
 P 2200 6150
 F 0 "D1" H 2300 6100 50  0000 L CNN
-F 1 "Blue" H 1950 6100 50  0000 R CNN
+F 1 "Green" H 1950 6100 50  0000 R CNN
 F 2 "LED_SMD:LED_0603_1608Metric" H 2200 6150 50  0001 C CNN
-F 3 "https://optoelectronics.liteon.com/upload/download/DS-22-99-0224/LTST-C190TBKT.PDF" H 2200 6150 50  0001 C CNN
-F 4 "LTST-C190TBKT" H 2200 6150 50  0001 C CNN "MPN"
-F 5 "Lite-On" H 2200 6150 50  0001 C CNN "Manufacturer"
-F 6 "https://www.digikey.com/en/products/detail/lite-on-inc/LTST-C190TBKT/388529" H 2200 6150 50  0001 C CNN "Ordering URL"
+F 3 "https://www.we-online.de/katalog/datasheet/150060GS75000.pdf" H 2200 6150 50  0001 C CNN
+F 4 "150060GS75000" H 2200 6150 50  0001 C CNN "MPN"
+F 5 "Wurth Elektronik" H 2200 6150 50  0001 C CNN "Manufacturer"
+F 6 "https://www.digikey.com/en/products/detail/w%C3%BCrth-elektronik/150060GS75000/4489898" H 2200 6150 50  0001 C CNN "Ordering URL"
 F 7 "SMD" H 2200 6150 50  0001 C CNN "Type"
 F 8 "Polarity is indicated by a diode symbol either next to the LED or at the end of the line of LEDs." H 2200 6150 50  0001 C CNN "Assembly Notes"
-F 9 "160-1646-1-ND" H 2200 6150 50  0001 C CNN "Digikey ID"
+F 9 "732-4971-1-ND" H 2200 6150 50  0001 C CNN "Digikey ID"
 	1    2200 6150
 	1    0    0    1   
 $EndComp
@@ -337,14 +333,14 @@ L Device:R R7
 U 1 1 626D59FC
 P 2600 6150
 F 0 "R7" V 2550 6000 50  0000 R CNN
-F 1 "270" V 2600 6150 50  0000 C CNN
+F 1 "7.5k" V 2600 6150 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 2530 6150 50  0001 C CNN
 F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 2600 6150 50  0001 C CNN
-F 4 "RC0603FR-07270RL" H 2600 6150 50  0001 C CNN "MPN"
+F 4 "RC0603FR-077K5L" H 2600 6150 50  0001 C CNN "MPN"
 F 5 "Yageo" H 2600 6150 50  0001 C CNN "Manufacturer"
-F 6 "https://www.digikey.com/en/products/detail/yageo/RC0603FR-07270RL/727103" H 2600 6150 50  0001 C CNN "Ordering URL"
+F 6 "https://www.digikey.com/en/products/detail/yageo/RC0603FR-077K5L/727366" H 2600 6150 50  0001 C CNN "Ordering URL"
 F 7 "SMD" H 2600 6150 50  0001 C CNN "Type"
-F 8 "311-270HRCT-ND" H 2600 6150 50  0001 C CNN "Digikey ID"
+F 8 "311-7.50KHRCT-ND" H 2600 6150 50  0001 C CNN "Digikey ID"
 	1    2600 6150
 	0    -1   1    0   
 $EndComp
@@ -359,15 +355,15 @@ L Device:LED D2
 U 1 1 6275C050
 P 2200 6250
 F 0 "D2" H 2300 6200 50  0000 L CNN
-F 1 "Blue" H 1950 6200 50  0000 R CNN
+F 1 "Green" H 1950 6200 50  0000 R CNN
 F 2 "LED_SMD:LED_0603_1608Metric" H 2200 6250 50  0001 C CNN
-F 3 "https://optoelectronics.liteon.com/upload/download/DS-22-99-0224/LTST-C190TBKT.PDF" H 2200 6250 50  0001 C CNN
-F 4 "LTST-C190TBKT" H 2200 6250 50  0001 C CNN "MPN"
-F 5 "Lite-On" H 2200 6250 50  0001 C CNN "Manufacturer"
-F 6 "https://www.digikey.com/en/products/detail/lite-on-inc/LTST-C190TBKT/388529" H 2200 6250 50  0001 C CNN "Ordering URL"
+F 3 "https://www.we-online.de/katalog/datasheet/150060GS75000.pdf" H 2200 6250 50  0001 C CNN
+F 4 "150060GS75000" H 2200 6250 50  0001 C CNN "MPN"
+F 5 "Wurth Elektronik" H 2200 6250 50  0001 C CNN "Manufacturer"
+F 6 "https://www.digikey.com/en/products/detail/w%C3%BCrth-elektronik/150060GS75000/4489898" H 2200 6250 50  0001 C CNN "Ordering URL"
 F 7 "SMD" H 2200 6250 50  0001 C CNN "Type"
 F 8 "Polarity is indicated by a diode symbol either next to the LED or at the end of the line of LEDs." H 2200 6250 50  0001 C CNN "Assembly Notes"
-F 9 "160-1646-1-ND" H 2200 6250 50  0001 C CNN "Digikey ID"
+F 9 "732-4971-1-ND" H 2200 6250 50  0001 C CNN "Digikey ID"
 	1    2200 6250
 	1    0    0    1   
 $EndComp
@@ -376,14 +372,14 @@ L Device:R R8
 U 1 1 6275C056
 P 2600 6250
 F 0 "R8" V 2550 6100 50  0000 R CNN
-F 1 "1k" V 2600 6250 50  0000 C CNN
+F 1 "7.5k" V 2600 6250 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 2530 6250 50  0001 C CNN
 F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 2600 6250 50  0001 C CNN
-F 4 "RC0603FR-071KL" H 2600 6250 50  0001 C CNN "MPN"
+F 4 "RC0603FR-077K5L" H 2600 6250 50  0001 C CNN "MPN"
 F 5 "Yageo" H 2600 6250 50  0001 C CNN "Manufacturer"
-F 6 "https://www.digikey.com/en/products/detail/yageo/RC0603FR-071KL/726843" H 2600 6250 50  0001 C CNN "Ordering URL"
+F 6 "https://www.digikey.com/en/products/detail/yageo/RC0603FR-077K5L/727366" H 2600 6250 50  0001 C CNN "Ordering URL"
 F 7 "SMD" H 2600 6250 50  0001 C CNN "Type"
-F 8 "311-1.00KHRCT-ND" H 2600 6250 50  0001 C CNN "Digikey ID"
+F 8 "311-7.50KHRCT-ND" H 2600 6250 50  0001 C CNN "Digikey ID"
 	1    2600 6250
 	0    -1   1    0   
 $EndComp
@@ -392,15 +388,15 @@ L Device:LED D3
 U 1 1 62766C77
 P 2200 6350
 F 0 "D3" H 2300 6300 50  0000 L CNN
-F 1 "Blue" H 1950 6300 50  0000 R CNN
+F 1 "Green" H 1950 6300 50  0000 R CNN
 F 2 "LED_SMD:LED_0603_1608Metric" H 2200 6350 50  0001 C CNN
-F 3 "https://optoelectronics.liteon.com/upload/download/DS-22-99-0224/LTST-C190TBKT.PDF" H 2200 6350 50  0001 C CNN
-F 4 "LTST-C190TBKT" H 2200 6350 50  0001 C CNN "MPN"
-F 5 "Lite-On" H 2200 6350 50  0001 C CNN "Manufacturer"
-F 6 "https://www.digikey.com/en/products/detail/lite-on-inc/LTST-C190TBKT/388529" H 2200 6350 50  0001 C CNN "Ordering URL"
+F 3 "https://www.we-online.de/katalog/datasheet/150060GS75000.pdf" H 2200 6350 50  0001 C CNN
+F 4 "150060GS75000" H 2200 6350 50  0001 C CNN "MPN"
+F 5 "Wurth Elektronik" H 2200 6350 50  0001 C CNN "Manufacturer"
+F 6 "https://www.digikey.com/en/products/detail/w%C3%BCrth-elektronik/150060GS75000/4489898" H 2200 6350 50  0001 C CNN "Ordering URL"
 F 7 "SMD" H 2200 6350 50  0001 C CNN "Type"
 F 8 "Polarity is indicated by a diode symbol either next to the LED or at the end of the line of LEDs." H 2200 6350 50  0001 C CNN "Assembly Notes"
-F 9 "160-1646-1-ND" H 2200 6350 50  0001 C CNN "Digikey ID"
+F 9 "732-4971-1-ND" H 2200 6350 50  0001 C CNN "Digikey ID"
 	1    2200 6350
 	1    0    0    1   
 $EndComp
@@ -409,14 +405,14 @@ L Device:R R9
 U 1 1 62766C7D
 P 2600 6350
 F 0 "R9" V 2550 6200 50  0000 R CNN
-F 1 "1.2k" V 2600 6350 50  0000 C CNN
+F 1 "20k" V 2600 6350 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 2530 6350 50  0001 C CNN
 F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 2600 6350 50  0001 C CNN
-F 4 "RC0603FR-071K2L" H 2600 6350 50  0001 C CNN "MPN"
+F 4 "RC0603FR-0720KL" H 2600 6350 50  0001 C CNN "MPN"
 F 5 "Yageo" H 2600 6350 50  0001 C CNN "Manufacturer"
-F 6 "https://www.digikey.com/en/products/detail/yageo/RC0603FR-071K2L/726852" H 2600 6350 50  0001 C CNN "Ordering URL"
+F 6 "https://www.digikey.com/en/products/detail/yageo/RC0603FR-0720KL/727040" H 2600 6350 50  0001 C CNN "Ordering URL"
 F 7 "SMD" H 2600 6350 50  0001 C CNN "Type"
-F 8 "311-1.20KHRCT-ND" H 2600 6350 50  0001 C CNN "Digikey ID"
+F 8 "311-20.0KHRCT-ND" H 2600 6350 50  0001 C CNN "Digikey ID"
 	1    2600 6350
 	0    -1   1    0   
 $EndComp

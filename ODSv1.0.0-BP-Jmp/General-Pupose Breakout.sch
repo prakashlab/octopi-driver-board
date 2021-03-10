@@ -5,8 +5,8 @@ $Descr USLetter 11000 8500
 encoding utf-8
 Sheet 6 9
 Title "Breakout Plane for Jumper Wires"
-Date "2021-02-08"
-Rev "v0.1.0"
+Date "2021-03-09"
+Rev "v0.1.1"
 Comp "Prakash Lab/Octopi Team"
 Comment1 "Designer: Ethan Li"
 Comment2 "License: SHL-2.1"
