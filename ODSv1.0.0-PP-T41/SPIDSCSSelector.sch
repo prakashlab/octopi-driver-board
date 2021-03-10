@@ -14,24 +14,6 @@ Comment3 ""
 Comment4 "Octopi Driver Stack v1.0.0: Plane"
 $EndDescr
 $Comp
-L Octopi:MAX7317 U1
-U 1 1 619E2325
-P 2000 2100
-AR Path="/619E2325" Ref="U1"  Part="1" 
-AR Path="/60C51399/6199D8B6/619E2325" Ref="U1"  Part="1" 
-F 0 "U1" H 1550 2700 50  0000 C CNN
-F 1 "MAX7317" H 2000 2100 50  0000 C CNN
-F 2 "Package_SO:QSOP-16_3.9x4.9mm_P0.635mm" H 2200 1450 50  0001 L CNN
-F 3 "https://datasheets.maximintegrated.com/en/ds/MAX7317.pdf" H 2200 1000 50  0001 L CNN
-F 4 "MAX7317AEE+T" H 2000 2100 50  0001 C CNN "MPN"
-F 5 "Maxim" H 2000 2100 50  0001 C CNN "Manufacturer"
-F 6 "https://www.digikey.com/en/products/detail/maxim-integrated/MAX7317AEE-T/1781026" H 2000 2100 50  0001 C CNN "Ordering URL"
-F 7 "SMD" H 2000 2100 50  0001 C CNN "Type"
-F 8 "MAX7317AEE+TCT-ND" H 2000 2100 50  0001 C CNN "Digikey ID"
-	1    2000 2100
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR010
 U 1 1 619E3B56
 P 2000 2850
@@ -54,8 +36,6 @@ Text HLabel 1000 1950 0    50   Input ~ 0
 SCK
 Text HLabel 1000 2050 0    50   Input ~ 0
 COPI
-Text HLabel 1000 2150 0    50   3State ~ 0
-CIPO
 Text HLabel 1000 2250 0    50   Input ~ 0
 ~MSCS~
 Text HLabel 2000 1350 1    50   Input ~ 0
@@ -249,4 +229,23 @@ Text HLabel 2750 1000 1    50   Input ~ 0
 3.3V
 Text HLabel 3500 1000 1    50   Input ~ 0
 3.3V
+$Comp
+L Octopi:MAX7317 U1
+U 1 1 619E2325
+P 2000 2100
+AR Path="/619E2325" Ref="U1"  Part="1" 
+AR Path="/60C51399/6199D8B6/619E2325" Ref="U1"  Part="1" 
+F 0 "U1" H 1550 2700 50  0000 C CNN
+F 1 "MAX7317" H 2000 2100 50  0000 C CNN
+F 2 "Package_SO:QSOP-16_3.9x4.9mm_P0.635mm" H 2200 1450 50  0001 L CNN
+F 3 "https://datasheets.maximintegrated.com/en/ds/MAX7317.pdf" H 2200 1000 50  0001 L CNN
+F 4 "MAX7317AEE+T" H 2000 2100 50  0001 C CNN "MPN"
+F 5 "Maxim" H 2000 2100 50  0001 C CNN "Manufacturer"
+F 6 "https://www.digikey.com/en/products/detail/maxim-integrated/MAX7317AEE-T/1781026" H 2000 2100 50  0001 C CNN "Ordering URL"
+F 7 "SMD" H 2000 2100 50  0001 C CNN "Type"
+F 8 "MAX7317AEE+TCT-ND" H 2000 2100 50  0001 C CNN "Digikey ID"
+	1    2000 2100
+	1    0    0    -1  
+$EndComp
+NoConn ~ 1000 2150
 $EndSCHEMATC
