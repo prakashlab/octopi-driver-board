@@ -20,8 +20,8 @@ L Device:C C?
 U 1 1 60C61D72
 P 750 1150
 AR Path="/60C51399/6199D8B6/60C61D72" Ref="C?"  Part="1" 
-AR Path="/60C384EE/60C61D72" Ref="C3"  Part="1" 
-F 0 "C3" H 865 1196 50  0000 L CNN
+AR Path="/60C384EE/60C61D72" Ref="C4"  Part="1" 
+F 0 "C4" H 865 1196 50  0000 L CNN
 F 1 "0.047uF" H 865 1105 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 788 1000 50  0001 C CNN
 F 3 "http://datasheets.avx.com/X7RDielectric.pdf" H 750 1150 50  0001 C CNN
@@ -54,8 +54,8 @@ L Device:C C?
 U 1 1 6021E777
 P 850 5150
 AR Path="/60C51399/6199D8B6/6021E777" Ref="C?"  Part="1" 
-AR Path="/60C384EE/6021E777" Ref="C5"  Part="1" 
-F 0 "C5" H 965 5196 50  0000 L CNN
+AR Path="/60C384EE/6021E777" Ref="C6"  Part="1" 
+F 0 "C6" H 965 5196 50  0000 L CNN
 F 1 "0.1uF" H 965 5105 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 888 5000 50  0001 C CNN
 F 3 "http://datasheets.avx.com/X7RDielectric.pdf" H 850 5150 50  0001 C CNN
@@ -155,10 +155,10 @@ F 9 "SMD" H 4150 5400 50  0001 C CNN "Type"
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Octopi:AD7689xCP U7
+L Octopi:AD7689xCP U8
 U 1 1 602154C4
 P 2850 5500
-F 0 "U7" H 2450 6150 50  0000 L CNN
+F 0 "U8" H 2450 6150 50  0000 L CNN
 F 1 "AD7689xCP" H 3300 6050 50  0000 L CNN
 F 2 "Package_CSP:LFCSP-20-1EP_4x4mm_P0.5mm_EP2.5x2.5mm" H 2850 5500 50  0001 C CNN
 F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/AD7682_7689.pdf" H 2850 5500 50  0001 C CNN
@@ -251,8 +251,8 @@ L Device:C C?
 U 1 1 60237E52
 P 1350 5950
 AR Path="/60C51399/6199D8B6/60237E52" Ref="C?"  Part="1" 
-AR Path="/60C384EE/60237E52" Ref="C8"  Part="1" 
-F 0 "C8" H 1465 5996 50  0000 L CNN
+AR Path="/60C384EE/60237E52" Ref="C9"  Part="1" 
+F 0 "C9" H 1465 5996 50  0000 L CNN
 F 1 "10uF" H 1465 5905 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 1388 5800 50  0001 C CNN
 F 3 "http://datasheets.avx.com/X7RDielectric.pdf" H 1350 5950 50  0001 C CNN
@@ -270,8 +270,8 @@ L Device:C C?
 U 1 1 60290679
 P 1350 5150
 AR Path="/60C51399/6199D8B6/60290679" Ref="C?"  Part="1" 
-AR Path="/60C384EE/60290679" Ref="C7"  Part="1" 
-F 0 "C7" H 1465 5196 50  0000 L CNN
+AR Path="/60C384EE/60290679" Ref="C8"  Part="1" 
+F 0 "C8" H 1465 5196 50  0000 L CNN
 F 1 "0.1uF" H 1465 5105 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 1388 5000 50  0001 C CNN
 F 3 "http://datasheets.avx.com/X7RDielectric.pdf" H 1350 5150 50  0001 C CNN
@@ -308,8 +308,8 @@ L Device:C C?
 U 1 1 602A3F4C
 P 850 5950
 AR Path="/60C51399/6199D8B6/602A3F4C" Ref="C?"  Part="1" 
-AR Path="/60C384EE/602A3F4C" Ref="C6"  Part="1" 
-F 0 "C6" H 965 5996 50  0000 L CNN
+AR Path="/60C384EE/602A3F4C" Ref="C7"  Part="1" 
+F 0 "C7" H 965 5996 50  0000 L CNN
 F 1 "0.1uF" H 965 5905 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 888 5800 50  0001 C CNN
 F 3 "http://datasheets.avx.com/X7RDielectric.pdf" H 850 5950 50  0001 C CNN
@@ -342,8 +342,8 @@ L Device:C C?
 U 1 1 605006E9
 P 750 2950
 AR Path="/60C51399/6199D8B6/605006E9" Ref="C?"  Part="1" 
-AR Path="/60C384EE/605006E9" Ref="C4"  Part="1" 
-F 0 "C4" H 865 2996 50  0000 L CNN
+AR Path="/60C384EE/605006E9" Ref="C5"  Part="1" 
+F 0 "C5" H 865 2996 50  0000 L CNN
 F 1 "0.047uF" H 865 2905 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 788 2800 50  0001 C CNN
 F 3 "http://datasheets.avx.com/X7RDielectric.pdf" H 750 2950 50  0001 C CNN
@@ -504,9 +504,9 @@ L Octopi:MAX7317 U?
 U 1 1 605006DD
 P 2750 3550
 AR Path="/60C51399/6199D8B6/605006DD" Ref="U?"  Part="1" 
-AR Path="/60C384EE/605006DD" Ref="U5"  Part="1" 
+AR Path="/60C384EE/605006DD" Ref="U6"  Part="1" 
 AR Path="/605006DD" Ref="U?"  Part="1" 
-F 0 "U5" H 2300 4150 50  0000 C CNN
+F 0 "U6" H 2300 4150 50  0000 C CNN
 F 1 "MAX7317" H 2750 3550 50  0000 C CNN
 F 2 "Package_SO:QSOP-16_3.9x4.9mm_P0.635mm" H 2950 2900 50  0001 L CNN
 F 3 "https://datasheets.maximintegrated.com/en/ds/MAX7317.pdf" H 2950 2450 50  0001 L CNN
@@ -624,9 +624,9 @@ L Octopi:MAX7317 U?
 U 1 1 60C56060
 P 2750 1750
 AR Path="/60C51399/6199D8B6/60C56060" Ref="U?"  Part="1" 
-AR Path="/60C384EE/60C56060" Ref="U3"  Part="1" 
+AR Path="/60C384EE/60C56060" Ref="U4"  Part="1" 
 AR Path="/60C56060" Ref="U3"  Part="1" 
-F 0 "U3" H 2300 2350 50  0000 C CNN
+F 0 "U4" H 2300 2350 50  0000 C CNN
 F 1 "MAX7317" H 2750 1750 50  0000 C CNN
 F 2 "Package_SO:QSOP-16_3.9x4.9mm_P0.635mm" H 2950 1100 50  0001 L CNN
 F 3 "https://datasheets.maximintegrated.com/en/ds/MAX7317.pdf" H 2950 650 50  0001 L CNN
@@ -644,10 +644,10 @@ SPI0_COPI
 Text HLabel 2050 1600 0    50   Input ~ 0
 SPI0_SCK
 $Comp
-L Octopi:NC7SZ125 U4
+L Octopi:NC7SZ125 U5
 U 1 1 605F593B
 P 1250 1800
-F 0 "U4" H 1100 1600 50  0000 C CNN
+F 0 "U5" H 1100 1600 50  0000 C CNN
 F 1 "NC7SZ125" H 1200 1450 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-353_SC-70-5" H 1250 1800 50  0001 C CNN
 F 3 "https://rocelec.widen.net/view/pdf/uyzzz6spvq/ONSM-S-A0003591114-1.pdf" H 1250 1800 50  0001 C CNN
@@ -686,10 +686,10 @@ Text HLabel 1250 1600 2    50   Input ~ 0
 Text HLabel 1000 3600 0    50   3State ~ 0
 SPI0_CIPO
 $Comp
-L Octopi:NC7SZ125 U6
+L Octopi:NC7SZ125 U7
 U 1 1 60602B26
 P 1250 3600
-F 0 "U6" H 1100 3400 50  0000 C CNN
+F 0 "U7" H 1100 3400 50  0000 C CNN
 F 1 "NC7SZ125" H 1200 3250 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-353_SC-70-5" H 1250 3600 50  0001 C CNN
 F 3 "https://rocelec.widen.net/view/pdf/uyzzz6spvq/ONSM-S-A0003591114-1.pdf" H 1250 3600 50  0001 C CNN
@@ -911,4 +911,8 @@ F 9 "-NoExpansion, -NoIC" H 4150 4000 50  0001 C CNN "Config"
 	1    4150 4000
 	0    -1   1    0   
 $EndComp
+Text Label 2050 1800 2    50   ~ 0
+EXP0_DOUT
+Text Label 2050 3600 2    50   ~ 0
+EXP1_DOUT
 $EndSCHEMATC

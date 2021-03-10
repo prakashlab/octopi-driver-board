@@ -25,7 +25,7 @@ This plane has the following internal features:
 
 - A 10-port digital I/O expander (MAX7317)
 - A 10-port digital I/O expander whose I/O ports are connected to pull-up resistors to 3.3V (MAX7317)
-- A 16-port PWM driver
+- A 16-port PWM driver (not yet added, will be a PCA9685)
 - A 8-port analog-to-digital converter (AD7689)
 
 This plane has the following groups of external connectors, all in the form of 0.1" pitch male header:

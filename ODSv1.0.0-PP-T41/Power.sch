@@ -388,8 +388,8 @@ L Device:C C?
 U 1 1 5FEE8067
 P 4400 2650
 AR Path="/60C51399/6199D8B6/5FEE8067" Ref="C?"  Part="1" 
-AR Path="/61CA1C97/5FEE8067" Ref="C3"  Part="1" 
-F 0 "C3" H 4515 2696 50  0000 L CNN
+AR Path="/61CA1C97/5FEE8067" Ref="C4"  Part="1" 
+F 0 "C4" H 4515 2696 50  0000 L CNN
 F 1 "220uF" H 4515 2605 50  0000 L CNN
 F 2 "Capacitor_SMD:CP_Elec_6.3x7.7" H 4438 2500 50  0001 C CNN
 F 3 "https://products.nichicon.co.jp/en/pdf/XJA043/e-uwt.pdf" H 4400 2650 50  0001 C CNN
