@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr USLetter 11000 8500
 encoding utf-8
-Sheet 3 9
+Sheet 4 9
 Title "Breakout Plane for Jumper Wires"
 Date "2021-03-09"
 Rev "v0.1.1"
@@ -53,8 +53,6 @@ Text HLabel 1000 1950 0    50   Input ~ 0
 SCK
 Text HLabel 1000 2050 0    50   Input ~ 0
 COPI
-Text HLabel 1000 2150 0    50   3State ~ 0
-CIPO
 Text HLabel 1000 2250 0    50   Input ~ 0
 ~DSCS~
 Text HLabel 2000 1350 1    50   Input ~ 0
@@ -251,4 +249,6 @@ Text HLabel 2750 1050 1    50   Input ~ 0
 3.3V
 Text HLabel 3500 1000 1    50   Input ~ 0
 3.3V
+Text HLabel 1000 2150 0    50   Output ~ 0
+CIPO
 $EndSCHEMATC

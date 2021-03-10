@@ -457,12 +457,6 @@ Wire Wire Line
 	3500 2500 3250 2500
 Wire Notes Line
 	1750 2700 3250 2700
-Wire Wire Line
-	3250 2900 4000 2900
-Wire Wire Line
-	3250 3100 4000 3100
-Wire Wire Line
-	3250 3300 4000 3300
 Text HLabel 7250 4350 2    50   Output ~ 0
 ~DCS15~
 Text HLabel 7250 4250 2    50   Output ~ 0
@@ -499,39 +493,6 @@ Wire Notes Line
 	6400 2750 6400 5050
 Wire Notes Line
 	7000 4450 6400 4450
-$Sheet
-S 6000 2750 1000 2300
-U 6199D8B6
-F0 "SPI DCS Selector" 50
-F1 "SPIDCSSelector.sch" 50
-F2 "SCK" I L 6000 2850 50 
-F3 "COPI" I L 6000 3050 50 
-F4 "CIPO" T L 6000 3250 50 
-F5 "~DSCS~" I L 6000 3900 50 
-F6 "3.3V" I L 6000 3750 50 
-F7 "~DCS~" I L 6000 3600 50 
-F8 "~DCS0~" O R 7000 2850 50 
-F9 "EXPGPIO_5" T R 7000 4550 50 
-F10 "EXPGPIO_6" T R 7000 4650 50 
-F11 "EXPGPIO_7" T R 7000 4750 50 
-F12 "EXPGPIO_8" T R 7000 4850 50 
-F13 "EXPGPIO_9" T R 7000 4950 50 
-F14 "~DCS1~" O R 7000 2950 50 
-F15 "~DCS2~" O R 7000 3050 50 
-F16 "~DCS3~" O R 7000 3150 50 
-F17 "~DCS4~" O R 7000 3250 50 
-F18 "~DCS5~" O R 7000 3350 50 
-F19 "~DCS6~" O R 7000 3450 50 
-F20 "~DCS7~" O R 7000 3550 50 
-F21 "~DCS8~" O R 7000 3650 50 
-F22 "~DCS9~" O R 7000 3750 50 
-F23 "~DCS10~" O R 7000 3850 50 
-F24 "~DCS11~" O R 7000 3950 50 
-F25 "~DCS12~" O R 7000 4050 50 
-F26 "~DCS13~" O R 7000 4150 50 
-F27 "~DCS14~" O R 7000 4250 50 
-F28 "~DCS15~" O R 7000 4350 50 
-$EndSheet
 Wire Wire Line
 	7000 4350 7250 4350
 Wire Wire Line
@@ -566,12 +527,10 @@ Wire Wire Line
 	7000 2850 7250 2850
 Text HLabel 5750 3750 0    50   Input ~ 0
 3.3V
-Text HLabel 5750 3250 0    50   3State ~ 0
-SPI_CIPO
 Text HLabel 5750 3050 0    50   Input ~ 0
-SPI_COPI
+SPI0_COPI
 Text HLabel 5750 2850 0    50   Input ~ 0
-SPI_SCK
+SPI0_SCK
 Wire Wire Line
 	5750 3750 6000 3750
 Wire Wire Line
@@ -580,48 +539,18 @@ Wire Wire Line
 	5750 3050 6000 3050
 Wire Wire Line
 	6000 2850 5750 2850
-Text HLabel 4750 2850 2    50   Output ~ 0
-SPI_SCK
-Text HLabel 4750 3050 2    50   Output ~ 0
-SPI_COPI
-Text HLabel 4750 3250 2    50   3State ~ 0
-SPI_CIPO
-Wire Wire Line
-	4500 3000 4500 3050
-Wire Wire Line
-	4500 3200 4500 3250
-Wire Wire Line
-	4500 2800 4500 2850
-Wire Notes Line
-	4000 2700 4600 2700
-Wire Notes Line
-	4600 3525 4000 3525
-Wire Wire Line
-	4500 2850 4750 2850
-Wire Wire Line
-	4500 3050 4750 3050
-Connection ~ 4500 3050
-Wire Wire Line
-	4500 3050 4500 3100
-Wire Wire Line
-	4500 3250 4750 3250
-Connection ~ 4500 3250
-Wire Wire Line
-	4500 3250 4500 3300
+Text HLabel 3500 2800 2    50   Output ~ 0
+SPI0_SCK
+Text HLabel 3500 3000 2    50   Output ~ 0
+SPI0_COPI
+Text HLabel 3500 3200 2    50   3State ~ 0
+SPI0_CIPO
 Text Notes 4000 3775 0    50   ~ 0
 SPI DSCS Selector
-Text Notes 4000 2675 0    50   ~ 0
-SPI Bus Selector
 Wire Notes Line
 	4000 3800 4600 3800
 Text Notes 4025 5500 0    25   ~ 0
 Select one DSCS line for the\ndefault BOM by removing\nDNP from its Config field.
-Text Notes 4025 3500 0    25   ~ 0
-Use the other SPI bus in\nthe default BOM by\nchanging the nets.
-Wire Notes Line
-	4600 2700 4600 3525
-Wire Notes Line
-	4000 2700 4000 3525
 Wire Wire Line
 	3250 3600 6000 3600
 Wire Wire Line
@@ -849,8 +778,8 @@ Text Label 7950 4850 2    50   ~ 0
 ~LED3~
 Text Label 7950 4950 2    50   ~ 0
 ~LED4~
-Text Notes 8000 5300 0    25   ~ 0
-Programmable indicator LEDs can be removed to free up extra GPIO pins\nfrom the SPI DCS selector's I/O expander IC for other purposes.
+Text Notes 8000 5450 0    25   ~ 0
+Programmable indicator LEDs can be removed to free up extra GPIO pins\nfrom the SPI DCS selector's I/O expander IC for other purposes. Note that\nusing these pins as inputs requires adding a ~DCS~-controlled tri-state buffer\nbetween the DCS Selector's CIPO output, which is not tri-state, and SPI0_CIPO,\nwhich needs to be tri-state.
 Text Notes 6500 1300 0    50   ~ 0
 Customization Instructions:\n- Select a DSCS pin to use for selecting SPI devices on the plane, by changing a resistor from DNP\n   to 0 for the corresponding DSCS pin in the "SPI DSCS Selector" section.\n- If you don't need one of the power supplies, change the corresponding LED value and resistor value\n   in the "Power Indicator LEDs" section to DNP.\n- Customize the colors and order of programmable indicator LEDs in the "Programmable Indicator\n   LEDs" section; make sure to update resistor values.\n- Remove any unnecessary power indicator LEDs in the "Power Indicator LEDs" section.\n- If you need to use any pins from the GPIO or Interplane sections, add hierarchical pin labels in\n   this sheet and add the corresponding pins to the sheet's symbol in the parent.
 $Comp
@@ -1014,15 +943,6 @@ Wire Notes Line
 	4000 6550 5500 6550
 Wire Notes Line
 	5500 5950 5500 6550
-Connection ~ 4500 2850
-Wire Wire Line
-	4500 2850 4500 2900
-Wire Wire Line
-	3250 2800 4500 2800
-Wire Wire Line
-	3250 3000 4500 3000
-Wire Wire Line
-	3250 3200 4500 3200
 Text HLabel 1500 4300 0    50   Output ~ 0
 12V
 Text HLabel 1500 4200 0    50   Output ~ 0
@@ -1129,4 +1049,50 @@ F71 "GPIO_9" B L 1750 2500 50
 $EndSheet
 Text Notes 4000 6650 0    25   ~ 0
 Remove power indicator LEDs for power sources which will not be used on\nthis plane by changing their Config fields to DNP in the symbol fields.
+Wire Wire Line
+	3500 2800 3250 2800
+Wire Wire Line
+	3500 2900 3250 2900
+Wire Wire Line
+	3500 3000 3250 3000
+Wire Wire Line
+	3500 3100 3250 3100
+Wire Wire Line
+	3500 3200 3250 3200
+Wire Wire Line
+	3500 3300 3250 3300
+NoConn ~ 5750 3250
+$Sheet
+S 6000 2750 1000 2300
+U 6199D8B6
+F0 "SPI DCS Selector" 50
+F1 "SPIDCSSelector.sch" 50
+F2 "SCK" I L 6000 2850 50 
+F3 "COPI" I L 6000 3050 50 
+F4 "CIPO" O L 6000 3250 50 
+F5 "~DSCS~" I L 6000 3900 50 
+F6 "3.3V" I L 6000 3750 50 
+F7 "~DCS~" I L 6000 3600 50 
+F8 "~DCS0~" O R 7000 2850 50 
+F9 "EXPGPIO_5" T R 7000 4550 50 
+F10 "EXPGPIO_6" T R 7000 4650 50 
+F11 "EXPGPIO_7" T R 7000 4750 50 
+F12 "EXPGPIO_8" T R 7000 4850 50 
+F13 "EXPGPIO_9" T R 7000 4950 50 
+F14 "~DCS1~" O R 7000 2950 50 
+F15 "~DCS2~" O R 7000 3050 50 
+F16 "~DCS3~" O R 7000 3150 50 
+F17 "~DCS4~" O R 7000 3250 50 
+F18 "~DCS5~" O R 7000 3350 50 
+F19 "~DCS6~" O R 7000 3450 50 
+F20 "~DCS7~" O R 7000 3550 50 
+F21 "~DCS8~" O R 7000 3650 50 
+F22 "~DCS9~" O R 7000 3750 50 
+F23 "~DCS10~" O R 7000 3850 50 
+F24 "~DCS11~" O R 7000 3950 50 
+F25 "~DCS12~" O R 7000 4050 50 
+F26 "~DCS13~" O R 7000 4150 50 
+F27 "~DCS14~" O R 7000 4250 50 
+F28 "~DCS15~" O R 7000 4350 50 
+$EndSheet
 $EndSCHEMATC

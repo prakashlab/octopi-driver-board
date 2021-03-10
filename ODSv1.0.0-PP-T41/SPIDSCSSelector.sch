@@ -247,5 +247,6 @@ F 8 "MAX7317AEE+TCT-ND" H 2000 2100 50  0001 C CNN "Digikey ID"
 	1    2000 2100
 	1    0    0    -1  
 $EndComp
-NoConn ~ 1000 2150
+Text HLabel 1000 2150 0    50   Output ~ 0
+CIPO
 $EndSCHEMATC
