@@ -6,7 +6,7 @@ Male header breakout for the Octopi Driver Stack for prototyping with jumper wir
 
 This board template is part of the [octopi-driver-board project](https://github.com/prakashlab/octopi-driver-board).
 
-This processing plane contains male headers exposing all lines of the driver stack's backbone. It also includes a digital I/O expander, a DAC, and an ADC for additional prototyping use; those peripherals are part of the driver stack's multiplexed SPI system.
+This processing plane contains male headers exposing all lines of the driver stack's backbone. It also includes a digital I/O expander, a PWM driver, and an ADC for additional prototyping use; those peripherals are part of the driver stack's multiplexed SPI system.
 
 ## Background
 
@@ -15,7 +15,7 @@ The backbone uses a custom fine-pitch connector as well as a novel SPI chip-sele
 This plane is designed to provide the following functionalities:
 
 - Expose all of the driver stack's backbone lines, including power rails, GPIO pins, inter-plane lines, communication buses, and the SPI demultiplexed chip-select lines for prototyping with jumper wires. This is useful for testing new components and for probing the system with oscilloscopes and logic analyzers.
-- Provide provide additional digital I/O, DAC, and ADC pins for prototyping use
+- Provide provide additional digital I/O, PWM, and ADC pins for prototyping use
 
 This plane is not associated with any daughter boards.
 
@@ -24,7 +24,8 @@ This plane is not associated with any peripheral boards.
 This plane has the following internal features:
 
 - A 10-port digital I/O expander (MAX7317)
-- A 8-port digital-to-analog converter (DAC80508)
+- A 10-port digital I/O expander whose I/O ports are connected to pull-up resistors to 3.3V (MAX7317)
+- A 16-port PWM driver
 - A 8-port analog-to-digital converter (AD7689)
 
 This plane has the following groups of external connectors, all in the form of 0.1" pitch male header:
@@ -51,8 +52,11 @@ This plane has the following mechanical stacking usage requirements:
 This plane has the following BOM variants:
 
 - Default: A fully-populated PCB.
-- NoExpansion: A PCB without components populated for I/O expansion (digital I/O expander, DAC, and ADC). This reduces the parts cost of the board by $40, because the DAC costs approx. $20 and the ADC costs approx. $12.
-- NoIC: A PCB without components populated for SPI device multiplexing or populated for I/O expansion (digital I/O expander, DAC, and ADC). This acts as a pure breakout for the backbone, without any extras. This only saves an additional approx. $8 beyond the NoExpansion variant, but it significantly reduces the number of parts to assemble.
+- NoExpansion: A PCB without components populated for I/O expansion (digital I/O expander, PWM driver, and ADC). This reduces the parts cost of the board by $25, because the ADC costs approx. $12.
+- NoIC: A PCB without components populated for SPI device multiplexing or populated for I/O expansion (digital I/O expander, PWM driver, and ADC). This acts as a pure breakout for the backbone, without any extras. This only saves an additional approx. $8 beyond the NoExpansion variant, but it significantly reduces the number of parts to assemble.
+
+The following components can be manually swapped out in the BOM, though this is not officially supported:
+- The AD7689 ADC can be replaced with a cheaper option such as the AD7682, AD7699, or the AD7949.
 
 This plane allows the following post-assembly modifications:
 
@@ -115,6 +119,18 @@ While almost all of GPIO header pins of the Teensy 4.1 on the processing plane a
 |41        |41        |Rear Edge: GPIO            |
 
 Note that Teensy pins 30 and 31 are not exposed by PP-T41 over the backbone, so they are not exposed by this plane.
+
+## Digital Input/Output Expanders
+
+This plane exposes 10 digital I/O pins connected to two [MAX7317](../Parts/ICs/SPI%20Peripherals/MAX7317/Datasheet.pdf) I/O expanders. The first MAX7317 is used for pins EXPIO0-EXPIO9, while the second is used for pins EXPIO10-19. Pins EXPIO0-EXPIO9 can be used either as high-impedance input pins or as open-drain output pins (i.e. the pin can be set to either floating or 0V); if you need output pins to drive devices such as LEDs which draw current, you should use these pins. Pins EXPIO10-EXPIO19 are connected to 3.3V by 20kOhm pullup resistors, so they can be used as either pullup input pins or as push-pull output pins (i.e. the pin can be set to either 3.3V or 0V); if you need output pins for 3.3V logic signals with no current draw, you should use these pins.
+
+## Pulse-Width Modulation Driver
+
+TBD
+
+## Analog-to-Digital Converter
+
+This pin exposes 8 analog input pins connected to an [AD7689BCPZ](../Parts/ICs/SPI%20Peripherals/AD768x/Datasheet.pdf) ADC. This ADC can be configured through its SPI interface to use either the internal voltage reference, an external reference on the REFIN pin with the internal buffer outputting to the REF pin, or an external reference on the REF pin. It can also be configured through its SPI interface to read inputs referenced to either GND or ADCCOM as a common reference point. If you are referencing inputs to GND, you can connect one of the ADCCOM pins to the GND pin, so that you will have 8 GND pins to accompany the 8 analog input pins.
 
 ## Maintainers
 
