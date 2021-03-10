@@ -457,6 +457,7 @@ F 5 "Yageo" H 4150 3100 50  0001 C CNN "Manufacturer"
 F 6 "https://www.digikey.com/en/products/detail/yageo/RC0603FR-0720KL/727040" H 4150 3100 50  0001 C CNN "Ordering URL"
 F 7 "SMD" H 4150 3100 50  0001 C CNN "Type"
 F 8 "311-20.0KHRCT-ND" H 4150 3100 50  0001 C CNN "Digikey ID"
+F 9 "-NoExpansion, -NoIC" H 4150 3100 50  0001 C CNN "Config"
 	1    4150 3100
 	0    -1   1    0   
 $EndComp
@@ -475,6 +476,7 @@ F 5 "Yageo" H 4150 3200 50  0001 C CNN "Manufacturer"
 F 6 "https://www.digikey.com/en/products/detail/yageo/RC0603FR-0720KL/727040" H 4150 3200 50  0001 C CNN "Ordering URL"
 F 7 "SMD" H 4150 3200 50  0001 C CNN "Type"
 F 8 "311-20.0KHRCT-ND" H 4150 3200 50  0001 C CNN "Digikey ID"
+F 9 "-NoExpansion, -NoIC" H 4150 3200 50  0001 C CNN "Config"
 	1    4150 3200
 	0    -1   1    0   
 $EndComp
@@ -493,6 +495,7 @@ F 5 "Yageo" H 4150 3300 50  0001 C CNN "Manufacturer"
 F 6 "https://www.digikey.com/en/products/detail/yageo/RC0603FR-0720KL/727040" H 4150 3300 50  0001 C CNN "Ordering URL"
 F 7 "SMD" H 4150 3300 50  0001 C CNN "Type"
 F 8 "311-20.0KHRCT-ND" H 4150 3300 50  0001 C CNN "Digikey ID"
+F 9 "-NoExpansion, -NoIC" H 4150 3300 50  0001 C CNN "Config"
 	1    4150 3300
 	0    -1   1    0   
 $EndComp
@@ -511,6 +514,7 @@ F 5 "Yageo" H 4150 3400 50  0001 C CNN "Manufacturer"
 F 6 "https://www.digikey.com/en/products/detail/yageo/RC0603FR-0720KL/727040" H 4150 3400 50  0001 C CNN "Ordering URL"
 F 7 "SMD" H 4150 3400 50  0001 C CNN "Type"
 F 8 "311-20.0KHRCT-ND" H 4150 3400 50  0001 C CNN "Digikey ID"
+F 9 "-NoExpansion, -NoIC" H 4150 3400 50  0001 C CNN "Config"
 	1    4150 3400
 	0    -1   1    0   
 $EndComp
@@ -529,6 +533,7 @@ F 5 "Yageo" H 4150 3500 50  0001 C CNN "Manufacturer"
 F 6 "https://www.digikey.com/en/products/detail/yageo/RC0603FR-0720KL/727040" H 4150 3500 50  0001 C CNN "Ordering URL"
 F 7 "SMD" H 4150 3500 50  0001 C CNN "Type"
 F 8 "311-20.0KHRCT-ND" H 4150 3500 50  0001 C CNN "Digikey ID"
+F 9 "-NoExpansion, -NoIC" H 4150 3500 50  0001 C CNN "Config"
 	1    4150 3500
 	0    -1   1    0   
 $EndComp
@@ -547,6 +552,7 @@ F 5 "Yageo" H 4150 3600 50  0001 C CNN "Manufacturer"
 F 6 "https://www.digikey.com/en/products/detail/yageo/RC0603FR-0720KL/727040" H 4150 3600 50  0001 C CNN "Ordering URL"
 F 7 "SMD" H 4150 3600 50  0001 C CNN "Type"
 F 8 "311-20.0KHRCT-ND" H 4150 3600 50  0001 C CNN "Digikey ID"
+F 9 "-NoExpansion, -NoIC" H 4150 3600 50  0001 C CNN "Config"
 	1    4150 3600
 	0    -1   1    0   
 $EndComp
@@ -565,6 +571,7 @@ F 5 "Yageo" H 4150 3700 50  0001 C CNN "Manufacturer"
 F 6 "https://www.digikey.com/en/products/detail/yageo/RC0603FR-0720KL/727040" H 4150 3700 50  0001 C CNN "Ordering URL"
 F 7 "SMD" H 4150 3700 50  0001 C CNN "Type"
 F 8 "311-20.0KHRCT-ND" H 4150 3700 50  0001 C CNN "Digikey ID"
+F 9 "-NoExpansion, -NoIC" H 4150 3700 50  0001 C CNN "Config"
 	1    4150 3700
 	0    -1   1    0   
 $EndComp
@@ -583,6 +590,7 @@ F 5 "Yageo" H 4150 3800 50  0001 C CNN "Manufacturer"
 F 6 "https://www.digikey.com/en/products/detail/yageo/RC0603FR-0720KL/727040" H 4150 3800 50  0001 C CNN "Ordering URL"
 F 7 "SMD" H 4150 3800 50  0001 C CNN "Type"
 F 8 "311-20.0KHRCT-ND" H 4150 3800 50  0001 C CNN "Digikey ID"
+F 9 "-NoExpansion, -NoIC" H 4150 3800 50  0001 C CNN "Config"
 	1    4150 3800
 	0    -1   1    0   
 $EndComp
@@ -601,6 +609,7 @@ F 5 "Yageo" H 4150 3900 50  0001 C CNN "Manufacturer"
 F 6 "https://www.digikey.com/en/products/detail/yageo/RC0603FR-0720KL/727040" H 4150 3900 50  0001 C CNN "Ordering URL"
 F 7 "SMD" H 4150 3900 50  0001 C CNN "Type"
 F 8 "311-20.0KHRCT-ND" H 4150 3900 50  0001 C CNN "Digikey ID"
+F 9 "-NoExpansion, -NoIC" H 4150 3900 50  0001 C CNN "Config"
 	1    4150 3900
 	0    -1   1    0   
 $EndComp
@@ -619,6 +628,7 @@ F 5 "Yageo" H 4150 4000 50  0001 C CNN "Manufacturer"
 F 6 "https://www.digikey.com/en/products/detail/yageo/RC0603FR-0720KL/727040" H 4150 4000 50  0001 C CNN "Ordering URL"
 F 7 "SMD" H 4150 4000 50  0001 C CNN "Type"
 F 8 "311-20.0KHRCT-ND" H 4150 4000 50  0001 C CNN "Digikey ID"
+F 9 "-NoExpansion, -NoIC" H 4150 4000 50  0001 C CNN "Config"
 	1    4150 4000
 	0    -1   1    0   
 $EndComp
@@ -831,6 +841,12 @@ F 0 "U4" H 1100 1600 50  0000 C CNN
 F 1 "NC7SZ125" H 1200 1450 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-353_SC-70-5" H 1250 1800 50  0001 C CNN
 F 3 "https://rocelec.widen.net/view/pdf/uyzzz6spvq/ONSM-S-A0003591114-1.pdf" H 1250 1800 50  0001 C CNN
+F 4 "-NoExpansion, -NoIC" H 1250 1800 50  0001 C CNN "Config"
+F 5 "NC7SZ125P5XCT-ND" H 1250 1800 50  0001 C CNN "Digikey ID"
+F 6 "NC7SZ125P5X" H 1250 1800 50  0001 C CNN "MPN"
+F 7 "ON Semiconductor" H 1250 1800 50  0001 C CNN "Manufacturer"
+F 8 "https://www.digikey.com/en/products/detail/on-semiconductor/NC7SZ125P5X/673366" H 1250 1800 50  0001 C CNN "Ordering URL"
+F 9 "SMD" H 1250 1800 50  0001 C CNN "Type"
 	1    1250 1800
 	-1   0    0    -1  
 $EndComp
@@ -867,6 +883,12 @@ F 0 "U6" H 1100 3400 50  0000 C CNN
 F 1 "NC7SZ125" H 1200 3250 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-353_SC-70-5" H 1250 3600 50  0001 C CNN
 F 3 "https://rocelec.widen.net/view/pdf/uyzzz6spvq/ONSM-S-A0003591114-1.pdf" H 1250 3600 50  0001 C CNN
+F 4 "-NoExpansion, -NoIC" H 1250 3600 50  0001 C CNN "Config"
+F 5 "NC7SZ125P5XCT-ND" H 1250 3600 50  0001 C CNN "Digikey ID"
+F 6 "NC7SZ125P5X" H 1250 3600 50  0001 C CNN "MPN"
+F 7 "ON Semiconductor" H 1250 3600 50  0001 C CNN "Manufacturer"
+F 8 "https://www.digikey.com/en/products/detail/on-semiconductor/NC7SZ125P5X/673366" H 1250 3600 50  0001 C CNN "Ordering URL"
+F 9 "SMD" H 1250 3600 50  0001 C CNN "Type"
 	1    1250 3600
 	-1   0    0    -1  
 $EndComp
