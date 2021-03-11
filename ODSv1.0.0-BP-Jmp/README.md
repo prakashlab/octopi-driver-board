@@ -122,7 +122,7 @@ Note that Teensy pins 30 and 31 are not exposed by PP-T41 over the backbone, so 
 
 ## Digital Input/Output Expanders
 
-This plane exposes 10 digital I/O pins connected to two [MAX7317](../Parts/ICs/SPI%20Peripherals/MAX7317/Datasheet.pdf) I/O expanders. The first MAX7317 is used for pins EXPIO0-EXPIO9, while the second is used for pins EXPIO10-19. Pins EXPIO0-EXPIO9 can be used either as high-impedance input pins or as open-drain output pins (i.e. the pin can be set to either floating or 0V); if you need output pins to drive devices such as LEDs which draw current, you should use these pins. Pins EXPIO10-EXPIO19 are connected to 3.3V by 20kOhm pullup resistors, so they can be used as either pullup input pins or as push-pull output pins (i.e. the pin can be set to either 3.3V or 0V); if you need output pins for 3.3V logic signals with no current draw, you should use these pins.
+This plane exposes 10 digital I/O pins connected to two [MAX7317](../Parts/ICs/SPI%20Peripherals/MAX7317/Datasheet.pdf) I/O expanders. The first MAX7317 is used for pins EXPIO0-EXPIO9, while the second is used for pins EXPIO10-19. Pins EXPIO0-EXPIO9 can be used either as high-impedance input pins or as open-drain output pins (i.e. the pin can be set to either floating or 0V); if you need output pins to drive devices such as LEDs which draw current, you should use these pins. Pins EXPIO10-EXPIO19 are connected to 3.3 V by 2 kOhm pullup resistors, so they can be used as either pullup input pins or as push-pull output pins (i.e. the pin can be set to either 3.3V or 0V); if you need output pins for 3.3V logic signals with no current draw, you should use these pins.
 
 ## Pulse-Width Modulation Driver
 
