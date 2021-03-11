@@ -323,4 +323,140 @@ Text Label 4000 2050 0    50   ~ 0
 MUX_S3
 Text Label 2000 2150 2    50   ~ 0
 EXP_DOUT
+$Comp
+L Device:R R?
+U 1 1 606697F7
+P 8150 1650
+AR Path="/60C51399/606697F7" Ref="R?"  Part="1" 
+AR Path="/60C51399/6199D8B6/606697F7" Ref="R17"  Part="1" 
+F 0 "R17" V 8100 1800 50  0000 L CNN
+F 1 "2k" V 8150 1650 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 8080 1650 50  0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 8150 1650 50  0001 C CNN
+F 4 "RC0603FR-072KL" H 8150 1650 50  0001 C CNN "MPN"
+F 5 "Yageo" H 8150 1650 50  0001 C CNN "Manufacturer"
+F 6 "https://www.digikey.com/en/products/detail/yageo/RC0603FR-072KL/727009" H 8150 1650 50  0001 C CNN "Ordering URL"
+F 7 "SMD" H 8150 1650 50  0001 C CNN "Type"
+F 8 "311-2.00KHRCT-ND" H 8150 1650 50  0001 C CNN "Digikey ID"
+	1    8150 1650
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 60669802
+P 8150 1750
+AR Path="/60C51399/60669802" Ref="R?"  Part="1" 
+AR Path="/60C51399/6199D8B6/60669802" Ref="R18"  Part="1" 
+F 0 "R18" V 8100 1900 50  0000 L CNN
+F 1 "2k" V 8150 1750 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 8080 1750 50  0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 8150 1750 50  0001 C CNN
+F 4 "RC0603FR-072KL" H 8150 1750 50  0001 C CNN "MPN"
+F 5 "Yageo" H 8150 1750 50  0001 C CNN "Manufacturer"
+F 6 "https://www.digikey.com/en/products/detail/yageo/RC0603FR-072KL/727009" H 8150 1750 50  0001 C CNN "Ordering URL"
+F 7 "SMD" H 8150 1750 50  0001 C CNN "Type"
+F 8 "311-2.00KHRCT-ND" H 8150 1750 50  0001 C CNN "Digikey ID"
+	1    8150 1750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 6066980D
+P 8150 1850
+AR Path="/60C51399/6066980D" Ref="R?"  Part="1" 
+AR Path="/60C51399/6199D8B6/6066980D" Ref="R19"  Part="1" 
+F 0 "R19" V 8100 2000 50  0000 L CNN
+F 1 "2k" V 8150 1850 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 8080 1850 50  0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 8150 1850 50  0001 C CNN
+F 4 "RC0603FR-072KL" H 8150 1850 50  0001 C CNN "MPN"
+F 5 "Yageo" H 8150 1850 50  0001 C CNN "Manufacturer"
+F 6 "https://www.digikey.com/en/products/detail/yageo/RC0603FR-072KL/727009" H 8150 1850 50  0001 C CNN "Ordering URL"
+F 7 "SMD" H 8150 1850 50  0001 C CNN "Type"
+F 8 "311-2.00KHRCT-ND" H 8150 1850 50  0001 C CNN "Digikey ID"
+	1    8150 1850
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 60669818
+P 8150 1950
+AR Path="/60C51399/60669818" Ref="R?"  Part="1" 
+AR Path="/60C51399/6199D8B6/60669818" Ref="R20"  Part="1" 
+F 0 "R20" V 8100 2100 50  0000 L CNN
+F 1 "2k" V 8150 1950 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 8080 1950 50  0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 8150 1950 50  0001 C CNN
+F 4 "RC0603FR-072KL" H 8150 1950 50  0001 C CNN "MPN"
+F 5 "Yageo" H 8150 1950 50  0001 C CNN "Manufacturer"
+F 6 "https://www.digikey.com/en/products/detail/yageo/RC0603FR-072KL/727009" H 8150 1950 50  0001 C CNN "Ordering URL"
+F 7 "SMD" H 8150 1950 50  0001 C CNN "Type"
+F 8 "311-2.00KHRCT-ND" H 8150 1950 50  0001 C CNN "Digikey ID"
+	1    8150 1950
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 60669823
+P 8150 2050
+AR Path="/60C51399/60669823" Ref="R?"  Part="1" 
+AR Path="/60C51399/6199D8B6/60669823" Ref="R21"  Part="1" 
+F 0 "R21" V 8100 2200 50  0000 L CNN
+F 1 "2k" V 8150 2050 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 8080 2050 50  0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 8150 2050 50  0001 C CNN
+F 4 "RC0603FR-072KL" H 8150 2050 50  0001 C CNN "MPN"
+F 5 "Yageo" H 8150 2050 50  0001 C CNN "Manufacturer"
+F 6 "https://www.digikey.com/en/products/detail/yageo/RC0603FR-072KL/727009" H 8150 2050 50  0001 C CNN "Ordering URL"
+F 7 "SMD" H 8150 2050 50  0001 C CNN "Type"
+F 8 "311-2.00KHRCT-ND" H 8150 2050 50  0001 C CNN "Digikey ID"
+	1    8150 2050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8300 1650 8500 1650
+Wire Wire Line
+	8300 1750 8500 1750
+Wire Wire Line
+	8300 1850 8500 1850
+Wire Wire Line
+	8300 1950 8500 1950
+Wire Wire Line
+	8300 2050 8500 2050
+Connection ~ 8500 1650
+Wire Wire Line
+	8500 1650 8500 1750
+Connection ~ 8500 1750
+Wire Wire Line
+	8500 1750 8500 1850
+Connection ~ 8500 1850
+Wire Wire Line
+	8500 1850 8500 1950
+Connection ~ 8500 1950
+Wire Wire Line
+	8500 1950 8500 2050
+Text Label 7750 1650 2    50   ~ 0
+~MUX_E~
+Text Label 7750 1750 2    50   ~ 0
+MUX_S0
+Text Label 7750 1850 2    50   ~ 0
+MUX_S1
+Text Label 7750 1950 2    50   ~ 0
+MUX_S2
+Text Label 7750 2050 2    50   ~ 0
+MUX_S3
+Wire Wire Line
+	7750 1650 8000 1650
+Wire Wire Line
+	7750 1750 8000 1750
+Wire Wire Line
+	7750 1850 8000 1850
+Wire Wire Line
+	7750 1950 8000 1950
+Wire Wire Line
+	7750 2050 8000 2050
+Text HLabel 8500 1500 1    50   Input ~ 0
+3.3V
+Wire Wire Line
+	8500 1500 8500 1650
 $EndSCHEMATC
