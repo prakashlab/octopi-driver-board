@@ -124,17 +124,19 @@ You should not attempt to use the SPI0, SPI1, or I2C0 pins as GPIOs. If you want
 
 As a special example, the I2C1 and I2C2 signal lines are each connected to 5 header pins, so if I2C1 or I2C2 isn't already being used and you need to plug multiple wires directly onto the same signal line, you can use SDA1, SCL1, SDA2, and/or SCL2. Since I2C1 can also serve as SER4 and I2C2 can also serve as SER6, you can also directly use jumper wires to connect up to 5 UART serial devices together on the same pair of signal lines, if they are designed for such use.
 
-## Digital Input/Output Expanders
+### I/O Peripherals
+
+#### Digital Input/Output Expanders
 
 This plane exposes 20 digital I/O pins connected to two [MAX7317](../Parts/ICs/SPI%20Peripherals/MAX7317/Datasheet.pdf) I/O expanders. The first MAX7317 is used for pins EXPIO0-EXPIO9, while the second is used for pins EXPIO10-19. Pins EXPIO0-EXPIO9 can be used either as high-impedance input pins or as open-drain output pins (i.e. the pin can be set to either floating or 0V); if you need output pins to drive devices such as LEDs which draw current, you should use these pins. Pins EXPIO10-EXPIO19 are connected to 3.3 V by 2 kOhm pullup resistors, so they can be used as either pullup input pins or as push-pull output pins (i.e. the pin can be set to either 3.3V or 0V); if you need output pins for 3.3V logic signals with no current draw, you should use these pins.
 
-## Pulse-Width Modulation Driver
-
-TBD
-
-## Analog-to-Digital Converter
+#### Analog-to-Digital Converter
 
 This pin exposes 8 analog input pins connected to an [AD7689BCPZ](../Parts/ICs/SPI%20Peripherals/AD768x/Datasheet.pdf) ADC. This ADC can be configured through its SPI interface to use either the internal voltage reference, an external reference on the REFIN pin with the internal buffer outputting to the REF pin, or an external reference on the REF pin. It can also be configured through its SPI interface to read inputs referenced to either GND or ADCCOM as a common reference point. If you are referencing inputs to GND, you can connect one of the ADCCOM pins to the GND pin, so that you will have 8 GND pins to accompany the 8 analog input pins.
+
+#### Pulse-Width Modulation Driver
+
+TBD
 
 ## Maintainers
 
