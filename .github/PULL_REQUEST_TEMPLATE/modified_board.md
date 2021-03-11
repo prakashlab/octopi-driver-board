@@ -8,17 +8,17 @@ Additions:
 
 - {LIST ANY ADDED FEATURES HERE, and TAG ANY RELEVANT ISSUES WITH CLOSING KEYWORDS}
 
-Changed:
+Changes:
 
 - {LIST ANY CHANGED FEATURES HERE, and TAG ANY RELEVANT ISSUES WITH CLOSING KEYWORDS}
 
-Fixed:
+Fixes:
 
 - {LIST ANY BUGFIXES HERE, and TAG ANY RELEVANT ISSUES WITH CLOSING KEYWORDS}
 
 {IF MODIFICATION WILL BE RELEASED AS A NEW TAG, INCLUDE THE FOLLOWING SECTION:}
 
-After this PR is merged, the board will be released with the `ODSv1.0.0-{{INSERT NAME CODE HERE}}v0.1.0` tag, which will be made on the develop branch. This PR will be used to keep track of previews and manufacturing files prior to a freeze on the tag. The PR will be merged once the prototype-stage manufacturing order (red PCBs) is placed. Afterwards, additional comments should be added to document any errata or testing results from assembled prototypes, or required changes for the next version can be recorded directly in Github Issues.
+After this PR is merged, the board will be released with the `ODSv1.0.0-{{INSERT NAME CODE HERE}}v{{INSERT VERSION NUMBER HERE}}` tag, which will be made on the develop branch. This PR will be used to keep track of previews and manufacturing files prior to a freeze on the tag. The PR will be merged once the prototype-stage manufacturing order (red PCBs) is placed. Afterwards, additional comments should be added to document any errata or testing results from assembled prototypes, or required changes for the next version can be recorded directly in Github Issues.
 
 {IF MODIFICATION WILL BE RELEASED AS A NEW TAG, INCLUDE THE FOLLOWING SECTION:}
 
