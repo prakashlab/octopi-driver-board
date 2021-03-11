@@ -77,8 +77,8 @@ This repository will provide planes and boards which implement a core set of fun
 
 1. Wherever possible, shift your use of GPIO pins on BP-Jmp to the plane's SPI I/O expanders for digital I/O, ADC, and DAC. The headers for those components are in the middle of the plane.
 2. Create a new plane as a copy of the [ODSv1.0.0-BT](ODSv1.0.0-BT) starter template. For more information, refer to [ODSv1.0.0-BT/README.md](ODSv1.0.0-BT/README.md).
-3. Add the standardized SPI I/O expanders, which are used in the BP-Jmp plane, to meet your GPIO needs.
-4. Add other SPI devices as needed.
+3. Add the standardized SPI I/O expanders, which are used in the BP-Jmp plane, to meet your GPIO needs; and add other SPI devices as needed. You will need to add the standardized pull-up resistor on the CS pin of each SPI device. For devices whose DOUT/DO/MISO/CIPO pins are not tri-state, you will need to add the standardized tri-state buffer between the pin and the CIPO line, which should be controlled by the same demultiplexed DCS line as the SPI device's CS pin; this tri-state buffer also needs a standardized bypass capacitor.
+4. Add I2C devices if no alternative with an SPI interface is available. You will need to add the standardized bus switch between the SDA/SCL pins of each device and the SDA/SCL bus, and you should control the bus switch using one of the demultiplexed DCS lines; you will need to add the standardized pull-up resistor onto this line. This bus switch also needs a standardized bypass capacitor.
 
 Where appropriate, you should delegate functions in your plane onto daughter boards. For example, if there is a particularly complex or expensive subsystem which you need to be able to swap out or test independently, or if you are reusing the same subsystem multiple times, you may want to make daughter board PCBs - each with one copy of the subsystem - which you can plug in to your new plane.
 
