@@ -3,10 +3,10 @@ EELAYER 30 0
 EELAYER END
 $Descr USLetter 11000 8500
 encoding utf-8
-Sheet 4 9
+Sheet 3 9
 Title "Breakout Plane for Jumper Wires"
-Date "2021-03-10"
-Rev "v0.1.1"
+Date "2021-03-11"
+Rev "v0.2.0"
 Comp "Prakash Lab/Octopi Team"
 Comment1 "Designer: Ethan Li"
 Comment2 "License: SHL-2.1"
@@ -19,8 +19,8 @@ U 1 1 60EAE366
 P 2450 3950
 AR Path="/60EAE366" Ref="J?"  Part="1" 
 AR Path="/60C51399/60EAE366" Ref="J?"  Part="1" 
-AR Path="/60C51399/60E9531F/60EAE366" Ref="J2"  Part="1" 
-F 0 "J2" H 2500 7067 50  0000 C CNN
+AR Path="/60C51399/60E9531F/60EAE366" Ref="J1"  Part="1" 
+F 0 "J1" H 2500 7067 50  0000 C CNN
 F 1 "Conn_02x60_Odd_Even" H 2500 6976 50  0000 C CNN
 F 2 "Backbone_Connector_Hirose:Hirose_FX20_FX20-120P-0.5SV_2x60_P0.50mm_Vertical" H 2450 3950 50  0001 C CNN
 F 3 "https://www.hirose.com/product/document?clcode=&productname=&series=FX20&documenttype=Catalog&lang=en&documentid=D49373_en" H 2450 3950 50  0001 C CNN
@@ -283,8 +283,8 @@ U 1 1 61296724
 P 5450 3950
 AR Path="/61296724" Ref="J?"  Part="1" 
 AR Path="/60C51399/61296724" Ref="J?"  Part="1" 
-AR Path="/60C51399/60E9531F/61296724" Ref="J3"  Part="1" 
-F 0 "J3" H 5500 7067 50  0000 C CNN
+AR Path="/60C51399/60E9531F/61296724" Ref="J2"  Part="1" 
+F 0 "J2" H 5500 7067 50  0000 C CNN
 F 1 "Conn_02x60_Odd_Even" H 5500 6976 50  0000 C CNN
 F 2 "Backbone_Connector_Hirose:Hirose_FX20_FX20-120S-0.5SV_2x60_P0.50mm_Vertical" H 5450 3950 50  0001 C CNN
 F 3 "https://www.hirose.com/product/document?clcode=&productname=&series=FX20&documenttype=Catalog&lang=en&documentid=D49373_en" H 5450 3950 50  0001 C CNN

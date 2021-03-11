@@ -5,8 +5,8 @@ $Descr USLetter 11000 8500
 encoding utf-8
 Sheet 8 9
 Title "Breakout Plane for Jumper Wires"
-Date "2021-03-10"
-Rev "v0.1.1"
+Date "2021-03-11"
+Rev "v0.2.0"
 Comp "Prakash Lab/Octopi Team"
 Comment1 "Designer: Ethan Li"
 Comment2 "License: SHL-2.1"
@@ -888,17 +888,17 @@ U 1 1 606B43E6
 P 4650 5000
 AR Path="/60C51399/606B43E6" Ref="R?"  Part="1" 
 AR Path="/60C384EE/606B43E6" Ref="R?"  Part="1" 
-AR Path="/6085F6E2/606B43E6" Ref="R24"  Part="1" 
-F 0 "R24" V 4600 4850 50  0000 R CNN
+AR Path="/6085F6E2/606B43E6" Ref="R29"  Part="1" 
+F 0 "R29" V 4600 4850 50  0000 R CNN
 F 1 "2k" V 4650 5000 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 4580 5000 50  0001 C CNN
 F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 4650 5000 50  0001 C CNN
-F 4 "RC0603FR-072KL" H 4650 5000 50  0001 C CNN "MPN"
+F 4 "RC0603FR-0720KL" H 4650 5000 50  0001 C CNN "MPN"
 F 5 "Yageo" H 4650 5000 50  0001 C CNN "Manufacturer"
-F 6 "https://www.digikey.com/en/products/detail/yageo/RC0603FR-072KL/727009" H 4650 5000 50  0001 C CNN "Ordering URL"
+F 6 "https://www.digikey.com/en/products/detail/yageo/RC0603FR-0720KL/727040" H 4650 5000 50  0001 C CNN "Ordering URL"
 F 7 "SMD" H 4650 5000 50  0001 C CNN "Type"
-F 8 "311-2.00KHRCT-ND" H 4650 5000 50  0001 C CNN "Digikey ID"
-F 9 "" H 4650 5000 50  0001 C CNN "Config"
+F 8 "311-20.0KHRCT-ND" H 4650 5000 50  0001 C CNN "Digikey ID"
+F 9 "-NoIC" H 4650 5000 50  0001 C CNN "Config"
 	1    4650 5000
 	0    -1   1    0   
 $EndComp
@@ -908,17 +908,17 @@ U 1 1 606B43F2
 P 4650 5100
 AR Path="/60C51399/606B43F2" Ref="R?"  Part="1" 
 AR Path="/60C384EE/606B43F2" Ref="R?"  Part="1" 
-AR Path="/6085F6E2/606B43F2" Ref="R25"  Part="1" 
-F 0 "R25" V 4600 4950 50  0000 R CNN
+AR Path="/6085F6E2/606B43F2" Ref="R30"  Part="1" 
+F 0 "R30" V 4600 4950 50  0000 R CNN
 F 1 "2k" V 4650 5100 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 4580 5100 50  0001 C CNN
 F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 4650 5100 50  0001 C CNN
-F 4 "RC0603FR-072KL" H 4650 5100 50  0001 C CNN "MPN"
+F 4 "RC0603FR-0720KL" H 4650 5100 50  0001 C CNN "MPN"
 F 5 "Yageo" H 4650 5100 50  0001 C CNN "Manufacturer"
-F 6 "https://www.digikey.com/en/products/detail/yageo/RC0603FR-072KL/727009" H 4650 5100 50  0001 C CNN "Ordering URL"
+F 6 "https://www.digikey.com/en/products/detail/yageo/RC0603FR-0720KL/727040" H 4650 5100 50  0001 C CNN "Ordering URL"
 F 7 "SMD" H 4650 5100 50  0001 C CNN "Type"
-F 8 "311-2.00KHRCT-ND" H 4650 5100 50  0001 C CNN "Digikey ID"
-F 9 "" H 4650 5100 50  0001 C CNN "Config"
+F 8 "311-20.0KHRCT-ND" H 4650 5100 50  0001 C CNN "Digikey ID"
+F 9 "-NoIC" H 4650 5100 50  0001 C CNN "Config"
 	1    4650 5100
 	0    -1   1    0   
 $EndComp
@@ -928,17 +928,17 @@ U 1 1 606B43FE
 P 4650 5200
 AR Path="/60C51399/606B43FE" Ref="R?"  Part="1" 
 AR Path="/60C384EE/606B43FE" Ref="R?"  Part="1" 
-AR Path="/6085F6E2/606B43FE" Ref="R26"  Part="1" 
-F 0 "R26" V 4600 5050 50  0000 R CNN
+AR Path="/6085F6E2/606B43FE" Ref="R31"  Part="1" 
+F 0 "R31" V 4600 5050 50  0000 R CNN
 F 1 "2k" V 4650 5200 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 4580 5200 50  0001 C CNN
 F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 4650 5200 50  0001 C CNN
-F 4 "RC0603FR-072KL" H 4650 5200 50  0001 C CNN "MPN"
+F 4 "RC0603FR-0720KL" H 4650 5200 50  0001 C CNN "MPN"
 F 5 "Yageo" H 4650 5200 50  0001 C CNN "Manufacturer"
-F 6 "https://www.digikey.com/en/products/detail/yageo/RC0603FR-072KL/727009" H 4650 5200 50  0001 C CNN "Ordering URL"
+F 6 "https://www.digikey.com/en/products/detail/yageo/RC0603FR-0720KL/727040" H 4650 5200 50  0001 C CNN "Ordering URL"
 F 7 "SMD" H 4650 5200 50  0001 C CNN "Type"
-F 8 "311-2.00KHRCT-ND" H 4650 5200 50  0001 C CNN "Digikey ID"
-F 9 "" H 4650 5200 50  0001 C CNN "Config"
+F 8 "311-20.0KHRCT-ND" H 4650 5200 50  0001 C CNN "Digikey ID"
+F 9 "-NoIC" H 4650 5200 50  0001 C CNN "Config"
 	1    4650 5200
 	0    -1   1    0   
 $EndComp
@@ -948,17 +948,17 @@ U 1 1 606B440A
 P 4650 5300
 AR Path="/60C51399/606B440A" Ref="R?"  Part="1" 
 AR Path="/60C384EE/606B440A" Ref="R?"  Part="1" 
-AR Path="/6085F6E2/606B440A" Ref="R27"  Part="1" 
-F 0 "R27" V 4600 5150 50  0000 R CNN
+AR Path="/6085F6E2/606B440A" Ref="R32"  Part="1" 
+F 0 "R32" V 4600 5150 50  0000 R CNN
 F 1 "2k" V 4650 5300 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 4580 5300 50  0001 C CNN
 F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 4650 5300 50  0001 C CNN
-F 4 "RC0603FR-072KL" H 4650 5300 50  0001 C CNN "MPN"
+F 4 "RC0603FR-0720KL" H 4650 5300 50  0001 C CNN "MPN"
 F 5 "Yageo" H 4650 5300 50  0001 C CNN "Manufacturer"
-F 6 "https://www.digikey.com/en/products/detail/yageo/RC0603FR-072KL/727009" H 4650 5300 50  0001 C CNN "Ordering URL"
+F 6 "https://www.digikey.com/en/products/detail/yageo/RC0603FR-0720KL/727040" H 4650 5300 50  0001 C CNN "Ordering URL"
 F 7 "SMD" H 4650 5300 50  0001 C CNN "Type"
-F 8 "311-2.00KHRCT-ND" H 4650 5300 50  0001 C CNN "Digikey ID"
-F 9 "" H 4650 5300 50  0001 C CNN "Config"
+F 8 "311-20.0KHRCT-ND" H 4650 5300 50  0001 C CNN "Digikey ID"
+F 9 "-NoIC" H 4650 5300 50  0001 C CNN "Config"
 	1    4650 5300
 	0    -1   1    0   
 $EndComp
@@ -968,17 +968,17 @@ U 1 1 606B4416
 P 4650 5400
 AR Path="/60C51399/606B4416" Ref="R?"  Part="1" 
 AR Path="/60C384EE/606B4416" Ref="R?"  Part="1" 
-AR Path="/6085F6E2/606B4416" Ref="R28"  Part="1" 
-F 0 "R28" V 4600 5250 50  0000 R CNN
+AR Path="/6085F6E2/606B4416" Ref="R33"  Part="1" 
+F 0 "R33" V 4600 5250 50  0000 R CNN
 F 1 "2k" V 4650 5400 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 4580 5400 50  0001 C CNN
 F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 4650 5400 50  0001 C CNN
-F 4 "RC0603FR-072KL" H 4650 5400 50  0001 C CNN "MPN"
+F 4 "RC0603FR-0720KL" H 4650 5400 50  0001 C CNN "MPN"
 F 5 "Yageo" H 4650 5400 50  0001 C CNN "Manufacturer"
-F 6 "https://www.digikey.com/en/products/detail/yageo/RC0603FR-072KL/727009" H 4650 5400 50  0001 C CNN "Ordering URL"
+F 6 "https://www.digikey.com/en/products/detail/yageo/RC0603FR-0720KL/727040" H 4650 5400 50  0001 C CNN "Ordering URL"
 F 7 "SMD" H 4650 5400 50  0001 C CNN "Type"
-F 8 "311-2.00KHRCT-ND" H 4650 5400 50  0001 C CNN "Digikey ID"
-F 9 "" H 4650 5400 50  0001 C CNN "Config"
+F 8 "311-20.0KHRCT-ND" H 4650 5400 50  0001 C CNN "Digikey ID"
+F 9 "-NoIC" H 4650 5400 50  0001 C CNN "Config"
 	1    4650 5400
 	0    -1   1    0   
 $EndComp
@@ -988,17 +988,17 @@ U 1 1 606B4422
 P 4650 5500
 AR Path="/60C51399/606B4422" Ref="R?"  Part="1" 
 AR Path="/60C384EE/606B4422" Ref="R?"  Part="1" 
-AR Path="/6085F6E2/606B4422" Ref="R29"  Part="1" 
-F 0 "R29" V 4600 5350 50  0000 R CNN
+AR Path="/6085F6E2/606B4422" Ref="R34"  Part="1" 
+F 0 "R34" V 4600 5350 50  0000 R CNN
 F 1 "2k" V 4650 5500 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 4580 5500 50  0001 C CNN
 F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 4650 5500 50  0001 C CNN
-F 4 "RC0603FR-072KL" H 4650 5500 50  0001 C CNN "MPN"
+F 4 "RC0603FR-0720KL" H 4650 5500 50  0001 C CNN "MPN"
 F 5 "Yageo" H 4650 5500 50  0001 C CNN "Manufacturer"
-F 6 "https://www.digikey.com/en/products/detail/yageo/RC0603FR-072KL/727009" H 4650 5500 50  0001 C CNN "Ordering URL"
+F 6 "https://www.digikey.com/en/products/detail/yageo/RC0603FR-0720KL/727040" H 4650 5500 50  0001 C CNN "Ordering URL"
 F 7 "SMD" H 4650 5500 50  0001 C CNN "Type"
-F 8 "311-2.00KHRCT-ND" H 4650 5500 50  0001 C CNN "Digikey ID"
-F 9 "" H 4650 5500 50  0001 C CNN "Config"
+F 8 "311-20.0KHRCT-ND" H 4650 5500 50  0001 C CNN "Digikey ID"
+F 9 "-NoIC" H 4650 5500 50  0001 C CNN "Config"
 	1    4650 5500
 	0    -1   1    0   
 $EndComp
@@ -1008,17 +1008,17 @@ U 1 1 606B442E
 P 4650 5600
 AR Path="/60C51399/606B442E" Ref="R?"  Part="1" 
 AR Path="/60C384EE/606B442E" Ref="R?"  Part="1" 
-AR Path="/6085F6E2/606B442E" Ref="R30"  Part="1" 
-F 0 "R30" V 4600 5450 50  0000 R CNN
+AR Path="/6085F6E2/606B442E" Ref="R35"  Part="1" 
+F 0 "R35" V 4600 5450 50  0000 R CNN
 F 1 "2k" V 4650 5600 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 4580 5600 50  0001 C CNN
 F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 4650 5600 50  0001 C CNN
-F 4 "RC0603FR-072KL" H 4650 5600 50  0001 C CNN "MPN"
+F 4 "RC0603FR-0720KL" H 4650 5600 50  0001 C CNN "MPN"
 F 5 "Yageo" H 4650 5600 50  0001 C CNN "Manufacturer"
-F 6 "https://www.digikey.com/en/products/detail/yageo/RC0603FR-072KL/727009" H 4650 5600 50  0001 C CNN "Ordering URL"
+F 6 "https://www.digikey.com/en/products/detail/yageo/RC0603FR-0720KL/727040" H 4650 5600 50  0001 C CNN "Ordering URL"
 F 7 "SMD" H 4650 5600 50  0001 C CNN "Type"
-F 8 "311-2.00KHRCT-ND" H 4650 5600 50  0001 C CNN "Digikey ID"
-F 9 "" H 4650 5600 50  0001 C CNN "Config"
+F 8 "311-20.0KHRCT-ND" H 4650 5600 50  0001 C CNN "Digikey ID"
+F 9 "-NoIC" H 4650 5600 50  0001 C CNN "Config"
 	1    4650 5600
 	0    -1   1    0   
 $EndComp
@@ -1028,17 +1028,17 @@ U 1 1 606B443A
 P 4650 5700
 AR Path="/60C51399/606B443A" Ref="R?"  Part="1" 
 AR Path="/60C384EE/606B443A" Ref="R?"  Part="1" 
-AR Path="/6085F6E2/606B443A" Ref="R31"  Part="1" 
-F 0 "R31" V 4600 5550 50  0000 R CNN
+AR Path="/6085F6E2/606B443A" Ref="R36"  Part="1" 
+F 0 "R36" V 4600 5550 50  0000 R CNN
 F 1 "2k" V 4650 5700 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 4580 5700 50  0001 C CNN
 F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 4650 5700 50  0001 C CNN
-F 4 "RC0603FR-072KL" H 4650 5700 50  0001 C CNN "MPN"
+F 4 "RC0603FR-0720KL" H 4650 5700 50  0001 C CNN "MPN"
 F 5 "Yageo" H 4650 5700 50  0001 C CNN "Manufacturer"
-F 6 "https://www.digikey.com/en/products/detail/yageo/RC0603FR-072KL/727009" H 4650 5700 50  0001 C CNN "Ordering URL"
+F 6 "https://www.digikey.com/en/products/detail/yageo/RC0603FR-0720KL/727040" H 4650 5700 50  0001 C CNN "Ordering URL"
 F 7 "SMD" H 4650 5700 50  0001 C CNN "Type"
-F 8 "311-2.00KHRCT-ND" H 4650 5700 50  0001 C CNN "Digikey ID"
-F 9 "" H 4650 5700 50  0001 C CNN "Config"
+F 8 "311-20.0KHRCT-ND" H 4650 5700 50  0001 C CNN "Digikey ID"
+F 9 "-NoIC" H 4650 5700 50  0001 C CNN "Config"
 	1    4650 5700
 	0    -1   1    0   
 $EndComp
@@ -1048,17 +1048,17 @@ U 1 1 606B4446
 P 4650 5800
 AR Path="/60C51399/606B4446" Ref="R?"  Part="1" 
 AR Path="/60C384EE/606B4446" Ref="R?"  Part="1" 
-AR Path="/6085F6E2/606B4446" Ref="R32"  Part="1" 
-F 0 "R32" V 4600 5650 50  0000 R CNN
+AR Path="/6085F6E2/606B4446" Ref="R37"  Part="1" 
+F 0 "R37" V 4600 5650 50  0000 R CNN
 F 1 "2k" V 4650 5800 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 4580 5800 50  0001 C CNN
 F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 4650 5800 50  0001 C CNN
-F 4 "RC0603FR-072KL" H 4650 5800 50  0001 C CNN "MPN"
+F 4 "RC0603FR-0720KL" H 4650 5800 50  0001 C CNN "MPN"
 F 5 "Yageo" H 4650 5800 50  0001 C CNN "Manufacturer"
-F 6 "https://www.digikey.com/en/products/detail/yageo/RC0603FR-072KL/727009" H 4650 5800 50  0001 C CNN "Ordering URL"
+F 6 "https://www.digikey.com/en/products/detail/yageo/RC0603FR-0720KL/727040" H 4650 5800 50  0001 C CNN "Ordering URL"
 F 7 "SMD" H 4650 5800 50  0001 C CNN "Type"
-F 8 "311-2.00KHRCT-ND" H 4650 5800 50  0001 C CNN "Digikey ID"
-F 9 "" H 4650 5800 50  0001 C CNN "Config"
+F 8 "311-20.0KHRCT-ND" H 4650 5800 50  0001 C CNN "Digikey ID"
+F 9 "-NoIC" H 4650 5800 50  0001 C CNN "Config"
 	1    4650 5800
 	0    -1   1    0   
 $EndComp
@@ -1068,17 +1068,17 @@ U 1 1 606B4452
 P 4650 5900
 AR Path="/60C51399/606B4452" Ref="R?"  Part="1" 
 AR Path="/60C384EE/606B4452" Ref="R?"  Part="1" 
-AR Path="/6085F6E2/606B4452" Ref="R33"  Part="1" 
-F 0 "R33" V 4600 5750 50  0000 R CNN
+AR Path="/6085F6E2/606B4452" Ref="R38"  Part="1" 
+F 0 "R38" V 4600 5750 50  0000 R CNN
 F 1 "2k" V 4650 5900 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 4580 5900 50  0001 C CNN
 F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 4650 5900 50  0001 C CNN
-F 4 "RC0603FR-072KL" H 4650 5900 50  0001 C CNN "MPN"
+F 4 "RC0603FR-0720KL" H 4650 5900 50  0001 C CNN "MPN"
 F 5 "Yageo" H 4650 5900 50  0001 C CNN "Manufacturer"
-F 6 "https://www.digikey.com/en/products/detail/yageo/RC0603FR-072KL/727009" H 4650 5900 50  0001 C CNN "Ordering URL"
+F 6 "https://www.digikey.com/en/products/detail/yageo/RC0603FR-0720KL/727040" H 4650 5900 50  0001 C CNN "Ordering URL"
 F 7 "SMD" H 4650 5900 50  0001 C CNN "Type"
-F 8 "311-2.00KHRCT-ND" H 4650 5900 50  0001 C CNN "Digikey ID"
-F 9 "" H 4650 5900 50  0001 C CNN "Config"
+F 8 "311-20.0KHRCT-ND" H 4650 5900 50  0001 C CNN "Digikey ID"
+F 9 "-NoIC" H 4650 5900 50  0001 C CNN "Config"
 	1    4650 5900
 	0    -1   1    0   
 $EndComp
@@ -1132,17 +1132,17 @@ U 1 1 606BF1FE
 P 4650 6000
 AR Path="/60C51399/606BF1FE" Ref="R?"  Part="1" 
 AR Path="/60C384EE/606BF1FE" Ref="R?"  Part="1" 
-AR Path="/6085F6E2/606BF1FE" Ref="R34"  Part="1" 
-F 0 "R34" V 4600 5850 50  0000 R CNN
+AR Path="/6085F6E2/606BF1FE" Ref="R39"  Part="1" 
+F 0 "R39" V 4600 5850 50  0000 R CNN
 F 1 "2k" V 4650 6000 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 4580 6000 50  0001 C CNN
 F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 4650 6000 50  0001 C CNN
-F 4 "RC0603FR-072KL" H 4650 6000 50  0001 C CNN "MPN"
+F 4 "RC0603FR-0720KL" H 4650 6000 50  0001 C CNN "MPN"
 F 5 "Yageo" H 4650 6000 50  0001 C CNN "Manufacturer"
-F 6 "https://www.digikey.com/en/products/detail/yageo/RC0603FR-072KL/727009" H 4650 6000 50  0001 C CNN "Ordering URL"
+F 6 "https://www.digikey.com/en/products/detail/yageo/RC0603FR-0720KL/727040" H 4650 6000 50  0001 C CNN "Ordering URL"
 F 7 "SMD" H 4650 6000 50  0001 C CNN "Type"
-F 8 "311-2.00KHRCT-ND" H 4650 6000 50  0001 C CNN "Digikey ID"
-F 9 "" H 4650 6000 50  0001 C CNN "Config"
+F 8 "311-20.0KHRCT-ND" H 4650 6000 50  0001 C CNN "Digikey ID"
+F 9 "-NoIC" H 4650 6000 50  0001 C CNN "Config"
 	1    4650 6000
 	0    -1   1    0   
 $EndComp
@@ -1160,17 +1160,17 @@ U 1 1 606C9BA8
 P 4650 6100
 AR Path="/60C51399/606C9BA8" Ref="R?"  Part="1" 
 AR Path="/60C384EE/606C9BA8" Ref="R?"  Part="1" 
-AR Path="/6085F6E2/606C9BA8" Ref="R35"  Part="1" 
-F 0 "R35" V 4600 5950 50  0000 R CNN
+AR Path="/6085F6E2/606C9BA8" Ref="R40"  Part="1" 
+F 0 "R40" V 4600 5950 50  0000 R CNN
 F 1 "2k" V 4650 6100 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 4580 6100 50  0001 C CNN
 F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 4650 6100 50  0001 C CNN
-F 4 "RC0603FR-072KL" H 4650 6100 50  0001 C CNN "MPN"
+F 4 "RC0603FR-0720KL" H 4650 6100 50  0001 C CNN "MPN"
 F 5 "Yageo" H 4650 6100 50  0001 C CNN "Manufacturer"
-F 6 "https://www.digikey.com/en/products/detail/yageo/RC0603FR-072KL/727009" H 4650 6100 50  0001 C CNN "Ordering URL"
+F 6 "https://www.digikey.com/en/products/detail/yageo/RC0603FR-0720KL/727040" H 4650 6100 50  0001 C CNN "Ordering URL"
 F 7 "SMD" H 4650 6100 50  0001 C CNN "Type"
-F 8 "311-2.00KHRCT-ND" H 4650 6100 50  0001 C CNN "Digikey ID"
-F 9 "" H 4650 6100 50  0001 C CNN "Config"
+F 8 "311-20.0KHRCT-ND" H 4650 6100 50  0001 C CNN "Digikey ID"
+F 9 "-NoIC" H 4650 6100 50  0001 C CNN "Config"
 	1    4650 6100
 	0    -1   1    0   
 $EndComp
@@ -1188,17 +1188,17 @@ U 1 1 606D4882
 P 4650 6200
 AR Path="/60C51399/606D4882" Ref="R?"  Part="1" 
 AR Path="/60C384EE/606D4882" Ref="R?"  Part="1" 
-AR Path="/6085F6E2/606D4882" Ref="R36"  Part="1" 
-F 0 "R36" V 4600 6050 50  0000 R CNN
+AR Path="/6085F6E2/606D4882" Ref="R41"  Part="1" 
+F 0 "R41" V 4600 6050 50  0000 R CNN
 F 1 "2k" V 4650 6200 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 4580 6200 50  0001 C CNN
 F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 4650 6200 50  0001 C CNN
-F 4 "RC0603FR-072KL" H 4650 6200 50  0001 C CNN "MPN"
+F 4 "RC0603FR-0720KL" H 4650 6200 50  0001 C CNN "MPN"
 F 5 "Yageo" H 4650 6200 50  0001 C CNN "Manufacturer"
-F 6 "https://www.digikey.com/en/products/detail/yageo/RC0603FR-072KL/727009" H 4650 6200 50  0001 C CNN "Ordering URL"
+F 6 "https://www.digikey.com/en/products/detail/yageo/RC0603FR-0720KL/727040" H 4650 6200 50  0001 C CNN "Ordering URL"
 F 7 "SMD" H 4650 6200 50  0001 C CNN "Type"
-F 8 "311-2.00KHRCT-ND" H 4650 6200 50  0001 C CNN "Digikey ID"
-F 9 "" H 4650 6200 50  0001 C CNN "Config"
+F 8 "311-20.0KHRCT-ND" H 4650 6200 50  0001 C CNN "Digikey ID"
+F 9 "-NoIC" H 4650 6200 50  0001 C CNN "Config"
 	1    4650 6200
 	0    -1   1    0   
 $EndComp
@@ -1216,17 +1216,17 @@ U 1 1 606DFA1B
 P 4650 6300
 AR Path="/60C51399/606DFA1B" Ref="R?"  Part="1" 
 AR Path="/60C384EE/606DFA1B" Ref="R?"  Part="1" 
-AR Path="/6085F6E2/606DFA1B" Ref="R37"  Part="1" 
-F 0 "R37" V 4600 6150 50  0000 R CNN
+AR Path="/6085F6E2/606DFA1B" Ref="R42"  Part="1" 
+F 0 "R42" V 4600 6150 50  0000 R CNN
 F 1 "2k" V 4650 6300 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 4580 6300 50  0001 C CNN
 F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 4650 6300 50  0001 C CNN
-F 4 "RC0603FR-072KL" H 4650 6300 50  0001 C CNN "MPN"
+F 4 "RC0603FR-0720KL" H 4650 6300 50  0001 C CNN "MPN"
 F 5 "Yageo" H 4650 6300 50  0001 C CNN "Manufacturer"
-F 6 "https://www.digikey.com/en/products/detail/yageo/RC0603FR-072KL/727009" H 4650 6300 50  0001 C CNN "Ordering URL"
+F 6 "https://www.digikey.com/en/products/detail/yageo/RC0603FR-0720KL/727040" H 4650 6300 50  0001 C CNN "Ordering URL"
 F 7 "SMD" H 4650 6300 50  0001 C CNN "Type"
-F 8 "311-2.00KHRCT-ND" H 4650 6300 50  0001 C CNN "Digikey ID"
-F 9 "" H 4650 6300 50  0001 C CNN "Config"
+F 8 "311-20.0KHRCT-ND" H 4650 6300 50  0001 C CNN "Digikey ID"
+F 9 "-NoIC" H 4650 6300 50  0001 C CNN "Config"
 	1    4650 6300
 	0    -1   1    0   
 $EndComp
@@ -1244,17 +1244,17 @@ U 1 1 606EB125
 P 4650 6400
 AR Path="/60C51399/606EB125" Ref="R?"  Part="1" 
 AR Path="/60C384EE/606EB125" Ref="R?"  Part="1" 
-AR Path="/6085F6E2/606EB125" Ref="R38"  Part="1" 
-F 0 "R38" V 4600 6250 50  0000 R CNN
+AR Path="/6085F6E2/606EB125" Ref="R43"  Part="1" 
+F 0 "R43" V 4600 6250 50  0000 R CNN
 F 1 "2k" V 4650 6400 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 4580 6400 50  0001 C CNN
 F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 4650 6400 50  0001 C CNN
-F 4 "RC0603FR-072KL" H 4650 6400 50  0001 C CNN "MPN"
+F 4 "RC0603FR-0720KL" H 4650 6400 50  0001 C CNN "MPN"
 F 5 "Yageo" H 4650 6400 50  0001 C CNN "Manufacturer"
-F 6 "https://www.digikey.com/en/products/detail/yageo/RC0603FR-072KL/727009" H 4650 6400 50  0001 C CNN "Ordering URL"
+F 6 "https://www.digikey.com/en/products/detail/yageo/RC0603FR-0720KL/727040" H 4650 6400 50  0001 C CNN "Ordering URL"
 F 7 "SMD" H 4650 6400 50  0001 C CNN "Type"
-F 8 "311-2.00KHRCT-ND" H 4650 6400 50  0001 C CNN "Digikey ID"
-F 9 "" H 4650 6400 50  0001 C CNN "Config"
+F 8 "311-20.0KHRCT-ND" H 4650 6400 50  0001 C CNN "Digikey ID"
+F 9 "-NoIC" H 4650 6400 50  0001 C CNN "Config"
 	1    4650 6400
 	0    -1   1    0   
 $EndComp
@@ -1272,17 +1272,17 @@ U 1 1 606F6F6F
 P 4650 6500
 AR Path="/60C51399/606F6F6F" Ref="R?"  Part="1" 
 AR Path="/60C384EE/606F6F6F" Ref="R?"  Part="1" 
-AR Path="/6085F6E2/606F6F6F" Ref="R39"  Part="1" 
-F 0 "R39" V 4600 6350 50  0000 R CNN
+AR Path="/6085F6E2/606F6F6F" Ref="R44"  Part="1" 
+F 0 "R44" V 4600 6350 50  0000 R CNN
 F 1 "2k" V 4650 6500 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 4580 6500 50  0001 C CNN
 F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 4650 6500 50  0001 C CNN
-F 4 "RC0603FR-072KL" H 4650 6500 50  0001 C CNN "MPN"
+F 4 "RC0603FR-0720KL" H 4650 6500 50  0001 C CNN "MPN"
 F 5 "Yageo" H 4650 6500 50  0001 C CNN "Manufacturer"
-F 6 "https://www.digikey.com/en/products/detail/yageo/RC0603FR-072KL/727009" H 4650 6500 50  0001 C CNN "Ordering URL"
+F 6 "https://www.digikey.com/en/products/detail/yageo/RC0603FR-0720KL/727040" H 4650 6500 50  0001 C CNN "Ordering URL"
 F 7 "SMD" H 4650 6500 50  0001 C CNN "Type"
-F 8 "311-2.00KHRCT-ND" H 4650 6500 50  0001 C CNN "Digikey ID"
-F 9 "" H 4650 6500 50  0001 C CNN "Config"
+F 8 "311-20.0KHRCT-ND" H 4650 6500 50  0001 C CNN "Digikey ID"
+F 9 "-NoIC" H 4650 6500 50  0001 C CNN "Config"
 	1    4650 6500
 	0    -1   1    0   
 $EndComp
