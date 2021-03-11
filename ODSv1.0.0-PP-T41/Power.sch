@@ -5,7 +5,7 @@ $Descr USLetter 11000 8500
 encoding utf-8
 Sheet 6 8
 Title "Processing Plane for Teensy 4.1"
-Date "2021-03-09"
+Date "2021-03-10"
 Rev "v0.1.1"
 Comp "Prakash Lab/Octopi Team"
 Comment1 "Designer: Ethan Li"
@@ -105,10 +105,10 @@ Barrel_12V
 Text HLabel 3450 1850 0    50   Input ~ 0
 Pufferfish_12V
 $Comp
-L Device:R R15
+L Device:R R25
 U 1 1 61CAF7E3
 P 3850 1650
-F 0 "R15" V 3800 1800 50  0000 L CNN
+F 0 "R25" V 3800 1800 50  0000 L CNN
 F 1 "0" V 3850 1650 50  0000 C CNN
 F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 3780 1650 50  0001 C CNN
 F 3 "https://www.vishay.com/docs/20043/crcwhpe3.pdf" H 3850 1650 50  0001 C CNN
@@ -122,10 +122,10 @@ F 9 "-Pufferfish" H 3850 1650 50  0001 C CNN "Config"
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R16
+L Device:R R26
 U 1 1 61CAFC0A
 P 3850 1850
-F 0 "R16" V 3800 2000 50  0000 L CNN
+F 0 "R26" V 3800 2000 50  0000 L CNN
 F 1 "0" V 3850 1850 50  0000 C CNN
 F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 3780 1850 50  0001 C CNN
 F 3 "https://www.vishay.com/docs/20043/crcwhpe3.pdf" H 3850 1850 50  0001 C CNN
@@ -254,8 +254,8 @@ L Device:R R?
 U 1 1 61CE4728
 P 5900 1650
 AR Path="/60C51399/61CE4728" Ref="R?"  Part="1" 
-AR Path="/61CA1C97/61CE4728" Ref="R17"  Part="1" 
-F 0 "R17" V 5850 1500 50  0000 R CNN
+AR Path="/61CA1C97/61CE4728" Ref="R27"  Part="1" 
+F 0 "R27" V 5850 1500 50  0000 R CNN
 F 1 "20k" V 5900 1650 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 5830 1650 50  0001 C CNN
 F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 5900 1650 50  0001 C CNN
@@ -291,8 +291,8 @@ L Device:R R?
 U 1 1 61CE473A
 P 5900 1850
 AR Path="/60C51399/61CE473A" Ref="R?"  Part="1" 
-AR Path="/61CA1C97/61CE473A" Ref="R18"  Part="1" 
-F 0 "R18" V 5850 1700 50  0000 R CNN
+AR Path="/61CA1C97/61CE473A" Ref="R28"  Part="1" 
+F 0 "R28" V 5850 1700 50  0000 R CNN
 F 1 "20k" V 5900 1850 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 5830 1850 50  0001 C CNN
 F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 5900 1850 50  0001 C CNN

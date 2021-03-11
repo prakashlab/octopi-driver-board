@@ -5,7 +5,7 @@ $Descr USLetter 11000 8500
 encoding utf-8
 Sheet 1 8
 Title "Processing Plane for Teensy 4.1"
-Date "2021-03-09"
+Date "2021-03-10"
 Rev "v0.1.1"
 Comp "Prakash Lab/Octopi Team"
 Comment1 "Designer: Ethan Li"
@@ -402,8 +402,8 @@ L Device:R R?
 U 1 1 61D44221
 P 2850 4950
 AR Path="/61CA1C97/61D44221" Ref="R?"  Part="1" 
-AR Path="/61D44221" Ref="R1"  Part="1" 
-F 0 "R1" V 2800 5100 50  0000 L CNN
+AR Path="/61D44221" Ref="R29"  Part="1" 
+F 0 "R29" V 2800 5100 50  0000 L CNN
 F 1 "0" V 2850 4950 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 2780 4950 50  0001 C CNN
 F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 2850 4950 50  0001 C CNN
@@ -420,8 +420,8 @@ L Device:R R?
 U 1 1 61D455A4
 P 2850 5050
 AR Path="/61CA1C97/61D455A4" Ref="R?"  Part="1" 
-AR Path="/61D455A4" Ref="R2"  Part="1" 
-F 0 "R2" V 2800 5200 50  0000 L CNN
+AR Path="/61D455A4" Ref="R30"  Part="1" 
+F 0 "R30" V 2800 5200 50  0000 L CNN
 F 1 "0" V 2850 5050 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 2780 5050 50  0001 C CNN
 F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 2850 5050 50  0001 C CNN
@@ -438,8 +438,8 @@ L Device:R R?
 U 1 1 61D47CA3
 P 2850 5250
 AR Path="/61CA1C97/61D47CA3" Ref="R?"  Part="1" 
-AR Path="/61D47CA3" Ref="R3"  Part="1" 
-F 0 "R3" V 2800 5400 50  0000 L CNN
+AR Path="/61D47CA3" Ref="R31"  Part="1" 
+F 0 "R31" V 2800 5400 50  0000 L CNN
 F 1 "0" V 2850 5250 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 2780 5250 50  0001 C CNN
 F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 2850 5250 50  0001 C CNN
@@ -456,8 +456,8 @@ L Device:R R?
 U 1 1 61D48FC7
 P 2850 5350
 AR Path="/61CA1C97/61D48FC7" Ref="R?"  Part="1" 
-AR Path="/61D48FC7" Ref="R4"  Part="1" 
-F 0 "R4" V 2800 5500 50  0000 L CNN
+AR Path="/61D48FC7" Ref="R32"  Part="1" 
+F 0 "R32" V 2800 5500 50  0000 L CNN
 F 1 "0" V 2850 5350 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 2780 5350 50  0001 C CNN
 F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 2850 5350 50  0001 C CNN
@@ -490,8 +490,8 @@ L Device:R R?
 U 1 1 61D60B91
 P 2850 5850
 AR Path="/61CA1C97/61D60B91" Ref="R?"  Part="1" 
-AR Path="/61D60B91" Ref="R6"  Part="1" 
-F 0 "R6" V 2800 6000 50  0000 L CNN
+AR Path="/61D60B91" Ref="R34"  Part="1" 
+F 0 "R34" V 2800 6000 50  0000 L CNN
 F 1 "0" V 2850 5850 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 2780 5850 50  0001 C CNN
 F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 2850 5850 50  0001 C CNN
@@ -516,8 +516,8 @@ L Device:R R?
 U 1 1 61E3FAAF
 P 2850 5750
 AR Path="/61CA1C97/61E3FAAF" Ref="R?"  Part="1" 
-AR Path="/61E3FAAF" Ref="R5"  Part="1" 
-F 0 "R5" V 2800 5900 50  0000 L CNN
+AR Path="/61E3FAAF" Ref="R33"  Part="1" 
+F 0 "R33" V 2800 5900 50  0000 L CNN
 F 1 "0" V 2850 5750 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 2780 5750 50  0001 C CNN
 F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 2850 5750 50  0001 C CNN
