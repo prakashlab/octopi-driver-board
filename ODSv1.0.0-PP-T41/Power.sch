@@ -44,7 +44,7 @@ F 6 "Molex" H 1150 2700 50  0001 C CNN "Manufacturer"
 F 7 "https://www.digikey.com/en/products/detail/molex/1723161108/5344295" H 1150 2700 50  0001 C CNN "Ordering URL"
 F 8 "PTH" H 1150 2700 50  0001 C CNN "Type"
 F 9 "WM11598-ND" H 1150 2700 50  0001 C CNN "Digikey ID"
-F 10 "" H 1150 2700 50  0001 C CNN "Config"
+F 10 "-NoPufferfish" H 1150 2700 50  0001 C CNN "Config"
 	1    1150 2700
 	0    -1   1    0   
 $EndComp
@@ -283,6 +283,7 @@ F 6 "https://www.digikey.com/en/products/detail/w%C3%BCrth-elektronik/150060GS75
 F 7 "SMD" H 5500 1850 50  0001 C CNN "Type"
 F 8 "Polarity is indicated by a diode symbol either next to the LED or at the end of the line of LEDs." H 5500 1850 50  0001 C CNN "Assembly Notes"
 F 9 "732-4971-1-ND" H 5500 1850 50  0001 C CNN "Digikey ID"
+F 10 "-NoPufferfish" H 5500 1850 50  0001 C CNN "Config"
 	1    5500 1850
 	1    0    0    1   
 $EndComp
@@ -301,6 +302,7 @@ F 5 "Yageo" H 5900 1850 50  0001 C CNN "Manufacturer"
 F 6 "https://www.digikey.com/en/products/detail/yageo/RC0603FR-0720KL/727040" H 5900 1850 50  0001 C CNN "Ordering URL"
 F 7 "SMD" H 5900 1850 50  0001 C CNN "Type"
 F 8 "311-20.0KHRCT-ND" H 5900 1850 50  0001 C CNN "Digikey ID"
+F 9 "-NoPufferfish" H 5900 1850 50  0001 C CNN "Config"
 	1    5900 1850
 	0    -1   1    0   
 $EndComp
