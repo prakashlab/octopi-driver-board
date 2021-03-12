@@ -61,7 +61,7 @@ This repository is structured so that every board has its own top-level director
 - Planes: `ODSv<Octopi Driver Stack version>-<board type name code>-<specific design name code>`
 - Peripheral boards and daughter boards: `<board type name code>-<specific design name code>`
 
-Each directory has a short README describing the contents of the directory. All boards are designed in KiCad. Only the most recent version of each board is included at the HEAD of the repository; older versions of boards are tagged on Git and archived in this repository's Github Releases.
+Each directory has a short README describing the contents of the directory. All boards are designed in KiCad. Only the most recent version of each board is included at the HEAD of the repository; older versions of boards are tagged on Git and archived in this repository's Github Releases. You can review the design files without KiCad, by viewing [this project on CADLab.io](https://cadlab.io/project/23992).
 
 Templates are provided as starters to copy for creating new boards. For more information, refer to [ODSv1.0.0-BT/README.md](ODSv1.0.0-BT/README.md).
 
