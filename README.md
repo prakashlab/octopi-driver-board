@@ -1,5 +1,3 @@
-View this project on [CADLAB.io](https://cadlab.io/project/23992). 
-
 # octopi-driver-board
 
 Driver electronics for the Octopi and Squid microscope families.
