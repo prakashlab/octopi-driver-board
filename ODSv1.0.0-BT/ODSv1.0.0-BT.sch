@@ -5,7 +5,7 @@ $Descr USLetter 11000 8500
 encoding utf-8
 Sheet 1 4
 Title "Backbone Template"
-Date "2021-03-09"
+Date "2021-03-11"
 Rev "v0.1.1"
 Comp "Prakash Lab/Octopi Team"
 Comment1 "Designer: Ethan Li"
@@ -18,9 +18,9 @@ S 750  1000 1000 6500
 U 60C51399
 F0 "Backbone" 50
 F1 "Backbone.sch" 50
-F2 "SPI_SCK" O R 1750 1450 50 
-F3 "SPI_COPI" O R 1750 1550 50 
-F4 "SPI_CIPO" T R 1750 1650 50 
+F2 "SPI0_SCK" O R 1750 1450 50 
+F3 "SPI0_COPI" O R 1750 1550 50 
+F4 "SPI0_CIPO" T R 1750 1650 50 
 F5 "3.3V" O R 1750 1050 50 
 F6 "5V" O R 1750 1150 50 
 F7 "12V" O R 1750 1250 50 

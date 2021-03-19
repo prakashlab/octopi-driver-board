@@ -5,7 +5,7 @@ $Descr USLetter 11000 8500
 encoding utf-8
 Sheet 6 8
 Title "Processing Plane for Teensy 4.1"
-Date "2021-03-09"
+Date "2021-03-10"
 Rev "v0.1.1"
 Comp "Prakash Lab/Octopi Team"
 Comment1 "Designer: Ethan Li"
@@ -44,7 +44,7 @@ F 6 "Molex" H 1150 2700 50  0001 C CNN "Manufacturer"
 F 7 "https://www.digikey.com/en/products/detail/molex/1723161108/5344295" H 1150 2700 50  0001 C CNN "Ordering URL"
 F 8 "PTH" H 1150 2700 50  0001 C CNN "Type"
 F 9 "WM11598-ND" H 1150 2700 50  0001 C CNN "Digikey ID"
-F 10 "" H 1150 2700 50  0001 C CNN "Config"
+F 10 "-NoPufferfish" H 1150 2700 50  0001 C CNN "Config"
 	1    1150 2700
 	0    -1   1    0   
 $EndComp
@@ -105,10 +105,10 @@ Barrel_12V
 Text HLabel 3450 1850 0    50   Input ~ 0
 Pufferfish_12V
 $Comp
-L Device:R R15
+L Device:R R30
 U 1 1 61CAF7E3
 P 3850 1650
-F 0 "R15" V 3800 1800 50  0000 L CNN
+F 0 "R30" V 3800 1800 50  0000 L CNN
 F 1 "0" V 3850 1650 50  0000 C CNN
 F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 3780 1650 50  0001 C CNN
 F 3 "https://www.vishay.com/docs/20043/crcwhpe3.pdf" H 3850 1650 50  0001 C CNN
@@ -122,10 +122,10 @@ F 9 "-Pufferfish" H 3850 1650 50  0001 C CNN "Config"
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R16
+L Device:R R31
 U 1 1 61CAFC0A
 P 3850 1850
-F 0 "R16" V 3800 2000 50  0000 L CNN
+F 0 "R31" V 3800 2000 50  0000 L CNN
 F 1 "0" V 3850 1850 50  0000 C CNN
 F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 3780 1850 50  0001 C CNN
 F 3 "https://www.vishay.com/docs/20043/crcwhpe3.pdf" H 3850 1850 50  0001 C CNN
@@ -254,8 +254,8 @@ L Device:R R?
 U 1 1 61CE4728
 P 5900 1650
 AR Path="/60C51399/61CE4728" Ref="R?"  Part="1" 
-AR Path="/61CA1C97/61CE4728" Ref="R17"  Part="1" 
-F 0 "R17" V 5850 1500 50  0000 R CNN
+AR Path="/61CA1C97/61CE4728" Ref="R32"  Part="1" 
+F 0 "R32" V 5850 1500 50  0000 R CNN
 F 1 "20k" V 5900 1650 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 5830 1650 50  0001 C CNN
 F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 5900 1650 50  0001 C CNN
@@ -283,6 +283,7 @@ F 6 "https://www.digikey.com/en/products/detail/w%C3%BCrth-elektronik/150060GS75
 F 7 "SMD" H 5500 1850 50  0001 C CNN "Type"
 F 8 "Polarity is indicated by a diode symbol either next to the LED or at the end of the line of LEDs." H 5500 1850 50  0001 C CNN "Assembly Notes"
 F 9 "732-4971-1-ND" H 5500 1850 50  0001 C CNN "Digikey ID"
+F 10 "-NoPufferfish" H 5500 1850 50  0001 C CNN "Config"
 	1    5500 1850
 	1    0    0    1   
 $EndComp
@@ -291,8 +292,8 @@ L Device:R R?
 U 1 1 61CE473A
 P 5900 1850
 AR Path="/60C51399/61CE473A" Ref="R?"  Part="1" 
-AR Path="/61CA1C97/61CE473A" Ref="R18"  Part="1" 
-F 0 "R18" V 5850 1700 50  0000 R CNN
+AR Path="/61CA1C97/61CE473A" Ref="R33"  Part="1" 
+F 0 "R33" V 5850 1700 50  0000 R CNN
 F 1 "20k" V 5900 1850 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 5830 1850 50  0001 C CNN
 F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 5900 1850 50  0001 C CNN
@@ -301,6 +302,7 @@ F 5 "Yageo" H 5900 1850 50  0001 C CNN "Manufacturer"
 F 6 "https://www.digikey.com/en/products/detail/yageo/RC0603FR-0720KL/727040" H 5900 1850 50  0001 C CNN "Ordering URL"
 F 7 "SMD" H 5900 1850 50  0001 C CNN "Type"
 F 8 "311-20.0KHRCT-ND" H 5900 1850 50  0001 C CNN "Digikey ID"
+F 9 "-NoPufferfish" H 5900 1850 50  0001 C CNN "Config"
 	1    5900 1850
 	0    -1   1    0   
 $EndComp
@@ -388,8 +390,8 @@ L Device:C C?
 U 1 1 5FEE8067
 P 4400 2650
 AR Path="/60C51399/6199D8B6/5FEE8067" Ref="C?"  Part="1" 
-AR Path="/61CA1C97/5FEE8067" Ref="C3"  Part="1" 
-F 0 "C3" H 4515 2696 50  0000 L CNN
+AR Path="/61CA1C97/5FEE8067" Ref="C4"  Part="1" 
+F 0 "C4" H 4515 2696 50  0000 L CNN
 F 1 "220uF" H 4515 2605 50  0000 L CNN
 F 2 "Capacitor_SMD:CP_Elec_6.3x7.7" H 4438 2500 50  0001 C CNN
 F 3 "https://products.nichicon.co.jp/en/pdf/XJA043/e-uwt.pdf" H 4400 2650 50  0001 C CNN

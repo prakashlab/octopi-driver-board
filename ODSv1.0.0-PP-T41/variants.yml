@@ -9,3 +9,8 @@ variants:
     type: kibom
     file_id: -Pufferfish
     variant: Pufferfish
+  - name: 'NoPufferfish'
+    comment: 'PCB omitting components for power from Pufferfish Power Board'
+    type: kibom
+    file_id: -NoPufferfish
+    variant: NoPufferfish

@@ -1,12 +1,12 @@
 # Breakout Plane for Jumper Wires _(BP-Jmp)_
 
-Male header breakout for the Octopi Driver Stack for prototyping with jumper wires
+Male header breakout for the Octopi Driver Stack for prototyping directly with jumper wires
 
 ![Mechanical render of top face of the plane, from the front edge](Mechanical%20Renders/Above%20Front.png)
 
 This board template is part of the [octopi-driver-board project](https://github.com/prakashlab/octopi-driver-board).
 
-This processing plane contains male headers exposing all lines of the driver stack's backbone. It also includes a digital I/O expander, a DAC, and an ADC for additional prototyping use; those peripherals are part of the driver stack's multiplexed SPI system.
+This processing plane contains 0.1" pitch male headers directly exposing all lines of the driver stack's backbone. It also includes a digital I/O expander, a PWM driver, and an ADC for additional prototyping use; those peripherals are part of the driver stack's multiplexed SPI system.
 
 ## Background
 
@@ -15,7 +15,7 @@ The backbone uses a custom fine-pitch connector as well as a novel SPI chip-sele
 This plane is designed to provide the following functionalities:
 
 - Expose all of the driver stack's backbone lines, including power rails, GPIO pins, inter-plane lines, communication buses, and the SPI demultiplexed chip-select lines for prototyping with jumper wires. This is useful for testing new components and for probing the system with oscilloscopes and logic analyzers.
-- Provide provide additional digital I/O, DAC, and ADC pins for prototyping use
+- Provide provide additional digital I/O, PWM, and ADC pins for prototyping use
 
 This plane is not associated with any daughter boards.
 
@@ -24,7 +24,8 @@ This plane is not associated with any peripheral boards.
 This plane has the following internal features:
 
 - A 10-port digital I/O expander (MAX7317)
-- A 8-port digital-to-analog converter (DAC80508)
+- A 10-port digital I/O expander whose I/O ports are connected to pull-up resistors to 3.3V (MAX7317)
+- A 16-port PWM driver (not yet added, will be a PCA9685)
 - A 8-port analog-to-digital converter (AD7689)
 
 This plane has the following groups of external connectors, all in the form of 0.1" pitch male header:
@@ -51,8 +52,11 @@ This plane has the following mechanical stacking usage requirements:
 This plane has the following BOM variants:
 
 - Default: A fully-populated PCB.
-- NoExpansion: A PCB without components populated for I/O expansion (digital I/O expander, DAC, and ADC). This reduces the parts cost of the board by $40, because the DAC costs approx. $20 and the ADC costs approx. $12.
-- NoIC: A PCB without components populated for SPI device multiplexing or populated for I/O expansion (digital I/O expander, DAC, and ADC). This acts as a pure breakout for the backbone, without any extras. This only saves an additional approx. $8 beyond the NoExpansion variant, but it significantly reduces the number of parts to assemble.
+- NoExpansion: A PCB without components populated for I/O expansion (digital I/O expander, PWM driver, and ADC). This reduces the parts cost of the board by $25, because the ADC costs approx. $12.
+- NoIC: A PCB without components populated for SPI device multiplexing or populated for I/O expansion (digital I/O expander, PWM driver, and ADC). This acts as a pure breakout for the backbone, without any extras. This only saves an additional approx. $8 beyond the NoExpansion variant, but it significantly reduces the number of parts to assemble, which may reduce assembly costs.
+
+The following components can be manually swapped out in the BOM, though this is not officially supported:
+- The AD7689 ADC can be replaced with a cheaper option such as the AD7682, AD7699, or the AD7949.
 
 This plane allows the following post-assembly modifications:
 
@@ -64,57 +68,75 @@ This plane has the following safety notices:
 
 ### Teensy Pin Mappings
 
-While almost all of GPIO header pins of the Teensy 4.1 on the processing plane are exposed in this plane, not all of them are labeled according to the Teensy pin numbers. Here is a table of correspondences between Teensy pins and header pins on this plane:
+While almost all GPIO header pins of the Teensy 4.1 on the processing plane are exposed in this plane, not all of them are labeled according to the Teensy pin numbers. Here is a table of correspondences between Teensy pins and header pins on this plane:
 
-|Teensy Pin|BP-Jmp Pin|BP-Jmp Section             |
-|----------|----------|---------------------------|
-|GND       |GND       |Various edges and sections |
-|3.3V      |3.3V      |Various edges and sections |
-|Vin       |5V        |Left Edge: 5V              |
-|0         |CRX2      |Rear Edge: UART & CAN      |
-|1         |CTX2      |Rear Edge: UART & CAN      |
-|2         |2         |Rear Edge: GPIO            |
-|3         |3         |Rear Edge: GPIO            |
-|4         |4         |Rear Edge: GPIO            |
-|5         |5         |Rear Edge: GPIO            |
-|6         |6         |Rear Edge: GPIO            |
-|7         |RX2       |Rear Edge: UART TX/RX      |
-|8         |TX2       |Rear Edge: UART TX/RX      |
-|9         |9         |Rear Edge: GPIO            |
-|10        |10        |Rear Edge: GPIO            |
-|11        |COPI0     |Right Edge: Main SPI0      |
-|12        |CIPO0     |Right Edge: Main SPI0      |
-|13        |SCK0      |Right Edge: Main SPI0      |
-|14        |TX3       |Rear Edge: UART & CAN      |
-|15        |RX3       |Rear Edge: UART & CAN      |
-|16        |SCL1      |Right Edge: Main I2C       |
-|17        |SDA1      |Right Edge: Main I2C       |
-|18        |SDA       |Right Edge: Main I2C       |
-|19        |SCL       |Right Edge: Main I2C       |
-|20        |20        |Rear Edge: GPIO            |
-|21        |21        |Rear Edge: GPIO            |
-|22        |22        |Rear Edge: GPIO            |
-|23        |23        |Rear Edge: GPIO            |
-|24        |SCL2      |Right Edge: Main I2C       |
-|25        |SDA2      |Right Edge: Main I2C       |
-|26        |COPI1     |Right Edge: Main SPI1      |
-|27        |SCK1      |Right Edge: Main SPI1      |
-|28        |TX7       |Rear Edge: UART & CAN      |
-|29        |RX7       |Rear Edge: UART & CAN      |
-|30        |N/A       |N/A                        |
-|31        |N/A       |N/A                        |
-|32        |DCS       |Front Edge: Extra Device CS|
-|33        |33        |Rear Edge: GPIO            |
-|34        |RX8       |Rear Edge: UART TX/RX      |
-|35        |TX8       |Rear Edge: UART TX/RX      |
-|36        |36        |Rear Edge: GPIO            |
-|37        |37        |Rear Edge: GPIO            |
-|38        |38        |Rear Edge: GPIO            |
-|39        |CIPO1     |Right Edge: Main SPI1      |
-|40        |40        |Rear Edge: GPIO            |
-|41        |41        |Rear Edge: GPIO            |
+|Teensy Pin|BP-Jmp Pin|BP-Jmp Section             |GPIO Functions      |
+|----------|----------|---------------------------|--------------------|
+|GND       |GND       |Various edges and sections |                    |
+|3.3V      |3.3V      |Various edges and sections |                    |
+|Vin       |5V        |Left Edge: 5V              |                    |
+|0         |CRX2      |Rear Edge: UART & CAN      |CAN2, SER1, PWM     |
+|1         |CTX2      |Rear Edge: UART & CAN      |CAN2, SER1, PWM     |
+|2         |2         |Rear Edge: GPIO            |PWM                 |
+|3         |3         |Rear Edge: GPIO            |PWM                 |
+|4         |4         |Rear Edge: GPIO            |PWM                 |
+|5         |5         |Rear Edge: GPIO            |PWM                 |
+|6         |6         |Rear Edge: GPIO            |PWM                 |
+|7         |RX2       |Rear Edge: UART TX/RX      |SER2, PWM           |
+|8         |TX2       |Rear Edge: UART TX/RX      |SER2, PWM           |
+|9         |9         |Rear Edge: GPIO            |PWM                 |
+|10        |10        |Rear Edge: GPIO            |PWM                 |
+|11        |COPI0     |Right Edge: Main SPI0      |SPI0                |
+|12        |CIPO0     |Right Edge: Main SPI0      |SPI0                |
+|13        |SCK0      |Right Edge: Main SPI0      |SPI0                |
+|14/A0     |TX3       |Rear Edge: UART & CAN      |SER3, PWM, ADC      |
+|15/A1     |RX3       |Rear Edge: UART & CAN      |SER3, PWM, ADC      |
+|16/A2     |SCL1      |Right Edge: Main I2C       |I2C1, SER4, ADC     |
+|17/A3     |SDA1      |Right Edge: Main I2C       |I2C1, SER4, ADC     |
+|18        |SDA0      |Right Edge: Main I2C       |I2C0                |
+|19        |SCL0      |Right Edge: Main I2C       |I2C0                |
+|20/A6     |20        |Rear Edge: GPIO            |SER5, ADC           |
+|21/A7     |21        |Rear Edge: GPIO            |SER5, ADC           |
+|22/A8     |22        |Rear Edge: GPIO            |CAN1, PWM, ADC      |
+|23/A9     |23        |Rear Edge: GPIO            |CAN1, PWM, ADC      |
+|24/A10    |SCL2      |Right Edge: Main I2C       |I2C2, SER6, PWM, ADC|
+|25/A11    |SDA2      |Right Edge: Main I2C       |I2C2, SER6, PWM, ADC|
+|26/A12    |COPI1     |Right Edge: Main SPI1      |SPI1                |
+|27/A13    |SCK1      |Right Edge: Main SPI1      |SPI1                |
+|28        |TX7       |Rear Edge: UART & CAN      |SER7, PWM           |
+|29        |RX7       |Rear Edge: UART & CAN      |SER7, PWM           |
+|30        |N/A       |N/A                        |                    |
+|31        |N/A       |N/A                        |                    |
+|32        |DCS       |Front Edge: Extra Device CS|                    |
+|33        |33        |Rear Edge: GPIO            |PWM                 |
+|34        |RX8       |Rear Edge: UART TX/RX      |SER8                |
+|35        |TX8       |Rear Edge: UART TX/RX      |SER8                |
+|36        |36        |Rear Edge: GPIO            |PWM                 |
+|37        |37        |Rear Edge: GPIO            |PWM                 |
+|38/A14    |38        |Rear Edge: GPIO            |ADC                 |
+|39        |CIPO1     |Right Edge: Main SPI1      |SPI1                |
+|40/A16    |40        |Rear Edge: GPIO            |ADC                 |
+|41/A17    |41        |Rear Edge: GPIO            |ADC                 |
 
-Note that Teensy pins 30 and 31 are not exposed by PP-T41 over the backbone, so they are not exposed by this plane.
+Note that Teensy pins 30 and 31 are not exposed by PP-T41 over the backbone, so they are not exposed by this plane. They are exclusively used by PP-T41, and if you need to probe them, you can solder a header to a location provided on the board for this purpose.
+
+You should not attempt to use the SPI0, SPI1, or I2C0 pins as GPIOs. If you want to use any of the other I2C or UART/CAN pins as GPIOs for prototyping, you can do so as long as your other planes are not already using them. For example, PP-T41 uses pins 22 and 23 if you connect an HB-* board to it. In the standard allocation, there are 15 pins reserved for GPIO (excluding pins 22 and 23), as well as up to 14 pins designated for UART/CAN/I2C which may be used instead for GPIO-based prototyping if they are available.
+
+As a special example, the I2C1 and I2C2 signal lines are each connected to 5 header pins, so if I2C1 or I2C2 isn't already being used and you need to plug multiple wires directly onto the same signal line, you can use SDA1, SCL1, SDA2, and/or SCL2. Since I2C1 can also serve as SER4 and I2C2 can also serve as SER6, you can also directly use jumper wires to connect up to 5 UART serial devices together on the same pair of signal lines, if they are designed for such use.
+
+### I/O Peripherals
+
+#### Digital Input/Output Expanders
+
+This plane exposes 20 digital I/O pins connected to two [MAX7317](../Parts/ICs/SPI%20Peripherals/MAX7317/Datasheet.pdf) I/O expanders. The first MAX7317 is used for pins EXPIO0-EXPIO9, while the second is used for pins EXPIO10-19. Pins EXPIO0-EXPIO9 can be used either as high-impedance input pins or as open-drain output pins (i.e. the pin can be set to either floating or 0V); if you need output pins to drive devices such as LEDs which draw current, you should use these pins. Pins EXPIO10-EXPIO19 are connected to 3.3 V by 2 kOhm pullup resistors, so they can be used as either pullup input pins or as push-pull output pins (i.e. the pin can be set to either 3.3V or 0V); if you need output pins for 3.3V logic signals with no current draw, you should use these pins.
+
+#### Analog-to-Digital Converter
+
+This pin exposes 8 analog input pins connected to an [AD7689BCPZ](../Parts/ICs/SPI%20Peripherals/AD768x/Datasheet.pdf) ADC. This ADC can be configured through its SPI interface to use either the internal voltage reference, an external reference on the REFIN pin with the internal buffer outputting to the REF pin, or an external reference on the REF pin. It can also be configured through its SPI interface to read inputs referenced to either GND or ADCCOM as a common reference point. If you are referencing inputs to GND, you can connect one of the ADCCOM pins to the GND pin, so that you will have 8 GND pins to accompany the 8 analog input pins.
+
+#### Pulse-Width Modulation Driver
+
+TBD
 
 ## Maintainers
 

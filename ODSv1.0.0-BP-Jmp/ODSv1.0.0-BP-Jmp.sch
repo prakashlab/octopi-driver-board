@@ -5,8 +5,8 @@ $Descr USLetter 11000 8500
 encoding utf-8
 Sheet 1 9
 Title "Breakout Plane for Jumper Wires"
-Date "2021-03-09"
-Rev "v0.1.1"
+Date "2021-03-11"
+Rev "v0.2.0"
 Comp "Prakash Lab/Octopi Team"
 Comment1 "Designer: Ethan Li"
 Comment2 "License: SHL-2.1"
@@ -129,8 +129,6 @@ F 3 "" H 3750 1200 50  0001 C CNN
 	1    3750 1200
 	0    1    1    0   
 $EndComp
-Text Notes 7000 1100 0    50   ~ 0
-Customization Instructions:\n- Customize the backbone as instructed in the Backbone hierarchical sheet.\n- Route any SPI devices to the SPI section of the Backbone symbol; use a unique DCS\n   pin for the CS of each SPI device.\n- If you need a more complex power topology (e.g. 12 V can come from the backbone\n   or from a power jack), add it between the 12 V pin of the Backbone symbol and the\n   12 V power symbol.
 $Comp
 L Mechanical:MountingHole H1
 U 1 1 600692B9

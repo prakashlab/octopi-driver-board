@@ -5,8 +5,8 @@ $Descr USLetter 11000 8500
 encoding utf-8
 Sheet 2 9
 Title "Breakout Plane for Jumper Wires"
-Date "2021-03-09"
-Rev "v0.1.1"
+Date "2021-03-11"
+Rev "v0.2.0"
 Comp "Prakash Lab/Octopi Team"
 Comment1 "Designer: Ethan Li"
 Comment2 "License: SHL-2.1"
@@ -491,39 +491,6 @@ Wire Notes Line
 	6400 2750 6400 5050
 Wire Notes Line
 	7000 4450 6400 4450
-$Sheet
-S 6000 2750 1000 2300
-U 6199D8B6
-F0 "SPI DCS Selector" 50
-F1 "SPIDCSSelector.sch" 50
-F2 "SCK" I L 6000 2850 50 
-F3 "COPI" I L 6000 3050 50 
-F4 "CIPO" T L 6000 3250 50 
-F5 "~DSCS~" I L 6000 3900 50 
-F6 "3.3V" I L 6000 3750 50 
-F7 "~DCS~" I L 6000 3600 50 
-F8 "~DCS0~" O R 7000 2850 50 
-F9 "EXPGPIO_5" T R 7000 4550 50 
-F10 "EXPGPIO_6" T R 7000 4650 50 
-F11 "EXPGPIO_7" T R 7000 4750 50 
-F12 "EXPGPIO_8" T R 7000 4850 50 
-F13 "EXPGPIO_9" T R 7000 4950 50 
-F14 "~DCS1~" O R 7000 2950 50 
-F15 "~DCS2~" O R 7000 3050 50 
-F16 "~DCS3~" O R 7000 3150 50 
-F17 "~DCS4~" O R 7000 3250 50 
-F18 "~DCS5~" O R 7000 3350 50 
-F19 "~DCS6~" O R 7000 3450 50 
-F20 "~DCS7~" O R 7000 3550 50 
-F21 "~DCS8~" O R 7000 3650 50 
-F22 "~DCS9~" O R 7000 3750 50 
-F23 "~DCS10~" O R 7000 3850 50 
-F24 "~DCS11~" O R 7000 3950 50 
-F25 "~DCS12~" O R 7000 4050 50 
-F26 "~DCS13~" O R 7000 4150 50 
-F27 "~DCS14~" O R 7000 4250 50 
-F28 "~DCS15~" O R 7000 4350 50 
-$EndSheet
 Wire Wire Line
 	7000 4350 7250 4350
 Wire Wire Line
@@ -558,20 +525,18 @@ Wire Wire Line
 	7000 2850 7250 2850
 Text HLabel 5750 3750 0    50   Input ~ 0
 3.3V
-Text HLabel 5750 3250 0    50   3State ~ 0
-SPI0_CIPO
-Text HLabel 5750 3050 0    50   Input ~ 0
+Text HLabel 5750 3000 0    50   Input ~ 0
 SPI0_COPI
-Text HLabel 5750 2850 0    50   Input ~ 0
+Text HLabel 5750 2800 0    50   Input ~ 0
 SPI0_SCK
 Wire Wire Line
 	5750 3750 6000 3750
 Wire Wire Line
-	5750 3250 6000 3250
+	5750 3200 6000 3200
 Wire Wire Line
-	5750 3050 6000 3050
+	5750 3000 6000 3000
 Wire Wire Line
-	6000 2850 5750 2850
+	6000 2800 5750 2800
 Text HLabel 3500 2800 2    50   Output ~ 0
 SPI0_SCK
 Text HLabel 3500 3000 2    50   Output ~ 0
@@ -586,86 +551,86 @@ Wire Wire Line
 	6000 3900 4500 3900
 Connection ~ 4500 3900
 $Comp
-L Device:R R19
+L Device:R R24
 U 1 1 61EE0A88
 P 9000 4550
-F 0 "R19" V 8950 4700 50  0000 L CNN
+F 0 "R24" V 8950 4700 50  0000 L CNN
 F 1 "2k" V 9000 4550 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 8930 4550 50  0001 C CNN
 F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 9000 4550 50  0001 C CNN
-F 4 "RC0603FR-072KL" H 9000 4550 50  0001 C CNN "MPN"
+F 4 "RC0603FR-0720KL" H 9000 4550 50  0001 C CNN "MPN"
 F 5 "Yageo" H 9000 4550 50  0001 C CNN "Manufacturer"
-F 6 "https://www.digikey.com/en/products/detail/yageo/RC0603FR-072KL/727009" H 9000 4550 50  0001 C CNN "Ordering URL"
+F 6 "https://www.digikey.com/en/products/detail/yageo/RC0603FR-0720KL/727040" H 9000 4550 50  0001 C CNN "Ordering URL"
 F 7 "SMD" H 9000 4550 50  0001 C CNN "Type"
-F 8 "311-2.00KHRCT-ND" H 9000 4550 50  0001 C CNN "Digikey ID"
+F 8 "311-20.0KHRCT-ND" H 9000 4550 50  0001 C CNN "Digikey ID"
 F 9 "-NoIC" H 9000 4550 50  0001 C CNN "Config"
 	1    9000 4550
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R20
+L Device:R R25
 U 1 1 61EE9DA7
 P 9000 4650
-F 0 "R20" V 8950 4800 50  0000 L CNN
+F 0 "R25" V 8950 4800 50  0000 L CNN
 F 1 "2k" V 9000 4650 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 8930 4650 50  0001 C CNN
 F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 9000 4650 50  0001 C CNN
-F 4 "RC0603FR-072KL" H 9000 4650 50  0001 C CNN "MPN"
+F 4 "RC0603FR-0720KL" H 9000 4650 50  0001 C CNN "MPN"
 F 5 "Yageo" H 9000 4650 50  0001 C CNN "Manufacturer"
-F 6 "https://www.digikey.com/en/products/detail/yageo/RC0603FR-072KL/727009" H 9000 4650 50  0001 C CNN "Ordering URL"
+F 6 "https://www.digikey.com/en/products/detail/yageo/RC0603FR-0720KL/727040" H 9000 4650 50  0001 C CNN "Ordering URL"
 F 7 "SMD" H 9000 4650 50  0001 C CNN "Type"
-F 8 "311-2.00KHRCT-ND" H 9000 4650 50  0001 C CNN "Digikey ID"
+F 8 "311-20.0KHRCT-ND" H 9000 4650 50  0001 C CNN "Digikey ID"
 F 9 "-NoIC" H 9000 4650 50  0001 C CNN "Config"
 	1    9000 4650
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R21
+L Device:R R26
 U 1 1 61EF30C8
 P 9000 4750
-F 0 "R21" V 8950 4900 50  0000 L CNN
+F 0 "R26" V 8950 4900 50  0000 L CNN
 F 1 "2k" V 9000 4750 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 8930 4750 50  0001 C CNN
 F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 9000 4750 50  0001 C CNN
-F 4 "RC0603FR-072KL" H 9000 4750 50  0001 C CNN "MPN"
+F 4 "RC0603FR-0720KL" H 9000 4750 50  0001 C CNN "MPN"
 F 5 "Yageo" H 9000 4750 50  0001 C CNN "Manufacturer"
-F 6 "https://www.digikey.com/en/products/detail/yageo/RC0603FR-072KL/727009" H 9000 4750 50  0001 C CNN "Ordering URL"
+F 6 "https://www.digikey.com/en/products/detail/yageo/RC0603FR-0720KL/727040" H 9000 4750 50  0001 C CNN "Ordering URL"
 F 7 "SMD" H 9000 4750 50  0001 C CNN "Type"
-F 8 "311-2.00KHRCT-ND" H 9000 4750 50  0001 C CNN "Digikey ID"
+F 8 "311-20.0KHRCT-ND" H 9000 4750 50  0001 C CNN "Digikey ID"
 F 9 "-NoIC" H 9000 4750 50  0001 C CNN "Config"
 	1    9000 4750
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R22
+L Device:R R27
 U 1 1 61EFC353
 P 9000 4850
-F 0 "R22" V 8950 5000 50  0000 L CNN
+F 0 "R27" V 8950 5000 50  0000 L CNN
 F 1 "2k" V 9000 4850 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 8930 4850 50  0001 C CNN
 F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 9000 4850 50  0001 C CNN
-F 4 "RC0603FR-072KL" H 9000 4850 50  0001 C CNN "MPN"
+F 4 "RC0603FR-0720KL" H 9000 4850 50  0001 C CNN "MPN"
 F 5 "Yageo" H 9000 4850 50  0001 C CNN "Manufacturer"
-F 6 "https://www.digikey.com/en/products/detail/yageo/RC0603FR-072KL/727009" H 9000 4850 50  0001 C CNN "Ordering URL"
+F 6 "https://www.digikey.com/en/products/detail/yageo/RC0603FR-0720KL/727040" H 9000 4850 50  0001 C CNN "Ordering URL"
 F 7 "SMD" H 9000 4850 50  0001 C CNN "Type"
-F 8 "311-2.00KHRCT-ND" H 9000 4850 50  0001 C CNN "Digikey ID"
+F 8 "311-20.0KHRCT-ND" H 9000 4850 50  0001 C CNN "Digikey ID"
 F 9 "-NoIC" H 9000 4850 50  0001 C CNN "Config"
 	1    9000 4850
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R23
+L Device:R R28
 U 1 1 61F055EF
 P 9000 4950
-F 0 "R23" V 8950 5100 50  0000 L CNN
+F 0 "R28" V 8950 5100 50  0000 L CNN
 F 1 "2k" V 9000 4950 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 8930 4950 50  0001 C CNN
 F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 9000 4950 50  0001 C CNN
-F 4 "RC0603FR-072KL" H 9000 4950 50  0001 C CNN "MPN"
+F 4 "RC0603FR-0720KL" H 9000 4950 50  0001 C CNN "MPN"
 F 5 "Yageo" H 9000 4950 50  0001 C CNN "Manufacturer"
-F 6 "https://www.digikey.com/en/products/detail/yageo/RC0603FR-072KL/727009" H 9000 4950 50  0001 C CNN "Ordering URL"
+F 6 "https://www.digikey.com/en/products/detail/yageo/RC0603FR-0720KL/727040" H 9000 4950 50  0001 C CNN "Ordering URL"
 F 7 "SMD" H 9000 4950 50  0001 C CNN "Type"
-F 8 "311-2.00KHRCT-ND" H 9000 4950 50  0001 C CNN "Digikey ID"
+F 8 "311-20.0KHRCT-ND" H 9000 4950 50  0001 C CNN "Digikey ID"
 F 9 "-NoIC" H 9000 4950 50  0001 C CNN "Config"
 	1    9000 4950
 	0    1    1    0   
@@ -818,125 +783,125 @@ Text Label 7950 4950 2    50   ~ 0
 $Comp
 L Device:LED D1
 U 1 1 626C91FC
-P 4450 6100
-F 0 "D1" H 4550 6050 50  0000 L CNN
-F 1 "Green" H 4200 6050 50  0000 R CNN
-F 2 "LED_SMD:LED_0603_1608Metric" H 4450 6100 50  0001 C CNN
-F 3 "https://www.we-online.de/katalog/datasheet/150060GS75000.pdf" H 4450 6100 50  0001 C CNN
-F 4 "150060GS75000" H 4450 6100 50  0001 C CNN "MPN"
-F 5 "Wurth Elektronik" H 4450 6100 50  0001 C CNN "Manufacturer"
-F 6 "https://www.digikey.com/en/products/detail/w%C3%BCrth-elektronik/150060GS75000/4489898" H 4450 6100 50  0001 C CNN "Ordering URL"
-F 7 "SMD" H 4450 6100 50  0001 C CNN "Type"
-F 8 "Polarity is indicated by a diode symbol either next to the LED or at the end of the line of LEDs." H 4450 6100 50  0001 C CNN "Assembly Notes"
-F 9 "732-4971-1-ND" H 4450 6100 50  0001 C CNN "Digikey ID"
-F 10 "" H 4450 6100 50  0001 C CNN "Config"
-	1    4450 6100
+P 8550 3400
+F 0 "D1" H 8650 3350 50  0000 L CNN
+F 1 "Green" H 8300 3350 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric" H 8550 3400 50  0001 C CNN
+F 3 "https://www.we-online.de/katalog/datasheet/150060GS75000.pdf" H 8550 3400 50  0001 C CNN
+F 4 "150060GS75000" H 8550 3400 50  0001 C CNN "MPN"
+F 5 "Wurth Elektronik" H 8550 3400 50  0001 C CNN "Manufacturer"
+F 6 "https://www.digikey.com/en/products/detail/w%C3%BCrth-elektronik/150060GS75000/4489898" H 8550 3400 50  0001 C CNN "Ordering URL"
+F 7 "SMD" H 8550 3400 50  0001 C CNN "Type"
+F 8 "Polarity is indicated by a diode symbol either next to the LED or at the end of the line of LEDs." H 8550 3400 50  0001 C CNN "Assembly Notes"
+F 9 "732-4971-1-ND" H 8550 3400 50  0001 C CNN "Digikey ID"
+F 10 "" H 8550 3400 50  0001 C CNN "Config"
+	1    8550 3400
 	1    0    0    1   
 $EndComp
 $Comp
-L Device:R R16
+L Device:R R21
 U 1 1 626D59FC
-P 4850 6100
-F 0 "R16" V 4800 5950 50  0000 R CNN
-F 1 "7.5k" V 4850 6100 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 4780 6100 50  0001 C CNN
-F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 4850 6100 50  0001 C CNN
-F 4 "RC0603FR-077K5L" H 4850 6100 50  0001 C CNN "MPN"
-F 5 "Yageo" H 4850 6100 50  0001 C CNN "Manufacturer"
-F 6 "https://www.digikey.com/en/products/detail/yageo/RC0603FR-077K5L/727366" H 4850 6100 50  0001 C CNN "Ordering URL"
-F 7 "SMD" H 4850 6100 50  0001 C CNN "Type"
-F 8 "311-7.50KHRCT-ND" H 4850 6100 50  0001 C CNN "Digikey ID"
-	1    4850 6100
+P 8950 3400
+F 0 "R21" V 8900 3250 50  0000 R CNN
+F 1 "7.5k" V 8950 3400 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 8880 3400 50  0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 8950 3400 50  0001 C CNN
+F 4 "RC0603FR-077K5L" H 8950 3400 50  0001 C CNN "MPN"
+F 5 "Yageo" H 8950 3400 50  0001 C CNN "Manufacturer"
+F 6 "https://www.digikey.com/en/products/detail/yageo/RC0603FR-077K5L/727366" H 8950 3400 50  0001 C CNN "Ordering URL"
+F 7 "SMD" H 8950 3400 50  0001 C CNN "Type"
+F 8 "311-7.50KHRCT-ND" H 8950 3400 50  0001 C CNN "Digikey ID"
+	1    8950 3400
 	0    -1   1    0   
 $EndComp
-Text HLabel 5250 6100 2    50   Input ~ 0
+Text HLabel 9350 3400 2    50   Input ~ 0
 3.3V
-Text HLabel 5250 6200 2    50   Input ~ 0
+Text HLabel 9350 3500 2    50   Input ~ 0
 5V
-Text HLabel 5250 6300 2    50   Input ~ 0
+Text HLabel 9350 3600 2    50   Input ~ 0
 12V
 $Comp
 L Device:LED D2
 U 1 1 6275C050
-P 4450 6200
-F 0 "D2" H 4550 6150 50  0000 L CNN
-F 1 "Green" H 4200 6150 50  0000 R CNN
-F 2 "LED_SMD:LED_0603_1608Metric" H 4450 6200 50  0001 C CNN
-F 3 "https://www.we-online.de/katalog/datasheet/150060GS75000.pdf" H 4450 6200 50  0001 C CNN
-F 4 "150060GS75000" H 4450 6200 50  0001 C CNN "MPN"
-F 5 "Wurth Elektronik" H 4450 6200 50  0001 C CNN "Manufacturer"
-F 6 "https://www.digikey.com/en/products/detail/w%C3%BCrth-elektronik/150060GS75000/4489898" H 4450 6200 50  0001 C CNN "Ordering URL"
-F 7 "SMD" H 4450 6200 50  0001 C CNN "Type"
-F 8 "Polarity is indicated by a diode symbol either next to the LED or at the end of the line of LEDs." H 4450 6200 50  0001 C CNN "Assembly Notes"
-F 9 "732-4971-1-ND" H 4450 6200 50  0001 C CNN "Digikey ID"
-F 10 "" H 4450 6200 50  0001 C CNN "Config"
-	1    4450 6200
+P 8550 3500
+F 0 "D2" H 8650 3450 50  0000 L CNN
+F 1 "Green" H 8300 3450 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric" H 8550 3500 50  0001 C CNN
+F 3 "https://www.we-online.de/katalog/datasheet/150060GS75000.pdf" H 8550 3500 50  0001 C CNN
+F 4 "150060GS75000" H 8550 3500 50  0001 C CNN "MPN"
+F 5 "Wurth Elektronik" H 8550 3500 50  0001 C CNN "Manufacturer"
+F 6 "https://www.digikey.com/en/products/detail/w%C3%BCrth-elektronik/150060GS75000/4489898" H 8550 3500 50  0001 C CNN "Ordering URL"
+F 7 "SMD" H 8550 3500 50  0001 C CNN "Type"
+F 8 "Polarity is indicated by a diode symbol either next to the LED or at the end of the line of LEDs." H 8550 3500 50  0001 C CNN "Assembly Notes"
+F 9 "732-4971-1-ND" H 8550 3500 50  0001 C CNN "Digikey ID"
+F 10 "" H 8550 3500 50  0001 C CNN "Config"
+	1    8550 3500
 	1    0    0    1   
 $EndComp
 $Comp
-L Device:R R17
+L Device:R R22
 U 1 1 6275C056
-P 4850 6200
-F 0 "R17" V 4800 6050 50  0000 R CNN
-F 1 "7.5k" V 4850 6200 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 4780 6200 50  0001 C CNN
-F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 4850 6200 50  0001 C CNN
-F 4 "RC0603FR-077K5L" H 4850 6200 50  0001 C CNN "MPN"
-F 5 "Yageo" H 4850 6200 50  0001 C CNN "Manufacturer"
-F 6 "https://www.digikey.com/en/products/detail/yageo/RC0603FR-077K5L/727366" H 4850 6200 50  0001 C CNN "Ordering URL"
-F 7 "SMD" H 4850 6200 50  0001 C CNN "Type"
-F 8 "311-7.50KHRCT-ND" H 4850 6200 50  0001 C CNN "Digikey ID"
-	1    4850 6200
+P 8950 3500
+F 0 "R22" V 8900 3350 50  0000 R CNN
+F 1 "7.5k" V 8950 3500 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 8880 3500 50  0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 8950 3500 50  0001 C CNN
+F 4 "RC0603FR-077K5L" H 8950 3500 50  0001 C CNN "MPN"
+F 5 "Yageo" H 8950 3500 50  0001 C CNN "Manufacturer"
+F 6 "https://www.digikey.com/en/products/detail/yageo/RC0603FR-077K5L/727366" H 8950 3500 50  0001 C CNN "Ordering URL"
+F 7 "SMD" H 8950 3500 50  0001 C CNN "Type"
+F 8 "311-7.50KHRCT-ND" H 8950 3500 50  0001 C CNN "Digikey ID"
+	1    8950 3500
 	0    -1   1    0   
 $EndComp
 $Comp
 L Device:LED D3
 U 1 1 62766C77
-P 4450 6300
-F 0 "D3" H 4550 6250 50  0000 L CNN
-F 1 "Green" H 4200 6250 50  0000 R CNN
-F 2 "LED_SMD:LED_0603_1608Metric" H 4450 6300 50  0001 C CNN
-F 3 "https://www.we-online.de/katalog/datasheet/150060GS75000.pdf" H 4450 6300 50  0001 C CNN
-F 4 "150060GS75000" H 4450 6300 50  0001 C CNN "MPN"
-F 5 "Wurth Elektronik" H 4450 6300 50  0001 C CNN "Manufacturer"
-F 6 "https://www.digikey.com/en/products/detail/w%C3%BCrth-elektronik/150060GS75000/4489898" H 4450 6300 50  0001 C CNN "Ordering URL"
-F 7 "SMD" H 4450 6300 50  0001 C CNN "Type"
-F 8 "Polarity is indicated by a diode symbol either next to the LED or at the end of the line of LEDs." H 4450 6300 50  0001 C CNN "Assembly Notes"
-F 9 "732-4971-1-ND" H 4450 6300 50  0001 C CNN "Digikey ID"
-F 10 "" H 4450 6300 50  0001 C CNN "Config"
-	1    4450 6300
+P 8550 3600
+F 0 "D3" H 8650 3550 50  0000 L CNN
+F 1 "Green" H 8300 3550 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric" H 8550 3600 50  0001 C CNN
+F 3 "https://www.we-online.de/katalog/datasheet/150060GS75000.pdf" H 8550 3600 50  0001 C CNN
+F 4 "150060GS75000" H 8550 3600 50  0001 C CNN "MPN"
+F 5 "Wurth Elektronik" H 8550 3600 50  0001 C CNN "Manufacturer"
+F 6 "https://www.digikey.com/en/products/detail/w%C3%BCrth-elektronik/150060GS75000/4489898" H 8550 3600 50  0001 C CNN "Ordering URL"
+F 7 "SMD" H 8550 3600 50  0001 C CNN "Type"
+F 8 "Polarity is indicated by a diode symbol either next to the LED or at the end of the line of LEDs." H 8550 3600 50  0001 C CNN "Assembly Notes"
+F 9 "732-4971-1-ND" H 8550 3600 50  0001 C CNN "Digikey ID"
+F 10 "" H 8550 3600 50  0001 C CNN "Config"
+	1    8550 3600
 	1    0    0    1   
 $EndComp
 $Comp
-L Device:R R18
+L Device:R R23
 U 1 1 62766C7D
-P 4850 6300
-F 0 "R18" V 4800 6150 50  0000 R CNN
-F 1 "20k" V 4850 6300 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 4780 6300 50  0001 C CNN
-F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 4850 6300 50  0001 C CNN
-F 4 "RC0603FR-0720KL" H 4850 6300 50  0001 C CNN "MPN"
-F 5 "Yageo" H 4850 6300 50  0001 C CNN "Manufacturer"
-F 6 "https://www.digikey.com/en/products/detail/yageo/RC0603FR-0720KL/727040" H 4850 6300 50  0001 C CNN "Ordering URL"
-F 7 "SMD" H 4850 6300 50  0001 C CNN "Type"
-F 8 "311-20.0KHRCT-ND" H 4850 6300 50  0001 C CNN "Digikey ID"
-	1    4850 6300
+P 8950 3600
+F 0 "R23" V 8900 3450 50  0000 R CNN
+F 1 "20k" V 8950 3600 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 8880 3600 50  0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 8950 3600 50  0001 C CNN
+F 4 "RC0603FR-0720KL" H 8950 3600 50  0001 C CNN "MPN"
+F 5 "Yageo" H 8950 3600 50  0001 C CNN "Manufacturer"
+F 6 "https://www.digikey.com/en/products/detail/yageo/RC0603FR-0720KL/727040" H 8950 3600 50  0001 C CNN "Ordering URL"
+F 7 "SMD" H 8950 3600 50  0001 C CNN "Type"
+F 8 "311-20.0KHRCT-ND" H 8950 3600 50  0001 C CNN "Digikey ID"
+	1    8950 3600
 	0    -1   1    0   
 $EndComp
 $Comp
 L power:GND #PWR010
 U 1 1 627C4E9F
-P 4250 6300
-F 0 "#PWR010" H 4250 6050 50  0001 C CNN
-F 1 "GND" H 4255 6127 50  0000 C CNN
-F 2 "" H 4250 6300 50  0001 C CNN
-F 3 "" H 4250 6300 50  0001 C CNN
-	1    4250 6300
+P 8350 3600
+F 0 "#PWR010" H 8350 3350 50  0001 C CNN
+F 1 "GND" H 8355 3427 50  0000 C CNN
+F 2 "" H 8350 3600 50  0001 C CNN
+F 3 "" H 8350 3600 50  0001 C CNN
+	1    8350 3600
 	-1   0    0    -1  
 $EndComp
 Wire Notes Line
-	4000 6550 4000 5950
-Text Notes 4000 5925 0    50   ~ 0
+	8000 3850 8000 3250
+Text Notes 8000 3225 0    50   ~ 0
 Power Indicator LEDs
 Wire Notes Line
 	8000 4200 8000 5200
@@ -950,35 +915,31 @@ Wire Wire Line
 	9500 4500 9500 4550
 Connection ~ 9500 4550
 Wire Wire Line
-	4300 6100 4250 6100
+	8400 3400 8350 3400
 Wire Wire Line
-	4300 6300 4250 6300
+	8400 3600 8350 3600
 Wire Wire Line
-	5000 6100 5250 6100
+	9100 3400 9350 3400
 Wire Wire Line
-	5000 6200 5250 6200
+	9100 3500 9350 3500
 Wire Wire Line
-	5000 6300 5250 6300
-Connection ~ 4250 6300
+	9100 3600 9350 3600
+Connection ~ 8350 3600
 Wire Wire Line
-	4250 6300 4250 6200
+	8350 3600 8350 3500
 Wire Wire Line
-	4300 6200 4250 6200
-Connection ~ 4250 6200
+	8400 3500 8350 3500
+Connection ~ 8350 3500
 Wire Wire Line
-	4250 6200 4250 6100
+	8350 3500 8350 3400
 Wire Wire Line
-	4600 6100 4700 6100
+	8700 3400 8800 3400
 Wire Wire Line
-	4600 6200 4700 6200
+	8700 3500 8800 3500
 Wire Wire Line
-	4600 6300 4700 6300
+	8700 3600 8800 3600
 Wire Notes Line
-	4000 5950 5500 5950
-Wire Notes Line
-	4000 6550 5500 6550
-Wire Notes Line
-	5500 5950 5500 6550
+	9600 3250 9600 3850
 Text HLabel 1500 4300 0    50   Output ~ 0
 12V
 Text HLabel 1500 4200 0    50   Output ~ 0
@@ -1116,86 +1077,87 @@ DSCS15
 Text Label 4600 3900 0    50   ~ 0
 DSCS
 $Comp
-L Connector_Generic:Conn_01x16 J1
+L Connector_Generic:Conn_01x16 J3
 U 1 1 60262969
-P 4800 5050
-F 0 "J1" H 4700 4000 50  0000 C CNN
-F 1 "Conn_01x16" H 4700 4100 50  0000 C CNN
-F 2 "Connector_Harwin:Harwin_M20-89016xx_1x16_P2.54mm_Horizontal" H 4800 5050 50  0001 C CNN
-F 3 "https://s3.amazonaws.com/catalogspreads-pdf/PAGE112-113%20.100%20MALE%20HDR.pdf" H 4800 5050 50  0001 C CNN
-F 4 "S1113E-16-ND" H 4800 5050 50  0001 C CNN "Digikey ID"
-F 5 "GEC16SBSN-M89" H 4800 5050 50  0001 C CNN "MPN"
-F 6 "Sullins" H 4800 5050 50  0001 C CNN "Manufacturer"
-F 7 "https://www.digikey.com/en/products/detail/sullins-connector-solutions/GEC16SBSN-M89/862267" H 4800 5050 50  0001 C CNN "Ordering URL"
-F 8 "SMD" H 4800 5050 50  0001 C CNN "Type"
-	1    4800 5050
+P 4100 6800
+F 0 "J3" H 4000 5750 50  0000 C CNN
+F 1 "Conn_01x16" H 4000 5850 50  0000 C CNN
+F 2 "Connector_Harwin:Harwin_M20-89016xx_1x16_P2.54mm_Horizontal" H 4100 6800 50  0001 C CNN
+F 3 "https://s3.amazonaws.com/catalogspreads-pdf/PAGE112-113%20.100%20MALE%20HDR.pdf" H 4100 6800 50  0001 C CNN
+F 4 "S1113E-16-ND" H 4100 6800 50  0001 C CNN "Digikey ID"
+F 5 "GEC16SBSN-M89" H 4100 6800 50  0001 C CNN "MPN"
+F 6 "Sullins" H 4100 6800 50  0001 C CNN "Manufacturer"
+F 7 "https://www.digikey.com/en/products/detail/sullins-connector-solutions/GEC16SBSN-M89/862267" H 4100 6800 50  0001 C CNN "Ordering URL"
+F 8 "SMD" H 4100 6800 50  0001 C CNN "Type"
+F 9 "-NoIC" H 4100 6800 50  0001 C CNN "Config"
+	1    4100 6800
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
 	4500 4500 4500 4600
 Wire Wire Line
-	5050 4250 5000 4250
+	4350 6000 4300 6000
 Wire Wire Line
-	5050 4350 5000 4350
+	4350 6100 4300 6100
 Wire Wire Line
-	5050 4450 5000 4450
+	4350 6200 4300 6200
 Wire Wire Line
-	5050 4550 5000 4550
+	4350 6300 4300 6300
 Wire Wire Line
-	5050 4650 5000 4650
+	4350 6400 4300 6400
 Wire Wire Line
-	5050 4750 5000 4750
+	4350 6500 4300 6500
 Wire Wire Line
-	5050 4850 5000 4850
+	4350 6600 4300 6600
 Wire Wire Line
-	5050 4950 5000 4950
+	4350 6700 4300 6700
 Wire Wire Line
-	5050 5050 5000 5050
+	4350 6800 4300 6800
 Wire Wire Line
-	5050 5150 5000 5150
+	4350 6900 4300 6900
 Wire Wire Line
-	5050 5250 5000 5250
+	4350 7000 4300 7000
 Wire Wire Line
-	5050 5350 5000 5350
+	4350 7100 4300 7100
 Wire Wire Line
-	5050 5450 5000 5450
+	4350 7200 4300 7200
 Wire Wire Line
-	5050 5550 5000 5550
+	4350 7300 4300 7300
 Wire Wire Line
-	5050 5650 5000 5650
+	4350 7400 4300 7400
 Wire Wire Line
-	5050 5750 5000 5750
-Text Label 5050 4250 0    50   ~ 0
+	4350 7500 4300 7500
+Text Label 4350 6000 0    50   ~ 0
 DSCS1
-Text Label 5050 4350 0    50   ~ 0
+Text Label 4350 6100 0    50   ~ 0
 DSCS2
-Text Label 5050 4450 0    50   ~ 0
+Text Label 4350 6200 0    50   ~ 0
 DSCS3
-Text Label 5050 4550 0    50   ~ 0
+Text Label 4350 6300 0    50   ~ 0
 DSCS4
-Text Label 5050 4650 0    50   ~ 0
+Text Label 4350 6400 0    50   ~ 0
 DSCS5
-Text Label 5050 4750 0    50   ~ 0
+Text Label 4350 6500 0    50   ~ 0
 DSCS6
-Text Label 5050 4850 0    50   ~ 0
+Text Label 4350 6600 0    50   ~ 0
 DSCS7
-Text Label 5050 4950 0    50   ~ 0
+Text Label 4350 6700 0    50   ~ 0
 DSCS8
-Text Label 5050 5050 0    50   ~ 0
+Text Label 4350 6800 0    50   ~ 0
 DSCS9
-Text Label 5050 5150 0    50   ~ 0
+Text Label 4350 6900 0    50   ~ 0
 DSCS10
-Text Label 5050 5250 0    50   ~ 0
+Text Label 4350 7000 0    50   ~ 0
 DSCS11
-Text Label 5050 5350 0    50   ~ 0
+Text Label 4350 7100 0    50   ~ 0
 DSCS12
-Text Label 5050 5450 0    50   ~ 0
+Text Label 4350 7200 0    50   ~ 0
 DSCS13
-Text Label 5050 5550 0    50   ~ 0
+Text Label 4350 7300 0    50   ~ 0
 DSCS14
-Text Label 5050 5650 0    50   ~ 0
+Text Label 4350 7400 0    50   ~ 0
 DSCS15
-Text Label 5050 5750 0    50   ~ 0
+Text Label 4350 7500 0    50   ~ 0
 DSCS
 Text HLabel 1500 2800 0    50   UnSpc ~ 0
 INTERPLANE1
@@ -1313,4 +1275,43 @@ Text HLabel 5750 3600 0    50   Input ~ 0
 ~DCS~
 Wire Wire Line
 	5750 3600 6000 3600
+$Sheet
+S 6000 2750 1000 2300
+U 6199D8B6
+F0 "SPI DCS Selector" 50
+F1 "SPIDCSSelector.sch" 50
+F2 "SCK" I L 6000 2800 50 
+F3 "COPI" I L 6000 3000 50 
+F4 "CIPO" T L 6000 3200 50 
+F5 "~DSCS~" I L 6000 3900 50 
+F6 "3.3V" I L 6000 3750 50 
+F7 "~DCS~" I L 6000 3600 50 
+F8 "~DCS0~" O R 7000 2850 50 
+F9 "EXPGPIO_5" T R 7000 4550 50 
+F10 "EXPGPIO_6" T R 7000 4650 50 
+F11 "EXPGPIO_7" T R 7000 4750 50 
+F12 "EXPGPIO_8" T R 7000 4850 50 
+F13 "EXPGPIO_9" T R 7000 4950 50 
+F14 "~DCS1~" O R 7000 2950 50 
+F15 "~DCS2~" O R 7000 3050 50 
+F16 "~DCS3~" O R 7000 3150 50 
+F17 "~DCS4~" O R 7000 3250 50 
+F18 "~DCS5~" O R 7000 3350 50 
+F19 "~DCS6~" O R 7000 3450 50 
+F20 "~DCS7~" O R 7000 3550 50 
+F21 "~DCS8~" O R 7000 3650 50 
+F22 "~DCS9~" O R 7000 3750 50 
+F23 "~DCS10~" O R 7000 3850 50 
+F24 "~DCS11~" O R 7000 3950 50 
+F25 "~DCS12~" O R 7000 4050 50 
+F26 "~DCS13~" O R 7000 4150 50 
+F27 "~DCS14~" O R 7000 4250 50 
+F28 "~DCS15~" O R 7000 4350 50 
+$EndSheet
+Text HLabel 5750 3200 0    50   3State ~ 0
+SPI0_CIPO
+Wire Notes Line
+	9600 3850 8000 3850
+Wire Notes Line
+	8000 3250 9600 3250
 $EndSCHEMATC

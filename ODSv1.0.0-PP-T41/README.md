@@ -63,6 +63,7 @@ This plane has the following BOM variants:
 
 - Default: A fully-populated PCB, configured to take 12 V power supply input from the barrel jack and not from the Pufferfish Power Board.
 - Pufferfish: A fully-populated PCB, configured to take 12 V power supply input from the Pufferfish Power Board and not from the barrel jack.
+- NoPufferfish: A PCB which can only take 12 V power supply input from the barrel jack and omits components related to the Pufferfish Power Board.
 
 This board has the following power supply connection instructions:
 
@@ -71,8 +72,9 @@ This board has the following power supply connection instructions:
 
 This plane allows the following post-assembly modifications:
 
-- A 0 Ohm jumper resistor can be moved from one place to another in order to convert this between the Default and Pufferfish variants. This jumper resistor determines which power supply input (barrel jack or Pufferfish Power Board) can be used to supply 12 V to the plane.
-- A 0 Ohm jumper resistor can be added to the unpopulated location for a given variant in order to allow the operator to choose whether to power the plane from the barrel jack or the Pufferfish Power Board simply by plugging in **one** of the two power sources, rather than by moving the jumper.
+- A 4-pin 0.1" pitch through-hole header can be soldered to the bottom of the plane at the front edge to expose jumper wire test points for probing the DSCS0, DSCS, MSCS, and GND lines. It is recommended to use a right-angle header with 0.23" contact length, such as [PRPC004SBAN-M71RC](https://www.digikey.com/en/products/detail/sullins-connector-solutions/PRPC004SBAN-M71RC/2775330).
+- A 0 Ohm jumper resistor can be moved from one place to another in order to convert this between the Default and Pufferfish variants. This jumper resistor determines which power supply input (barrel jack or Pufferfish Power Board) can be used to supply 12 V to the plane. Note that this does not work with the NoPufferfish variant, which lacks the connector for the Pufferfish Power Board.
+- A 0 Ohm jumper resistor can be added to the unpopulated location for a given variant in order to allow the operator to choose whether to power the plane from the barrel jack or the Pufferfish Power Board simply by plugging in **one** of the two power sources, rather than by moving the jumper. Note that this does not work with the NoPufferfish variant, which lacks the connector for the Pufferfish Power Board.
 
 This plane has the following safety notices:
 
