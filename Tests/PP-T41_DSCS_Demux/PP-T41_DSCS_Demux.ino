@@ -80,7 +80,7 @@ class BackboneSwitcher {
     }
     void set_addr(uint8_t addr) {
       for (uint8_t port = 1; port <= addr_width; ++port) {
-        io_expander.setOutput(port, !(addr & addr_port_mask(port)));
+        io_expander.setOutput(port, addr & addr_port_mask(port));
       }
     }
 
