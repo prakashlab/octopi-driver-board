@@ -1,5 +1,7 @@
 static const uint8_t num_pins = 42;
 uint8_t pin = 0;
+// Backbone
+static const uint8_t mscs_pin = 30;
 
 void setup() {
   for (uint8_t i = 0; i < num_pins; ++i) {
@@ -35,6 +37,8 @@ void loop() {
       Serial.print(". Press enter to test pin ");
       Serial.print((pin + 1) % num_pins);
       Serial.println('.');
+      // Deactivate the 3-state buffer on the MAX7317's CIPO output
+      digitalWrite(mscs_pin, HIGH);
       break;
     }
   }
